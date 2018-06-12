@@ -4,11 +4,19 @@
   "StartAt": "SetDefaults",
   "States": {
     "SetDefaults": {
-      "ResourceConfig":{
+      "ResourceConfig": {
         "$.formData.catName": "Rupert",
+        "$.formData.dogName": "$.dog",
         "$.formData.catOwnerId": "$USERID",
         "$.formData.catBirthday": "$NOW",
-        "$.formData.email": "$EMAIL"
+        "$.formData.email": "$EMAIL",
+        "$.formData.faveColours": "$.faveColours",
+        "$.formData.measurements": [
+          {
+            "height": "$.height",
+            "weight": "$.weight"
+          }
+        ]
       },
       "Type": "Task",
       "Resource": "module:setContextData",
