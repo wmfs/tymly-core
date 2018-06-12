@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = function normalFunction () {
-  return function normalFunction (options) {
-    return 'Hello World.'
+  return function normalFunction (event, context) {
+    return {name: event.options.name, userId: context.userId}
   }
 }
