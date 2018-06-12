@@ -12,3 +12,8 @@ test:
   - npm test
 after_success:
   - npm run coverage
+deploy:
+  provider: script
+  script_cleanup: true
+  script:
+    - npx semantic-release
