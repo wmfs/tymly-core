@@ -5,6 +5,8 @@ const tymly = require('../lib')
 const path = require('path')
 const UPSERT_FIND_STATE_MACHINE_NAME = 'tymlyTest_upsertACatFindACat_1_0'
 const FIND_WHERE_STATE_MACHINE_NAME = 'tymlyTest_findACatWhere_1_0'
+const FIND_BY_ID_STATE_MACHINE_NAME = 'tymlyTest_findACatById_1_0'
+const FIND_BY_ID_OBJ_PK_STATE_MACHINE_NAME = 'tymlyTest_findADogById_1_0'
 const DELETE_STATE_MACHINE_NAME = 'tymlyTest_deleteACat_1_0'
 const DELETE_OBJ_PK_STATE_MACHINE_NAME = 'tymlyTest_deleteADog_1_0'
 
@@ -63,6 +65,7 @@ describe('State resource tests', function () {
   it('should upsert some animals', async () => {
     await catModel.upsert({name: 'Wilfred'}, {})
     await dogModel.upsert({name: 'Alfie', id: 1}, {})
+    await dogModel.upsert({name: 'Donald', id: 2}, {})
   })
 
   it('should start a simple-storage Tymly with correct name', async () => {
@@ -110,7 +113,34 @@ describe('State resource tests', function () {
 
   it('should check the dog has been deleted', async () => {
     const dog = await dogModel.find({})
-    expect(dog.length).to.eql(0)
+    expect(dog.length).to.eql(1)
+  })
+
+  it('should start state machine to test the FindingById state resource', async () => {
+    const execDesc = await statebox.startExecution(
+      {catName: 'Rupert'},
+      FIND_BY_ID_STATE_MACHINE_NAME,
+      {sendResponse: 'COMPLETE'}
+    )
+
+    expect(execDesc.status).to.eql('SUCCEEDED')
+    expect(execDesc.currentStateName).to.eql('FindingRupert')
+    expect(execDesc.currentResource).to.eql('module:findingById')
+    expect(execDesc.ctx.catDocFromStorage.name).to.eql('Rupert')
+  })
+
+  it('should start state machine to test the FindingById state resource with an object primary key', async () => {
+    const execDesc = await statebox.startExecution(
+      {dog: {name: 'Donald', id: 2}},
+      FIND_BY_ID_OBJ_PK_STATE_MACHINE_NAME,
+      {sendResponse: 'COMPLETE'}
+    )
+
+    expect(execDesc.status).to.eql('SUCCEEDED')
+    expect(execDesc.currentStateName).to.eql('FindingDonald')
+    expect(execDesc.currentResource).to.eql('module:findingById')
+    expect(execDesc.ctx.dogDocFromStorage.name).to.eql('Donald')
+    expect(execDesc.ctx.dogDocFromStorage.id).to.eql(2)
   })
 
   it('should shutdown Tymly', async () => {

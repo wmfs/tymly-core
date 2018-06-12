@@ -1,0 +1,25 @@
+{
+  "Comment": "Find a dog by id.",
+  "StartAt": "FindingDonald",
+  "version": "1.0",
+  "States": {
+    "FindingDonald": {
+      "Type": "Task",
+      "InputPath": "$.dog",
+      "Resource": "module:findingById",
+      "ResourceConfig": {
+        "modelId": "dog"
+      },
+      "ResultPath": "$.dogDocFromStorage",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

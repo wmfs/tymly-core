@@ -1,0 +1,25 @@
+{
+  "Comment": "Find a cat by id.",
+  "StartAt": "FindingRupert",
+  "version": "1.0",
+  "States": {
+    "FindingRupert": {
+      "Type": "Task",
+      "InputPath": "$.catName",
+      "Resource": "module:findingById",
+      "ResourceConfig": {
+        "modelId": "cat"
+      },
+      "ResultPath": "$.catDocFromStorage",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
