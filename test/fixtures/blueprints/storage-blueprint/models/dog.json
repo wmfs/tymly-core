@@ -1,0 +1,28 @@
+{
+  "name": "cat",
+  "version": "1.0",
+  "plural": "cats",
+  "primaryKey": [
+    "name",
+    "id"
+  ],
+  "description": "Model for storing cat details",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "An identifier"
+    },
+    "name": {
+      "type": "string",
+      "description": "The cat's name."
+    },
+    "comment": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "id"
+  ]
+}

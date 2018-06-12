@@ -1,0 +1,24 @@
+{
+  "Comment": "Delete a dog.",
+  "StartAt": "DeletingAlfie",
+  "version": "1.0",
+  "States": {
+    "DeletingAlfie": {
+      "Type": "Task",
+      "Resource": "module:deletingById",
+      "InputPath": "$.dog",
+      "ResourceConfig": {
+        "modelId": "dog"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

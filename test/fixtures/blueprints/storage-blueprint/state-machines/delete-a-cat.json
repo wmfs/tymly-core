@@ -1,0 +1,24 @@
+{
+  "Comment": "Delete a cat.",
+  "StartAt": "DeletingWilfred",
+  "version": "1.0",
+  "States": {
+    "DeletingWilfred": {
+      "Type": "Task",
+      "Resource": "module:deletingById",
+      "InputPath": "$.catName",
+      "ResourceConfig": {
+        "modelId": "cat"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
