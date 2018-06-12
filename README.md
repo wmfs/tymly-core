@@ -1,6 +1,6 @@
 # tymly
 [![Tymly Package](https://img.shields.io/badge/tymly-package-blue.svg)](https://tymly.io/)
-[![npm (scoped)](https://img.shields.io/npm/v/@wmfs/tymly-core.svg)](https://www.npmjs.com/package/@wmfs/tymly-core)
+[![npm (scoped)](https://img.shields.io/npm/v/@wmfs/tymly.svg)](https://www.npmjs.com/package/@wmfs/tymly)
 [![Build Status](https://travis-ci.org/wmfs/tymly-core.svg?branch=master)](https://travis-ci.org/wmfs/tymly-core)
 [![codecov](https://codecov.io/gh/wmfs/tymly-core/branch/master/graph/badge.svg)](https://codecov.io/gh/wmfs/tymly-core)
 [![CodeFactor](https://www.codefactor.io/repository/github/wmfs/tymly-core/badge)](https://www.codefactor.io/repository/github/wmfs/tymly-core)
