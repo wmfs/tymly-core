@@ -1,8 +1,23 @@
 {
-  "name": "tymly",
+  "name": "@wmfs/tymly",
+  "version": "0.0.0-semantically-released",
   "description": "A framework for building and sharing workflows in Node.js",
-  "version": "0.0.17",
-  "author": "Tim Needham",
+  "author": "West Midlands Fire Service",
+  "homepage": "https://github.com/wmfs/tymly-core#readme",
+  "keywords": [
+    "tymly",
+    "low code",
+    "workflow",
+    "open source"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wmfs/tymly-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wmfs/tymly-core/issues"
+  },
   "main": "./lib/index.js",
   "dependencies": {
     "async": "2.6.1",
@@ -30,21 +45,26 @@
   "devDependencies": {
     "chai": "4.1.2",
     "chai-subset": "1.6.0",
+    "codecov": "3.0.2",
+    "cz-conventional-changelog": "2.1.0",
     "mocha": "5.2.0",
     "moment": "2.22.2",
     "standard": "11.0.1",
-    "tymly-test-helpers": "0.0.1"
+    "@wmfs/tymly-test-helpers": "1.0.0",
+    "semantic-release": "^15.5.2"
   },
   "scripts": {
     "lint": "standard",
-    "test": "standard && mocha"
+    "test": "nyc mocha && standard",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wmfs/tymly"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
-  "bugs": {
-    "url": "https://github.com/wmfs/tymly/issues"
+  "publishConfig": {
+    "access": "public"
   }
 }
