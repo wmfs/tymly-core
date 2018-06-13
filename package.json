@@ -37,7 +37,7 @@
     "read-pkg-up": "3.0.0",
     "split": "1.0.1",
     "sprintf-js": "1.1.1",
-    "@wmfs/statebox": "1.0.0",
+    "@wmfs/statebox": "1.0.3",
     "underscore-query": "3.3.2",
     "upath": "1.1.0",
     "uuid": "3.2.1"
