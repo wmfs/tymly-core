@@ -6,6 +6,7 @@
   "homepage": "https://github.com/wmfs/tymly-core#readme",
   "keywords": [
     "tymly",
+    "package",
     "low code",
     "workflow",
     "open source"
@@ -37,7 +38,7 @@
     "read-pkg-up": "3.0.0",
     "split": "1.0.1",
     "sprintf-js": "1.1.1",
-    "@wmfs/statebox": "1.0.3",
+    "@wmfs/statebox": "1.0.4",
     "underscore-query": "3.3.2",
     "upath": "1.1.0",
     "uuid": "3.2.1"
