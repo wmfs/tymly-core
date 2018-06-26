@@ -65,6 +65,18 @@ const heartBeatTests = [
       { userId: user}
     ),
     status: 'SUCCEEDED'
+  },
+  {
+    label: 'sendTaskFailure',
+    testFn: (statebox, executionName, user) => statebox.sendTaskFailure(
+      executionName,
+      {
+        error: 'FAIL',
+        cause: 'Brexit'
+      },
+      { userId: user}
+    ),
+    status: 'FAILED'
   }
 ]
 
@@ -139,7 +151,7 @@ describe('Statebox service RBAC authorisation', function () {
                   userId: disallowed
                 }
               )
-              expect(execDesc.status).to.eql('FAILED')
+              expect(execDesc.status).to.eql('NOAUTH')
               expect(execDesc.stateMachineName).to.eql(test.blueprint)
               expect(execDesc.errorCode).to.eql('401')
             })
@@ -200,7 +212,9 @@ describe('Statebox service RBAC authorisation', function () {
                 it('stopExecution', async () => {
                   const execDesc = await testAction.testFn(statebox, executionName, disallowed)
 
-                  expect(execDesc.status).to.eql('FAILED')
+                  expect(execDesc.status).to.eql('NOAUTH')
+                  expect(execDesc.stateMachineName).to.eql(test.blueprint)
+                  expect(execDesc.errorCode).to.eql('401')
                 })
               })
             } // for disallowed ...
