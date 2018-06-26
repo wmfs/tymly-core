@@ -25,7 +25,7 @@ const startTests = [
     } */
 ]
 
-const heartBeatTests = [
+const heartBeatBlueprints = [
   {
     label: 'everyone',
     blueprint: 'tymlyTest_everyoneHeartBeat_1_0',
@@ -46,7 +46,29 @@ const heartBeatTests = [
   }
 ]
 
-xdescribe('statebox service RBAC authorisation tests', function () {
+const heartBeatTests = [
+  {
+    label: 'stopExecution',
+    testFn: (statebox, executionName, user) => statebox.stopExecution(
+      'Form cancelled by user',
+      'CANCELLED',
+      executionName,
+      { userId: user }
+    ),
+    status: 'STOPPED'
+  },
+  {
+    label: 'sendTaskSuccess',
+    testFn: (statebox, executionName, user) => statebox.sendTaskSuccess(
+      executionName,
+      {},
+      { userId: user}
+    ),
+    status: 'SUCCEEDED'
+  }
+]
+
+describe('Statebox service RBAC authorisation', function () {
   this.timeout(process.env.TIMEOUT || 5000)
 
   let tymlyService
@@ -127,148 +149,66 @@ xdescribe('statebox service RBAC authorisation tests', function () {
     } // for ...
   }) // start execution tests
 
-  describe('stopExecution', () => {
-    for (const test of heartBeatTests) {
-      describe(test.label, () => {
-        describe('allowed', () => {
-          for (const allowed of test.allowed) {
-            describe(`${allowed}`, () => {
-              let executionName
+  for (const testAction of heartBeatTests) {
+    describe(testAction.label, () => {
+      for (const test of heartBeatBlueprints) {
+        describe(test.label, () => {
+          describe('allowed', () => {
+            for (const allowed of test.allowed) {
+              describe(`${allowed}`, () => {
+                let executionName
 
-              it('startExecution', async () => {
-                const execDesc = await statebox.startExecution(
-                  {},
-                  test.blueprint,
-                  {
-                    sendResponse: 'AFTER_RESOURCE_CALLBACK.TYPE:heartBeat',
-                    userId: 'the-stopper'
-                  }
-                )
-                expect(execDesc.status).to.eql('RUNNING')
-                executionName = execDesc.executionName
+                it('startExecution', async () => {
+                  const execDesc = await statebox.startExecution(
+                    {},
+                    test.blueprint,
+                    {
+                      sendResponse: 'AFTER_RESOURCE_CALLBACK.TYPE:heartBeat',
+                      userId: 'the-stopper'
+                    }
+                  )
+                  expect(execDesc.status).to.eql('RUNNING')
+                  executionName = execDesc.executionName
+                })
+
+                it('stopExecution', async () => {
+                  const execDesc = await testAction.testFn(statebox, executionName, allowed)
+
+                  expect(execDesc.status).to.eql(testAction.status)
+                })
               })
+            } // for allowed ...
+          })
+          describe('disallowed', () => {
+            for (const disallowed of test.disallowed) {
+              describe(`${disallowed}`, () => {
+                let executionName
 
-              it('stopExecution', async () => {
-                const execDesc = await statebox.stopExecution(
-                  'Form cancelled by user',
-                  'CANCELLED',
-                  executionName,
-                  {
-                    userId: allowed
-                  }
-                )
+                it('startExecution', async () => {
+                  const execDesc = await statebox.startExecution(
+                    {},
+                    test.blueprint,
+                    {
+                      sendResponse: 'AFTER_RESOURCE_CALLBACK.TYPE:heartBeat',
+                      userId: 'the-stopper'
+                    }
+                  )
+                  expect(execDesc.status).to.eql('RUNNING')
+                  executionName = execDesc.executionName
+                })
 
-                expect(execDesc.status).to.eql('STOPPED')
+                it('stopExecution', async () => {
+                  const execDesc = await testAction.testFn(statebox, executionName, disallowed)
+
+                  expect(execDesc.status).to.eql('FAILED')
+                })
               })
-            })
-          } // for allowed ...
+            } // for disallowed ...
+          })
         })
-        describe('disallowed', () => {
-          for (const disallowed of test.disallowed) {
-            describe(`${disallowed}`, () => {
-              let executionName
-
-              it('startExecution', async () => {
-                const execDesc = await statebox.startExecution(
-                  {},
-                  test.blueprint,
-                  {
-                    sendResponse: 'AFTER_RESOURCE_CALLBACK.TYPE:heartBeat',
-                    userId: 'the-stopper'
-                  }
-                )
-                expect(execDesc.status).to.eql('RUNNING')
-                executionName = execDesc.executionName
-              })
-
-              it('stopExecution', async () => {
-                const execDesc = await statebox.stopExecution(
-                  'Form cancelled by user',
-                  'CANCELLED',
-                  executionName,
-                  {
-                    userId: disallowed
-                  }
-                )
-
-                expect(execDesc.status).to.eql('FAILED')
-              })
-            })
-          } // for disallowed ...
-        })
-      })
-    } // for stop tests ...
-  }) // stop execution
-
-  describe('sendTaskSuccess', () => {
-    for (const test of heartBeatTests) {
-      describe(test.label, () => {
-        describe('allowed', () => {
-          for (const allowed of test.allowed) {
-            describe(`${allowed}`, () => {
-              let executionName
-
-              it('startExecution', async () => {
-                const execDesc = await statebox.startExecution(
-                  {},
-                  test.blueprint,
-                  {
-                    sendResponse: 'AFTER_RESOURCE_CALLBACK.TYPE:heartBeat',
-                    userId: 'the-stopper'
-                  }
-                )
-                expect(execDesc.status).to.eql('RUNNING')
-                executionName = execDesc.executionName
-              })
-
-              it('sendTaskSuccess', async () => {
-                const execDesc = await statebox.sendTaskSuccess(
-                  executionName,
-                  {},
-                  {
-                    userId: allowed
-                  }
-                )
-                expect(execDesc.status).to.eql('SUCCEEDED')
-              })
-            })
-          } // for allowed ...
-        })
-        describe('disallowed', () => {
-          for (const disallowed of test.disallowed) {
-            describe(`${disallowed}`, () => {
-              let executionName
-
-              it('startExecution', async () => {
-                const execDesc = await statebox.startExecution(
-                  {},
-                  test.blueprint,
-                  {
-                    sendResponse: 'AFTER_RESOURCE_CALLBACK.TYPE:heartBeat',
-                    userId: 'the-stopper'
-                  }
-                )
-                expect(execDesc.status).to.eql('RUNNING')
-                executionName = execDesc.executionName
-              })
-
-              it('sendTaskSuccess', async () => {
-                const execDesc = await statebox.sendTaskSuccess(
-                  executionName,
-                  {},
-                  {
-                    userId: disallowed
-                  }
-                )
-
-                expect(execDesc.status).to.eql('FAILED')
-              })
-            })
-          } // for allowed ...
-        })
-      })
-    } // for stop tests ...
-  }) // stop execution
+      } // for stop tests ...
+    })
+  }
 
   describe('cleanup', () => {
     it('shutdown Tymly', async () => {
