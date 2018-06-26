@@ -9,7 +9,7 @@ const INDIRECT_HEARTBEAT = 'tymlyTest_indirectHeartBeat'
 const JUSTFAIL = 'tymlyTest_justFail'
 const INDIRECT_JUSTFAIL = 'tymlyTest_indirectJustFail'
 
-describe('run-state-machine state resource test', function () {
+describe('Run-state-machine state resources', function () {
   this.timeout(process.env.TIMEOUT || 5000)
 
   describe('positive test', () => {

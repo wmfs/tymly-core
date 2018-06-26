@@ -9,7 +9,7 @@ process.on('unhandledRejection', (reason, p) => {
   // application specific logging, throwing an error, or other logic here
 })
 
-describe('registry key state resources', function () {
+describe('Registry key state resources', function () {
   this.timeout(process.env.TIMEOUT || 5000)
 
   let tymlyService

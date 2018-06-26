@@ -10,7 +10,7 @@ const TestTimestampString = `${TestTimestamp}`
 
 const timestampStateMachine = 'tymlyTest_timestamp_1_0'
 
-describe('timestamp state resources', function () {
+describe('Timestamp state resources', function () {
   this.timeout(process.env.TIMEOUT || 5000)
 
   let tymlyService
