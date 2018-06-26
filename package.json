@@ -41,7 +41,7 @@
     "@wmfs/statebox": "1.0.5",
     "underscore-query": "3.3.2",
     "upath": "1.1.0",
-    "uuid": "3.2.1"
+    "uuid": "3.3.0"
   },
   "devDependencies": {
     "chai": "4.1.2",
