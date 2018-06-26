@@ -4,18 +4,16 @@ class Heartbeat {
     callback(null)
   }
 
-  run (event, context, done) {
+  async run (event, context, done) {
     const heartbeat = {
       heart: 'ba-dum-dum'
     }
 
-    context.sendTaskHeartbeat(
-      {heartbeat},
-      (err, executionDescription) => {
-        if (err) throw new Error(err)
-        done(executionDescription)
-      }
+    const executionDescription = await context.sendTaskHeartbeat(
+      {heartbeat}
     )
+
+    done(executionDescription)
   } // run
 } // Heartbeat
 

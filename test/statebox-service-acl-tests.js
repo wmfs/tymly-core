@@ -77,6 +77,15 @@ const heartBeatTests = [
       { userId: user}
     ),
     status: 'FAILED'
+  },
+  {
+    label: 'sendTaskHeartbeat',
+    testFn: (statebox, executionName, user) => statebox.sendTaskHeartbeat(
+      executionName,
+      { },
+      { userId: user}
+    ),
+    status: 'RUNNING'
   }
 ]
 
@@ -183,7 +192,7 @@ describe('Statebox service RBAC authorisation', function () {
                   executionName = execDesc.executionName
                 })
 
-                it('stopExecution', async () => {
+                it(testAction.label, async () => {
                   const execDesc = await testAction.testFn(statebox, executionName, allowed)
 
                   expect(execDesc.status).to.eql(testAction.status)
