@@ -29,7 +29,7 @@ describe('Run-state-machine state resources', function () {
           pluginPaths: [
             path.resolve(__dirname, './fixtures/plugins/cats-plugin'),
             path.resolve(__dirname, './fixtures/plugins/heartbeat-plugin'),
-            path.resolve(__dirname, '../node_modules/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
           ]
         },
         function (err, tymlyServices) {
@@ -113,7 +113,7 @@ describe('Run-state-machine state resources', function () {
             path.resolve(__dirname, './fixtures/blueprints/cats-wrapper-blueprint')
           ],
           pluginPaths: [
-            path.resolve(__dirname, '../node_modules/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
           ]
         },
         function (err, tymlyServices) {
@@ -173,7 +173,7 @@ describe('Run-state-machine state resources', function () {
           ],
           pluginPaths: [
             path.resolve(__dirname, './fixtures/plugins/justfail-plugin'),
-            path.resolve(__dirname, '../node_modules/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
           ]
         },
         function (err, tymlyServices) {

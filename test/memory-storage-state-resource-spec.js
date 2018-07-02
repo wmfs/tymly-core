@@ -22,7 +22,7 @@ describe('State resource tests', function () {
           path.resolve(__dirname, './fixtures/blueprints/storage-blueprint')
         ],
         pluginPaths: [
-          path.resolve(__dirname, '../node_modules/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
         ]
       },
       (err, tymlyServices) => {

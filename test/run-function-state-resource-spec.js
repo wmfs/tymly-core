@@ -21,7 +21,7 @@ describe('Test the run function state resource', function () {
         ],
         pluginPaths: [
           path.resolve(__dirname, './fixtures/plugins/cats-plugin'),
-          path.resolve(__dirname, '../node_modules/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
         ]
       },
       (err, tymlyServices) => {
