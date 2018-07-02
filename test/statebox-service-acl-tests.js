@@ -62,7 +62,7 @@ const heartBeatTests = [
     testFn: (statebox, executionName, user) => statebox.sendTaskSuccess(
       executionName,
       {},
-      { userId: user}
+      { userId: user }
     ),
     status: 'SUCCEEDED'
   },
@@ -74,7 +74,7 @@ const heartBeatTests = [
         error: 'FAIL',
         cause: 'Brexit'
       },
-      { userId: user}
+      { userId: user }
     ),
     status: 'FAILED'
   },
@@ -83,7 +83,7 @@ const heartBeatTests = [
     testFn: (statebox, executionName, user) => statebox.sendTaskHeartbeat(
       executionName,
       { },
-      { userId: user}
+      { userId: user }
     ),
     status: 'RUNNING'
   }
