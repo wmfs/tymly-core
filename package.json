@@ -38,7 +38,7 @@
     "read-pkg-up": "3.0.0",
     "split": "1.0.1",
     "sprintf-js": "1.1.1",
-    "@wmfs/statebox": "1.0.5",
+    "@wmfs/statebox": "1.2.0",
     "underscore-query": "3.3.2",
     "upath": "1.1.0",
     "uuid": "3.3.0"
@@ -73,8 +73,16 @@
     "analyzeCommits": {
       "preset": "angular",
       "releaseRules": [
-        {"type": "build", "scope":"deps", "release": "minor"},
-        {"type": "build", "scope":"deps-dev", "release": "patch"}
+        {
+          "type": "build",
+          "scope": "deps",
+          "release": "minor"
+        },
+        {
+          "type": "build",
+          "scope": "deps-dev",
+          "release": "patch"
+        }
       ]
     }
   }
