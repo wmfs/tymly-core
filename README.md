@@ -66,7 +66,7 @@ Tymly has been developed as an alternative for organisations (especially non-pro
 
 ## <a name="documentation"></a>Documentation
 
-For documentation, please visit http://www.tymlyjs.io/
+For documentation, please visit http://www.tymly.io/
 
 ## <a name="tests"></a>Tests
 ```bash
