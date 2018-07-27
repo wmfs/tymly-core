@@ -37,78 +37,69 @@ describe('Inject userId through statebox service', function () {
   let slowMachine
   let verySlowMachine
 
+  const tests = [
+    {
+      title: 'long wait, upsert and fetch',
+      person: {
+        'employeeNo': '1002',
+        'firstName': 'Raymond',
+        'lastName': 'Chandler'
+      },
+      stateMachine: LONG_WAIT_AND_UPSERT_STATE_MACHINE,
+      userId: 'El Dragon Azteca Jr'
+    },
+    {
+      title: 'wait, upsert and fetch',
+      person: {
+        'employeeNo': '1001',
+        'firstName': 'Dashiell',
+        'lastName': 'Hammett'
+      },
+      stateMachine: WAIT_AND_UPSERT_STATE_MACHINE,
+      userId: 'Fenix'
+    },
+    {
+      title: 'upsert and fetch',
+      person: {
+        'employeeNo': '1000',
+        'firstName': 'Jim',
+        'lastName': 'Thompson'
+      },
+      stateMachine: UPSERT_STATE_MACHINE,
+      userId: 'Penta El Zero M'
+    }
+  ]
+
   describe('fire off state machines', () => {
-    it('long wait, upsert and fetch', async () => {
-      const execDescription = await statebox.startExecution(
-        {
-          person: {
-            'employeeNo': '1002',
-            'firstName': 'Raymond',
-            'lastName': 'Chandler'
+    for (const test of tests) {
+      it(test.title, async () => {
+        const execDescription = await statebox.startExecution(
+          {
+            person: test.person
+          },
+          test.stateMachine,
+          {
+            userId: test.userId
           }
-        },
-        LONG_WAIT_AND_UPSERT_STATE_MACHINE,
-        { }
-      )
+        )
 
-      expect(execDescription.status).to.eql('RUNNING')
+        expect(execDescription.status).to.eql('RUNNING')
 
-      verySlowMachine = execDescription.executionName
-    })
-
-    it('wait, upsert and fetch', async () => {
-      const execDescription = await statebox.startExecution(
-        {
-          person: {
-            'employeeNo': '1001',
-            'firstName': 'Dashiell',
-            'lastName': 'Hammett'
-          }
-        },
-        WAIT_AND_UPSERT_STATE_MACHINE,
-        { }
-      )
-
-      expect(execDescription.status).to.eql('RUNNING')
-
-      slowMachine = execDescription.executionName
-    })
-
-    it('upsert and fetch', async () => {
-      const execDescription = await statebox.startExecution(
-        {
-          person: {
-            'employeeNo': '1000',
-            'firstName': 'Jim',
-            'lastName': 'Thompson'
-          }
-        },
-        UPSERT_STATE_MACHINE,
-        { }
-      )
-
-      expect(execDescription.status).to.eql('RUNNING')
-
-      quickMachine = execDescription.executionName
-    })
+        test.execName = execDescription.executionName
+      })
+    }
   })
 
   describe('wait for state machines to finish', () => {
-    it('upsert and fetch', async () => {
-      const executionDescription = await statebox.waitUntilStoppedRunning(quickMachine)
+    tests.reverse()
+    for (const test of tests) {
+      it(test.title, async () => {
+        const executionDescription = await statebox.waitUntilStoppedRunning(test.execName)
 
-      expect(executionDescription.status).to.eql('SUCCEEDED')
-    })
-    it('wait, upsert and fetch', async () => {
-      const executionDescription = await statebox.waitUntilStoppedRunning(slowMachine)
-
-      expect(executionDescription.status).to.eql('SUCCEEDED')
-    })
-    it('long wait, upsert and fetch', async () => {
-      const executionDescription = await statebox.waitUntilStoppedRunning(verySlowMachine)
-
-      expect(executionDescription.status).to.eql('SUCCEEDED')
-    })
+        expect(executionDescription.status).to.eql('SUCCEEDED')
+        expect(executionDescription.ctx.upsertedPerson.createdBy).to.eql(test.userId)
+      })
+    }
   })
 
   describe('shutdown', () => {

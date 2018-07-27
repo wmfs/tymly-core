@@ -3,7 +3,7 @@
   "States": {
     "Wait": {
       "Type": "Wait",
-      "Seconds": "10",
+      "Seconds": "2",
       "Next": "Upserting"
     },
     "Upserting": {
