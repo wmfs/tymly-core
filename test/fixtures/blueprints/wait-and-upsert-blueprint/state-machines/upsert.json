@@ -1,0 +1,37 @@
+{
+  "StartAt": "Upserting",
+  "States": {
+    "Upserting": {
+      "Type": "Task",
+      "InputPath": "$.person",
+      "Resource": "module:upserting",
+      "ResourceConfig": {
+        "modelId": "people"
+      },
+      "Next": "Finding"
+    },
+    "Finding": {
+      "Type": "Task",
+      "InputPath": "$.person",
+      "Resource": "module:findingOne",
+      "ResourceConfig": {
+        "modelId": "people",
+        "filter": {
+          "where": {
+            "employeeNo": "$.employeeNo"
+          }
+        }
+      },
+      "ResultPath": "$.upsertedPerson",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

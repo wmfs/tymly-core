@@ -9,7 +9,7 @@ const NORMAL_STATE_MACHINE_NAME = 'tymlyTest_runFunction'
 const CALLBACK_STATE_MACHINE_NAME = 'tymlyTest_runCallbackFunction'
 const UNKNOWN_STATE_MACHINE_NAME = 'tymlyTest_runUnknownFunction'
 
-describe('Test the run function state resource', function () {
+describe('Run-function-state resource', function () {
   this.timeout(process.env.TIMEOUT || 5000)
   let tymlyService, statebox
 
