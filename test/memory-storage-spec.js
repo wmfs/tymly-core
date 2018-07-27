@@ -688,7 +688,7 @@ describe('Memory storage tests', function () {
           'firstName': 'James',
           'lastName': 'Thompson',
           'age': 39,
-          'createdBy': 'test'
+          '_createdBy': 'test'
         }
       )
     })
@@ -720,8 +720,8 @@ describe('Memory storage tests', function () {
           'firstName': 'Jim',
           'lastName': 'Thompson',
           'age': 39,
-          'createdBy': 'test',
-          'modifiedBy': 'modifier'
+          '_createdBy': 'test',
+          '_modifiedBy': 'modifier'
         }
       )
     })

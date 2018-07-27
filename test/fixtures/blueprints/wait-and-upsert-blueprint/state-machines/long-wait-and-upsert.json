@@ -23,7 +23,9 @@
         "modelId": "people",
         "filter": {
           "where": {
-            "employeeNo": "$.employeeNo"
+            "employeeNo": {
+              "equals": "$.employeeNo"
+            }
           }
         }
       },

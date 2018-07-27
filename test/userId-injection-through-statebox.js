@@ -34,11 +34,54 @@ describe('Inject userId through statebox service', function () {
     })
   })
 
-  let quickMachine
-  let slowMachine
-  let verySlowMachine
+  function testBatch (label, tests) {
+    describe(label, () => {
+      describe('fire off state machines', () => {
+        for (const test of tests) {
+          it(test.title, async () => {
+            const execDescription = await statebox.startExecution(
+              {
+                person: test.person
+              },
+              test.stateMachine,
+              {
+                userId: test.userId
+              }
+            )
 
-  const tests = [
+            expect(execDescription.status).to.eql('RUNNING')
+
+            test.execName = execDescription.executionName
+          })
+        }
+      })
+
+      describe('wait for state machines to finish', () => {
+        tests.reverse()
+        for (const test of tests) {
+          it(test.title, async () => {
+            const executionDescription = await statebox.waitUntilStoppedRunning(test.execName)
+
+            expect(executionDescription.status).to.eql('SUCCEEDED')
+            expect(executionDescription.ctx.upsertedPerson._createdBy).to.eql(test.userId)
+          })
+        }
+      })
+
+      describe('check execution table', () => {
+        for (const test of tests) {
+          it(test.title, async () => {
+            const execution = await storage.models.tymly_execution.findOne({where: {executionName: {equals: test.execName}}})
+
+            expect(execution._createdBy).to.eql(test.userId)
+            expect(execution._modifiedBy).to.eql(test.userId)
+          })
+        }
+      })
+    })
+  } // testBatch
+
+  const combination = [
     {
       title: 'long wait, upsert and fetch',
       person: {
@@ -71,48 +114,22 @@ describe('Inject userId through statebox service', function () {
     }
   ]
 
-  describe('fire off state machines', () => {
-    for (const test of tests) {
-      it(test.title, async () => {
-        const execDescription = await statebox.startExecution(
-          {
-            person: test.person
-          },
-          test.stateMachine,
-          {
-            userId: test.userId
-          }
-        )
+  const speedyspeedy = [ ]
+  for (let i = 0; i !== 500; ++i) {
+    speedyspeedy.push(
+      {
+        title: `${i} upsert and fetch`,
+        person: {
+          'employeeNo': `${2000 + i}`
+        },
+        stateMachine: UPSERT_STATE_MACHINE,
+        userId: `Speedy-${i}`
+      }
+    )
+  }
 
-        expect(execDescription.status).to.eql('RUNNING')
-
-        test.execName = execDescription.executionName
-      })
-    }
-  })
-
-  describe('wait for state machines to finish', () => {
-    tests.reverse()
-    for (const test of tests) {
-      it(test.title, async () => {
-        const executionDescription = await statebox.waitUntilStoppedRunning(test.execName)
-
-        expect(executionDescription.status).to.eql('SUCCEEDED')
-        expect(executionDescription.ctx.upsertedPerson.createdBy).to.eql(test.userId)
-      })
-    }
-  })
-
-  describe('check execution table', () => {
-    for (const test of tests) {
-      it(test.title, async() => {
-        const execution = await storage.models.tymly_execution.findOne({where: {executionName: {equals: test.execName}}})
-
-        expect(execution.createdBy).to.eql(test.userId)
-        expect(execution.modifiedBy).to.eql(test.userId)
-      })
-    }
-  })
+  testBatch('Different speeds', combination)
+  testBatch('All quick', speedyspeedy)
 
   describe('shutdown', () => {
     it('shutdown Tymly', async () => {
