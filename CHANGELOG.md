@@ -1,3 +1,21 @@
+# [1.13.0](https://github.com/wmfs/tymly-core/compare/v1.12.1...v1.13.0) (2018-07-27)
+
+
+### ✨ Features
+
+* Propagate userId from statebox service into storage service so _createdBy and _modifiedBy can ([d490abf](https://github.com/wmfs/tymly-core/commit/d490abf))
+* Trying out cls-hooked to see we can use it to propagate the userId through statemachine execut ([909f5c1](https://github.com/wmfs/tymly-core/commit/909f5c1))
+
+
+### 📦 Code Refactoring
+
+* All restrictd calls now go through processIfAuthorised, including start execution ([85e74db](https://github.com/wmfs/tymly-core/commit/85e74db))
+
+
+### 🚨 Tests
+
+* Dynamically create tests ([1222c8c](https://github.com/wmfs/tymly-core/commit/1222c8c))
+
 ## [1.12.1](https://github.com/wmfs/tymly-core/compare/v1.12.0...v1.12.1) (2018-07-27)
 
 
