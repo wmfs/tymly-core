@@ -1,3 +1,15 @@
+## [1.12.1](https://github.com/wmfs/tymly-core/compare/v1.12.0...v1.12.1) (2018-07-27)
+
+
+### 🐛 Bug Fixes
+
+* ENABLE_RBAC should be false until we've audited all the blueprints ([35d83a4](https://github.com/wmfs/tymly-core/commit/35d83a4))
+
+
+### 🚨 Tests
+
+* Initial work on getting userId from statebox service into createdBy/modifiedBy ([4a0008e](https://github.com/wmfs/tymly-core/commit/4a0008e))
+
 # [1.12.0](https://github.com/wmfs/tymly-core/compare/v1.11.0...v1.12.0) (2018-07-26)
 
 
