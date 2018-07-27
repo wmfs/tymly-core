@@ -89,7 +89,7 @@ const heartBeatTests = [
   }
 ]
 
-describe('Statebox service RBAC authorisation', function () {
+xdescribe('Statebox service RBAC authorisation', function () {
   this.timeout(process.env.TIMEOUT || 5000)
 
   let tymlyService
