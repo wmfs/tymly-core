@@ -10,7 +10,7 @@ const LONG_WAIT_AND_UPSERT_STATE_MACHINE = 'tymlyTest_longWaitAndUpsert'
 
 describe('Inject userId through statebox service', function () {
   this.timeout(process.env.TIMEOUT || 30000)
-  let tymlyService, statebox
+  let tymlyService, statebox, storage
 
   describe('start up', () => {
     it('boot tymly', done => {
@@ -27,6 +27,7 @@ describe('Inject userId through statebox service', function () {
           expect(err).to.eql(null)
           tymlyService = tymlyServices.tymly
           statebox = tymlyServices.statebox
+          storage = tymlyServices.storage
           done()
         }
       )
@@ -46,7 +47,7 @@ describe('Inject userId through statebox service', function () {
         'lastName': 'Chandler'
       },
       stateMachine: LONG_WAIT_AND_UPSERT_STATE_MACHINE,
-      userId: 'El Dragon Azteca Jr'
+      userId: 'SuperSlow'
     },
     {
       title: 'wait, upsert and fetch',
@@ -56,7 +57,7 @@ describe('Inject userId through statebox service', function () {
         'lastName': 'Hammett'
       },
       stateMachine: WAIT_AND_UPSERT_STATE_MACHINE,
-      userId: 'Fenix'
+      userId: 'Slow'
     },
     {
       title: 'upsert and fetch',
@@ -66,7 +67,7 @@ describe('Inject userId through statebox service', function () {
         'lastName': 'Thompson'
       },
       stateMachine: UPSERT_STATE_MACHINE,
-      userId: 'Penta El Zero M'
+      userId: 'Speedy'
     }
   ]
 
@@ -98,6 +99,17 @@ describe('Inject userId through statebox service', function () {
 
         expect(executionDescription.status).to.eql('SUCCEEDED')
         expect(executionDescription.ctx.upsertedPerson.createdBy).to.eql(test.userId)
+      })
+    }
+  })
+
+  describe('check execution table', () => {
+    for (const test of tests) {
+      it(test.title, async() => {
+        const execution = await storage.models.tymly_execution.findOne({where: {executionName: {equals: test.execName}}})
+
+        expect(execution.createdBy).to.eql(test.userId)
+        expect(execution.modifiedBy).to.eql(test.userId)
       })
     }
   })
