@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/wmfs/tymly-core/compare/v1.13.0...v1.13.1) (2018-07-28)
+
+
+### 🐛 Bug Fixes
+
+* s/_(created|modified)By/(created|modifiedBy)/ ([a8226ab](https://github.com/wmfs/tymly-core/commit/a8226ab))
+
 # [1.13.0](https://github.com/wmfs/tymly-core/compare/v1.12.1...v1.13.0) (2018-07-27)
 
 
