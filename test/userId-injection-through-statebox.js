@@ -39,7 +39,7 @@ describe('Inject userId through statebox service', function () {
   function testBatch (label, tests) {
     describe(label, () => {
       describe('fire off state machines', () => {
-        it ('set mock userInfo', () => {
+        it('set mock userInfo', () => {
           for (const test of tests) {
             userInfo.addUser(test.userId, test.userEmail)
           }
