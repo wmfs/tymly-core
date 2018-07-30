@@ -10,7 +10,7 @@ const LONG_WAIT_AND_UPSERT_STATE_MACHINE = 'tymlyTest_longWaitAndUpsert'
 
 describe('Inject userId through statebox service', function () {
   this.timeout(process.env.TIMEOUT || 30000)
-  let tymlyService, statebox, storage
+  let tymlyService, statebox, storage, userInfo
 
   describe('start up', () => {
     it('boot tymly', done => {
@@ -20,7 +20,8 @@ describe('Inject userId through statebox service', function () {
             path.resolve(__dirname, './fixtures/blueprints/wait-and-upsert-blueprint')
           ],
           pluginPaths: [
-            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin'),
+            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/mock-user-info-plugin')
           ]
         },
         (err, tymlyServices) => {
@@ -28,6 +29,7 @@ describe('Inject userId through statebox service', function () {
           tymlyService = tymlyServices.tymly
           statebox = tymlyServices.statebox
           storage = tymlyServices.storage
+          userInfo = tymlyServices.userInfo
           done()
         }
       )
@@ -37,6 +39,12 @@ describe('Inject userId through statebox service', function () {
   function testBatch (label, tests) {
     describe(label, () => {
       describe('fire off state machines', () => {
+        it ('set mock userInfo', () => {
+          for (const test of tests) {
+            userInfo.addUser(test.userId, test.userEmail)
+          }
+        })
+
         for (const test of tests) {
           it(test.title, async () => {
             const execDescription = await statebox.startExecution(
@@ -63,7 +71,7 @@ describe('Inject userId through statebox service', function () {
             const executionDescription = await statebox.waitUntilStoppedRunning(test.execName)
 
             expect(executionDescription.status).to.eql('SUCCEEDED')
-            expect(executionDescription.ctx.upsertedPerson.createdBy).to.eql(test.userId)
+            expect(executionDescription.ctx.upsertedPerson.createdBy).to.eql(test.userEmail)
           })
         }
       })
@@ -73,8 +81,8 @@ describe('Inject userId through statebox service', function () {
           it(test.title, async () => {
             const execution = await storage.models.tymly_execution.findOne({where: {executionName: {equals: test.execName}}})
 
-            expect(execution.createdBy).to.eql(test.userId)
-            expect(execution.modifiedBy).to.eql(test.userId)
+            expect(execution.createdBy).to.eql(test.userEmail)
+            expect(execution.modifiedBy).to.eql(test.userEmail)
           })
         }
       })
@@ -90,7 +98,8 @@ describe('Inject userId through statebox service', function () {
         'lastName': 'Chandler'
       },
       stateMachine: LONG_WAIT_AND_UPSERT_STATE_MACHINE,
-      userId: 'SuperSlow'
+      userId: 'SuperSlow',
+      userEmail: 'super@slow.com'
     },
     {
       title: 'wait, upsert and fetch',
@@ -100,7 +109,8 @@ describe('Inject userId through statebox service', function () {
         'lastName': 'Hammett'
       },
       stateMachine: WAIT_AND_UPSERT_STATE_MACHINE,
-      userId: 'Slow'
+      userId: 'Slow',
+      userEmail: 'snail@slow.com'
     },
     {
       title: 'upsert and fetch',
@@ -110,7 +120,8 @@ describe('Inject userId through statebox service', function () {
         'lastName': 'Thompson'
       },
       stateMachine: UPSERT_STATE_MACHINE,
-      userId: 'Speedy'
+      userId: 'Speedy',
+      userEmail: 'hare@tortoise.com'
     }
   ]
 
@@ -123,7 +134,8 @@ describe('Inject userId through statebox service', function () {
           'employeeNo': `${2000 + i}`
         },
         stateMachine: UPSERT_STATE_MACHINE,
-        userId: `Speedy-${i}`
+        userId: `Speedy-${i}`,
+        userEmail: `user-email-${i}@domain-${i}.test`
       }
     )
   }
