@@ -1,3 +1,26 @@
+# [1.15.0](https://github.com/wmfs/tymly-core/compare/v1.14.0...v1.15.0) (2018-08-06)
+
+
+### ✨ Features
+
+* User details injection looks up user email from id ([2216af9](https://github.com/wmfs/tymly-core/commit/2216af9))
+
+
+### 🐛 Bug Fixes
+
+* Tweak path-exploder so that it always strips /index.js from provided paths ([f111167](https://github.com/wmfs/tymly-core/commit/f111167))
+
+
+### ♻️ Chores
+
+* Bump tymly-test-helpers dependency ([1063fcb](https://github.com/wmfs/tymly-core/commit/1063fcb))
+* semantic-release 15.9.1 -> 15.9.5 ([d919e55](https://github.com/wmfs/tymly-core/commit/d919e55))
+
+
+### 💎 Styles
+
+* Standards fix #classic ([7700cc9](https://github.com/wmfs/tymly-core/commit/7700cc9))
+
 # [1.14.0](https://github.com/wmfs/tymly-core/compare/v1.13.1...v1.14.0) (2018-07-30)
 
 
