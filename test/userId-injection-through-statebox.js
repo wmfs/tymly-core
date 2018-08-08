@@ -71,7 +71,7 @@ describe('Inject userId through statebox service', function () {
             const executionDescription = await statebox.waitUntilStoppedRunning(test.execName)
 
             expect(executionDescription.status).to.eql('SUCCEEDED')
-            expect(executionDescription.ctx.upsertedPerson.createdBy).to.eql(test.userId)
+            expect(executionDescription.ctx.upsertedPerson.createdBy).to.eql(test.userEmail)
           })
         }
       })
@@ -81,8 +81,8 @@ describe('Inject userId through statebox service', function () {
           it(test.title, async () => {
             const execution = await storage.models.tymly_execution.findOne({where: {executionName: {equals: test.execName}}})
 
-            expect(execution.createdBy).to.eql(test.userId)
-            expect(execution.modifiedBy).to.eql(test.userId)
+            expect(execution.createdBy).to.eql(test.userEmail)
+            expect(execution.modifiedBy).to.eql(test.userEmail)
           })
         }
       })
