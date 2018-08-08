@@ -71,7 +71,7 @@ describe('Inject userId through statebox service', function () {
             const executionDescription = await statebox.waitUntilStoppedRunning(test.execName)
 
             expect(executionDescription.status).to.eql('SUCCEEDED')
-            // expect(executionDescription.ctx.upsertedPerson.createdBy).to.eql(test.userEmail)
+            expect(executionDescription.ctx.upsertedPerson.createdBy).to.eql(test.userId)
           })
         }
       })
@@ -79,10 +79,10 @@ describe('Inject userId through statebox service', function () {
       describe('check execution table', () => {
         for (const test of tests) {
           it(test.title, async () => {
-            // const execution = await storage.models.tymly_execution.findOne({where: {executionName: {equals: test.execName}}})
+            const execution = await storage.models.tymly_execution.findOne({where: {executionName: {equals: test.execName}}})
 
-            // expect(execution.createdBy).to.eql(test.userEmail)
-            // expect(execution.modifiedBy).to.eql(test.userEmail)
+            expect(execution.createdBy).to.eql(test.userId)
+            expect(execution.modifiedBy).to.eql(test.userId)
           })
         }
       })
@@ -125,7 +125,7 @@ describe('Inject userId through statebox service', function () {
     }
   ]
 
-  const speedyspeedy = [ ]
+  const speedyspeedy = []
   for (let i = 0; i !== 500; ++i) {
     speedyspeedy.push(
       {
