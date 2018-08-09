@@ -1,3 +1,15 @@
+## [1.15.2](https://github.com/wmfs/tymly-core/compare/v1.15.1...v1.15.2) (2018-08-09)
+
+
+### 🐛 Bug Fixes
+
+* don't try to get user email if there's no user id ([ca4c241](https://github.com/wmfs/tymly-core/commit/ca4c241))
+
+
+### 💎 Styles
+
+* Fix indents ([f3eec54](https://github.com/wmfs/tymly-core/commit/f3eec54))
+
 ## [1.15.1](https://github.com/wmfs/tymly-core/compare/v1.15.0...v1.15.1) (2018-08-08)
 
 
