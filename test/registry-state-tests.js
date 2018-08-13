@@ -91,7 +91,7 @@ describe('Registry key state resources', function () {
         getFalseTestKey,
         { sendResponse: 'COMPLETE' }
       )
-      expect(execDesc.ctx.result.registryValue).to.eql(123)
+      expect(execDesc.ctx.result).to.eql(123)
     })
   })
 
