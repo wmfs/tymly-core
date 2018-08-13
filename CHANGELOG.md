@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/wmfs/tymly-core/compare/v1.15.2...v1.16.0) (2018-08-13)
+
+
+### ✨ Features
+
+* Registry get key state-machine handles returns default value without dressing it up as "the de ([df730b5](https://github.com/wmfs/tymly-core/commit/df730b5))
+
 ## [1.15.2](https://github.com/wmfs/tymly-core/compare/v1.15.1...v1.15.2) (2018-08-09)
 
 
