@@ -1,3 +1,15 @@
+## [1.16.1](https://github.com/wmfs/tymly-core/compare/v1.16.0...v1.16.1) (2018-08-14)
+
+
+### 🐛 Bug Fixes
+
+* throw error if user email cannot be retrieved ([7a90866](https://github.com/wmfs/tymly-core/commit/7a90866))
+
+
+### 💎 Styles
+
+* standard fix ([1c69bab](https://github.com/wmfs/tymly-core/commit/1c69bab))
+
 # [1.16.0](https://github.com/wmfs/tymly-core/compare/v1.15.2...v1.16.0) (2018-08-13)
 
 
