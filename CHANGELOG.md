@@ -1,3 +1,16 @@
+## [1.16.2](https://github.com/wmfs/tymly-core/compare/v1.16.1...v1.16.2) (2018-08-22)
+
+
+### 🐛 Bug Fixes
+
+* Bump rbac package ([8370227](https://github.com/wmfs/tymly-core/commit/8370227))
+* Pull in Rbac package and use that for the Rbac service. ([d7dd080](https://github.com/wmfs/tymly-core/commit/d7dd080))
+
+
+### ♻️ Chores
+
+* renamed acl-tests to rbac-tests. ([a31f4e7](https://github.com/wmfs/tymly-core/commit/a31f4e7))
+
 ## [1.16.1](https://github.com/wmfs/tymly-core/compare/v1.16.0...v1.16.1) (2018-08-14)
 
 
