@@ -1,3 +1,25 @@
+# [1.17.0](https://github.com/wmfs/tymly-core/compare/v1.16.2...v1.17.0) (2018-08-23)
+
+
+### ✨ Features
+
+* RBAC service removed - it's pulled out into tymly-rbac-plugin ([137e9c2](https://github.com/wmfs/tymly-core/commit/137e9c2))
+
+
+### 📦 Code Refactoring
+
+* Collapsed getUserRoles/checkRoleAuthorization into a single checkAuthorization call ([b5ac48e](https://github.com/wmfs/tymly-core/commit/b5ac48e))
+
+
+### 🚨 Tests
+
+* Disable RBAC tests again ([461a618](https://github.com/wmfs/tymly-core/commit/461a618))
+
+
+### ♻️ Chores
+
+* Bump tymly-test-helper to 1.1.1 ([e1756f2](https://github.com/wmfs/tymly-core/commit/e1756f2))
+
 ## [1.16.2](https://github.com/wmfs/tymly-core/compare/v1.16.1...v1.16.2) (2018-08-22)
 
 
