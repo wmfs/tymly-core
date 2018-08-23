@@ -36,11 +36,10 @@ describe('Shutdown services tests', function () {
         'storage',
         'functions',
         'blueprintDocs',
+        'testService3',
         'registry',
         'categories',
         'statebox',
-        'testService3',
-        'rbac',
         'testService1',
         'testService2'
       ]
