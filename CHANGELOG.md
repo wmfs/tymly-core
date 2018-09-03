@@ -1,3 +1,11 @@
+## [1.17.1](https://github.com/wmfs/tymly-core/compare/v1.17.0...v1.17.1) (2018-09-03)
+
+
+### 🐛 Bug Fixes
+
+* Removed RBAC tables. ([7bdff9a](https://github.com/wmfs/tymly-core/commit/7bdff9a))
+* Updated statebox service for statebox package release 1.4.0 ([b8cfc62](https://github.com/wmfs/tymly-core/commit/b8cfc62))
+
 # [1.17.0](https://github.com/wmfs/tymly-core/compare/v1.16.2...v1.17.0) (2018-08-23)
 
 
