@@ -1,3 +1,11 @@
+# [1.19.0](https://github.com/wmfs/tymly-core/compare/v1.18.0...v1.19.0) (2018-09-03)
+
+
+### 🛠 Builds
+
+* **deps:** update glob requirement from 7.1.2 to 7.1.3 ([314e242](https://github.com/wmfs/tymly-core/commit/314e242))
+* **deps-dev:** update nyc requirement from 12.0.2 to 13.0.1 ([7e60982](https://github.com/wmfs/tymly-core/commit/7e60982))
+
 # [1.18.0](https://github.com/wmfs/tymly-core/compare/v1.17.1...v1.18.0) (2018-09-03)
 
 
