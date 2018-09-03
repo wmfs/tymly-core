@@ -21,7 +21,7 @@
   },
   "main": "./lib/index.js",
   "dependencies": {
-    "@wmfs/rbac": "1.1.0",
+    "@wmfs/rbac": "1.1.1",
     "@wmfs/statebox": "1.4.0",
     "async": "2.6.1",
     "boom": "7.2.0",
