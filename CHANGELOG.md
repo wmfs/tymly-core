@@ -1,3 +1,11 @@
+# [1.18.0](https://github.com/wmfs/tymly-core/compare/v1.17.1...v1.18.0) (2018-09-03)
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/rbac requirement from 1.1.0 to 1.1.1 ([9607d24](https://github.com/wmfs/tymly-core/commit/9607d24))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement from 7.0.1 to 7.0.3 ([494d304](https://github.com/wmfs/tymly-core/commit/494d304))
+
 ## [1.17.1](https://github.com/wmfs/tymly-core/compare/v1.17.0...v1.17.1) (2018-09-03)
 
 
