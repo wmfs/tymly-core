@@ -1,3 +1,13 @@
+# [1.21.0](https://github.com/wmfs/tymly-core/compare/v1.20.0...v1.21.0) (2018-09-04)
+
+
+### 🛠 Builds
+
+* **deps:** update nanoid requirement from 1.1.0 to 1.2.3 ([f967919](https://github.com/wmfs/tymly-core/commit/f967919))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-test-helpers requirement from 1.1.1 to 1.1.2 ([5b8097e](https://github.com/wmfs/tymly-core/commit/5b8097e))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-test-helpers requirement from 1.1.2 to 1.1.3 ([abb166d](https://github.com/wmfs/tymly-core/commit/abb166d))
+* **deps-dev:** update semantic-release requirement from 15.9.5 to 15.9.12 ([227cfbf](https://github.com/wmfs/tymly-core/commit/227cfbf))
+
 # [1.20.0](https://github.com/wmfs/tymly-core/compare/v1.19.0...v1.20.0) (2018-09-04)
 
 
