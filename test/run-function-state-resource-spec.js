@@ -35,7 +35,7 @@ describe('Run-function-state resource', function () {
 
   it('should run the run function state machine with the normal function', async () => {
     const execDescription = await statebox.startExecution(
-      {options: {name: 'Jim'}},
+      { options: { name: 'Jim' } },
       NORMAL_STATE_MACHINE_NAME,
       {
         sendResponse: 'COMPLETE',
@@ -52,7 +52,7 @@ describe('Run-function-state resource', function () {
     const execDescription = await statebox.startExecution(
       {},
       HELLO_WORLD_STATE_MACHINE_NAME,
-      {sendResponse: 'COMPLETE'}
+      { sendResponse: 'COMPLETE' }
     )
 
     expect(execDescription.status).to.eql('SUCCEEDED')
@@ -61,9 +61,9 @@ describe('Run-function-state resource', function () {
 
   it('should run the run function state machine with the callback function', async () => {
     const execDescription = await statebox.startExecution(
-      {options: {age: '28'}},
+      { options: { age: '28' } },
       CALLBACK_STATE_MACHINE_NAME,
-      {sendResponse: 'COMPLETE'}
+      { sendResponse: 'COMPLETE' }
     )
 
     expect(execDescription.status).to.eql('SUCCEEDED')
@@ -74,7 +74,7 @@ describe('Run-function-state resource', function () {
     const execDescription = await statebox.startExecution(
       {},
       UNKNOWN_STATE_MACHINE_NAME,
-      {sendResponse: 'COMPLETE'}
+      { sendResponse: 'COMPLETE' }
     )
 
     expect(execDescription.status).to.eql('FAILED')

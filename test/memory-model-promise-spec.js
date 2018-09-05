@@ -198,8 +198,8 @@ describe('Memory Model promise tests', function () {
     const doc = await personModel.find(
       {
         where: {
-          firstName: {equals: 'Bart'},
-          lastName: {equals: 'Simpson'}
+          firstName: { equals: 'Bart' },
+          lastName: { equals: 'Simpson' }
         }
       }
     )
@@ -221,8 +221,8 @@ describe('Memory Model promise tests', function () {
     return personModel.findOne(
       {
         where: {
-          firstName: {equals: 'Homer'},
-          lastName: {equals: 'Simpson'}
+          firstName: { equals: 'Homer' },
+          lastName: { equals: 'Simpson' }
         }
       }
     ).then(doc =>
@@ -241,8 +241,8 @@ describe('Memory Model promise tests', function () {
     const doc = await personModel.findOne(
       {
         where: {
-          firstName: {equals: 'Ned'},
-          lastName: {equals: 'Flanders'}
+          firstName: { equals: 'Ned' },
+          lastName: { equals: 'Flanders' }
         }
       }
     )

@@ -10,7 +10,7 @@ class Heartbeat {
     }
 
     const executionDescription = await context.sendTaskHeartbeat(
-      {heartbeat}
+      { heartbeat }
     )
 
     done(executionDescription)

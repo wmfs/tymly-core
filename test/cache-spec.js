@@ -13,7 +13,7 @@ describe('Cache tests', function () {
       {
         config: {
           caches: {
-            users: {max: 500}
+            users: { max: 500 }
           }
         }
       },

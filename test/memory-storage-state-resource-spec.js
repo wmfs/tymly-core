@@ -51,7 +51,7 @@ describe('State resource tests', function () {
         }
       },
       UPSERT_FIND_STATE_MACHINE_NAME,
-      {sendResponse: 'COMPLETE'}
+      { sendResponse: 'COMPLETE' }
     )
 
     expect(execDesc.status).to.eql('SUCCEEDED')
@@ -63,16 +63,16 @@ describe('State resource tests', function () {
   })
 
   it('should upsert some animals', async () => {
-    await catModel.upsert({name: 'Wilfred'}, {})
-    await dogModel.upsert({name: 'Alfie', id: 1}, {})
-    await dogModel.upsert({name: 'Donald', id: 2}, {})
+    await catModel.upsert({ name: 'Wilfred' }, {})
+    await dogModel.upsert({ name: 'Alfie', id: 1 }, {})
+    await dogModel.upsert({ name: 'Donald', id: 2 }, {})
   })
 
   it('should start a simple-storage Tymly with correct name', async () => {
     const execDesc = await statebox.startExecution(
-      {catName: 'Wilfred'},
+      { catName: 'Wilfred' },
       FIND_WHERE_STATE_MACHINE_NAME,
-      {sendResponse: 'COMPLETE'}
+      { sendResponse: 'COMPLETE' }
     )
 
     expect(execDesc.status).to.eql('SUCCEEDED')
@@ -84,9 +84,9 @@ describe('State resource tests', function () {
 
   it('should start state machine to test the DeletingById state resource', async () => {
     const execDesc = await statebox.startExecution(
-      {catName: 'Wilfred'},
+      { catName: 'Wilfred' },
       DELETE_STATE_MACHINE_NAME,
-      {sendResponse: 'COMPLETE'}
+      { sendResponse: 'COMPLETE' }
     )
 
     expect(execDesc.status).to.eql('SUCCEEDED')
@@ -101,9 +101,9 @@ describe('State resource tests', function () {
 
   it('should start state machine to test the DeletingById state resource passing in an object', async () => {
     const execDesc = await statebox.startExecution(
-      {dog: {name: 'Alfie', id: 1}},
+      { dog: { name: 'Alfie', id: 1 } },
       DELETE_OBJ_PK_STATE_MACHINE_NAME,
-      {sendResponse: 'COMPLETE'}
+      { sendResponse: 'COMPLETE' }
     )
 
     expect(execDesc.status).to.eql('SUCCEEDED')
@@ -118,9 +118,9 @@ describe('State resource tests', function () {
 
   it('should start state machine to test the FindingById state resource', async () => {
     const execDesc = await statebox.startExecution(
-      {catName: 'Rupert'},
+      { catName: 'Rupert' },
       FIND_BY_ID_STATE_MACHINE_NAME,
-      {sendResponse: 'COMPLETE'}
+      { sendResponse: 'COMPLETE' }
     )
 
     expect(execDesc.status).to.eql('SUCCEEDED')
@@ -131,9 +131,9 @@ describe('State resource tests', function () {
 
   it('should start state machine to test the FindingById state resource with an object primary key', async () => {
     const execDesc = await statebox.startExecution(
-      {dog: {name: 'Donald', id: 2}},
+      { dog: { name: 'Donald', id: 2 } },
       FIND_BY_ID_OBJ_PK_STATE_MACHINE_NAME,
-      {sendResponse: 'COMPLETE'}
+      { sendResponse: 'COMPLETE' }
     )
 
     expect(execDesc.status).to.eql('SUCCEEDED')

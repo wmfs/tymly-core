@@ -60,7 +60,7 @@ describe('Memory storage tests', function () {
           expect(idProperties).to.eql(
             {
               idProperties:
-                {employeeNo: '1'}
+                { employeeNo: '1' }
             }
           )
           done()
@@ -243,8 +243,8 @@ describe('Memory storage tests', function () {
       people.find(
         {
           where: {
-            firstName: {equals: 'Bart'},
-            lastName: {equals: 'Simpson'}
+            firstName: { equals: 'Bart' },
+            lastName: { equals: 'Simpson' }
           }
         },
         function (err, doc) {
@@ -270,7 +270,7 @@ describe('Memory storage tests', function () {
       people.find(
         {
           where: {
-            age: {moreThan: 30}
+            age: { moreThan: 30 }
           }
         },
         function (err, doc) {
@@ -287,7 +287,7 @@ describe('Memory storage tests', function () {
       people.find(
         {
           where: {
-            age: {moreThanEquals: 39}
+            age: { moreThanEquals: 39 }
           }
         },
         function (err, doc) {
@@ -303,7 +303,7 @@ describe('Memory storage tests', function () {
       people.find(
         {
           where: {
-            age: {lessThan: 10}
+            age: { lessThan: 10 }
           }
         },
         function (err, doc) {
@@ -318,7 +318,7 @@ describe('Memory storage tests', function () {
       people.find(
         {
           where: {
-            age: {lessThanEquals: 10}
+            age: { lessThanEquals: 10 }
           }
         },
         function (err, doc) {
@@ -389,8 +389,8 @@ describe('Memory storage tests', function () {
       people.findOne(
         {
           where: {
-            firstName: {equals: 'Homer'},
-            lastName: {equals: 'Simpson'}
+            firstName: { equals: 'Homer' },
+            lastName: { equals: 'Simpson' }
           }
         },
         function (err, doc) {
@@ -413,8 +413,8 @@ describe('Memory storage tests', function () {
       people.findOne(
         {
           where: {
-            firstName: {equals: 'Maude'},
-            lastName: {equals: 'Flanders'}
+            firstName: { equals: 'Maude' },
+            lastName: { equals: 'Flanders' }
           }
         },
         function (err, doc) {
@@ -668,7 +668,7 @@ describe('Memory storage tests', function () {
 
       expect(properties).to.eql(
         {
-          idProperties: {employeeNo: '1000'}
+          idProperties: { employeeNo: '1000' }
         }
       )
     })
@@ -677,7 +677,7 @@ describe('Memory storage tests', function () {
       const doc = await people.findOne(
         {
           where: {
-            employeeNo: {equals: '1000'}
+            employeeNo: { equals: '1000' }
           }
         }
       )
@@ -709,7 +709,7 @@ describe('Memory storage tests', function () {
       const doc = await people.findOne(
         {
           where: {
-            employeeNo: {equals: '1000'}
+            employeeNo: { equals: '1000' }
           }
         }
       )

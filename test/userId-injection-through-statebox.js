@@ -79,7 +79,7 @@ describe('Inject userId through statebox service', function () {
       describe('check execution table', () => {
         for (const test of tests) {
           it(test.title, async () => {
-            const execution = await storage.models.tymly_execution.findOne({where: {executionName: {equals: test.execName}}})
+            const execution = await storage.models.tymly_execution.findOne({ where: { executionName: { equals: test.execName } } })
 
             expect(execution.createdBy).to.eql(test.userEmail)
             expect(execution.modifiedBy).to.eql(test.userEmail)

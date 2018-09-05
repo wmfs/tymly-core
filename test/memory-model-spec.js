@@ -217,8 +217,8 @@ describe('Memory Model tests', function () {
     personModel.find(
       {
         where: {
-          firstName: {equals: 'Bart'},
-          lastName: {equals: 'Simpson'}
+          firstName: { equals: 'Bart' },
+          lastName: { equals: 'Simpson' }
         }
       },
       function (err, doc) {
@@ -244,7 +244,7 @@ describe('Memory Model tests', function () {
     personModel.find(
       {
         where: {
-          firstName: {like: 'art'}
+          firstName: { like: 'art' }
         }
       },
       function (err, doc) {
@@ -270,8 +270,8 @@ describe('Memory Model tests', function () {
     personModel.findOne(
       {
         where: {
-          firstName: {equals: 'Homer'},
-          lastName: {equals: 'Simpson'}
+          firstName: { equals: 'Homer' },
+          lastName: { equals: 'Simpson' }
         }
       },
       function (err, doc) {
@@ -294,8 +294,8 @@ describe('Memory Model tests', function () {
     personModel.findOne(
       {
         where: {
-          firstName: {equals: 'Ned'},
-          lastName: {equals: 'Flanders'}
+          firstName: { equals: 'Ned' },
+          lastName: { equals: 'Flanders' }
         }
       },
       function (err, doc) {
