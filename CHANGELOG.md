@@ -1,3 +1,22 @@
+# [1.22.0](https://github.com/wmfs/tymly-core/compare/v1.21.0...v1.22.0) (2018-09-06)
+
+
+### ✨ Features
+
+* **registry:** Added clearRegistryKey state resource ([ab542aa](https://github.com/wmfs/tymly-core/commit/ab542aa))
+* **registry:** Added registryService.has(key) and registryService.clear(key) methods ([9472ce8](https://github.com/wmfs/tymly-core/commit/9472ce8))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update codecov requirement from 3.0.4 to 3.1.0 ([d40e269](https://github.com/wmfs/tymly-core/commit/d40e269))
+* **dev-deps:** move to standard 12.0.1 ([d02fa57](https://github.com/wmfs/tymly-core/commit/d02fa57))
+
+
+### 💎 Styles
+
+* standards fixes ([e15292e](https://github.com/wmfs/tymly-core/commit/e15292e))
+
 # [1.21.0](https://github.com/wmfs/tymly-core/compare/v1.20.0...v1.21.0) (2018-09-04)
 
 
