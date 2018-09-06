@@ -11,84 +11,128 @@ describe('Registry tests', function () {
   let tymlyService
   let registryService
 
-  it('should load the cat blueprint (which has some registry keys)', function (done) {
-    tymly.boot(
-      {
-        blueprintPaths: [
-          path.resolve(__dirname, './fixtures/blueprints/cats-blueprint')
-        ],
+  describe('startup', () => {
+    it('load the cat blueprint, which has some registry keys', function (done) {
+      tymly.boot(
+        {
+          blueprintPaths: [
+            path.resolve(__dirname, './fixtures/blueprints/cats-blueprint')
+          ],
 
-        pluginPaths: [
-          path.resolve(__dirname, './fixtures/plugins/cats-plugin')
-        ]
-      },
-      function (err, tymlyServices) {
-        expect(err).to.eql(null)
-        tymlyService = tymlyServices.tymly
-        registryService = tymlyServices.registry
-        done()
-      }
-    )
-  })
+          pluginPaths: [
+            path.resolve(__dirname, './fixtures/plugins/cats-plugin')
+          ]
+        },
+        function (err, tymlyServices) {
+          expect(err).to.eql(null)
+          tymlyService = tymlyServices.tymly
+          registryService = tymlyServices.registry
+          done()
+        }
+      )
+    })
 
-  it('should find the value is correctly set in the registry', function () {
-    expect(registryService.registry.tymlyTest_mealThreshold.value).to.eql(3)
-  })
+    it('verify key exists', () => {
+      expect(registryService.has('tymlyTest_mealThreshold')).to.eql(true)
+    })
 
-  it('should get the value from registry using key', function (done) {
-    let key = 'tymlyTest_mealThreshold'
-    let value = registryService.get(key)
-    expect(value).to.eql(3)
-    done()
-  })
+    it('registry value is correct, direct access', function () {
+      expect(registryService.registry.tymlyTest_mealThreshold.value).to.eql(3)
+    })
 
-  it('should change the value in registry using key via registry service', function (done) {
-    let key = 'tymlyTest_mealThreshold'
-    registryService.set(key, 2, function (err) {
-      expect(err).to.eql(null)
-      expect(registryService.get(key)).to.eql(2)
+    it('registry value is correct, using key', function (done) {
+      let key = 'tymlyTest_mealThreshold'
+      let value = registryService.get(key)
+      expect(value).to.eql(3)
       done()
+    })
+
+    it('change registry value, using key', function (done) {
+      let key = 'tymlyTest_mealThreshold'
+      registryService.set(key, 2, function (err) {
+        expect(err).to.eql(null)
+        expect(registryService.get(key)).to.eql(2)
+        done()
+      })
     })
   })
 
-  it('should reboot tymly and set some registry key value to bind to environment variable)', function (done) {
-    process.env.MEAL_THRESHOLD = 5
-    tymly.boot(
-      {
-        blueprintPaths: [
-          path.resolve(__dirname, './fixtures/blueprints/cats-blueprint')
-        ],
+  describe('reboot', () => {
+    it('reboot tymly, set a registry key value by binding to environment variable)', function (done) {
+      process.env.MEAL_THRESHOLD = 5
+      tymly.boot(
+        {
+          blueprintPaths: [
+            path.resolve(__dirname, './fixtures/blueprints/cats-blueprint')
+          ],
 
-        pluginPaths: [
-          path.resolve(__dirname, './fixtures/plugins/cats-plugin')
-        ]
-      },
-      function (err, tymlyServices) {
+          pluginPaths: [
+            path.resolve(__dirname, './fixtures/plugins/cats-plugin')
+          ]
+        },
+        function (err, tymlyServices) {
+          expect(err).to.eql(null)
+          registryService = tymlyServices.registry
+          done()
+        }
+      )
+    })
+
+    it('the environment variable is correctly set in the registry by env vars', function () {
+      expect(registryService.registry.tymlyTest_mealThreshold.meta.schema.properties.environmentVariableName).to.eql('MEAL_THRESHOLD')
+    })
+
+    it('registry value is correct, direct access', function () {
+      expect(registryService.registry.tymlyTest_mealThreshold.value).to.eql('5')
+    })
+
+    const key = 'tymlyTest_mealThreshold'
+    it('change registry value, using key', function (done) {
+      registryService.set(key, 2, function (err) {
         expect(err).to.eql(null)
-        registryService = tymlyServices.registry
+        expect(registryService.get(key)).to.eql(2)
         done()
-      }
-    )
-  })
+      })
+    })
 
-  it('should find the environment variable is correctly set in the registry by env vars', function () {
-    expect(registryService.registry.tymlyTest_mealThreshold.meta.schema.properties.environmentVariableName).to.eql('MEAL_THRESHOLD')
-  })
-
-  it('should find the value is correctly set in the registry by env vars', function () {
-    expect(registryService.registry.tymlyTest_mealThreshold.value).to.eql('5')
-  })
-
-  it('should change the value in registry using key via registry service to overwrite registry value', function (done) {
-    let key = 'tymlyTest_mealThreshold'
-    registryService.set(key, 2, function (err) {
-      expect(err).to.eql(null)
-      expect(registryService.get(key)).to.eql(2)
-      done()
+    it('reset registry value, using key', function (done) {
+      registryService.clear(key, (err) => {
+        expect(err).to.eql(null)
+        expect(registryService.has(key)).to.eql(false)
+        done()
+      })
     })
   })
 
-  it('should shutdown Tymly', async () => {
-    await tymlyService.shutdown()
+  describe('free form reg key', () => {
+    const key = 'test_key'
+
+    it('value doesn\'t exist', () => {
+      expect(registryService.has(key)).to.eql(false)
+    })
+
+    it('set value by key', (done) => {
+      registryService.set(key, 'trousers', done)
+    })
+
+    it('verify value', () => {
+      expect(registryService.has(key)).to.eql(true)
+      expect(registryService.get(key)).to.eql('trousers')
+      expect(registryService.registry[key].value).to.eql('trousers')
+    })
+
+    it('reset value by key', (done) => {
+      registryService.clear(key, done)
+    })
+
+    it('value is gone', () => {
+      expect(registryService.has(key)).to.eql(false)
+    })
+  })
+
+  describe('shutdown', () => {
+    it('should shutdown Tymly', async () => {
+      await tymlyService.shutdown()
+    })
   })
 })
