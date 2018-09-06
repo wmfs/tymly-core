@@ -24,7 +24,7 @@ describe('Registry key state resources', function () {
             path.resolve(__dirname, './fixtures/blueprints/registry-blueprint')
           ],
           pluginPaths: [
-            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+            require.resolve('@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
           ],
           config: {
             caches: {
@@ -100,6 +100,7 @@ describe('Registry key state resources', function () {
     const expectedRegValue = 15
     const setRegKeyStateMachine = 'tymlyTest_setAnyRegistryKey_1_0'
     const getRegKeyStateMachine = 'tymlyTest_getAnyRegistryKey_1_0'
+    const clearRegKeyStateMachine = 'tymlyTest_clearAnyRegistryKey_1_0'
 
     it('check the value via the registry', () => {
       expect(registry.get(regKeyName)).to.eql(expectedRegValue)
@@ -146,6 +147,22 @@ describe('Registry key state resources', function () {
         }
       )
       expect(execDesc.ctx.registryValue).to.eql(2)
+    })
+
+    it('clear the registry key', async () => {
+      await statebox.startExecution(
+        {
+          key: regKeyName
+        },
+        clearRegKeyStateMachine,
+        {
+          sendResponse: 'COMPLETE'
+        }
+      )
+    })
+
+    it('verify the registry value has gone', () => {
+      expect(registry.has(regKeyName)).to.eql(false)
     })
 
     it('fetch an unknown registry key', async () => {
