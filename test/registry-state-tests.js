@@ -85,7 +85,7 @@ describe('Registry key state resources', function () {
       )
       expect(execDesc.ctx.result).to.eql(newValue)
     })
-    
+
     it('clear the registry key', async () => {
       await statebox.startExecution(
         { },
