@@ -1,3 +1,15 @@
+# [1.23.0](https://github.com/wmfs/tymly-core/compare/v1.22.0...v1.23.0) (2018-09-06)
+
+
+### ✨ Features
+
+* **registry:** Added ClearConfiguredRegistryKey state resource ([1082475](https://github.com/wmfs/tymly-core/commit/1082475))
+
+
+### 💎 Styles
+
+* whitespace fixes ([9cd7434](https://github.com/wmfs/tymly-core/commit/9cd7434))
+
 # [1.22.0](https://github.com/wmfs/tymly-core/compare/v1.21.0...v1.22.0) (2018-09-06)
 
 
