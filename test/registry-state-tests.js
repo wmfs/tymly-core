@@ -49,6 +49,7 @@ describe('Registry key state resources', function () {
     const newValue = 2
     const setTestKey = 'tymlyTest_setTestKey_1_0'
     const getTestKey = 'tymlyTest_getTestKey_1_0'
+    const clearTestKey = 'tymlyTest_clearTestKey_1_0'
     const getFalseTestKey = 'tymlyTest_getFalseTestKey_1_0'
 
     it('check the value via the registry', () => {
@@ -83,6 +84,20 @@ describe('Registry key state resources', function () {
         { sendResponse: 'COMPLETE' }
       )
       expect(execDesc.ctx.result).to.eql(newValue)
+    })
+    
+    it('clear the registry key', async () => {
+      await statebox.startExecution(
+        { },
+        clearTestKey,
+        {
+          sendResponse: 'COMPLETE'
+        }
+      )
+    })
+
+    it('verify the registry value has gone', () => {
+      expect(registry.has(regKeyName)).to.eql(false)
     })
 
     it('try to get registry value with a false key, expect default value', async () => {
