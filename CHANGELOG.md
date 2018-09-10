@@ -1,3 +1,15 @@
+# [1.25.0](https://github.com/wmfs/tymly-core/compare/v1.24.0...v1.25.0) (2018-09-10)
+
+
+### ✨ Features
+
+* Add statebox.sendTaskRevivification method, to retry failed state machines ([ce5f9c5](https://github.com/wmfs/tymly-core/commit/ce5f9c5))
+
+
+### 🚨 Tests
+
+* I really should run lint before committing ([9d5c76c](https://github.com/wmfs/tymly-core/commit/9d5c76c))
+
 # [1.24.0](https://github.com/wmfs/tymly-core/compare/v1.23.0...v1.24.0) (2018-09-10)
 
 
