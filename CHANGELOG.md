@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/wmfs/tymly-core/compare/v1.23.0...v1.24.0) (2018-09-10)
+
+
+### ✨ Features
+
+* Added error loging in sendTaskFailure ([b9064fd](https://github.com/wmfs/tymly-core/commit/b9064fd))
+
 # [1.23.0](https://github.com/wmfs/tymly-core/compare/v1.22.0...v1.23.0) (2018-09-06)
 
 
