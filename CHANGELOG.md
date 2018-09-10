@@ -1,3 +1,10 @@
+# [1.26.0](https://github.com/wmfs/tymly-core/compare/v1.25.0...v1.26.0) (2018-09-10)
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/statebox requirement from 1.5.0 to 1.6.0 ([bae6c54](https://github.com/wmfs/tymly-core/commit/bae6c54))
+
 # [1.25.0](https://github.com/wmfs/tymly-core/compare/v1.24.0...v1.25.0) (2018-09-10)
 
 
