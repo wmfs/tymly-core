@@ -1,0 +1,11 @@
+{
+  "namespace": "tymlyTest",
+  "name": "it lives",
+  "version": "1.0",
+
+  "label": "Test",
+  "author": "Tim Needham",
+
+  "organisation": "Tymly",
+  "description": "a state machine that fails but comes back to live "
+}
