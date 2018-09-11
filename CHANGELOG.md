@@ -1,3 +1,10 @@
+## [1.26.1](https://github.com/wmfs/tymly-core/compare/v1.26.0...v1.26.1) (2018-09-11)
+
+
+### 🐛 Bug Fixes
+
+* Correct sendTaskFailure parameters ([1ce8088](https://github.com/wmfs/tymly-core/commit/1ce8088))
+
 # [1.26.0](https://github.com/wmfs/tymly-core/compare/v1.25.0...v1.26.0) (2018-09-10)
 
 
