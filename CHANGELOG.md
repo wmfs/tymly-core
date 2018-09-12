@@ -1,3 +1,10 @@
+# [1.29.0](https://github.com/wmfs/tymly-core/compare/v1.28.0...v1.29.0) (2018-09-12)
+
+
+### 🛠 Builds
+
+* **deps:** update debug requirement from 3.1.0 to 4.0.1 ([673db45](https://github.com/wmfs/tymly-core/commit/673db45))
+
 # [1.28.0](https://github.com/wmfs/tymly-core/compare/v1.27.0...v1.28.0) (2018-09-12)
 
 
