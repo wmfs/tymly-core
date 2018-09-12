@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/wmfs/tymly-core/compare/v1.27.0...v1.28.0) (2018-09-12)
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/rbac requirement from 1.1.1 to 1.1.4 ([a8c63a5](https://github.com/wmfs/tymly-core/commit/a8c63a5))
+
 # [1.27.0](https://github.com/wmfs/tymly-core/compare/v1.26.1...v1.27.0) (2018-09-12)
 
 
