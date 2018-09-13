@@ -1,3 +1,10 @@
+# [1.32.0](https://github.com/wmfs/tymly-core/compare/v1.31.0...v1.32.0) (2018-09-13)
+
+
+### 🛠 Builds
+
+* **deps:** update lodash requirement from 4.17.10 to 4.17.11 ([a1a6b72](https://github.com/wmfs/tymly-core/commit/a1a6b72))
+
 # [1.31.0](https://github.com/wmfs/tymly-core/compare/v1.30.0...v1.31.0) (2018-09-12)
 
 
