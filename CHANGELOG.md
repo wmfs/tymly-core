@@ -1,3 +1,10 @@
+# [1.37.0](https://github.com/wmfs/tymly-core/compare/v1.36.0...v1.37.0) (2018-09-26)
+
+
+### 🛠 Builds
+
+* **deps:** update nanoid requirement from 1.2.3 to 1.2.4 ([a74c437](https://github.com/wmfs/tymly-core/commit/a74c437))
+
 # [1.36.0](https://github.com/wmfs/tymly-core/compare/v1.35.0...v1.36.0) (2018-09-26)
 
 
