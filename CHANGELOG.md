@@ -1,3 +1,11 @@
+# [1.36.0](https://github.com/wmfs/tymly-core/compare/v1.35.0...v1.36.0) (2018-09-26)
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/rbac requirement from 1.1.5 to 1.2.0 ([2696da6](https://github.com/wmfs/tymly-core/commit/2696da6))
+* **deps-dev:** update chai requirement from 4.1.2 to 4.2.0 ([a010aee](https://github.com/wmfs/tymly-core/commit/a010aee))
+
 # [1.35.0](https://github.com/wmfs/tymly-core/compare/v1.34.0...v1.35.0) (2018-09-26)
 
 
