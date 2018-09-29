@@ -1,3 +1,15 @@
+# [1.39.0](https://github.com/wmfs/tymly-core/compare/v1.38.0...v1.39.0) (2018-09-29)
+
+
+### 🛠 Builds
+
+* **deps:** update nanoid requirement from 1.2.4 to 1.2.5 ([4405d3c](https://github.com/wmfs/tymly-core/commit/4405d3c))
+
+
+### ♻️ Chores
+
+* **deps:** Remove [@wmfs](https://github.com/wmfs)/rbac dependency ([f66d473](https://github.com/wmfs/tymly-core/commit/f66d473))
+
 # [1.38.0](https://github.com/wmfs/tymly-core/compare/v1.37.0...v1.38.0) (2018-09-27)
 
 
