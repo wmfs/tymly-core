@@ -21,7 +21,7 @@
   },
   "main": "./lib/index.js",
   "dependencies": {
-    "@wmfs/statebox": "1.17.0",
+    "@wmfs/statebox": "1.18.0",
     "async": "2.6.1",
     "boom": "7.2.0",
     "cls-hooked": "^4.2.2",
