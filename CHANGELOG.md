@@ -1,3 +1,34 @@
+# [1.46.0](https://github.com/wmfs/tymly-core/compare/v1.45.0...v1.46.0) (2018-10-11)
+
+
+### ✨ Features
+
+* Hook tymly-statelint into statebox start-up ([7483888](https://github.com/wmfs/tymly-core/commit/7483888))
+
+
+### 🛠 Builds
+
+* **deps:** Update tymly-statelint from 1.0.0 to 1.1.0 ([2ead327](https://github.com/wmfs/tymly-core/commit/2ead327))
+
+
+### 📦 Code Refactoring
+
+* Calm down code to merge rootComponents into allComponents ([95cb4db](https://github.com/wmfs/tymly-core/commit/95cb4db))
+* Flip Array.forEach into for loops ([52eb356](https://github.com/wmfs/tymly-core/commit/52eb356))
+* Get rid of continueLoading variable - just return early ([a0f994e](https://github.com/wmfs/tymly-core/commit/a0f994e))
+* Hoist part of the directory filtering out of the main loop ([0f363e8](https://github.com/wmfs/tymly-core/commit/0f363e8))
+* Initialise rootComponents[name] when we need to ([3162b83](https://github.com/wmfs/tymly-core/commit/3162b83))
+* Let's just do the path.join once ([8da0dc3](https://github.com/wmfs/tymly-core/commit/8da0dc3))
+* Lift all the component type directory filtering and path expansion up ahead of the for loo ([ea1cf1e](https://github.com/wmfs/tymly-core/commit/ea1cf1e))
+* Move componentDir declaration into the loop ([8b4f509](https://github.com/wmfs/tymly-core/commit/8b4f509))
+* Pull out body of loadComponentDir ([181ba23](https://github.com/wmfs/tymly-core/commit/181ba23))
+* Pulled out loadComponentFile function ([a863e98](https://github.com/wmfs/tymly-core/commit/a863e98))
+* s/COMPONENT_DIR_BLACKLIST/COMPONENT_TYPE_BLACKLIST/ because that's what it is ([c90c005](https://github.com/wmfs/tymly-core/commit/c90c005))
+* Simplified if condition grabbing namespace ([453b593](https://github.com/wmfs/tymly-core/commit/453b593))
+* Simplify file loading ([c2b73e7](https://github.com/wmfs/tymly-core/commit/c2b73e7))
+* Slimmed and simplified discoverBlueprintPaths ([30aed24](https://github.com/wmfs/tymly-core/commit/30aed24))
+* Use hasProperty helper to slim things down a bit ([d401ef7](https://github.com/wmfs/tymly-core/commit/d401ef7))
+
 # [1.45.0](https://github.com/wmfs/tymly-core/compare/v1.44.0...v1.45.0) (2018-10-08)
 
 
