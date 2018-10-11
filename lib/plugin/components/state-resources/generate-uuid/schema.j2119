@@ -1,0 +1,3 @@
+This document specifies a JSON object called a "UUID Resource Config".
+A UUID Resource Config MAY have an integer field named "length".
+A UUID Resource Config MAY have a boolean field named "short".
