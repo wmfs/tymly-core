@@ -1,3 +1,25 @@
+# [1.48.0](https://github.com/wmfs/tymly-core/compare/v1.47.0...v1.48.0) (2018-10-15)
+
+
+### ✨ Features
+
+* Initialised state machine validator with state resources ([38cf619](https://github.com/wmfs/tymly-core/commit/38cf619))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update nyc requirement from 13.0.1 to 13.1.0 ([0b768f9](https://github.com/wmfs/tymly-core/commit/0b768f9))
+
+
+### 📦 Code Refactoring
+
+* Declare at point of definition in applyBootBefore ([99431a0](https://github.com/wmfs/tymly-core/commit/99431a0))
+* Elide an if in applyBootBefore by straightforward application of the Null Object Pattern ([94844fb](https://github.com/wmfs/tymly-core/commit/94844fb))
+* Flip Array.forEach to a for of ([7650a65](https://github.com/wmfs/tymly-core/commit/7650a65))
+* Flipped Object.keys.forEach with a lookup to a for of Object.entries ([f1a524a](https://github.com/wmfs/tymly-core/commit/f1a524a))
+* Pulled out applyBootBefore so it's not local to bootSequenceOrder ([9968613](https://github.com/wmfs/tymly-core/commit/9968613))
+* Removed empty duplicate if condition ([45ad5f3](https://github.com/wmfs/tymly-core/commit/45ad5f3))
+
 # [1.47.0](https://github.com/wmfs/tymly-core/compare/v1.46.0...v1.47.0) (2018-10-12)
 
 
