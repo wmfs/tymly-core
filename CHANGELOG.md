@@ -1,3 +1,15 @@
+## [1.48.1](https://github.com/wmfs/tymly-core/compare/v1.48.0...v1.48.1) (2018-10-16)
+
+
+### 🐛 Bug Fixes
+
+* Direct all statelint warnings into startup-messages ([7efe21e](https://github.com/wmfs/tymly-core/commit/7efe21e))
+
+
+### 📦 Code Refactoring
+
+* Validate all state machines, then add them ([886cb37](https://github.com/wmfs/tymly-core/commit/886cb37))
+
 # [1.48.0](https://github.com/wmfs/tymly-core/compare/v1.47.0...v1.48.0) (2018-10-15)
 
 
