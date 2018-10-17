@@ -1,0 +1,2 @@
+This document specifies a JSON object called a "RunFunction Resource Config".
+A RunFunction Resource Config MUST have a string field named "functionName".

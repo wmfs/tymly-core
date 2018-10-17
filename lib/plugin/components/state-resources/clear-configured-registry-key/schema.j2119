@@ -1,0 +1,2 @@
+This document specifies a JSON object called a "ClearConfiguredRegKey Resource Config".
+A ClearConfiguredRegKey Resource Config MUST have a string field named "key".
