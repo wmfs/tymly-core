@@ -1,3 +1,10 @@
+## [1.52.1](https://github.com/wmfs/tymly-core/compare/v1.52.0...v1.52.1) (2018-10-19)
+
+
+### 🐛 Bug Fixes
+
+* Bump [@wmfs](https://github.com/wmfs)/tymly-statelint from 1.3.1 to 1.3.2 ([1f71e48](https://github.com/wmfs/tymly-core/commit/1f71e48))
+
 # [1.52.0](https://github.com/wmfs/tymly-core/compare/v1.51.0...v1.52.0) (2018-10-19)
 
 
