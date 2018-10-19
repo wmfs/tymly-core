@@ -10,6 +10,7 @@
       "ResourceConfig": {
         "modelId": "cat"
       },
+      "ResultPath": null,
       "Next": "FindingOne"
     },
     "FindingOne": {
