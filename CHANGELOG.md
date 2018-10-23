@@ -1,3 +1,18 @@
+# [1.55.0](https://github.com/wmfs/tymly-core/compare/v1.54.0...v1.55.0) (2018-10-23)
+
+
+### 🛠 Builds
+
+* **deps:** update dottie requirement from 2.0.0 to 2.0.1 ([07038b1](https://github.com/wmfs/tymly-core/commit/07038b1))
+* **deps-dev:** update semantic-release requirement ([be6950b](https://github.com/wmfs/tymly-core/commit/be6950b))
+* **deps-dev:** update semantic-release requirement ([46c2c1a](https://github.com/wmfs/tymly-core/commit/46c2c1a))
+
+
+### 🚨 Tests
+
+* Return whole cat state from state resources, not just pet diary. ([cea6f03](https://github.com/wmfs/tymly-core/commit/cea6f03))
+* set ResultPath: null on tasks where we want to ignore the output ([951e50a](https://github.com/wmfs/tymly-core/commit/951e50a))
+
 # [1.54.0](https://github.com/wmfs/tymly-core/compare/v1.53.0...v1.54.0) (2018-10-20)
 
 
