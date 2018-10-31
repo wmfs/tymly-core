@@ -1,3 +1,12 @@
+# [1.57.0](https://github.com/wmfs/tymly-core.git/compare/v1.56.0...v1.57.0) (2018-10-31)
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/statebox requirement from 1.24.0 to 1.25.0 ([f9b10fd](https://github.com/wmfs/tymly-core.git/commit/f9b10fd))
+* **deps:** update nanoid requirement from 1.3.1 to 1.3.2 ([d94ec16](https://github.com/wmfs/tymly-core.git/commit/d94ec16))
+* **deps-dev:** update semantic-release requirement ([b239753](https://github.com/wmfs/tymly-core.git/commit/b239753))
+
 # [1.56.0](https://github.com/wmfs/tymly-core/compare/v1.55.0...v1.56.0) (2018-10-23)
 
 
