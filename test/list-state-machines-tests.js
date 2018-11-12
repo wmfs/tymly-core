@@ -37,9 +37,8 @@ describe('list available state machines', () => {
     const resources = await runAvailableResources()
 
     const stateResourceDir = path.resolve(__dirname, './../lib/plugin/components/state-resources')
-    const stateResources = fs.readdirSync(stateResourceDir, { withFileTypes: true })
-      .filter(dirent => dirent.isDirectory())
-      .map(dirent => dirent.name)
+    const stateResources = fs.readdirSync(stateResourceDir)
+      .filter(name => fs.lstatSync(path.resolve(__dirname, './../lib/plugin/components/state-resources', name)).isDirectory())
       .map(name => _.camelCase(name))
 
     expect(resources).to.eql(stateResources)
