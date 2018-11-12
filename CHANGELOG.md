@@ -1,3 +1,28 @@
+# [1.59.0](https://github.com/wmfs/tymly-core/compare/v1.58.0...v1.59.0) (2018-11-12)
+
+
+### ✨ Features
+
+* Add state resources to list available state machines and state resources. ([8b477ff](https://github.com/wmfs/tymly-core/commit/8b477ff))
+
+
+### 🚨 Tests
+
+* Rework test for Node 9 ([84dbdc0](https://github.com/wmfs/tymly-core/commit/84dbdc0))
+
+
+### ♻️ Chores
+
+* **deps:** Bump boom from 7.2.0 to 7.2.2. ([432e4cc](https://github.com/wmfs/tymly-core/commit/432e4cc))
+* **dev-deps:** Bump semantic-release from 15.10.6 to 15.10.8 ([544e9e0](https://github.com/wmfs/tymly-core/commit/544e9e0))
+* Bump nanoid from 1.3.3 to 2.0.0. ([cf0678c](https://github.com/wmfs/tymly-core/commit/cf0678c))
+* Correct cls-hooked dependency from ^4.2.2 to 4.2.2 ([61d6918](https://github.com/wmfs/tymly-core/commit/61d6918))
+
+
+### 💎 Styles
+
+* Standards fix ([1321436](https://github.com/wmfs/tymly-core/commit/1321436))
+
 # [1.58.0](https://github.com/wmfs/tymly-core.git/compare/v1.57.0...v1.58.0) (2018-10-31)
 
 
