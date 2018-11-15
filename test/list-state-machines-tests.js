@@ -47,12 +47,8 @@ describe('list available state machines', () => {
   it('available-state-machines state resource', async () => {
     const stateMachines = await runAvailableStateMachines()
 
-    expect(stateMachines).to.eql([
-      {
-        name: 'tymlyTest_timestamp_1_0',
-        description: 'Blueprint to get timestamp'
-      }
-    ])
+    expect(stateMachines[0].name).to.eql('tymlyTest_timestamp_1_0')
+    expect(stateMachines[0].description).to.eql('Blueprint to get timestamp')
   })
 
   after('shutdown tymly', async () => {
