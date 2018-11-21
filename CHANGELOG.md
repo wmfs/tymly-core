@@ -1,3 +1,10 @@
+# [1.63.0](https://github.com/wmfs/tymly-core/compare/v1.62.0...v1.63.0) (2018-11-21)
+
+
+### 🛠 Builds
+
+* **deps:** update lru-cache requirement from 4.1.3 to 4.1.4 ([34b52f2](https://github.com/wmfs/tymly-core/commit/34b52f2))
+
 # [1.62.0](https://github.com/wmfs/tymly-core/compare/v1.61.0...v1.62.0) (2018-11-19)
 
 
