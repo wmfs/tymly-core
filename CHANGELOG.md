@@ -1,3 +1,10 @@
+## [1.65.1](https://github.com/wmfs/tymly-core/compare/v1.65.0...v1.65.1) (2018-11-27)
+
+
+### 🐛 Bug Fixes
+
+* **vulnerable dep:** Use mongodb-extjson instead of the deprecated and compromised mongodb-extended- ([29c04c6](https://github.com/wmfs/tymly-core/commit/29c04c6))
+
 # [1.65.0](https://github.com/wmfs/tymly-core/compare/v1.64.0...v1.65.0) (2018-11-27)
 
 
