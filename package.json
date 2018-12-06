@@ -34,10 +34,8 @@
     "lru-cache": "4.1.4",
     "mkdirp": "0.5.1",
     "moment": "2.22.2",
-    "mongodb-extjson": "3.0.3",
     "nanoid": "2.0.0",
     "read-pkg-up": "4.0.0",
-    "split": "1.0.1",
     "underscore-query": "3.3.2",
     "upath": "1.1.0",
     "uuid": "3.3.2"
