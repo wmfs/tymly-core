@@ -1,3 +1,10 @@
+## [1.68.1](https://github.com/wmfs/tymly-core/compare/v1.68.0...v1.68.1) (2018-12-06)
+
+
+### 🐛 Bug Fixes
+
+* Clone the objects coming out of .find() ([18c75db](https://github.com/wmfs/tymly-core/commit/18c75db))
+
 # [1.68.0](https://github.com/wmfs/tymly-core/compare/v1.67.0...v1.68.0) (2018-12-04)
 
 
