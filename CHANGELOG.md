@@ -1,3 +1,10 @@
+# [1.69.0](https://github.com/wmfs/tymly-core/compare/v1.68.1...v1.69.0) (2018-12-06)
+
+
+### 🛠 Builds
+
+* **deps:** Update statebox, boom, semantic-release dependencies ([7cfb9e1](https://github.com/wmfs/tymly-core/commit/7cfb9e1))
+
 ## [1.68.1](https://github.com/wmfs/tymly-core/compare/v1.68.0...v1.68.1) (2018-12-06)
 
 
