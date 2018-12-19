@@ -1,3 +1,16 @@
+# [1.75.0](https://github.com/wmfs/tymly-core/compare/v1.74.0...v1.75.0) (2018-12-19)
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/statebox requirement from 1.40.0 to 1.41.0 ([ab5c7d9](https://github.com/wmfs/tymly-core/commit/ab5c7d9))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-test-helpers requirement ([8c9e8df](https://github.com/wmfs/tymly-core/commit/8c9e8df))
+
+
+### 🚨 Tests
+
+* Tweak day-in-the-life state machine ([fd58bec](https://github.com/wmfs/tymly-core/commit/fd58bec))
+
 # [1.74.0](https://github.com/wmfs/tymly-core/compare/v1.73.0...v1.74.0) (2018-12-11)
 
 
