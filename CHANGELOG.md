@@ -1,3 +1,24 @@
+# [1.76.0](https://github.com/wmfs/tymly-core/compare/v1.75.0...v1.76.0) (2019-01-10)
+
+
+### 🛠 Builds
+
+* **deps:** Removed unused dependencies - esprima, jsonschema, sprintf-js ([2c62e95](https://github.com/wmfs/tymly-core/commit/2c62e95))
+
+
+### 📦 Code Refactoring
+
+* **dead code:** Removed unused MemoryStorageService.fileImporter method ([66549da](https://github.com/wmfs/tymly-core/commit/66549da))
+* Changed forEach to for/of, removed redundant guard clauses ([adf9254](https://github.com/wmfs/tymly-core/commit/adf9254))
+* Rework boot order again ([ecfee67](https://github.com/wmfs/tymly-core/commit/ecfee67))
+* Try and simplify control flow in order-boot-sequence ([83ce81b](https://github.com/wmfs/tymly-core/commit/83ce81b))
+* Use native methods rather than lodash ([63382d0](https://github.com/wmfs/tymly-core/commit/63382d0))
+
+
+### 💎 Styles
+
+* lint fix - added a space :o ([8634745](https://github.com/wmfs/tymly-core/commit/8634745))
+
 # [1.75.0](https://github.com/wmfs/tymly-core/compare/v1.74.0...v1.75.0) (2018-12-19)
 
 
