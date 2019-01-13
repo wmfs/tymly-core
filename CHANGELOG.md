@@ -1,3 +1,10 @@
+# [1.77.0](https://github.com/wmfs/tymly-core/compare/v1.76.0...v1.77.0) (2019-01-13)
+
+
+### ✨ Features
+
+* Add meta-info for core plugin. ([1018887](https://github.com/wmfs/tymly-core/commit/1018887))
+
 # [1.76.0](https://github.com/wmfs/tymly-core/compare/v1.75.0...v1.76.0) (2019-01-10)
 
 
