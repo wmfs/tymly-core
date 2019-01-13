@@ -1,0 +1,17 @@
+{
+  "name": "tymly-core-plugin",
+  "version": "0.0.0",
+  "description": "Provides low-level functions for Tymly",
+  "homepage": "https://github.com/wmfs/tymly-core/tree/master/lib/plugin",
+  "author": "West Midlands Fire Service",
+  "keywords": [
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wmfs/tymly-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wmfs/tymly-core/issues"
+  }
+}
