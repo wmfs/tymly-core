@@ -6,9 +6,7 @@ module.exports = class Hello {
   }
 
   run (event, context) {
-    const greeting = 'HELLO...'
-    console.log(greeting)
-    event.greeting = greeting
+    console.log('I SHOULD NOT BE!!!')
     context.sendTaskSuccess()
   }
 }
