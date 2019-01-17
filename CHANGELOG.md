@@ -1,3 +1,15 @@
+# [1.78.0](https://github.com/wmfs/tymly-core/compare/v1.77.0...v1.78.0) (2019-01-17)
+
+
+### ✨ Features
+
+* Add support to exclude plugins/blueprints. ([6277e35](https://github.com/wmfs/tymly-core/commit/6277e35))
+
+
+### ♻️ Chores
+
+* **deps:** Bump [@wmfs](https://github.com/wmfs)/statebox to 1.42.0 to get findModuleByName ([d67f318](https://github.com/wmfs/tymly-core/commit/d67f318))
+
 # [1.77.0](https://github.com/wmfs/tymly-core/compare/v1.76.0...v1.77.0) (2019-01-13)
 
 
