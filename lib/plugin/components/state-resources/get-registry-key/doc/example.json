@@ -1,0 +1,8 @@
+{
+  "GetRegistryKey": {
+    "Type": "Task",
+    "Resource": "module:getRegistryKey",
+    "InputPath": "$",
+    "End": true
+  }
+}

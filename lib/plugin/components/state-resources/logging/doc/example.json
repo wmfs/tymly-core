@@ -1,0 +1,10 @@
+{
+  "Logging": {
+    "Type": "Task",
+    "Resource": "module:logging",
+    "ResourceConfig": {
+      "template": "Purge site!"
+    },
+    "End": true
+  }
+}

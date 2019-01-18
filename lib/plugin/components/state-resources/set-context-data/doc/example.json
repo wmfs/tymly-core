@@ -1,0 +1,10 @@
+{
+  "SetContextData": {
+    "Type": "Task",
+    "Resource": "module:setContextData",
+    "ResourceConfig": {
+      "$.formData.sawReportId": "$.boardKeys.sawReportId"
+    },
+    "Next": "AwaitingHumanInput"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "AvailableResources": {
+    "Type": "Task",
+    "Resource": "module:availableResources",
+    "InputPath": "$",
+    "End": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Upserting": {
+    "Type": "Task",
+    "InputPath": "$.formData",
+    "Resource": "module:upserting",
+    "ResourceConfig": {
+      "modelId": "buildingDna",
+      "setMissingPropertiesToNull": false
+    },
+    "Next": "UpsertingBuilding"
+  }
+}

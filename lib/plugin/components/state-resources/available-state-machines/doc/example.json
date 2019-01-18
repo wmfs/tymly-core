@@ -1,0 +1,8 @@
+{
+  "AvailableStateMachines": {
+    "Type": "Task",
+    "Resource": "module:availableStateMachines",
+    "InputPath": "$",
+    "End": true
+  }
+}

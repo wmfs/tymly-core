@@ -1,0 +1,8 @@
+{
+  "ClearRegistryKey": {
+    "Type": "Task",
+    "Resource": "module:clearRegistryKey",
+    "InputPath": "$",
+    "End": true
+  }
+}

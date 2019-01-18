@@ -1,0 +1,8 @@
+{
+  "SetRegistryKey": {
+    "Type": "Task",
+    "Resource": "module:setRegistryKey",
+    "InputPath": "$.setRegistryKey",
+    "Next": "RefreshRanking"
+  }
+}

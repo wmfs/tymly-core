@@ -1,0 +1,10 @@
+{
+  "GenerateUuid": {
+    "Type": "Task",
+    "Resource": "module:generateUuid",
+    "ResourceConfig": {
+      "length": 10,
+      "short": true
+    }
+  }
+}

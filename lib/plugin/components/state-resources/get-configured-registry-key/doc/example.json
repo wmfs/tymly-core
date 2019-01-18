@@ -1,0 +1,11 @@
+{
+  "GetConfiguredRegistryKey": {
+    "Type": "Task",
+    "Resource": "module:getConfiguredRegistryKey",
+    "ResourceConfig": {
+      "key": "tymlyTest_falseTestKey"
+    },
+    "ResultPath": "$.result",
+    "End": true
+  }
+}

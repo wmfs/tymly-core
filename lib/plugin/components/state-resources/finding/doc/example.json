@@ -1,0 +1,7 @@
+{
+  "Finding": {
+    "Type": "Task",
+    "Resource": "module:findingById",
+    "End": true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "Timestamp": {
+    "Type": "Task",
+    "Resource": "module:timestamp",
+    "ResultPath": "$.timestamp",
+    "End": true
+  }
+}
