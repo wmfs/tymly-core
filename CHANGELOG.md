@@ -1,3 +1,15 @@
+## [1.78.1](https://github.com/wmfs/tymly-core/compare/v1.78.0...v1.78.1) (2019-01-20)
+
+
+### 🐛 Bug Fixes
+
+* Fix a few example JSON files. ([13c6aef](https://github.com/wmfs/tymly-core/commit/13c6aef))
+
+
+### ♻️ Chores
+
+* Add examples to state machines ([ddfca37](https://github.com/wmfs/tymly-core/commit/ddfca37))
+
 # [1.78.0](https://github.com/wmfs/tymly-core/compare/v1.77.0...v1.78.0) (2019-01-17)
 
 
