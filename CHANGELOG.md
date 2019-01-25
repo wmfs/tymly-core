@@ -1,3 +1,10 @@
+# [1.79.0](https://github.com/wmfs/tymly-core/compare/v1.78.1...v1.79.0) (2019-01-25)
+
+
+### ✨ Features
+
+* Pull in statebox 1.43 so we get new Parameters field ([7c72798](https://github.com/wmfs/tymly-core/commit/7c72798))
+
 ## [1.78.1](https://github.com/wmfs/tymly-core/compare/v1.78.0...v1.78.1) (2019-01-20)
 
 
