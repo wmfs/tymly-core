@@ -6,14 +6,14 @@
       "Type": "Task",
       "Resource": "module:runFunction",
       "ResourceConfig": {
-        "functionName": "helloWorldFunction"
+        "functionName": "normalFunction"
       },
       "End": true
     }
   },
   "restrictions": [
     {
-      "roleId": "$authenticated",
+      "roleId": "$everyone",
       "allows": [
         "*"
       ]

@@ -1,0 +1,14 @@
+{
+
+  "namespace": "tymlyTest",
+  "name": "runFunctionStateResource",
+  "version": "1.0",
+
+  "label": "Cats",
+  "author": "Tim Needham",
+
+  "organisation": "Tymlys",
+  "description": "An example Tymly Blueprint using the run-function module",
+  "categories": []
+
+}
