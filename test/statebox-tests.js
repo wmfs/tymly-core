@@ -5,7 +5,7 @@ const path = require('path')
 const expect = require('chai').expect
 const STATE_MACHINE_NAME = 'tymlyTest_aDayInTheLife'
 
-describe('Simple Tymly test', function () {
+describe('Statebox Service', function () {
   let tymlyService
   let statebox
   this.timeout(process.env.TIMEOUT || 5000)
