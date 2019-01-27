@@ -1,0 +1,19 @@
+{
+  "Comment": "Testing the run function state resource",
+  "StartAt": "RunFunction",
+  "States": {
+    "RunFunction": {
+      "Type": "Task",
+      "Resource": "function:callbackFunction",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$everyone",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

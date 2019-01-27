@@ -1,0 +1,14 @@
+{
+
+  "namespace": "tymlyTest",
+  "name": "functionResources",
+  "version": "1.0",
+
+  "label": "Cats",
+  "author": "Tim Needham",
+
+  "organisation": "Tymlys",
+  "description": "An example Tymly Blueprint using the function resource resolver",
+  "categories": []
+
+}
