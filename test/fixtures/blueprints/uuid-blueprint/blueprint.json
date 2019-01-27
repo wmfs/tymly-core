@@ -1,0 +1,12 @@
+{
+
+  "namespace": "tymlyTest",
+  "name": "uuid",
+  "version": "1.0",
+
+  "label": "Cats",
+  "author": "Tim Needham",
+
+  "organisation": "Tymlys",
+  "description": ""
+}

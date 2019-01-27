@@ -10,15 +10,11 @@ describe('Generate uuid state resource', function () {
   this.timeout(process.env.TIMEOUT || 5000)
   let tymlyService, statebox
 
-  it('boot tymly', done => {
+  before('boot tymly', done => {
     tymly.boot(
       {
         blueprintPaths: [
-          path.resolve(__dirname, './fixtures/blueprints/cats-blueprint')
-        ],
-        pluginPaths: [
-          path.resolve(__dirname, './fixtures/plugins/cats-plugin'),
-          path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          path.resolve(__dirname, './fixtures/blueprints/uuid-blueprint')
         ]
       },
       (err, tymlyServices) => {
@@ -30,24 +26,21 @@ describe('Generate uuid state resource', function () {
     )
   })
 
-  it('should run the state machine', done => {
-    statebox.startExecution(
+  it('run the state machine', async () => {
+    const executionDescription = await statebox.startExecution(
       {},
       STATE_MACHINE_NAME,
       {
         sendResponse: 'COMPLETE'
-      },
-      (err, execDescription) => {
-        expect(err).to.eql(null)
-        expect(execDescription.ctx.shortId.id.length).to.eql(8)
-        expect(execDescription.ctx.shorterId.id.length).to.eql(5)
-        expect(execDescription.ctx.longerId.id.length).to.eql(36)
-        done()
       }
     )
+
+    expect(executionDescription.ctx.shortId.id.length).to.eql(8)
+    expect(executionDescription.ctx.shorterId.id.length).to.eql(5)
+    expect(executionDescription.ctx.longerId.id.length).to.eql(36)
   })
 
-  it('shutdown Tymly', async () => {
+  after('shutdown Tymly', async () => {
     await tymlyService.shutdown()
   })
 })
