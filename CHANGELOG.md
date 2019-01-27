@@ -1,3 +1,34 @@
+# [1.80.0](https://github.com/wmfs/tymly-core/compare/v1.79.0...v1.80.0) (2019-01-27)
+
+
+### ✨ Features
+
+* Add function resource type ([636f005](https://github.com/wmfs/tymly-core/commit/636f005))
+* Add function resource type. ([15162e4](https://github.com/wmfs/tymly-core/commit/15162e4))
+
+
+### 🛠 Builds
+
+* **dev:** Bump statebox from 1.43.0 to 1.44.1 ([be81b21](https://github.com/wmfs/tymly-core/commit/be81b21))
+
+
+### 📦 Code Refactoring
+
+* Correct test filename ([cdbda29](https://github.com/wmfs/tymly-core/commit/cdbda29))
+* Neaten parse-meta ([4468acb](https://github.com/wmfs/tymly-core/commit/4468acb))
+
+
+### 🚨 Tests
+
+* Better description ([075561c](https://github.com/wmfs/tymly-core/commit/075561c))
+* Pull run-function test fixtures out of the cat blueprint. ([904d246](https://github.com/wmfs/tymly-core/commit/904d246))
+* Tidy up UUID state resource test ([bd18c86](https://github.com/wmfs/tymly-core/commit/bd18c86))
+
+
+### ⚙️ Continuous Integrations
+
+* Update Node version ([d59505e](https://github.com/wmfs/tymly-core/commit/d59505e))
+
 # [1.79.0](https://github.com/wmfs/tymly-core/compare/v1.78.1...v1.79.0) (2019-01-25)
 
 
