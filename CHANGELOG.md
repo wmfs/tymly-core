@@ -1,3 +1,10 @@
+## [1.80.2](https://github.com/wmfs/tymly-core/compare/v1.80.1...v1.80.2) (2019-01-28)
+
+
+### 🐛 Bug Fixes
+
+* Further fix on lookup email - return userId if email is empty ([3818100](https://github.com/wmfs/tymly-core/commit/3818100))
+
 ## [1.80.1](https://github.com/wmfs/tymly-core/compare/v1.80.0...v1.80.1) (2019-01-28)
 
 
