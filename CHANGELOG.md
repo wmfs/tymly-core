@@ -1,3 +1,10 @@
+## [1.80.1](https://github.com/wmfs/tymly-core/compare/v1.80.0...v1.80.1) (2019-01-28)
+
+
+### 🐛 Bug Fixes
+
+* Ensure we do default to userId if we can't find an email for them. ([7d4ac81](https://github.com/wmfs/tymly-core/commit/7d4ac81))
+
 # [1.80.0](https://github.com/wmfs/tymly-core/compare/v1.79.0...v1.80.0) (2019-01-27)
 
 
