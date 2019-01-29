@@ -1,0 +1,21 @@
+{
+  "id": "lovely",
+  "title": "Lovely Animals",
+  "primaryKey": [
+    "name",
+    "animal"
+  ],
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "animal": {
+      "type": "string"
+    },
+    "colour": {
+      "type": "string"
+    }
+  },
+  "required": ["name", "animal", "colour"]
+}

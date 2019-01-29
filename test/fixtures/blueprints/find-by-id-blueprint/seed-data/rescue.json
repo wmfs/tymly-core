@@ -1,0 +1,14 @@
+{
+  "propertyNames": [
+    "id",
+    "name",
+    "animal"
+  ],
+  "data": [
+    [ "99X", "Babu", "Red Panda" ],
+    [ "BigBoi", "Digby", "Dog" ],
+    [ "QQ", "Pancho", "Guinea Pig" ],
+    [ "101", "Billy", "Dog" ],
+    [ "BE", "Dumbo", "Elephant" ]
+  ]
+}

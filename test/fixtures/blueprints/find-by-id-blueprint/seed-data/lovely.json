@@ -1,0 +1,14 @@
+{
+  "propertyNames": [
+    "name",
+    "animal",
+    "colour"
+  ],
+  "data": [
+    [ "Babu", "Red Panda", "Auburn" ],
+    [ "Digby", "Dog", "Red" ],
+    [ "Pancho", "Guinea Pig", "Chocolate self" ],
+    [ "Billy", "Dog", "orange" ],
+    [ "Dumbo", "Elephant", "grey" ]
+  ]
+}

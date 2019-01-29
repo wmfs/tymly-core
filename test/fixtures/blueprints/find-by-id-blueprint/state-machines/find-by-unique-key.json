@@ -1,0 +1,18 @@
+{
+  "name": "FindByUniqueId",
+  "version": "1.0",
+  "StartAt": "FindingById",
+  "States": {
+    "FindingById": {
+      "Type": "Task",
+      "InputPath": "$.id",
+      "Resource": "module:findingById",
+      "ResourceConfig": {
+        "modelId": "rescue"
+      },
+      "ResultPath": "$.found",
+      "End": true
+    }
+  }
+}
+

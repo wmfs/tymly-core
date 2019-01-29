@@ -1,0 +1,21 @@
+{
+  "id": "rescue",
+  "title": "Rescue Pets",
+  "description": "Some Pets That Have Been Rescued",
+  "primaryKey": [
+    "id"
+  ],
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "animal": {
+      "type": "string"
+    }
+  },
+  "required": ["id", "name", "animal"]
+}
