@@ -5,7 +5,7 @@
   "States": {
     "FindingById": {
       "Type": "Task",
-      "InputPath": "$",
+      "InputPath": "$.key",
       "Resource": "module:findingById",
       "ResourceConfig": {
         "modelId": "lovely"

@@ -46,9 +46,41 @@ describe('FindById State Resource', function () {
     })
   })
 
+  it('find by unique key, passing array', async () => {
+    const executionDescription = await statebox.startExecution(
+      { id: ['101'] },
+      UNIQUE_KEY,
+      {
+        sendResponse: 'COMPLETE'
+      }
+    )
+
+    expect(executionDescription.ctx.found).to.containSubset({
+      id: '101',
+      name: 'Billy',
+      animal: 'Dog'
+    })
+  })
+
+  it('find by composite key, passing array', async () => {
+    const executionDescription = await statebox.startExecution(
+      { key: [ 'Billy', 'Dog' ] },
+      COMPOSITE_KEY,
+      {
+        sendResponse: 'COMPLETE'
+      }
+    )
+
+    expect(executionDescription.ctx.found).to.containSubset({
+      name: 'Billy',
+      animal: 'Dog',
+      colour: 'orange'
+    })
+  })
+
   it('find by composite key', async () => {
     const executionDescription = await statebox.startExecution(
-      { name: 'Billy', animal: 'Dog' },
+      { key: { name: 'Billy', animal: 'Dog' } },
       COMPOSITE_KEY,
       {
         sendResponse: 'COMPLETE'
