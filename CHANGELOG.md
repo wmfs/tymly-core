@@ -1,3 +1,16 @@
+## [1.80.3](https://github.com/wmfs/tymly-core/compare/v1.80.2...v1.80.3) (2019-01-29)
+
+
+### 🐛 Bug Fixes
+
+* Correct FindById so it works with memory model and pg storage model ([252585c](https://github.com/wmfs/tymly-core/commit/252585c))
+
+
+### 🚨 Tests
+
+* Extend findById tests to cover array input ([072363b](https://github.com/wmfs/tymly-core/commit/072363b))
+* findById state resource tests ([206ae9b](https://github.com/wmfs/tymly-core/commit/206ae9b))
+
 ## [1.80.2](https://github.com/wmfs/tymly-core/compare/v1.80.1...v1.80.2) (2019-01-28)
 
 
