@@ -1,3 +1,11 @@
+# [1.81.0](https://github.com/wmfs/tymly-core/compare/v1.80.3...v1.81.0) (2019-02-08)
+
+
+### 🛠 Builds
+
+* **deps:** update moment requirement from 2.22.2 to 2.23.0 ([1b78d85](https://github.com/wmfs/tymly-core/commit/1b78d85))
+* **dev-deps:** Update semantic-release and nyc ([d391d1c](https://github.com/wmfs/tymly-core/commit/d391d1c))
+
 ## [1.80.3](https://github.com/wmfs/tymly-core/compare/v1.80.2...v1.80.3) (2019-01-29)
 
 
