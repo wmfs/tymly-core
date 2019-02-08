@@ -1,3 +1,15 @@
+# [1.82.0](https://github.com/wmfs/tymly-core/compare/v1.81.0...v1.82.0) (2019-02-08)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** Bump lru-cache from 4.1.4 to 5.1.1. Make required change to match. ([d33fd6c](https://github.com/wmfs/tymly-core/commit/d33fd6c))
+
+
+### 🛠 Builds
+
+* **deps:** Bump statebox, tymly-statelint, debug, moment, nanoid ([18040b2](https://github.com/wmfs/tymly-core/commit/18040b2))
+
 # [1.81.0](https://github.com/wmfs/tymly-core/compare/v1.80.3...v1.81.0) (2019-02-08)
 
 
