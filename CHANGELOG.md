@@ -1,3 +1,10 @@
+# [1.83.0](https://github.com/wmfs/tymly-core/compare/v1.82.0...v1.83.0) (2019-02-17)
+
+
+### ✨ Features
+
+* Inject "blueprintName" and "blueprintVersion" to loaded JSON files. ([4b85e41](https://github.com/wmfs/tymly-core/commit/4b85e41))
+
 # [1.82.0](https://github.com/wmfs/tymly-core/compare/v1.81.0...v1.82.0) (2019-02-08)
 
 
