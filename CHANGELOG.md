@@ -1,3 +1,10 @@
+## [1.83.1](https://github.com/wmfs/tymly-core/compare/v1.83.0...v1.83.1) (2019-02-26)
+
+
+### 🐛 Bug Fixes
+
+* Tweak to service booting to capture service name in the event of an error ([4efee64](https://github.com/wmfs/tymly-core/commit/4efee64))
+
 # [1.83.0](https://github.com/wmfs/tymly-core/compare/v1.82.0...v1.83.0) (2019-02-17)
 
 
