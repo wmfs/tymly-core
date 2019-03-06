@@ -13,23 +13,18 @@ describe('Function resources', function () {
   this.timeout(process.env.TIMEOUT || 5000)
   let tymlyService, statebox
 
-  it('boot tymly', done => {
-    tymly.boot(
-      {
-        blueprintPaths: [
-          path.resolve(__dirname, './fixtures/blueprints/function-resource-blueprint')
-        ],
-        pluginPaths: [
-          path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
-        ]
-      },
-      (err, tymlyServices) => {
-        expect(err).to.eql(null)
-        tymlyService = tymlyServices.tymly
-        statebox = tymlyServices.statebox
-        done()
-      }
-    )
+  it('boot tymly', async () => {
+    const tymlyServices = await tymly.boot({
+      blueprintPaths: [
+        path.resolve(__dirname, './fixtures/blueprints/function-resource-blueprint')
+      ],
+      pluginPaths: [
+        path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+      ]
+    })
+
+    tymlyService = tymlyServices.tymly
+    statebox = tymlyServices.statebox
   })
 
   it('normal function', async () => {

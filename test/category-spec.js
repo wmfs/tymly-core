@@ -10,24 +10,19 @@ describe('Category tests', function () {
   let tymlyService
   let categoryService
 
-  it('should load the cat blueprint (which has some registry keys)', function (done) {
-    tymly.boot(
-      {
-        blueprintPaths: [
-          path.resolve(__dirname, './fixtures/blueprints/cats-blueprint')
-        ],
+  it('should load the cat blueprint (which has some registry keys)', async () => {
+    const tymlyServices = await tymly.boot({
+      blueprintPaths: [
+        path.resolve(__dirname, './fixtures/blueprints/cats-blueprint')
+      ],
 
-        pluginPaths: [
-          path.resolve(__dirname, './fixtures/plugins/cats-plugin')
-        ]
-      },
-      function (err, tymlyServices) {
-        expect(err).to.eql(null)
-        tymlyService = tymlyServices.tymly
-        categoryService = tymlyServices.categories
-        done()
-      }
-    )
+      pluginPaths: [
+        path.resolve(__dirname, './fixtures/plugins/cats-plugin')
+      ]
+    })
+
+    tymlyService = tymlyServices.tymly
+    categoryService = tymlyServices.categories
   })
 
   it('should find the tags are all stored correctly', function () {

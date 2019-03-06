@@ -8,22 +8,17 @@ describe('Cache tests', function () {
 
   let tymlyService, cacheService
 
-  it('should boot Tymly', done => {
-    tymly.boot(
-      {
-        config: {
-          caches: {
-            users: { max: 500 }
-          }
+  it('should boot Tymly', async () => {
+    const tymlyServices = await tymly.boot({
+      config: {
+        caches: {
+          users: { max: 500 }
         }
-      },
-      (err, tymlyServices) => {
-        expect(err).to.eql(null)
-        tymlyService = tymlyServices.tymly
-        cacheService = tymlyServices.caches
-        done()
       }
-    )
+    })
+
+    tymlyService = tymlyServices.tymly
+    cacheService = tymlyServices.caches
   })
 
   it('should set something in the cache', () => {

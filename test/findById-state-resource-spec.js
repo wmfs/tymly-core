@@ -14,20 +14,15 @@ describe('FindById State Resource', function () {
   this.timeout(process.env.TIMEOUT || 5000)
   let tymlyService, statebox
 
-  before('boot tymly', done => {
-    tymly.boot(
-      {
-        blueprintPaths: [
-          path.resolve(__dirname, './fixtures/blueprints/find-by-id-blueprint')
-        ]
-      },
-      (err, tymlyServices) => {
-        expect(err).to.eql(null)
-        tymlyService = tymlyServices.tymly
-        statebox = tymlyServices.statebox
-        done()
-      }
-    )
+  before('boot tymly', async () => {
+    const tymlyServices = await tymly.boot({
+      blueprintPaths: [
+        path.resolve(__dirname, './fixtures/blueprints/find-by-id-blueprint')
+      ]
+    })
+
+    tymlyService = tymlyServices.tymly
+    statebox = tymlyServices.statebox
   })
 
   it('find by unique key', async () => {
