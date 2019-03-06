@@ -8,7 +8,7 @@ describe('Cache tests', function () {
 
   let tymlyService, cacheService
 
-  it('should boot Tymly', async () => {
+  before('boot Tymly', async () => {
     const tymlyServices = await tymly.boot({
       config: {
         caches: {
@@ -21,47 +21,47 @@ describe('Cache tests', function () {
     cacheService = tymlyServices.caches
   })
 
-  it('should set something in the cache', () => {
+  it('set something in the cache', () => {
     cacheService.set('users', 'user1', 'user-one', 1000)
   })
 
-  it('should check \'has\' function', () => {
+  it('check \'has\' function', () => {
     expect(cacheService.has('users', 'user1')).to.eql(true)
     expect(cacheService.has('users', 'user2')).to.eql(false)
   })
 
-  it('should get the cache', () => {
+  it('get the cache', () => {
     expect(cacheService.get('users', 'user1')).to.eql('user-one')
   })
 
-  it('should delete the cache', () => {
+  it('delete the cache', () => {
     cacheService.del('users', 'user1')
   })
 
-  it('should check the key has been removed from the cahce', () => {
+  it('check the key has been removed from the cahce', () => {
     expect(cacheService.has('users', 'user1')).to.eql(false)
   })
 
-  it('should add more things to the cache', () => {
+  it('add more things to the cache', () => {
     cacheService.set('users', 'user1', 'user-one')
     cacheService.set('users', 'user2', 'user-two')
   })
 
-  it('should check the things have been added to the cache', () => {
+  it('check the things have been added to the cache', () => {
     expect(cacheService.has('users', 'user1')).to.eql(true)
     expect(cacheService.has('users', 'user2')).to.eql(true)
   })
 
-  it('should reset the cache', () => {
+  it('reset the cache', () => {
     cacheService.reset('users')
   })
 
-  it('should check the cache is empty', () => {
+  it('check the cache is empty', () => {
     expect(cacheService.has('users', 'user1')).to.eql(false)
     expect(cacheService.has('users', 'user2')).to.eql(false)
   })
 
-  it('should shutdown Tymly', async () => {
+  after('shutdown Tymly', async () => {
     await tymlyService.shutdown()
   })
 })

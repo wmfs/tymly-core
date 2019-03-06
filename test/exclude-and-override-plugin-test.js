@@ -9,7 +9,7 @@ describe('Exclude plugins tests', function () {
 
   let tymlyServices, statebox
 
-  it('should boot Tymly and see all plugins', async () => {
+  it('boot Tymly and see all plugins', async () => {
     const ts = await tymly.boot({
       pluginPaths: path.resolve(__dirname, './fixtures/plugins/*-plugin')
     })

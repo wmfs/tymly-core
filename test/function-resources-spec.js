@@ -13,7 +13,7 @@ describe('Function resources', function () {
   this.timeout(process.env.TIMEOUT || 5000)
   let tymlyService, statebox
 
-  it('boot tymly', async () => {
+  before('boot tymly', async () => {
     const tymlyServices = await tymly.boot({
       blueprintPaths: [
         path.resolve(__dirname, './fixtures/blueprints/function-resource-blueprint')
@@ -76,7 +76,7 @@ describe('Function resources', function () {
     expect(execDescription.errorMessage).to.eql('Cannot find function: unknownFunction in state machine tymlyTest_runUnknownFunction')
   })
 
-  it('shutdown Tymly', async () => {
+  after('shutdown Tymly', async () => {
     await tymlyService.shutdown()
   })
 })

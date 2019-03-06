@@ -4,7 +4,7 @@ const path = require('path')
 const expect = require('chai').expect
 const startupMessages = require('../lib/startup-messages')
 
-describe('Simple Inventory tests', function () {
+describe('Inventory tests', function () {
   const tymly = require('../lib')
   let tymlyService
   let inventoryService
@@ -14,22 +14,17 @@ describe('Simple Inventory tests', function () {
   ]
   this.timeout(process.env.TIMEOUT || 5000)
 
-  it('should boot with an inventory service', function (done) {
-    tymly.boot(
-      {
-        blueprintPaths: blueprintPaths,
-        pluginPaths: pluginPaths
-      },
-      function (err, tymlyServices) {
-        expect(err).to.eql(null)
-        tymlyService = tymlyServices.tymly
-        inventoryService = tymlyServices.inventory
-        done()
-      }
-    )
+  before('boot with an inventory service', async () => {
+    const tymlyServices = await tymly.boot({
+      blueprintPaths: blueprintPaths,
+      pluginPaths: pluginPaths
+    })
+
+    tymlyService = tymlyServices.tymly
+    inventoryService = tymlyServices.inventory
   })
 
-  it('should return inventory contents', function (done) {
+  it('return inventory contents', function (done) {
     inventoryService.collateEverything(
       {
         blueprintPaths: blueprintPaths,
@@ -45,7 +40,7 @@ describe('Simple Inventory tests', function () {
     )
   })
 
-  it('should shutdown Tymly', async () => {
+  after('shutdown Tymly', async () => {
     await tymlyService.shutdown()
   })
 })

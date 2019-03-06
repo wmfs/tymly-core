@@ -13,24 +13,17 @@ describe('list available state machines', () => {
   let tymlyService
   let statebox
 
-  before('boot tymly', done => {
-    tymly.boot(
-      {
-        blueprintPaths: [
-          path.resolve(__dirname, './fixtures/blueprints/timestamp-blueprint')
-        ],
-        pluginPaths: [
-        ]
-      },
-      (err, tymlyServices) => {
-        expect(err).to.eql(null)
+  before('boot tymly', async () => {
+    const tymlyServices = await tymly.boot({
+      blueprintPaths: [
+        path.resolve(__dirname, './fixtures/blueprints/timestamp-blueprint')
+      ],
+      pluginPaths: [
+      ]
+    })
 
-        tymlyService = tymlyServices.tymly
-        statebox = tymlyServices.statebox
-
-        done()
-      }
-    )
+    tymlyService = tymlyServices.tymly
+    statebox = tymlyServices.statebox
   })
 
   it('available-resources state resource', async () => {
