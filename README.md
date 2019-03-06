@@ -22,7 +22,7 @@ $ npm install tymly --save
 ```javascript
 const tymly = require('tymly')
 
-tymly.boot(
+const tymlyServices = await tymly.boot(
   {
     // Blueprints are structured directories that describe a business function.
     // They contain 'state-machines' (e.g. Finite State Machines expressed in JSON as per Amazon State Machine specification: http://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-state-machine-structure.html)
@@ -41,23 +41,15 @@ tymly.boot(
       '/tymly/plugins/tymly-pg-plugin'   // Persist to PostgreSQL instead of the default in-memory solution
     ],
     excludePlugins: 'the-thing-that-should-not-be-plugin'
-  },
-
-  // Callback once everything has booted (or not)
-  function (err, services) {
-    if (err) {
-      // Handle something going wrong
-      console.error(err)
-    } else {
-      // Do something with those services...
-      // (e.g. the 'tymly-express-plugin' provides an Express-powered 'server' service)
-      const port = 3000
-      services.server.listen(port, function () {
-        console.log('Example app listening on port ' + port);
-      })
-    }
   }
 )
+
+// Do something with those services...
+// (e.g. the 'tymly-express-plugin' provides an Express-powered 'server' service)
+const port = 3000
+services.server.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+})
 ```
 
 ## <a name="why"></a>Why?
