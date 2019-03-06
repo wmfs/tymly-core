@@ -1,3 +1,35 @@
+# [1.84.0](https://github.com/wmfs/tymly-core/compare/v1.83.1...v1.84.0) (2019-03-06)
+
+
+### ✨ Features
+
+* **boot:** tymly.boot's callback parameter is now optional, you can await instead if you wish ([5406ff1](https://github.com/wmfs/tymly-core/commit/5406ff1))
+
+
+### 🐛 Bug Fixes
+
+* **function-resolver:** Do two phase look up on the function name. If not found, prepend namespace a ([3e84b26](https://github.com/wmfs/tymly-core/commit/3e84b26))
+
+
+### 📦 Code Refactoring
+
+* **boot:** Reordered boot sequentce to bail early ([011ed19](https://github.com/wmfs/tymly-core/commit/011ed19))
+
+
+### 🚨 Tests
+
+* **function-resolver:** Correct test ([e5f62b2](https://github.com/wmfs/tymly-core/commit/e5f62b2))
+
+
+### ♻️ Chores
+
+* **deps:** Bump [@wmfs](https://github.com/wmfs)/tymly-statelint from 1.6.1 to 1.6.2 ([0e55df9](https://github.com/wmfs/tymly-core/commit/0e55df9))
+
+
+### 💎 Styles
+
+* **get-lost-aron:** Lint fix ([e3d9743](https://github.com/wmfs/tymly-core/commit/e3d9743))
+
 ## [1.83.1](https://github.com/wmfs/tymly-core/compare/v1.83.0...v1.83.1) (2019-02-26)
 
 
