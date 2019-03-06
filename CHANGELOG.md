@@ -1,3 +1,17 @@
+## [1.84.1](https://github.com/wmfs/tymly-core/compare/v1.84.0...v1.84.1) (2019-03-06)
+
+
+### 🐛 Bug Fixes
+
+* **boot:** Fix typo :( ([c4a770b](https://github.com/wmfs/tymly-core/commit/c4a770b))
+* **services:** None of these services do anything asynchronous, so bin out callback param from boot ([0f169f5](https://github.com/wmfs/tymly-core/commit/0f169f5))
+
+
+### 📦 Code Refactoring
+
+* **boot:** Rework booter so service.boot can be called without a callback ([f9ee628](https://github.com/wmfs/tymly-core/commit/f9ee628))
+* **test:** Convert tymly.boot to callback-less ([2183dea](https://github.com/wmfs/tymly-core/commit/2183dea))
+
 # [1.84.0](https://github.com/wmfs/tymly-core/compare/v1.83.1...v1.84.0) (2019-03-06)
 
 
