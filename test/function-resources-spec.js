@@ -78,7 +78,7 @@ describe('Function resources', function () {
 
     expect(execDescription.status).to.eql('FAILED')
     expect(execDescription.errorCode).to.eql('UNKNOWN_FUNCTION')
-    expect(execDescription.errorMessage).to.eql('Cannot find function: tymlyTest_unknownFunction in state machine tymlyTest_runUnknownFunction')
+    expect(execDescription.errorMessage).to.eql('Cannot find function: unknownFunction in state machine tymlyTest_runUnknownFunction')
   })
 
   it('shutdown Tymly', async () => {
