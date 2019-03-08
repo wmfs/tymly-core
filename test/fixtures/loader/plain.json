@@ -1,0 +1,8 @@
+{
+  "value": "string",
+  "array": [1,2,3],
+  "obj": {
+    "a": "one",
+    "b": "two"
+  }
+}
