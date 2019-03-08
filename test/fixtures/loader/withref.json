@@ -1,0 +1,7 @@
+{
+  "value": "string",
+  "array": [1,2,3],
+  "obj": {
+    "$tymlyRef": "file://somefile.json"
+  }
+}
