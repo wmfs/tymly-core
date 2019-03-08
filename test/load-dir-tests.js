@@ -20,12 +20,12 @@ describe('loadDir loader test', () => {
     loadDir(
       path.resolve(testDir, 'cats-blueprint'),
       components,
+      tymlyRefs,
       {
         quiet: true,
         expectModule: false,
         expectedMetaFilename: 'blueprint.json',
         mandatoryMetaKeys: ['name', 'version', 'namespace'],
-        tymlyRefs: tymlyRefs
       }
     )
 
@@ -43,12 +43,12 @@ describe('loadDir loader test', () => {
     loadDir(
       path.resolve(testDir, 'cats-blueprint-with-ref'),
       components,
+      tymlyRefs,
       {
         quiet: true,
         expectModule: false,
         expectedMetaFilename: 'blueprint.json',
-        mandatoryMetaKeys: ['name', 'version', 'namespace'],
-        tymlyRefs: tymlyRefs
+        mandatoryMetaKeys: ['name', 'version', 'namespace']
       }
     )
 
