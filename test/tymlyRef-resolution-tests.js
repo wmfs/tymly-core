@@ -15,6 +15,15 @@ describe('TymlyRef resolution', () => {
     id: 'inner',
     name: 'inner'
   }
+  const between = {
+    blueprintName: 'withRef',
+    blueprintVersion: '1.0',
+    namespace: 'refResolution',
+    id: 'between',
+    name: 'middle',
+    description: 'sits in the middle',
+    contents: inner
+  }
 
   const goodTests = [
     [
@@ -42,15 +51,22 @@ describe('TymlyRef resolution', () => {
     [
       'nested ref',
       'with-refs-in-refs-blueprint',
-      {
-        blueprintName: 'withRef',
-        blueprintVersion: '1.0',
-        namespace: 'refResolution',
-        id: 'between',
-        name: 'middle',
-        description: 'sits in the middle',
-        contents: inner
-      }
+      between
+    ],
+    [
+      'multiple nested ref',
+      'with-multiple-refs-in-refs-blueprint',
+      [
+        between,
+        {
+          blueprintName: 'withRef',
+          blueprintVersion: '1.0',
+          namespace: 'refResolution',
+          id: 'shim',
+          name: 'shim',
+          contents: between
+        }
+      ]
     ]
   ]
 
