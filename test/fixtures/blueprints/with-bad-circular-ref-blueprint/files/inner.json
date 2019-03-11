@@ -1,0 +1,6 @@
+{
+  "name": "inner",
+  "content": {
+    "$tymlyRef": "files:refResolution_outer"
+  }
+}

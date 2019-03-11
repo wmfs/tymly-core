@@ -2,7 +2,9 @@
 
 const tymly = require('./../lib')
 const path = require('path')
-const expect = require('chai').expect
+const chai = require('chai')
+chai.use(require('chai-string'))
+const expect = chai.expect
 
 describe('TymlyRef resolution', () => {
   const probePluginPath = path.resolve(__dirname, 'fixtures/plugins/with-ref-plugin')
@@ -90,7 +92,13 @@ describe('TymlyRef resolution', () => {
       'bad reference name',
       'with-bad-ref-name-blueprint',
       'Error: Could not resolve \'files:refResolution_inner\' in refResolution_outer'
+    ],
+    [
+      'circular reference',
+      'with-bad-circular-ref-blueprint',
+      'Error: Circular dependency in '
     ]
+
   ]
 
   describe('Bad references', () => {
@@ -100,8 +108,9 @@ describe('TymlyRef resolution', () => {
           await tymly.boot({
             blueprintPaths: [ path.resolve(bpDir, bp) ]
           })
+          expect.fail('Tymly Ref should have failed')
         } catch (err) {
-          expect(err.message).to.eql(error)
+          expect(err.message).to.startWith(error)
         }
       }) // it ...
     } // for ...
