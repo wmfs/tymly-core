@@ -1,0 +1,8 @@
+{
+  "name": "outer",
+  "description": "a file which has a tymly ref to another file",
+  "contents": {
+    "once": { "$tymlyRef": "files:refResolution_inner" },
+    "again": { "$tymlyRef": "files:refResolution_inner" }
+  }
+}

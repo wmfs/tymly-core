@@ -1,0 +1,8 @@
+{
+  "namespace": "refResolution",
+  "name": "withRef",
+  "version": "1.0",
+
+  "label": "TymlyRef Test Blueprint",
+  "author": "Jez Higgins"
+}
