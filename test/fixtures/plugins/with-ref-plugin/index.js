@@ -4,5 +4,5 @@ module.exports = {
   author: 'Tim Needham',
   version: '1.0',
 
-  organisation: 'Tymly',
+  organisation: 'Tymly'
 }

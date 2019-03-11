@@ -25,7 +25,7 @@ describe('loadDir loader test', () => {
         quiet: true,
         expectModule: false,
         expectedMetaFilename: 'blueprint.json',
-        mandatoryMetaKeys: ['name', 'version', 'namespace'],
+        mandatoryMetaKeys: ['name', 'version', 'namespace']
       }
     )
 
@@ -65,5 +65,4 @@ describe('loadDir loader test', () => {
       }
     })
   })
-
 })
