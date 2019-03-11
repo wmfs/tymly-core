@@ -16,7 +16,7 @@ describe('TymlyRef resolution', () => {
     name: 'inner'
   }
 
-  const tests = [
+  const goodTests = [
     [
       'good reference',
       'with-good-ref-blueprint',
@@ -33,36 +33,61 @@ describe('TymlyRef resolution', () => {
     ],
     [
       'reference the same file twice',
-      'with-two-good-refs-blueprint', {
+      'with-two-good-refs-blueprint',
+      {
         once: inner,
         again: inner
+      }
+    ],
+    [
+      'nested ref',
+      'with-refs-in-refs-blueprint',
+      {
+        blueprintName: 'withRef',
+        blueprintVersion: '1.0',
+        namespace: 'refResolution',
+        id: 'between',
+        name: 'middle',
+        description: 'sits in the middle',
+        contents: inner
       }
     ]
   ]
 
-  for (const [label, bp, contents] of tests) {
-    it(label, async () => {
-      const tymlyServices = await tymly.boot({
-        pluginPaths: [ probePluginPath ],
-        blueprintPaths: [ path.resolve(bpDir, bp) ]
+  describe('Good references', () => {
+    for (const [label, bp, contents] of goodTests) {
+      it(label, async () => {
+        const tymlyServices = await tymly.boot({
+          pluginPaths: [ probePluginPath ],
+          blueprintPaths: [ path.resolve(bpDir, bp) ]
+        })
+
+        const files = tymlyServices.probe.files
+
+        expect(files.refResolution_outer.contents).to.eql(contents)
       })
-
-      const files = tymlyServices.probe.files
-
-      expect(Object.keys(files).length).to.eql(2)
-      expect(files.refResolution_outer.contents).to.eql(contents)
-    })
-  }
-
-  it('bad reference', async () => {
-    try {
-      await tymly.boot({
-        blueprintPaths: [
-          path.resolve(bpDir, 'with-bad-ref-blueprint')
-        ]
-      })
-    } catch (err) {
-      expect(err.message).to.eql('Error: Could not resolve \'files:refResolution_inner\' in refResolution_outer')
     }
   })
+
+  const badTests = [
+    [
+      'bad reference name',
+      'with-bad-ref-name-blueprint',
+      'Error: Could not resolve \'files:refResolution_inner\' in refResolution_outer'
+    ]
+  ]
+
+  describe('Bad references', () => {
+    for (const [label, bp, error] of badTests) {
+      it(label, async () => {
+        try {
+          await tymly.boot({
+            blueprintPaths: [ path.resolve(bpDir, bp) ]
+          })
+        } catch (err) {
+          expect(err.message).to.eql(error)
+        }
+      }) // it ...
+    } // for ...
+  }) // describe
 })
