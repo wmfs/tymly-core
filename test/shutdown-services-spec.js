@@ -41,7 +41,8 @@ describe('Shutdown services tests', function () {
         'categories',
         'statebox',
         'testService1',
-        'testService2'
+        'testService2',
+        'probe'
       ]
     )
     expect(testService3.bootOrder).to.eql(
