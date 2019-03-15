@@ -1,3 +1,59 @@
+# [1.85.0](https://github.com/wmfs/tymly-core/compare/v1.84.1...v1.85.0) (2019-03-15)
+
+
+### ✨ Features
+
+* **tymlyRef:** Check for circular dependencies ([090b3b0](https://github.com/wmfs/tymly-core/commit/090b3b0))
+* **tymlyRef:** Find $tymlyRefs in loaded json files ([bb3a60a](https://github.com/wmfs/tymly-core/commit/bb3a60a))
+* **tymlyRef:** First pass tymlyRef resolution. ([beea3bc](https://github.com/wmfs/tymly-core/commit/beea3bc))
+* **tymlyRef:** Load tymlyRef resolvers dynamically. ([1a52b5c](https://github.com/wmfs/tymly-core/commit/1a52b5c))
+* **tymlyRef:** Order resolutions ([833f179](https://github.com/wmfs/tymly-core/commit/833f179))
+* **tymlyRef:** Pass refs up out of the boot load ([a7d5e8f](https://github.com/wmfs/tymly-core/commit/a7d5e8f))
+* **tymlyRef:** Second-pass tymlyRef resolution ([c5f1fd9](https://github.com/wmfs/tymly-core/commit/c5f1fd9))
+* **tymlyRef:** tymlyRef function calls can pass parameters ([8f7e1d1](https://github.com/wmfs/tymly-core/commit/8f7e1d1))
+* **tymlyRefs:** Pass refs out of loadDir ([77873ed](https://github.com/wmfs/tymly-core/commit/77873ed))
+
+
+### 🐛 Bug Fixes
+
+* **tymlyRef:** Actually, don't make it an option to loadDir make it a parameter ([fb0bba4](https://github.com/wmfs/tymly-core/commit/fb0bba4))
+* **tymlyRef:** Fix fat-finger spelling mistake ([3000afd](https://github.com/wmfs/tymly-core/commit/3000afd))
+* **tymlyRef:** We don't need to try and order resolutions. ([6a96a2a](https://github.com/wmfs/tymly-core/commit/6a96a2a))
+* Don't need to pass messages into thirdPass ([b100bb6](https://github.com/wmfs/tymly-core/commit/b100bb6))
+
+
+### 📦 Code Refactoring
+
+* **category:** Simplified category service boot ([e0c2dc3](https://github.com/wmfs/tymly-core/commit/e0c2dc3))
+* **inventory:** Use Object.entries to simplify a load of loops ([baccbe2](https://github.com/wmfs/tymly-core/commit/baccbe2))
+* **loader:** Extract functions from jsonFileLoader ([45e7434](https://github.com/wmfs/tymly-core/commit/45e7434))
+* **loader:** Reworked if ladders to loops ([36f93af](https://github.com/wmfs/tymly-core/commit/36f93af))
+* **statebox:** Refactor statebox.boot so it doesn't use a callback ([9d7fd6b](https://github.com/wmfs/tymly-core/commit/9d7fd6b))
+* **tests:** Bit of test grooming ([e641652](https://github.com/wmfs/tymly-core/commit/e641652))
+* **tymlyRef:** Make boot sequence more explicit in code ([ec7800b](https://github.com/wmfs/tymly-core/commit/ec7800b))
+* **tymlyRef:** Simplify so we can start looking at resolution order ([56969cb](https://github.com/wmfs/tymly-core/commit/56969cb))
+
+
+### 📚 Documentation
+
+* **readme:** Update for new tymly.boot ([5217705](https://github.com/wmfs/tymly-core/commit/5217705))
+
+
+### 🚨 Tests
+
+* **load-dir:** Test around load dir ([e3b32b8](https://github.com/wmfs/tymly-core/commit/e3b32b8))
+* **loader:** JSON loader test ([eb19128](https://github.com/wmfs/tymly-core/commit/eb19128))
+* **run-function-state-resource:** Better test names ([1e9c7f6](https://github.com/wmfs/tymly-core/commit/1e9c7f6))
+* **tymlyRef:** Correct for extra test service ([2e24caf](https://github.com/wmfs/tymly-core/commit/2e24caf))
+* **tymlyRef:** Further tests ([b3fab75](https://github.com/wmfs/tymly-core/commit/b3fab75))
+
+
+### 💎 Styles
+
+* **biscuits:** Linty McLintington ([690b7f2](https://github.com/wmfs/tymly-core/commit/690b7f2))
+* **tymlyRef:** lint fix ([29796f3](https://github.com/wmfs/tymly-core/commit/29796f3))
+* Fix code-factor warning. ([63f83c1](https://github.com/wmfs/tymly-core/commit/63f83c1))
+
 ## [1.84.1](https://github.com/wmfs/tymly-core/compare/v1.84.0...v1.84.1) (2019-03-06)
 
 
