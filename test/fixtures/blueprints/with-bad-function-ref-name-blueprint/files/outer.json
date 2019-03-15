@@ -1,0 +1,7 @@
+{
+  "name": "outer",
+  "description": "a file which has a tymly ref to another file",
+  "contents": {
+    "$tymlyRef": "function:refResolution_doesNotExist"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "middle",
+  "description": "sits in the middle",
+  "contents": {
+    "$tymlyRef": "files:refResolution_inner"
+  }
+}

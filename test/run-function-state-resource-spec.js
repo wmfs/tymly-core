@@ -13,26 +13,21 @@ describe('Run-function-state resource', function () {
   this.timeout(process.env.TIMEOUT || 5000)
   let tymlyService, statebox
 
-  it('boot tymly', done => {
-    tymly.boot(
-      {
-        blueprintPaths: [
-          path.resolve(__dirname, './fixtures/blueprints/run-function-blueprint')
-        ],
-        pluginPaths: [
-          path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
-        ]
-      },
-      (err, tymlyServices) => {
-        expect(err).to.eql(null)
-        tymlyService = tymlyServices.tymly
-        statebox = tymlyServices.statebox
-        done()
-      }
-    )
+  before('boot tymly', async () => {
+    const tymlyServices = await tymly.boot({
+      blueprintPaths: [
+        path.resolve(__dirname, './fixtures/blueprints/run-function-blueprint')
+      ],
+      pluginPaths: [
+        path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+      ]
+    })
+
+    tymlyService = tymlyServices.tymly
+    statebox = tymlyServices.statebox
   })
 
-  it('should run the run function state machine with the normal function', async () => {
+  it('run a normal function', async () => {
     const execDescription = await statebox.startExecution(
       { options: { name: 'Jim' } },
       NORMAL_STATE_MACHINE_NAME,
@@ -47,7 +42,7 @@ describe('Run-function-state resource', function () {
     expect(execDescription.ctx.userId).to.eql('jimmy2012')
   })
 
-  it('should run the run function state machine with the hello world function', async () => {
+  it('run hello world function', async () => {
     const execDescription = await statebox.startExecution(
       {},
       HELLO_WORLD_STATE_MACHINE_NAME,
@@ -58,7 +53,7 @@ describe('Run-function-state resource', function () {
     expect(execDescription.ctx.result).to.eql('Hello World.')
   })
 
-  it('should run the run function state machine with the callback function', async () => {
+  it('run with a callback function', async () => {
     const execDescription = await statebox.startExecution(
       { options: { age: '28' } },
       CALLBACK_STATE_MACHINE_NAME,
@@ -69,7 +64,7 @@ describe('Run-function-state resource', function () {
     expect(execDescription.ctx.result).to.eql('Hello World.')
   })
 
-  it('should run the run function state machine with the unknown function', async () => {
+  it('run an unknown function', async () => {
     const execDescription = await statebox.startExecution(
       {},
       UNKNOWN_STATE_MACHINE_NAME,
@@ -81,7 +76,7 @@ describe('Run-function-state resource', function () {
     expect(execDescription.errorMessage).to.eql('Cannot find function: tymlyTest_unknownFunction')
   })
 
-  it('shutdown Tymly', async () => {
+  after('shutdown Tymly', async () => {
     await tymlyService.shutdown()
   })
 })
