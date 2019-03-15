@@ -6,7 +6,7 @@ const chai = require('chai')
 chai.use(require('chai-string'))
 const expect = chai.expect
 
-describe('TymlyRef resolution', () => {
+describe('TymlyRef first-stage resolution', () => {
   const probePluginPath = path.resolve(__dirname, 'fixtures/plugins/with-ref-plugin')
   const bpDir = path.resolve(__dirname, 'fixtures/blueprints')
 
@@ -91,7 +91,7 @@ describe('TymlyRef resolution', () => {
     [
       'bad reference name',
       'with-bad-ref-name-blueprint',
-      'Error: Could not resolve \'files:refResolution_inner\' in refResolution_outer'
+      'Error: Could not resolve files:refResolution_inner in files:refResolution_outer'
     ],
     [
       'circular reference',
