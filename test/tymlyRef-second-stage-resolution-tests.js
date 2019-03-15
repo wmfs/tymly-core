@@ -40,10 +40,10 @@ describe('TymlyRef second-stage resolution', () => {
     ],
     [
       'function reference the same file twice',
-      'with-two-function-refs-blueprint',
+      'with-parameterised-function-refs-blueprint',
       {
-        once: inner,
-        again: inner
+        once: { message: 'Hello Sailor!' },
+        again: { message: 'Call me' }
       }
     ],
     [
