@@ -69,6 +69,16 @@ describe('TymlyRef first-stage resolution', () => {
           contents: between
         }
       ]
+    ],
+    [
+      'wildcard namespace reference',
+      'with-wildcard-namespace-ref-blueprint',
+      [ inner ]
+    ],
+    [
+      'wildcard name reference',
+      'with-wildcard-name-ref-blueprint',
+      [ inner ]
     ]
   ]
 
