@@ -1,3 +1,21 @@
+# [1.86.0](https://github.com/wmfs/tymly-core/compare/v1.85.0...v1.86.0) (2019-03-18)
+
+
+### ✨ Features
+
+* **tymlyRef:** First stage resolution can use * as namespace or name wildcard/ ([356199c](https://github.com/wmfs/tymly-core/commit/356199c))
+* **tymlyRef:** Second-pass tymlyRef functions can be async. ([0aedbdb](https://github.com/wmfs/tymly-core/commit/0aedbdb))
+
+
+### ♻️ Chores
+
+* **release:** 1.85.0 [skip ci] ([c318e3a](https://github.com/wmfs/tymly-core/commit/c318e3a))
+
+
+### 💎 Styles
+
+* **lint:** #classic ([6f8aafc](https://github.com/wmfs/tymly-core/commit/6f8aafc))
+
 # [1.85.0](https://github.com/wmfs/tymly-core/compare/v1.84.1...v1.85.0) (2019-03-15)
 
 
