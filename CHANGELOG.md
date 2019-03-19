@@ -1,3 +1,10 @@
+# [1.87.0](https://github.com/wmfs/tymly-core/compare/v1.86.0...v1.87.0) (2019-03-19)
+
+
+### ✨ Features
+
+* **tymly-statelint:** Move to tymly-statelint 1.7.0. Validates function: tasks too. ([a116ad6](https://github.com/wmfs/tymly-core/commit/a116ad6))
+
 # [1.86.0](https://github.com/wmfs/tymly-core/compare/v1.85.0...v1.86.0) (2019-03-18)
 
 
