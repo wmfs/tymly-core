@@ -1,3 +1,10 @@
+# [1.88.0](https://github.com/wmfs/tymly-core/compare/v1.87.0...v1.88.0) (2019-03-20)
+
+
+### ✨ Features
+
+* **deps:** ModuleResources no longer need to take a callback, and maybe async or return a promise. ([a4dea64](https://github.com/wmfs/tymly-core/commit/a4dea64))
+
 # [1.87.0](https://github.com/wmfs/tymly-core/compare/v1.86.0...v1.87.0) (2019-03-19)
 
 
