@@ -37,7 +37,7 @@
     "nanoid": "2.0.1",
     "read-pkg-up": "4.0.0",
     "underscore-query": "3.3.2",
-    "upath": "1.1.0",
+    "upath": "1.1.2",
     "uuid": "3.3.2"
   },
   "devDependencies": {
