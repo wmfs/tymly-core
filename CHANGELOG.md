@@ -1,3 +1,15 @@
+## [1.90.1](https://github.com/wmfs/tymly-core/compare/v1.90.0...v1.90.1) (2019-03-21)
+
+
+### 🐛 Bug Fixes
+
+* Add resource config schema for set-context-data state resource. ([90659a5](https://github.com/wmfs/tymly-core/commit/90659a5))
+
+
+### ♻️ Chores
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/statebox requirement from 1.47.1 to 1.47.2 ([03da2e2](https://github.com/wmfs/tymly-core/commit/03da2e2))
+
 # [1.90.0](https://github.com/wmfs/tymly-core/compare/v1.89.0...v1.90.0) (2019-03-21)
 
 
