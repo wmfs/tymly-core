@@ -1,3 +1,10 @@
+## [1.90.2](https://github.com/wmfs/tymly-core/compare/v1.90.1...v1.90.2) (2019-03-21)
+
+
+### 🐛 Bug Fixes
+
+* Pull in statebox 1.47.3 ([72397dd](https://github.com/wmfs/tymly-core/commit/72397dd))
+
 ## [1.90.1](https://github.com/wmfs/tymly-core/compare/v1.90.0...v1.90.1) (2019-03-21)
 
 
