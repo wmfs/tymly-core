@@ -21,7 +21,7 @@
   },
   "main": "./lib/index.js",
   "dependencies": {
-    "@wmfs/statebox": "1.47.1",
+    "@wmfs/statebox": "1.47.2",
     "@wmfs/tymly-statelint": "1.8.0",
     "async": "2.6.1",
     "boom": "7.3.0",
