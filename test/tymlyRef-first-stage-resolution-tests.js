@@ -79,6 +79,12 @@ describe('TymlyRef first-stage resolution', () => {
       'wildcard name reference',
       'with-wildcard-name-ref-blueprint',
       [ inner ]
+    ],
+    [ 'reference with JSONPath selection',
+      'with-good-ref-and-jsonpath-blueprint',
+      {
+        name: 'the subsection'
+      }
     ]
   ]
 
