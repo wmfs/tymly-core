@@ -1,3 +1,10 @@
+## [1.91.1](https://github.com/wmfs/tymly-core/compare/v1.91.0...v1.91.1) (2019-03-28)
+
+
+### 🐛 Bug Fixes
+
+* **tymlyRef:** Don't apply path to a null object. ([aba5cc8](https://github.com/wmfs/tymly-core/commit/aba5cc8))
+
 # [1.91.0](https://github.com/wmfs/tymly-core/compare/v1.90.2...v1.91.0) (2019-03-28)
 
 
