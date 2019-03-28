@@ -80,11 +80,39 @@ describe('TymlyRef first-stage resolution', () => {
       'with-wildcard-name-ref-blueprint',
       [ inner ]
     ],
-    [ 'reference with JSONPath selection',
+    [
+      'reference with JSONPath selection',
       'with-good-ref-and-jsonpath-blueprint',
       {
         name: 'the subsection'
       }
+    ],
+    [
+      'reference with JSONPath Array selection',
+      'with-good-ref-and-jsonpath-array-blueprint',
+      [
+        {
+          name: 'the before subsection'
+        },
+        {
+          name: 'the subsection'
+        },
+        {
+          name: 'the next subsection'
+        }
+      ]
+    ],
+    [
+      'reference with JSONPath Array subselect',
+      'with-good-ref-and-jsonpath-array-subselect-blueprint',
+      [
+        {
+          name: 'the subsection'
+        },
+        {
+          name: 'the next subsection'
+        }
+      ]
     ]
   ]
 

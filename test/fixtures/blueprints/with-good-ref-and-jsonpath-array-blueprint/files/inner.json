@@ -1,0 +1,14 @@
+{
+  "name": "inner",
+  "choose": [
+    {
+      "name": "the before subsection"
+    },
+    {
+      "name": "the subsection"
+    },
+    {
+      "name": "the next subsection"
+    }
+  ]
+}
