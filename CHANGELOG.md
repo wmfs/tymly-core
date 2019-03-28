@@ -1,3 +1,26 @@
+# [1.91.0](https://github.com/wmfs/tymly-core/compare/v1.90.2...v1.91.0) (2019-03-28)
+
+
+### ✨ Features
+
+* **tymlyRef:** Add jsonPath select to firstPass tymly refs ([b825bf3](https://github.com/wmfs/tymly-core/commit/b825bf3))
+
+
+### 🛠 Builds
+
+* **deps:** Bump all the deps - notably statebox to 1.48.0 and tymly-statelint to 1.10.0 ([f1ad1ce](https://github.com/wmfs/tymly-core/commit/f1ad1ce))
+* **deps-dev:** Bumped codecov, mocha, and nyc ([14f00b1](https://github.com/wmfs/tymly-core/commit/14f00b1))
+
+
+### 🚨 Tests
+
+* tymlyRef jsonpath array select tests ([59ed87d](https://github.com/wmfs/tymly-core/commit/59ed87d))
+
+
+### ♻️ Chores
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/tymly-statelint requirement ([e1c7a5e](https://github.com/wmfs/tymly-core/commit/e1c7a5e))
+
 ## [1.90.2](https://github.com/wmfs/tymly-core/compare/v1.90.1...v1.90.2) (2019-03-21)
 
 
