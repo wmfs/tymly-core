@@ -1,3 +1,20 @@
+# [1.93.0](https://github.com/wmfs/tymly-core/compare/v1.92.0...v1.93.0) (2019-04-14)
+
+
+### ✨ Features
+
+* Model for execution table ([7a8603e](https://github.com/wmfs/tymly-core/commit/7a8603e))
+
+
+### 🐛 Bug Fixes
+
+* Handle callbacks correctly when invoking another state-machine ([84ec38f](https://github.com/wmfs/tymly-core/commit/84ec38f))
+
+
+### ♻️ Chores
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/statebox requirement from 1.48.1 to 1.49.0 ([3e3dc3e](https://github.com/wmfs/tymly-core/commit/3e3dc3e))
+
 # [1.92.0](https://github.com/wmfs/tymly-core/compare/v1.91.1...v1.92.0) (2019-03-28)
 
 
