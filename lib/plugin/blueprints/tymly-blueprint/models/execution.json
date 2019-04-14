@@ -1,0 +1,37 @@
+{
+  "plural": "executions",
+  "primaryKey": ["executionName"],
+  "description": "Statebox executions instances",
+  "type": "object",
+  "properties": {
+    "executionName": {
+      "type": "string"
+    },
+    "ctx": {
+      "type": "string"
+    },
+    "currentStateName": {
+      "type": "string"
+    },
+    "currentResource": {
+      "type": "string"
+    },
+    "stateMachineName": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "executionOptions": {
+      "type": "string"
+    },
+    "parentExecution": {
+      "type": "string"
+    },
+    "childCount": {
+      "type": "integer"
+    }
+  },
+  "required": ["uuid"],
+  "audit": false
+}
