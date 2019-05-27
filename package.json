@@ -23,7 +23,7 @@
   "dependencies": {
     "@wmfs/statebox": "1.49.0",
     "@wmfs/tymly-statelint": "1.10.0",
-    "async": "2.6.2",
+    "async": "3.0.1",
     "boom": "7.3.0",
     "cls-hooked": "4.2.2",
     "debug": "4.1.1",
