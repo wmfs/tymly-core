@@ -1,0 +1,8 @@
+{
+  "label": "System",
+  "description": "System Operations",
+  "style": {
+    "icon": "system",
+    "backgroundColor": "#008800"
+  }
+}
