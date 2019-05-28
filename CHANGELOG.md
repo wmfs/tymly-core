@@ -1,3 +1,10 @@
+# [1.94.0](https://github.com/wmfs/tymly-core/compare/v1.93.0...v1.94.0) (2019-05-28)
+
+
+### ✨ Features
+
+* move system category into core tymly blueprint ([f266ecd](https://github.com/wmfs/tymly-core/commit/f266ecd))
+
 # [1.93.0](https://github.com/wmfs/tymly-core/compare/v1.92.0...v1.93.0) (2019-04-14)
 
 
