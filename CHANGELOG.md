@@ -1,3 +1,17 @@
+## [1.94.1](https://github.com/wmfs/tymly-core/compare/v1.94.0...v1.94.1) (2019-07-02)
+
+
+### 🐛 Bug Fixes
+
+* callback on destory by id even if not found ([8166747](https://github.com/wmfs/tymly-core/commit/8166747))
+
+
+### ♻️ Chores
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/statebox requirement from 1.49.0 to 1.50.0 ([e26479b](https://github.com/wmfs/tymly-core/commit/e26479b))
+* **deps-dev:** update semantic-release requirement ([aeb9abb](https://github.com/wmfs/tymly-core/commit/aeb9abb))
+* **deps-dev:** update semantic-release requirement ([1ad155e](https://github.com/wmfs/tymly-core/commit/1ad155e))
+
 # [1.94.0](https://github.com/wmfs/tymly-core/compare/v1.93.0...v1.94.0) (2019-05-28)
 
 
