@@ -1,3 +1,28 @@
+## [1.94.2](https://github.com/wmfs/tymly-core/compare/v1.94.1...v1.94.2) (2019-07-09)
+
+
+### 🐛 Bug Fixes
+
+* getting PK in deleting by id ([267692d](https://github.com/wmfs/tymly-core/commit/267692d))
+
+
+### 📚 Documentation
+
+* Add CircleCI badge ([9f5671a](https://github.com/wmfs/tymly-core/commit/9f5671a))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** Add CircleCI config ([f6d2e52](https://github.com/wmfs/tymly-core/commit/f6d2e52))
+* **travis:** Remove Travis config ([0f5871b](https://github.com/wmfs/tymly-core/commit/0f5871b))
+
+
+### ♻️ Chores
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/statebox requirement from 1.50.0 to 1.51.0 ([3d83e15](https://github.com/wmfs/tymly-core/commit/3d83e15))
+* **deps-dev:** update mocha requirement from 6.0.2 to 6.1.4 ([8e55bb2](https://github.com/wmfs/tymly-core/commit/8e55bb2))
+* **deps-dev:** update nyc requirement from 13.3.0 to 14.1.1 ([8756114](https://github.com/wmfs/tymly-core/commit/8756114))
+
 ## [1.94.1](https://github.com/wmfs/tymly-core/compare/v1.94.0...v1.94.1) (2019-07-02)
 
 
