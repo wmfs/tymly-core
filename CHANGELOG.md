@@ -1,3 +1,15 @@
+# [1.96.0](https://github.com/wmfs/tymly-core/compare/v1.95.0...v1.96.0) (2019-08-20)
+
+
+### ✨ Features
+
+* collect changelogs for blueprints and store as blueprint components ([5925879](https://github.com/wmfs/tymly-core/commit/5925879))
+
+
+### 💎 Styles
+
+* remove trailing comma ([0938ada](https://github.com/wmfs/tymly-core/commit/0938ada))
+
 # [1.95.0](https://github.com/wmfs/tymly-core/compare/v1.94.2...v1.95.0) (2019-07-11)
 
 
