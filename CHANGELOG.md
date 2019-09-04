@@ -1,3 +1,10 @@
+## [1.96.1](https://github.com/wmfs/tymly-core/compare/v1.96.0...v1.96.1) (2019-09-04)
+
+
+### 🐛 Bug Fixes
+
+* get full reference, check full ref as well ([e59027f](https://github.com/wmfs/tymly-core/commit/e59027f))
+
 # [1.96.0](https://github.com/wmfs/tymly-core/compare/v1.95.0...v1.96.0) (2019-08-20)
 
 
