@@ -1,3 +1,10 @@
+# [1.97.0](https://github.com/wmfs/tymly-core/compare/v1.96.1...v1.97.0) (2019-09-09)
+
+
+### 🛠 Builds
+
+* **deps:** update jsonpath requirement from 1.0.1 to 1.0.2 ([#211](https://github.com/wmfs/tymly-core/issues/211)) ([2dc7583](https://github.com/wmfs/tymly-core/commit/2dc7583))
+
 ## [1.96.1](https://github.com/wmfs/tymly-core/compare/v1.96.0...v1.96.1) (2019-09-04)
 
 
