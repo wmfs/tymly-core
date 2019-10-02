@@ -1,3 +1,15 @@
+## [1.98.1](https://github.com/wmfs/tymly-core/compare/v1.98.0...v1.98.1) (2019-10-02)
+
+
+### 🐛 Bug Fixes
+
+* process ref properties checks if the ref exists first ([978e939](https://github.com/wmfs/tymly-core/commit/978e939))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dev dependancies ([07c2b68](https://github.com/wmfs/tymly-core/commit/07c2b68))
+
 # [1.98.0](https://github.com/wmfs/tymly-core/compare/v1.97.0...v1.98.0) (2019-09-09)
 
 
