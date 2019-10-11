@@ -1,0 +1,11 @@
+{
+  "ReadEmailHost": {
+    "Type": "Task",
+    "Resource": "module:configSetting",
+    "ResourceConfig": {
+      "setting": "email.server.hostname"
+    },
+    "ResultPath": "$.server",
+    "End": true
+  }
+}
