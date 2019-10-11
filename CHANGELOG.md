@@ -1,3 +1,10 @@
+# [1.99.0](https://github.com/wmfs/tymly-core/compare/v1.98.1...v1.99.0) (2019-10-11)
+
+
+### ✨ Features
+
+* Add configSetting state resource. ([](https://github.com/wmfs/tymly-core/commit/8254fb3))
+
 ## [1.98.1](https://github.com/wmfs/tymly-core/compare/v1.98.0...v1.98.1) (2019-10-02)
 
 
