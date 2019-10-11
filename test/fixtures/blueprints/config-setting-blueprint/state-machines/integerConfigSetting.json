@@ -1,0 +1,24 @@
+{
+  "Comment": "Blueprint to get integer config variable",
+  "version": "1.0",
+  "StartAt": "Config",
+  "States": {
+    "Config": {
+      "Type": "Task",
+      "Resource": "module:configSetting",
+      "ResourceConfig": {
+        "setting": "values.integer"
+      },
+      "ResultPath": "$.setting",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

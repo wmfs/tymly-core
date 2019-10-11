@@ -1,0 +1,9 @@
+{
+
+  "namespace": "tymlyTest",
+  "name": "config-setting",
+  "version": "1.0",
+
+  "label": "Config Setting",
+  "organisation": "Tymly"
+}

@@ -1,0 +1,24 @@
+{
+  "Comment": "Blueprint to get bool config variable",
+  "version": "1.0",
+  "StartAt": "Config",
+  "States": {
+    "Config": {
+      "Type": "Task",
+      "Resource": "module:configSetting",
+      "ResourceConfig": {
+        "setting": "values.bool"
+      },
+      "ResultPath": "$.setting",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
