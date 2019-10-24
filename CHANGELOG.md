@@ -1,3 +1,10 @@
+# [1.100.0](https://github.com/wmfs/tymly-core/compare/v1.99.0...v1.100.0) (2019-10-24)
+
+
+### 🛠 Builds
+
+* **deps:** bump nanoid from 2.0.1 to 2.1.5 ([](https://github.com/wmfs/tymly-core/commit/a6ded37))
+
 # [1.99.0](https://github.com/wmfs/tymly-core/compare/v1.98.1...v1.99.0) (2019-10-11)
 
 
