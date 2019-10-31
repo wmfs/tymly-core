@@ -1,0 +1,205 @@
+/* eslint-env mocha */
+
+const tymly = require('./../lib')
+const path = require('path')
+const chai = require('chai')
+chai.use(require('dirty-chai'))
+const expect = chai.expect
+
+const DAY_IN_THE_LIFE_LAUNCHER = 'tymlyTest_launchADayInTheLife'
+const DAY_IN_THE_LIFE = 'tymlyTest_aDayInTheLife'
+const JUSTFAIL_LAUNCHER = 'tymlyTest_launchJustFail'
+const JUSTFAIL = 'tymlyTest_justFail'
+
+describe('Launch-state-machine state resources', function () {
+  this.timeout(process.env.TIMEOUT || 5000)
+
+  describe('positive test - launched state machines runs successfully', () => {
+    let tymlyService
+    let statebox
+    let launched
+
+    before('boot tymly', function (done) {
+      tymly.boot(
+        {
+          blueprintPaths: [
+            path.resolve(__dirname, './fixtures/blueprints/cats-blueprint'),
+            path.resolve(__dirname, './fixtures/blueprints/cats-launcher-blueprint')
+          ],
+
+          pluginPaths: [
+            path.resolve(__dirname, './fixtures/plugins/cats-plugin'),
+            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          ]
+        },
+        function (err, tymlyServices) {
+          expect(err).to.eql(null)
+          tymlyService = tymlyServices.tymly
+          statebox = tymlyServices.statebox
+          done()
+        }
+      )
+    })
+
+    it('launcher completes successfully', async () => {
+      const executionDescription = await statebox.startExecution(
+        {
+          petName: 'Rupert',
+          gender: 'male',
+          hoursSinceLastMotion: 11,
+          hoursSinceLastMeal: 5,
+          petDiary: []
+        }, // input
+        DAY_IN_THE_LIFE_LAUNCHER, // state machine name
+        {
+          sendResponse: 'COMPLETE'
+        }
+      )
+
+      expect(executionDescription.status).to.eql('SUCCEEDED')
+      expect(executionDescription.stateMachineName).to.eql(DAY_IN_THE_LIFE_LAUNCHER)
+      expect(executionDescription.currentStateName).to.eql('Start')
+
+      const launchedResult = executionDescription.ctx.launched
+      expect(launchedResult).to.not.be.null()
+      expect(launchedResult.executionName).to.not.be.null()
+      expect(launchedResult.status).to.eql('RUNNING')
+      expect(launchedResult.startDate).to.not.be.null()
+
+      launched = launchedResult.executionName
+    })
+
+    it('launched state machine completes successfully', async () => {
+      const executionDescription = await statebox.waitUntilStoppedRunning(launched)
+
+      expect(executionDescription.status).to.eql('SUCCEEDED')
+      expect(executionDescription.stateMachineName).to.eql(DAY_IN_THE_LIFE)
+      expect(executionDescription.ctx.hoursSinceLastMeal).to.eql(0)
+      expect(executionDescription.ctx.hoursSinceLastMotion).to.eql(0)
+      expect(executionDescription.ctx.gender).to.eql('male')
+      expect(executionDescription.ctx.petDiary).to.be.an('array')
+      expect(executionDescription.ctx.petDiary[0]).to.equal('Look out, Rupert is waking up!')
+      expect(executionDescription.ctx.petDiary[2]).to.equal('Rupert is walking... where\'s he off to?')
+      expect(executionDescription.ctx.petDiary[6]).to.equal('Shh, Rupert is eating...')
+    })
+
+    after('shutdown Tymly', async () => {
+      await tymlyService.shutdown()
+    })
+  })
+
+  describe('negative test - launched state machine doesn\'t exist', () => {
+    let tymlyService
+    let statebox
+    let launcher
+
+    before('boot tymly', function (done) {
+      tymly.boot(
+        {
+          blueprintPaths: [
+            path.resolve(__dirname, './fixtures/blueprints/cats-launcher-blueprint')
+          ],
+          pluginPaths: [
+            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          ]
+        },
+        function (err, tymlyServices) {
+          expect(err).to.eql(null)
+          tymlyService = tymlyServices.tymly
+          statebox = tymlyServices.statebox
+          done()
+        }
+      )
+    })
+
+    it('start launcher', async () => {
+      const result = await statebox.startExecution(
+        {
+          petName: 'Rupert',
+          gender: 'male',
+          hoursSinceLastMotion: 11,
+          hoursSinceLastMeal: 5,
+          petDiary: []
+        }, // input
+        DAY_IN_THE_LIFE_LAUNCHER, // state machine name
+        {}
+      )
+
+      launcher = result.executionName
+    })
+
+    it('launcher failed', async () => {
+      const executionDescription = await statebox.waitUntilStoppedRunning(launcher)
+
+      expect(executionDescription.status).to.eql('FAILED')
+      expect(executionDescription.errorCode).to.eql('launchStateMachine')
+      expect(executionDescription.stateMachineName).to.eql(DAY_IN_THE_LIFE_LAUNCHER)
+      expect(executionDescription.currentStateName).to.eql('Start')
+    })
+
+    after('shutdown Tymly', async () => {
+      await tymlyService.shutdown()
+    })
+  })
+
+  describe('positive test - launched state machine fails', () => {
+    let tymlyService
+    let statebox
+    let launched
+
+    before('boot tymly', function (done) {
+      tymly.boot(
+        {
+          blueprintPaths: [
+            path.resolve(__dirname, './fixtures/blueprints/failing-blueprint')
+          ],
+          pluginPaths: [
+            path.resolve(__dirname, './fixtures/plugins/justfail-plugin'),
+            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          ]
+        },
+        function (err, tymlyServices) {
+          expect(err).to.eql(null)
+          tymlyService = tymlyServices.tymly
+          statebox = tymlyServices.statebox
+          done()
+        }
+      )
+    })
+
+    it('launcher completes successfully', async () => {
+      const executionDescription = await statebox.startExecution(
+        { }, // input
+        JUSTFAIL_LAUNCHER, // state machine name
+        {
+          sendResponse: 'COMPLETED'
+        }
+      )
+
+      expect(executionDescription.status).to.eql('SUCCEEDED')
+      expect(executionDescription.stateMachineName).to.eql(JUSTFAIL_LAUNCHER)
+      expect(executionDescription.currentStateName).to.eql('Start')
+
+      const launchedResult = executionDescription.ctx
+      expect(launchedResult).to.not.be.null()
+      expect(launchedResult.executionName).to.not.be.null()
+      expect(launchedResult.status).to.eql('RUNNING')
+      expect(launchedResult.startDate).to.not.be.null()
+
+      launched = launchedResult.executionName
+    })
+
+    it('launched state machine fails', async () => {
+      const executionDescription = await statebox.waitUntilStoppedRunning(launched)
+
+      expect(executionDescription.status).to.eql('FAILED')
+      expect(executionDescription.errorCode).to.eql('justFail')
+      expect(executionDescription.stateMachineName).to.eql(JUSTFAIL)
+      expect(executionDescription.currentStateName).to.eql('JustFail')
+    })
+
+    after('shutdown Tymly', async () => {
+      await tymlyService.shutdown()
+    })
+  })
+})
