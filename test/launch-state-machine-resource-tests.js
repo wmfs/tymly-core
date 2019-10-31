@@ -14,7 +14,7 @@ const JUSTFAIL = 'tymlyTest_justFail'
 describe('Launch-state-machine state resources', function () {
   this.timeout(process.env.TIMEOUT || 5000)
 
-  describe('positive test - launched state machines runs successfully', () => {
+  describe('launched state machines runs successfully', () => {
     let tymlyService
     let statebox
     let launched
@@ -88,7 +88,7 @@ describe('Launch-state-machine state resources', function () {
     })
   })
 
-  describe('negative test - launched state machine doesn\'t exist', () => {
+  describe('launched state machine doesn\'t exist', () => {
     let tymlyService
     let statebox
     let launcher
@@ -142,7 +142,7 @@ describe('Launch-state-machine state resources', function () {
     })
   })
 
-  describe('positive test - launched state machine fails', () => {
+  describe('launched state machine fails', () => {
     let tymlyService
     let statebox
     let launched
@@ -196,6 +196,60 @@ describe('Launch-state-machine state resources', function () {
       expect(executionDescription.errorCode).to.eql('justFail')
       expect(executionDescription.stateMachineName).to.eql(JUSTFAIL)
       expect(executionDescription.currentStateName).to.eql('JustFail')
+    })
+
+    after('shutdown Tymly', async () => {
+      await tymlyService.shutdown()
+    })
+  })
+
+  describe('launched state machine gets parent execution name', () => {
+    let tymlyService
+    let statebox
+    let launcher
+    let launched
+
+    before('boot tymly', async () => {
+      const tymlyServices = await tymly.boot(
+        {
+          blueprintPaths: [
+            path.resolve(__dirname, './fixtures/blueprints/launcher-blueprint')
+          ],
+          pluginPaths: [
+            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          ]
+        }
+      )
+      tymlyService = tymlyServices.tymly
+      statebox = tymlyServices.statebox
+    })
+
+    it('launch state machine', async () => {
+      const executionDescription = await statebox.startExecution(
+        { }, // input
+        'tymlyTest_passExecutionNameToLaunched', // state machine name
+        {
+          sendResponse: 'COMPLETE'
+        }
+      )
+
+      expect(executionDescription.status).to.eql('SUCCEEDED')
+
+      const launchedResult = executionDescription.ctx
+      expect(launchedResult).to.not.be.null()
+      expect(launchedResult.executionName).to.not.be.null()
+
+      launched = launchedResult.executionName
+      launcher = executionDescription.executionName
+    })
+
+    it('launched state machine returns parent execution name', async () => {
+      const executionDescription = await statebox.waitUntilStoppedRunning(launched)
+
+      expect(executionDescription.status).to.eql('SUCCEEDED')
+
+      expect(executionDescription.executionName).to.eql(launched)
+      expect(executionDescription.ctx).to.eql(launcher)
     })
 
     after('shutdown Tymly', async () => {

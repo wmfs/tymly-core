@@ -1,0 +1,21 @@
+{
+  "StartAt": "Start",
+  "States": {
+    "Start": {
+      "Type": "Task",
+      "Resource": "module:launchStateMachine",
+      "ResourceConfig": {
+        "stateMachine": "tymlyTest_returnExecutionNameOfParent"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

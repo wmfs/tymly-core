@@ -1,0 +1,9 @@
+{
+  "namespace": "tymlyTest",
+  "name": "launcher",
+  "version": "1.0",
+
+  "organisation": "Tymly",
+  "description": "An example blueprint that launches another blueprint ...",
+  "categories": ["cats", "pets"]
+}
