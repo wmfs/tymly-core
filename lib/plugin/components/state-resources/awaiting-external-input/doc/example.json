@@ -1,0 +1,10 @@
+{
+  "AwaitingHumanInput": {
+    "Type": "Task",
+    "Resource": "module:awaitingExternalInput",
+    "ResourceConfig": {
+    },
+    "ResultPath": "$.result",
+    "Next": "Upserting"
+  }
+}

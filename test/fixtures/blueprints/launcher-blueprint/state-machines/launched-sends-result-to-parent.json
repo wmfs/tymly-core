@@ -1,0 +1,33 @@
+{
+  "StartAt": "LongRunningTask",
+  "States": {
+    "LongRunningTask": {
+      "Type": "Wait",
+      "Seconds": 2,
+      "Next": "Timestamp"
+    },
+    "Timestamp": {
+      "Type": "Task",
+      "Resource": "module:timestamp",
+      "ResultPath": "$.timestamp",
+      "Next": "FlagParent"
+    },
+    "FlagParent": {
+      "Type": "Task",
+      "Resource": "module:sendTaskSuccess",
+      "Parameters": {
+        "executionName.$": "$.launcher.executionName",
+        "result.$": "$.timestamp"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

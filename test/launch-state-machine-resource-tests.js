@@ -209,7 +209,7 @@ describe('Launch-state-machine state resources', function () {
     let launcher
     let launched
 
-    before('boot tymly', async () => {
+    it('boot tymly', async () => {
       const tymlyServices = await tymly.boot(
         {
           blueprintPaths: [
@@ -250,6 +250,68 @@ describe('Launch-state-machine state resources', function () {
 
       expect(executionDescription.executionName).to.eql(launched)
       expect(executionDescription.ctx).to.eql(launcher)
+    })
+
+    after('shutdown Tymly', async () => {
+      await tymlyService.shutdown()
+    })
+  })
+
+  describe('launched state machine sends result to parent execution', async () => {
+    let tymlyService
+    let statebox
+    let parent
+    let launched
+    let launchedResult
+
+    before('boot tymly', async () => {
+      const tymlyServices = await tymly.boot(
+        {
+          blueprintPaths: [
+            path.resolve(__dirname, './fixtures/blueprints/launcher-blueprint')
+          ],
+          pluginPaths: [
+            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          ]
+        }
+      )
+      tymlyService = tymlyServices.tymly
+      statebox = tymlyServices.statebox
+    })
+
+    it('launch state machine', async () => {
+      const parentExecDesc = await statebox.startExecution(
+        { }, // input
+        'tymlyTest_parentWaitsForResult', // state machine name
+        { }
+      )
+
+      parent = parentExecDesc.executionName
+    })
+
+    it('launcher is paused, waiting for result', async () => {
+      const parentExecDesc = await statebox.describeExecution(parent)
+      expect(parentExecDesc.status).to.eql('RUNNING')
+
+      launched = parentExecDesc.ctx.executionName
+    })
+
+    it('wait for launched state machine to complete', async () => {
+      const launchedExecDesc = await statebox.waitUntilStoppedRunning(launched)
+
+      expect(launchedExecDesc.status).to.eql('SUCCEEDED')
+      expect(launchedExecDesc.executionName).to.eql(launched)
+
+      launchedResult = launchedExecDesc.ctx
+    })
+
+    it('launcher completes, returning result passed back from launched', async () => {
+      const parentExecDesc = await statebox.waitUntilStoppedRunning(parent)
+
+      expect(parentExecDesc.status).to.eql('SUCCEEDED')
+      expect(parentExecDesc.executionName).to.eql(parent)
+
+      expect(parentExecDesc.ctx.launchedResult).to.eql(launchedResult)
     })
 
     after('shutdown Tymly', async () => {
