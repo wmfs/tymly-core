@@ -319,7 +319,7 @@ describe('Launch-state-machine state resources', function () {
     })
   })
 
-  describe('sendTaskSuccess fails if execution is not found', async () => {
+  describe('sendTaskSuccess state resource', async () => {
     let tymlyService
     let statebox
 
@@ -338,7 +338,7 @@ describe('Launch-state-machine state resources', function () {
       statebox = tymlyServices.statebox
     })
 
-    it('launch state machine, it fails', async () => {
+    it('fails if invalid execution name', async () => {
       const executionDescription = await statebox.startExecution(
         { }, // input
         'tymlyTest_launchedSendsResultToParent', // state machine name
@@ -348,6 +348,18 @@ describe('Launch-state-machine state resources', function () {
       )
 
       expect(executionDescription.status).to.eql('FAILED')
+    })
+
+    it('doesn\'t fail if invalid execution name when relaxed is true', async () => {
+      const executionDescription = await statebox.startExecution(
+        { }, // input
+        'tymlyTest_relaxedSendTaskSuccess', // state machine name
+        {
+          sendResponse: 'COMPLETE'
+        }
+      )
+
+      expect(executionDescription.status).to.eql('SUCCEEDED')
     })
 
     after('shutdown Tymly', async () => {

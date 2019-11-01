@@ -17,12 +17,12 @@
       "Choices": [
         {
           "Variable": "$.hoursSinceLastMotion",
-          "NumericGreaterThan": "3",
+          "NumericGreaterThan": 3,
           "Next": "WalkingToCatLitter"
         },
         {
           "Variable": "$.hoursSinceLastMeal",
-          "NumericGreaterThan": "2",
+          "NumericGreaterThan": 2,
           "Next": "WalkingToFood"
         }
       ],

@@ -1,0 +1,11 @@
+{
+  "FlagParent": {
+    "Type": "Task",
+    "Resource": "module:sendTaskSuccess",
+    "Parameters": {
+      "executionName.$": "$.launcher.executionName",
+      "result.$": "$.timestamp"
+    },
+    "End": true
+  }
+}
