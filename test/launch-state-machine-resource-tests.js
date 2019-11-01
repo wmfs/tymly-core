@@ -318,4 +318,40 @@ describe('Launch-state-machine state resources', function () {
       await tymlyService.shutdown()
     })
   })
+
+  describe('sendTaskSuccess fails if execution is not found', async () => {
+    let tymlyService
+    let statebox
+
+    before('boot tymly', async () => {
+      const tymlyServices = await tymly.boot(
+        {
+          blueprintPaths: [
+            path.resolve(__dirname, './fixtures/blueprints/launcher-blueprint')
+          ],
+          pluginPaths: [
+            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          ]
+        }
+      )
+      tymlyService = tymlyServices.tymly
+      statebox = tymlyServices.statebox
+    })
+
+    it('launch state machine, it fails', async () => {
+      const executionDescription = await statebox.startExecution(
+        { }, // input
+        'tymlyTest_launchedSendsResultToParent', // state machine name
+        {
+          sendResponse: 'COMPLETE'
+        }
+      )
+
+      expect(executionDescription.status).to.eql('FAILED')
+    })
+
+    after('shutdown Tymly', async () => {
+      await tymlyService.shutdown()
+    })
+  })
 })
