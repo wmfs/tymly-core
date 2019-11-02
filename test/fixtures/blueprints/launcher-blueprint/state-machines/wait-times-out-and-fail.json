@@ -7,12 +7,15 @@
       "ResourceConfig": {
         "stateMachine": "tymlyTest_launchedSendsResultToParent"
       },
+      "ResultPath": "$.launched",
       "Next": "WaitForExternalPrompt"
     },
     "WaitForExternalPrompt": {
       "Type": "Task",
       "Resource": "module:awaitingExternalInput",
-      "ResultPath": "$.launchedResult",
+      "ResourceConfig": {
+        "failAfter": 1
+      },
       "End": true
     }
   },

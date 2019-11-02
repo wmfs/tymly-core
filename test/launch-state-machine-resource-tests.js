@@ -319,6 +319,54 @@ describe('Launch-state-machine state resources', function () {
     })
   })
 
+  describe('parent state machine times out waiting', async () => {
+    let tymlyService
+    let statebox
+
+    before('boot tymly', async () => {
+      const tymlyServices = await tymly.boot(
+        {
+          blueprintPaths: [
+            path.resolve(__dirname, './fixtures/blueprints/launcher-blueprint')
+          ],
+          pluginPaths: [
+            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          ]
+        }
+      )
+      tymlyService = tymlyServices.tymly
+      statebox = tymlyServices.statebox
+    })
+
+    it('time out and continue', async () => {
+      const parentExecDesc = await statebox.startExecution(
+        { }, // input
+        'tymlyTest_waitTimesOutAndContinue', // state machine name
+        {
+          sendResponse: 'COMPLETED'
+        }
+      )
+      expect(parentExecDesc.status).to.eql('SUCCEEDED')
+      expect(parentExecDesc.ctx.launchedResult).to.be.undefined()
+      expect(parentExecDesc.ctx.good).to.eql('stuff')
+    })
+
+    it('time out and fail', async () => {
+      const parentExecDesc = await statebox.startExecution(
+        {}, // input
+        'tymlyTest_waitTimesOutAndFail', // state machine name
+        {
+          sendResponse: 'COMPLETED'
+        }
+      )
+      expect(parentExecDesc.status).to.eql('FAILED')
+    })
+
+    after('shutdown Tymly', async () => {
+      await tymlyService.shutdown()
+    })
+  })
+
   describe('sendTaskSuccess state resource', async () => {
     let tymlyService
     let statebox
