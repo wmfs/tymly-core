@@ -414,4 +414,75 @@ describe('Launch-state-machine state resources', function () {
       await tymlyService.shutdown()
     })
   })
+
+  describe('sendTaskHeartbeat state resource', async () => {
+    let tymlyService
+    let statebox
+    let parentExecution
+
+    before('boot tymly', async () => {
+      const tymlyServices = await tymly.boot(
+        {
+          blueprintPaths: [
+            path.resolve(__dirname, './fixtures/blueprints/launcher-blueprint')
+          ],
+          pluginPaths: [
+            path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          ]
+        }
+      )
+      tymlyService = tymlyServices.tymly
+      statebox = tymlyServices.statebox
+    })
+
+    it('launched execution sends heartbeat to parent', async () => {
+      const executionDescription = await statebox.startExecution(
+        { }, // input
+        'tymlyTest_parentGetsUpdates', // state machine name
+        {
+          sendResponse: 'IMMEDIATELY'
+        }
+      )
+
+      parentExecution = executionDescription.executionName
+      expect(executionDescription.status).to.eql('RUNNING')
+    })
+
+    it('check for first update', async () => {
+      await pause()
+
+      const executionDescription = await statebox.describeExecution(parentExecution)
+      expect(executionDescription.status).to.eql('RUNNING')
+      expect(executionDescription.ctx.launchedResult).to.equals('STARTED')
+    })
+
+    it('wait for second update', async () => {
+      await pause()
+      await pause()
+
+      const executionDescription = await statebox.describeExecution(parentExecution)
+      expect(executionDescription.status).to.eql('RUNNING')
+      expect(executionDescription.ctx.launchedResult).to.equals('UPDATED')
+    })
+
+    it('complete the parent execution', async () => {
+      const executionDescription = await statebox.sendTaskSuccess(
+        parentExecution,
+        null,
+        {}
+      )
+
+      expect(executionDescription.status).to.eql('SUCCEEDED')
+    })
+
+    after('shutdown Tymly', async () => {
+      await tymlyService.shutdown()
+    })
+  })
 })
+
+function pause () {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => resolve(), 1000)
+  })
+}

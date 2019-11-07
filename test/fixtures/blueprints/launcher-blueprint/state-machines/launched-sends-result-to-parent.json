@@ -19,6 +19,11 @@
         "executionName.$": "$.launcher.executionName",
         "result.$": "$.timestamp"
       },
+      "Next": "TimestampOut"
+    },
+    "TimestampOut": {
+      "Type": "Pass",
+      "InputPath": "$.timestamp",
       "End": true
     }
   },

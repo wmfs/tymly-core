@@ -1,0 +1,3 @@
+This document specifies a JSON object called a "SendTaskHeartbeat Parameters".
+A SendTaskHeartbeat Parameters MUST have a string field named "executionName".
+A SendTaskHeartbeat Parameters MUST have an object field named "result".
