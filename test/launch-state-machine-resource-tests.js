@@ -319,7 +319,7 @@ describe('Launch-state-machine state resources', function () {
     })
   })
 
-  describe('parent state machine times out waiting', async () => {
+  describe('awaitingExternalInput state resource', async () => {
     let tymlyService
     let statebox
 
@@ -347,7 +347,7 @@ describe('Launch-state-machine state resources', function () {
         }
       )
       expect(parentExecDesc.status).to.eql('SUCCEEDED')
-      expect(parentExecDesc.ctx.launchedResult).to.be.undefined()
+      expect(parentExecDesc.ctx.launchedResult).to.eql('time-out')
       expect(parentExecDesc.ctx.good).to.eql('stuff')
     })
 

@@ -16,6 +16,13 @@
       "ResourceConfig": {
         "failAfter": 1
       },
+      "Next": "SomethingElse"
+    },
+    "SomethingElse": {
+      "Type": "Pass",
+      "Result": {
+        "good": "stuff"
+      },
       "End": true
     }
   },
