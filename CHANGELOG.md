@@ -1,3 +1,10 @@
+# [1.101.0](https://github.com/wmfs/tymly-core/compare/v1.100.0...v1.101.0) (2019-11-14)
+
+
+### 🛠 Builds
+
+* **deps:** update many deps ([2e33a2c](https://github.com/wmfs/tymly-core/commit/2e33a2c4db2d18da9aa73c313f2ac5f74e18b5e7))
+
 # [1.100.0](https://github.com/wmfs/tymly-core/compare/v1.99.0...v1.100.0) (2019-10-24)
 
 
