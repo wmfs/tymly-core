@@ -1,0 +1,37 @@
+{
+  "StartAt": "Start",
+  "States": {
+    "Start": {
+      "Type": "Task",
+      "Resource": "module:launchStateMachine",
+      "ResourceConfig": {
+        "stateMachine": "tymlyTest_launchedSendsResultToParent"
+      },
+      "ResultPath": "$.launched",
+      "Next": "WaitForExternalPrompt"
+    },
+    "WaitForExternalPrompt": {
+      "Type": "Task",
+      "Resource": "module:awaitingExternalInput",
+      "ResourceConfig": {
+        "failAfter": 1
+      },
+      "Next": "SomethingElse"
+    },
+    "SomethingElse": {
+      "Type": "Pass",
+      "Result": {
+        "good": "stuff"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "StartAt": "FlagParent",
+  "States": {
+    "FlagParent": {
+      "Type": "Task",
+      "Resource": "module:sendTaskSuccess",
+      "ResourceConfig": {
+        "relaxed": true
+      },
+      "Parameters": {
+        "executionName.$": "$.launcher.executionName",
+        "result.$": "$.timestamp"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

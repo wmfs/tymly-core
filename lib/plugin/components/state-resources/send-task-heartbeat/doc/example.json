@@ -1,0 +1,11 @@
+{
+  "FlagParent": {
+    "Type": "Task",
+    "Resource": "module:sendTaskHeartbeat",
+    "Parameters": {
+      "executionName.$": "$.launcher.executionName",
+      "result.$": "$.count"
+    },
+    "End": true
+  }
+}

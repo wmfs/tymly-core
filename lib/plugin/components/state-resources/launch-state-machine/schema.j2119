@@ -1,0 +1,2 @@
+This document specifies a JSON object called a "LaunchStateMachine Resource Config".
+A LaunchStateMachine Resource Config MUST have a string field named "stateMachine".

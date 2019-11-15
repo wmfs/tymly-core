@@ -1,0 +1,36 @@
+{
+  "StartAt": "Start",
+  "States": {
+    "Start": {
+      "Type": "Task",
+      "Resource": "module:sendTaskHeartbeat",
+      "Parameters": {
+        "executionName.$": "$.launcher.executionName",
+        "result": "STARTED"
+      },
+      "Next": "Pause"
+    },
+    "Pause": {
+      "Type": "Wait",
+      "Seconds": 2,
+      "Next": "FlagParent"
+    },
+    "FlagParent": {
+      "Type": "Task",
+      "Resource": "module:sendTaskHeartbeat",
+      "Parameters": {
+        "executionName.$": "$.launcher.executionName",
+        "result": "UPDATED"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+This document specifies a JSON object called a "SendTaskSuccess Parameters".
+A SendTaskSuccess Parameters MUST have a string field named "executionName".
+A SendTaskSuccess Parameters MUST have an object field named "result".

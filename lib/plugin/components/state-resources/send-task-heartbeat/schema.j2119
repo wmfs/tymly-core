@@ -1,0 +1,2 @@
+This document specifies a JSON object called a "SendTaskHeartbeat Resource Config".
+A SendTaskHeartbeat Resource Config MAY have a boolean field named "relaxed".

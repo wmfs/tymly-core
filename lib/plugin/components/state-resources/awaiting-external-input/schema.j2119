@@ -1,0 +1,4 @@
+This document specifies a JSON object called a "AwaitingExternalInput Resource Config".
+An AwaitingExternalInput Resource Config MAY have a positive-integer field named "continueAfter".
+An AwaitingExternalInput Resource Config MAY have a positive-integer field named "failAfter".
+An AwaitingExternalInput Resource Config MUST have only one of "continueAfter", and "failAfter".

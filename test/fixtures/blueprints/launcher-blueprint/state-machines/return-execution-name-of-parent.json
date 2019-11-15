@@ -1,0 +1,18 @@
+{
+  "StartAt": "Start",
+  "States": {
+    "Start": {
+      "Type": "Pass",
+      "InputPath": "$.launcher.executionName",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
