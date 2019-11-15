@@ -1,3 +1,26 @@
+# [1.102.0](https://github.com/wmfs/tymly-core/compare/v1.101.0...v1.102.0) (2019-11-15)
+
+
+### ✨ Features
+
+* Add awaitExternalInput and sendTaskSuccess state resources. ([e32056b](https://github.com/wmfs/tymly-core/commit/e32056b9a3d4c685dc03ac3ba9edd14785f5f6d5))
+* Add launchStateMachine state resource ([b2cf197](https://github.com/wmfs/tymly-core/commit/b2cf197fae5866ecf2534902c7589427cedd7e90))
+* Add sendTaskSuccess relaxed ResourceConfig field. ([8a42e9c](https://github.com/wmfs/tymly-core/commit/8a42e9c5adcd77965fa93cca076ef3eb11ae7590))
+* Extend launchStateMachine to pass launcher's executionName into the launched state machine. ([b4ae770](https://github.com/wmfs/tymly-core/commit/b4ae7702770e475fb77b053e09dcf091d3aaf69e))
+* Implemented time outs for continuing and failing while awaiting external input. ([1698823](https://github.com/wmfs/tymly-core/commit/1698823069d0554ade2e9e43e0e42d301c557836))
+* Toughen up sendTaskSuccess state resource in the face of bad input. ([3036881](https://github.com/wmfs/tymly-core/commit/3036881a8b0c67eedb4b12a5a5fe740b50ee96f2))
+
+
+### 🐛 Bug Fixes
+
+* Add sendTaskHeartbeat resource ([72ae7e9](https://github.com/wmfs/tymly-core/commit/72ae7e96806f17932bd179cfbd3babd7f831a632))
+* Pull in statebox 1.54.2. We need those fixes ([f27a7a2](https://github.com/wmfs/tymly-core/commit/f27a7a23b31e094ae1baac4f9dec6a31ab0b83b1))
+
+
+### 🚨 Tests
+
+* Sketching out timeout functionality for awaiting-external-input ([620b8be](https://github.com/wmfs/tymly-core/commit/620b8be02b0b48c0b726c0148a5e180ec037cb69))
+
 # [1.101.0](https://github.com/wmfs/tymly-core/compare/v1.100.0...v1.101.0) (2019-11-14)
 
 
