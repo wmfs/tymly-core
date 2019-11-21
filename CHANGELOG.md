@@ -1,3 +1,10 @@
+# [1.103.0](https://github.com/wmfs/tymly-core/compare/v1.102.0...v1.103.0) (2019-11-21)
+
+
+### ✨ Features
+
+* statelint parameters schema ([b7ca56d](https://github.com/wmfs/tymly-core/commit/b7ca56d22a3f8ad8eaaa1e530539c91b7780c05e))
+
 # [1.102.0](https://github.com/wmfs/tymly-core/compare/v1.101.0...v1.102.0) (2019-11-15)
 
 
