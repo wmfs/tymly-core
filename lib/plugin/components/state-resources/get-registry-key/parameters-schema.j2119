@@ -1,0 +1,3 @@
+This document specifies a JSON object called a "GetRegKey Parameters".
+A GetRegKey Resource Config MUST have a string field named "key".
+A GetRegKey Parameters MAY have a field named "defaultValue".

@@ -1,0 +1,2 @@
+This document specifies a JSON object called a "GetConfiguredRegKey Parameters".
+A GetConfiguredRegKey Parameters MAY have a field named "defaultValue".
