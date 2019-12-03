@@ -1,3 +1,10 @@
+## [1.103.2](https://github.com/wmfs/tymly-core/compare/v1.103.1...v1.103.2) (2019-12-03)
+
+
+### 🐛 Bug Fixes
+
+* Added parameters schemas for get reg key state-resources. ([6a063cf](https://github.com/wmfs/tymly-core/commit/6a063cf07f1cd5a41638f96209d00b1d297b422a))
+
 ## [1.103.1](https://github.com/wmfs/tymly-core/compare/v1.103.0...v1.103.1) (2019-11-29)
 
 
