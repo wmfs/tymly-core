@@ -1,0 +1,7 @@
+{
+  "Versioning": {
+    "Type": "Task",
+    "Resource": "module:versioning",
+    "End": true
+  }
+}

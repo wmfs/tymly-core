@@ -1,0 +1,20 @@
+{
+  "Comment": "Get versions on Tymly components",
+  "version": "1.0",
+  "StartAt": "GetVersions",
+  "States": {
+    "GetVersions": {
+      "Type": "Task",
+      "Resource": "module:versioning",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
