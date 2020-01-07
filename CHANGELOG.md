@@ -1,3 +1,10 @@
+# [1.106.0](https://github.com/wmfs/tymly-core/compare/v1.105.0...v1.106.0) (2020-01-07)
+
+
+### 🛠 Builds
+
+* **deps:** bump dottie from 2.0.1 to 2.0.2 ([ecefe28](https://github.com/wmfs/tymly-core/commit/ecefe28f1fe006ba283b1f63e0e07b65504484a2))
+
 # [1.105.0](https://github.com/wmfs/tymly-core/compare/v1.104.0...v1.105.0) (2020-01-07)
 
 
