@@ -1,3 +1,12 @@
+# [1.104.0](https://github.com/wmfs/tymly-core/compare/v1.103.3...v1.104.0) (2020-01-07)
+
+
+### 🛠 Builds
+
+* **deps:** bump nanoid from 2.1.6 to 2.1.9 ([edaf2ac](https://github.com/wmfs/tymly-core/commit/edaf2acb21bc733c3ef0bdfc873b87dd843719fb))
+* **deps-dev:** bump mocha from 6.2.2 to 7.0.0 ([e45dcec](https://github.com/wmfs/tymly-core/commit/e45dcec9a7bc583f75830ef412d5d9bed9f10bcd))
+* **deps-dev:** bump packages ([64f48d7](https://github.com/wmfs/tymly-core/commit/64f48d76e58dfcbd4a694295f0d996017bb90717))
+
 ## [1.103.3](https://github.com/wmfs/tymly-core/compare/v1.103.2...v1.103.3) (2019-12-16)
 
 
