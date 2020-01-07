@@ -1,3 +1,10 @@
+# [1.107.0](https://github.com/wmfs/tymly-core/compare/v1.106.0...v1.107.0) (2020-01-07)
+
+
+### 🛠 Builds
+
+* **deps:** bump read-pkg-up from 7.0.0 to 7.0.1 ([ae803b2](https://github.com/wmfs/tymly-core/commit/ae803b208850edbc729e7aa2dc9060e8f8e85165))
+
 # [1.106.0](https://github.com/wmfs/tymly-core/compare/v1.105.0...v1.106.0) (2020-01-07)
 
 
