@@ -1,3 +1,11 @@
+# [1.111.0](https://github.com/wmfs/tymly-core/compare/v1.110.0...v1.111.0) (2020-01-22)
+
+
+### 🛠 Builds
+
+* **deps:** bump nanoid from 2.1.9 to 2.1.10 ([abd891a](https://github.com/wmfs/tymly-core/commit/abd891a0c21dd3d6bf8d32813e2343ab1500aa5f))
+* **deps-dev:** bump conventional-changelog-metahub from 3.0.0 to 4.0.0 ([9360370](https://github.com/wmfs/tymly-core/commit/9360370a255ae44799ca11b457013b97f9be4aaa))
+
 # [1.110.0](https://github.com/wmfs/tymly-core/compare/v1.109.0...v1.110.0) (2020-01-08)
 
 
