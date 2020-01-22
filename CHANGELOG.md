@@ -1,3 +1,10 @@
+## [1.112.1](https://github.com/wmfs/tymly-core/compare/v1.112.0...v1.112.1) (2020-01-22)
+
+
+### 🐛 Bug Fixes
+
+* Fix parent execution name passing in launch state machine ([a0f984f](https://github.com/wmfs/tymly-core/commit/a0f984f89c7c0de3c78b1a5a2bdf1f9fe4925820))
+
 # [1.112.0](https://github.com/wmfs/tymly-core/compare/v1.111.0...v1.112.0) (2020-01-22)
 
 
