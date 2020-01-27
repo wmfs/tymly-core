@@ -5,7 +5,7 @@ const expect = require('chai').expect
 const moment = require('moment')
 const tymly = require('./../lib')
 
-const STATE_MACHINE_NAME = `tymlyTest_setContextData_1_0`
+const STATE_MACHINE_NAME = 'tymlyTest_setContextData_1_0'
 
 describe('Context tests', function () {
   let tymlyService, statebox

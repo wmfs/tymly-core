@@ -34,10 +34,10 @@ describe('Config Setting state resources', function () {
   })
 
   const goodTests = [
-    [ 'string', 'good' ],
-    [ 'integer', 123 ],
-    [ 'bool', true ],
-    [ 'unspecified', undefined ]
+    ['string', 'good'],
+    ['integer', 123],
+    ['bool', true],
+    ['unspecified', undefined]
   ]
 
   for (const [name, expected] of goodTests) {

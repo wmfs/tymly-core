@@ -57,8 +57,8 @@ describe('TymlyRef second-stage resolution', () => {
     for (const [label, bp, contents] of goodTests) {
       it(label, async () => {
         const tymlyServices = await tymly.boot({
-          pluginPaths: [ probePluginPath ],
-          blueprintPaths: [ path.resolve(bpDir, bp) ]
+          pluginPaths: [probePluginPath],
+          blueprintPaths: [path.resolve(bpDir, bp)]
         })
 
         const files = tymlyServices.probe.files
@@ -87,7 +87,7 @@ describe('TymlyRef second-stage resolution', () => {
       it(label, async () => {
         try {
           await tymly.boot({
-            blueprintPaths: [ path.resolve(bpDir, bp) ]
+            blueprintPaths: [path.resolve(bpDir, bp)]
           })
         } catch (err) {
           expect(err.message).to.startWith(error)

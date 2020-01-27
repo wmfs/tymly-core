@@ -41,14 +41,14 @@ describe('Registry tests', function () {
     })
 
     it('registry value is correct, using key', function (done) {
-      let key = 'tymlyTest_mealThreshold'
-      let value = registryService.get(key)
+      const key = 'tymlyTest_mealThreshold'
+      const value = registryService.get(key)
       expect(value).to.eql(3)
       done()
     })
 
     it('change registry value, using key', function (done) {
-      let key = 'tymlyTest_mealThreshold'
+      const key = 'tymlyTest_mealThreshold'
       registryService.set(key, 2, function (err) {
         expect(err).to.eql(null)
         expect(registryService.get(key)).to.eql(2)

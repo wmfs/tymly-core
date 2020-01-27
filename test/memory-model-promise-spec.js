@@ -15,23 +15,23 @@ describe('Memory Model promise tests', function () {
   it('should get some model instances', function () {
     planetsModel = new MemoryModel(
       {
-        'id': 'planets',
-        'name': 'planets',
-        'namespace': 'test',
-        'primaryKey': ['name'],
-        'properties': {
-          'name': 'string'
+        id: 'planets',
+        name: 'planets',
+        namespace: 'test',
+        primaryKey: ['name'],
+        properties: {
+          name: 'string'
         }
       }
     )
     personModel = new MemoryModel(
       {
-        'id': 'people',
-        'name': 'people',
-        'namespace': 'test',
-        'primaryKey': ['employeeNo'],
-        'properties': {
-          'employeeNo': 'number'
+        id: 'people',
+        name: 'people',
+        namespace: 'test',
+        primaryKey: ['employeeNo'],
+        properties: {
+          employeeNo: 'number'
         }
       }
     )
@@ -102,7 +102,7 @@ describe('Memory Model promise tests', function () {
       .catch(err => {
         expect(err).to.containSubset(
           {
-            'name': 'DuplicatePrimaryKey'
+            name: 'DuplicatePrimaryKey'
           }
         )
       }
@@ -124,7 +124,7 @@ describe('Memory Model promise tests', function () {
       .catch(err => {
         expect(err).to.containSubset(
           {
-            'name': 'DuplicatePrimaryKey'
+            name: 'DuplicatePrimaryKey'
           }
         )
       }
@@ -136,10 +136,10 @@ describe('Memory Model promise tests', function () {
       .then(doc =>
         expect(doc).to.containSubset(
           {
-            'employeeNo': 3,
-            'firstName': 'Lisa',
-            'lastName': 'Simpson',
-            'age': 8
+            employeeNo: 3,
+            firstName: 'Lisa',
+            lastName: 'Simpson',
+            age: 8
           }
         )
       )
@@ -162,33 +162,33 @@ describe('Memory Model promise tests', function () {
     expect(doc).to.containSubset(
       [
         {
-          'age': 8,
-          'employeeNo': 3,
-          'firstName': 'Lisa',
-          'lastName': 'Simpson'
+          age: 8,
+          employeeNo: 3,
+          firstName: 'Lisa',
+          lastName: 'Simpson'
         },
         {
-          'age': 10,
-          'employeeNo': 5,
-          'firstName': 'Bart',
-          'lastName': 'Simpson'
+          age: 10,
+          employeeNo: 5,
+          firstName: 'Bart',
+          lastName: 'Simpson'
         },
         {
-          'age': 36,
-          'employeeNo': 4,
-          'firstName': 'Marge',
-          'lastName': 'Simpson'
+          age: 36,
+          employeeNo: 4,
+          firstName: 'Marge',
+          lastName: 'Simpson'
         },
         {
-          'age': 39,
-          'employeeNo': 1,
-          'firstName': 'Homer',
-          'lastName': 'Simpson'
+          age: 39,
+          employeeNo: 1,
+          firstName: 'Homer',
+          lastName: 'Simpson'
         },
         {
-          'employeeNo': 2,
-          'firstName': 'Maggie',
-          'lastName': 'Simpson'
+          employeeNo: 2,
+          firstName: 'Maggie',
+          lastName: 'Simpson'
         }
       ]
     )
@@ -208,10 +208,10 @@ describe('Memory Model promise tests', function () {
     expect(doc).to.containSubset(
       [
         {
-          'age': 10,
-          'employeeNo': 5,
-          'firstName': 'Bart',
-          'lastName': 'Simpson'
+          age: 10,
+          employeeNo: 5,
+          firstName: 'Bart',
+          lastName: 'Simpson'
         }
       ]
     )
@@ -228,10 +228,10 @@ describe('Memory Model promise tests', function () {
     ).then(doc =>
       expect(doc).to.containSubset(
         {
-          'age': 39,
-          'employeeNo': 1,
-          'firstName': 'Homer',
-          'lastName': 'Simpson'
+          age: 39,
+          employeeNo: 1,
+          firstName: 'Homer',
+          lastName: 'Simpson'
         }
       )
     )
@@ -267,10 +267,10 @@ describe('Memory Model promise tests', function () {
       .then(doc =>
         expect(doc).to.containSubset(
           {
-            'employeeNo': 2,
-            'firstName': 'Maggie',
-            'lastName': 'Simpson',
-            'age': 1
+            employeeNo: 2,
+            firstName: 'Maggie',
+            lastName: 'Simpson',
+            age: 1
           }
         )
       )
@@ -292,9 +292,9 @@ describe('Memory Model promise tests', function () {
 
     expect(doc).to.containSubset(
       {
-        'employeeNo': 2,
-        'firstName': 'Maggie',
-        'lastName': 'Simpson'
+        employeeNo: 2,
+        firstName: 'Maggie',
+        lastName: 'Simpson'
       }
     )
   })
@@ -314,9 +314,9 @@ describe('Memory Model promise tests', function () {
 
     expect(doc).to.containSubset(
       {
-        'employeeNo': 2,
-        'firstName': 'Margaret',
-        'lastName': 'Simpson'
+        employeeNo: 2,
+        firstName: 'Margaret',
+        lastName: 'Simpson'
       }
     )
   })
@@ -354,10 +354,10 @@ describe('Memory Model promise tests', function () {
     const doc = await personModel.findById(10)
     expect(doc).to.containSubset(
       {
-        'employeeNo': 10,
-        'firstName': 'Abe',
-        'lastName': 'Simpson',
-        'age': 82
+        employeeNo: 10,
+        firstName: 'Abe',
+        lastName: 'Simpson',
+        age: 82
       }
     )
   })
@@ -378,10 +378,10 @@ describe('Memory Model promise tests', function () {
     const doc = await personModel.findById(10)
     expect(doc).to.containSubset(
       {
-        'employeeNo': 10,
-        'firstName': 'Abraham',
-        'lastName': 'Simpson',
-        'age': 82
+        employeeNo: 10,
+        firstName: 'Abraham',
+        lastName: 'Simpson',
+        age: 82
       }
     )
   })
@@ -403,10 +403,10 @@ describe('Memory Model promise tests', function () {
     const doc = await personModel.findById(10)
     expect(doc).to.containSubset(
       {
-        'employeeNo': 10,
-        'firstName': 'Abe',
-        'lastName': 'Simpson',
-        'age': 82
+        employeeNo: 10,
+        firstName: 'Abe',
+        lastName: 'Simpson',
+        age: 82
       }
     )
   })
@@ -426,9 +426,9 @@ describe('Memory Model promise tests', function () {
     const doc = await personModel.findById(10)
     expect(doc).to.containSubset(
       {
-        'employeeNo': 10,
-        'firstName': 'Abraham',
-        'lastName': 'Simpson'
+        employeeNo: 10,
+        firstName: 'Abraham',
+        lastName: 'Simpson'
       }
     )
   })
@@ -488,33 +488,33 @@ describe('Memory Model promise tests', function () {
         expect(err).to.equal(null)
         expect(doc).to.containSubset(
           {
-            'name': 'mars',
-            'title': 'Mars',
-            'type': 'Terrestrial',
-            'diameter': 6700,
-            'color': 'red',
-            'url': 'http://en.wikipedia.org/wiki/Mars',
-            'otherFacts': {
-              'radius': 3390,
-              'surfacePressure': '0.636 (0.4–0.87) kPa; 0.00628 atm',
-              'equatorialRotationVelocity': '868.22 km/h (241.17 m/s)'
+            name: 'mars',
+            title: 'Mars',
+            type: 'Terrestrial',
+            diameter: 6700,
+            color: 'red',
+            url: 'http://en.wikipedia.org/wiki/Mars',
+            otherFacts: {
+              radius: 3390,
+              surfacePressure: '0.636 (0.4–0.87) kPa; 0.00628 atm',
+              equatorialRotationVelocity: '868.22 km/h (241.17 m/s)'
             },
-            'moons': [
+            moons: [
               {
-                'title': 'Phobos',
-                'discoveredBy': 'Asaph Hall',
-                'discoveryYear': 1800,
-                'craters': [
+                title: 'Phobos',
+                discoveredBy: 'Asaph Hall',
+                discoveryYear: 1800,
+                craters: [
                   {
-                    'title': 'Stickney',
-                    'diameter': 9
+                    title: 'Stickney',
+                    diameter: 9
                   }
                 ]
               },
               {
-                'title': 'Deimos',
-                'discoveredBy': 'Asaph Hall',
-                'discoveryYear': 1800
+                title: 'Deimos',
+                discoveredBy: 'Asaph Hall',
+                discoveryYear: 1800
               }
             ]
           }
