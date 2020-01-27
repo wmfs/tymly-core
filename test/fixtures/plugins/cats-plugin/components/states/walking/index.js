@@ -9,7 +9,7 @@ class Walking {
     const ctx = tymly.ctx
 
     let destination
-    if (data !== undefined && data.hasOwnProperty('destination')) {
+    if (data !== undefined && Object.prototype.hasOwnProperty.call(data, 'destination')) {
       destination = 'to the ' + data.destination
     } else {
       destination = 'somewhere'
