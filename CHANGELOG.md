@@ -1,3 +1,10 @@
+# [1.116.0](https://github.com/wmfs/tymly-core/compare/v1.115.0...v1.116.0) (2020-01-27)
+
+
+### 🛠 Builds
+
+* **deps:** bump mkdirp from 0.5.1 to 1.0.3 ([e69a7ac](https://github.com/wmfs/tymly-core/commit/e69a7aca202f627001866823637a8782ff2bae69))
+
 # [1.115.0](https://github.com/wmfs/tymly-core/compare/v1.114.0...v1.115.0) (2020-01-27)
 
 
