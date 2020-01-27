@@ -1,3 +1,19 @@
+# [1.114.0](https://github.com/wmfs/tymly-core/compare/v1.113.0...v1.114.0) (2020-01-27)
+
+
+### 🛠 Builds
+
+* **deps:** bump async from 3.1.0 to 3.1.1 ([c5a02e1](https://github.com/wmfs/tymly-core/commit/c5a02e19b110917349082645604c856b054b0dcb))
+* **deps-dev:** bump codecov from 3.6.1 to 3.6.2 ([216c4c5](https://github.com/wmfs/tymly-core/commit/216c4c52e01b91e098f0334679a73347e8c7c32f))
+* **deps-dev:** bump mocha from 7.0.0 to 7.0.1 ([375cea2](https://github.com/wmfs/tymly-core/commit/375cea22dbc49d9defe6ee298aa09de9ba03555a))
+* **deps-dev:** update standard requirement from 12.0.1 to 14.3.1 ([72a2aac](https://github.com/wmfs/tymly-core/commit/72a2aacc507eb31d80d98dfbd0f9b5022faf2013))
+
+
+### 💎 Styles
+
+* Do not access Object.prototype method 'hasOwnProperty' from target object ([9389117](https://github.com/wmfs/tymly-core/commit/93891179b8c1e96a0197fadcbddfb637339164c6))
+* standard --fix ([306c0fa](https://github.com/wmfs/tymly-core/commit/306c0fa45d47438128956b7b354011636ae415f6))
+
 # [1.113.0](https://github.com/wmfs/tymly-core/compare/v1.112.1...v1.113.0) (2020-01-23)
 
 
