@@ -17,23 +17,23 @@ describe('Memory Model tests', function () {
   it('should get some model instances', function () {
     planetsModel = new MemoryModel(
       {
-        'id': 'planets',
-        'name': 'planets',
-        'namespace': 'test',
-        'primaryKey': ['name'],
-        'properties': {
-          'name': 'string'
+        id: 'planets',
+        name: 'planets',
+        namespace: 'test',
+        primaryKey: ['name'],
+        properties: {
+          name: 'string'
         }
       }
     )
     personModel = new MemoryModel(
       {
-        'id': 'people',
-        'name': 'people',
-        'namespace': 'test',
-        'primaryKey': ['employeeNo'],
-        'properties': {
-          'employeeNo': 'number'
+        id: 'people',
+        name: 'people',
+        namespace: 'test',
+        primaryKey: ['employeeNo'],
+        properties: {
+          employeeNo: 'number'
         }
       }
     )
@@ -111,7 +111,7 @@ describe('Memory Model tests', function () {
       function (err, doc) {
         expect(err).to.containSubset(
           {
-            'name': 'DuplicatePrimaryKey'
+            name: 'DuplicatePrimaryKey'
           }
         )
         done()
@@ -132,7 +132,7 @@ describe('Memory Model tests', function () {
       function (err, doc) {
         expect(err).to.containSubset(
           {
-            'name': 'DuplicatePrimaryKey'
+            name: 'DuplicatePrimaryKey'
           }
         )
         done()
@@ -147,10 +147,10 @@ describe('Memory Model tests', function () {
         expect(err).to.equal(null)
         expect(doc).to.containSubset(
           {
-            'employeeNo': 3,
-            'firstName': 'Lisa',
-            'lastName': 'Simpson',
-            'age': 8
+            employeeNo: 3,
+            firstName: 'Lisa',
+            lastName: 'Simpson',
+            age: 8
           }
         )
         done()
@@ -178,33 +178,33 @@ describe('Memory Model tests', function () {
         expect(doc).to.containSubset(
           [
             {
-              'age': 8,
-              'employeeNo': 3,
-              'firstName': 'Lisa',
-              'lastName': 'Simpson'
+              age: 8,
+              employeeNo: 3,
+              firstName: 'Lisa',
+              lastName: 'Simpson'
             },
             {
-              'age': 10,
-              'employeeNo': 5,
-              'firstName': 'Bart',
-              'lastName': 'Simpson'
+              age: 10,
+              employeeNo: 5,
+              firstName: 'Bart',
+              lastName: 'Simpson'
             },
             {
-              'age': 36,
-              'employeeNo': 4,
-              'firstName': 'Marge',
-              'lastName': 'Simpson'
+              age: 36,
+              employeeNo: 4,
+              firstName: 'Marge',
+              lastName: 'Simpson'
             },
             {
-              'age': 39,
-              'employeeNo': 1,
-              'firstName': 'Homer',
-              'lastName': 'Simpson'
+              age: 39,
+              employeeNo: 1,
+              firstName: 'Homer',
+              lastName: 'Simpson'
             },
             {
-              'employeeNo': 2,
-              'firstName': 'Maggie',
-              'lastName': 'Simpson'
+              employeeNo: 2,
+              firstName: 'Maggie',
+              lastName: 'Simpson'
             }
           ]
         )
@@ -227,10 +227,10 @@ describe('Memory Model tests', function () {
         expect(doc).to.containSubset(
           [
             {
-              'age': 10,
-              'employeeNo': 5,
-              'firstName': 'Bart',
-              'lastName': 'Simpson'
+              age: 10,
+              employeeNo: 5,
+              firstName: 'Bart',
+              lastName: 'Simpson'
             }
           ]
         )
@@ -253,10 +253,10 @@ describe('Memory Model tests', function () {
         expect(doc).to.containSubset(
           [
             {
-              'age': 10,
-              'employeeNo': 5,
-              'firstName': 'Bart',
-              'lastName': 'Simpson'
+              age: 10,
+              employeeNo: 5,
+              firstName: 'Bart',
+              lastName: 'Simpson'
             }
           ]
         )
@@ -278,10 +278,10 @@ describe('Memory Model tests', function () {
         expect(err).to.equal(null)
         expect(doc).to.containSubset(
           {
-            'age': 39,
-            'employeeNo': 1,
-            'firstName': 'Homer',
-            'lastName': 'Simpson'
+            age: 39,
+            employeeNo: 1,
+            firstName: 'Homer',
+            lastName: 'Simpson'
           }
         )
 
@@ -329,10 +329,10 @@ describe('Memory Model tests', function () {
         expect(err).to.equal(null)
         expect(doc).to.containSubset(
           {
-            'employeeNo': 2,
-            'firstName': 'Maggie',
-            'lastName': 'Simpson',
-            'age': 1
+            employeeNo: 2,
+            firstName: 'Maggie',
+            lastName: 'Simpson',
+            age: 1
           }
         )
         done()
@@ -362,9 +362,9 @@ describe('Memory Model tests', function () {
         expect(err).to.equal(null)
         expect(doc).to.containSubset(
           {
-            'employeeNo': 2,
-            'firstName': 'Maggie',
-            'lastName': 'Simpson'
+            employeeNo: 2,
+            firstName: 'Maggie',
+            lastName: 'Simpson'
           }
         )
         done()
@@ -393,9 +393,9 @@ describe('Memory Model tests', function () {
         expect(err).to.equal(null)
         expect(doc).to.containSubset(
           {
-            'employeeNo': 2,
-            'firstName': 'Margaret',
-            'lastName': 'Simpson'
+            employeeNo: 2,
+            firstName: 'Margaret',
+            lastName: 'Simpson'
           }
         )
         done()
@@ -454,10 +454,10 @@ describe('Memory Model tests', function () {
         expect(err).to.equal(null)
         expect(doc).to.containSubset(
           {
-            'employeeNo': 10,
-            'firstName': 'Abe',
-            'lastName': 'Simpson',
-            'age': 82
+            employeeNo: 10,
+            firstName: 'Abe',
+            lastName: 'Simpson',
+            age: 82
           }
         )
         done()
@@ -488,10 +488,10 @@ describe('Memory Model tests', function () {
         expect(err).to.equal(null)
         expect(doc).to.containSubset(
           {
-            'employeeNo': 10,
-            'firstName': 'Abraham',
-            'lastName': 'Simpson',
-            'age': 83
+            employeeNo: 10,
+            firstName: 'Abraham',
+            lastName: 'Simpson',
+            age: 83
           }
         )
         done()
@@ -522,10 +522,10 @@ describe('Memory Model tests', function () {
         expect(err).to.equal(null)
         expect(doc).to.containSubset(
           {
-            'employeeNo': 10,
-            'firstName': 'Abe',
-            'lastName': 'Simpson',
-            'age': 83
+            employeeNo: 10,
+            firstName: 'Abe',
+            lastName: 'Simpson',
+            age: 83
           }
         )
         done()
@@ -555,9 +555,9 @@ describe('Memory Model tests', function () {
         expect(err).to.equal(null)
         expect(doc).to.containSubset(
           {
-            'employeeNo': 10,
-            'firstName': 'Abraham',
-            'lastName': 'Simpson'
+            employeeNo: 10,
+            firstName: 'Abraham',
+            lastName: 'Simpson'
           }
         )
         done()
@@ -620,33 +620,33 @@ describe('Memory Model tests', function () {
         expect(err).to.equal(null)
         expect(doc).to.containSubset(
           {
-            'name': 'mars',
-            'title': 'Mars',
-            'type': 'Terrestrial',
-            'diameter': 6700,
-            'color': 'red',
-            'url': 'http://en.wikipedia.org/wiki/Mars',
-            'otherFacts': {
-              'radius': 3390,
-              'surfacePressure': '0.636 (0.4–0.87) kPa; 0.00628 atm',
-              'equatorialRotationVelocity': '868.22 km/h (241.17 m/s)'
+            name: 'mars',
+            title: 'Mars',
+            type: 'Terrestrial',
+            diameter: 6700,
+            color: 'red',
+            url: 'http://en.wikipedia.org/wiki/Mars',
+            otherFacts: {
+              radius: 3390,
+              surfacePressure: '0.636 (0.4–0.87) kPa; 0.00628 atm',
+              equatorialRotationVelocity: '868.22 km/h (241.17 m/s)'
             },
-            'moons': [
+            moons: [
               {
-                'title': 'Phobos',
-                'discoveredBy': 'Asaph Hall',
-                'discoveryYear': 1800,
-                'craters': [
+                title: 'Phobos',
+                discoveredBy: 'Asaph Hall',
+                discoveryYear: 1800,
+                craters: [
                   {
-                    'title': 'Stickney',
-                    'diameter': 9
+                    title: 'Stickney',
+                    diameter: 9
                   }
                 ]
               },
               {
-                'title': 'Deimos',
-                'discoveredBy': 'Asaph Hall',
-                'discoveryYear': 1800
+                title: 'Deimos',
+                discoveredBy: 'Asaph Hall',
+                discoveryYear: 1800
               }
             ]
           }
@@ -655,8 +655,8 @@ describe('Memory Model tests', function () {
         const moons = {}
         moons[doc.moons[0].title] = doc.moons[0]
         moons[doc.moons[1].title] = doc.moons[1]
-        phobosId = moons['Phobos'].id
-        stickneyId = moons['Phobos'].craters[0].id
+        phobosId = moons.Phobos.id
+        stickneyId = moons.Phobos.craters[0].id
         done()
       }
     )
@@ -671,11 +671,11 @@ describe('Memory Model tests', function () {
         diameter: 6779,
         color: 'red',
         url: 'http://en.wikipedia.org/wiki/Mars',
-        'otherFacts': {
-          'radius': 3390,
-          'surfacePressure': '0.636 (0.4–0.87) kPa; 0.00628 atm',
-          'equatorialRotationVelocity': '868.22 km/h (241.17 m/s)',
-          'lengthOfDay': '1d 0h 40m'
+        otherFacts: {
+          radius: 3390,
+          surfacePressure: '0.636 (0.4–0.87) kPa; 0.00628 atm',
+          equatorialRotationVelocity: '868.22 km/h (241.17 m/s)',
+          lengthOfDay: '1d 0h 40m'
         },
         moons: [
           {
@@ -709,29 +709,29 @@ describe('Memory Model tests', function () {
         expect(doc.moons).to.have.length(1)
         expect(doc).to.containSubset(
           {
-            'name': 'mars',
-            'title': 'Mars',
-            'type': 'Terrestrial',
-            'diameter': 6779,
-            'color': 'red',
-            'url': 'http://en.wikipedia.org/wiki/Mars',
-            'otherFacts': {
-              'radius': 3390,
-              'surfacePressure': '0.636 (0.4–0.87) kPa; 0.00628 atm',
-              'equatorialRotationVelocity': '868.22 km/h (241.17 m/s)',
-              'lengthOfDay': '1d 0h 40m'
+            name: 'mars',
+            title: 'Mars',
+            type: 'Terrestrial',
+            diameter: 6779,
+            color: 'red',
+            url: 'http://en.wikipedia.org/wiki/Mars',
+            otherFacts: {
+              radius: 3390,
+              surfacePressure: '0.636 (0.4–0.87) kPa; 0.00628 atm',
+              equatorialRotationVelocity: '868.22 km/h (241.17 m/s)',
+              lengthOfDay: '1d 0h 40m'
             },
-            'moons': [
+            moons: [
               {
                 id: phobosId,
-                'title': 'Phobos',
-                'discoveredBy': 'Asaph Hall',
-                'discoveryYear': 1875,
-                'craters': [
+                title: 'Phobos',
+                discoveredBy: 'Asaph Hall',
+                discoveryYear: 1875,
+                craters: [
                   {
                     id: stickneyId,
-                    'title': 'Stickney',
-                    'diameter': 10
+                    title: 'Stickney',
+                    diameter: 10
                   }
                 ]
               }

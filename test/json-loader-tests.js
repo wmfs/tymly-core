@@ -31,7 +31,7 @@ describe('JSON loader tests', () => {
       id: 'normal',
       name: 'normal',
       value: 'string',
-      array: [ 1, 2, 3 ],
+      array: [1, 2, 3],
       obj: {
         a: 'one',
         b: 'two'
@@ -55,9 +55,9 @@ describe('JSON loader tests', () => {
       id: 'withref',
       name: 'withref',
       value: 'string',
-      array: [ 1, 2, 3 ],
+      array: [1, 2, 3],
       obj: {
-        '$tymlyRef': 'file://somefile.json'
+        $tymlyRef: 'file://somefile.json'
       }
     })
     expect(info.refs).to.eql([{

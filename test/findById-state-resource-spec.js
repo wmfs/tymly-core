@@ -59,7 +59,7 @@ describe('FindById State Resource', function () {
 
   it('find by composite key, passing array', async () => {
     const executionDescription = await statebox.startExecution(
-      { key: [ 'Billy', 'Dog' ] },
+      { key: ['Billy', 'Dog'] },
       COMPOSITE_KEY,
       {
         sendResponse: 'COMPLETE'

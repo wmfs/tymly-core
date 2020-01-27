@@ -29,8 +29,8 @@ describe('State resource tests', function () {
         expect(err).to.eql(null)
         tymlyService = tymlyServices.tymly
         statebox = tymlyServices.statebox
-        catModel = tymlyServices.storage.models['tymlyTest_cat_1_0']
-        dogModel = tymlyServices.storage.models['tymlyTest_dog_1_0']
+        catModel = tymlyServices.storage.models.tymlyTest_cat_1_0
+        dogModel = tymlyServices.storage.models.tymlyTest_dog_1_0
         done()
       }
     )
@@ -45,9 +45,9 @@ describe('State resource tests', function () {
     const execDesc = await statebox.startExecution(
       {
         catDoc: {
-          'name': 'Rupert',
-          'size': 'large',
-          'comment': 'Stunning.'
+          name: 'Rupert',
+          size: 'large',
+          comment: 'Stunning.'
         }
       },
       UPSERT_FIND_STATE_MACHINE_NAME,

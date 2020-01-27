@@ -93,9 +93,9 @@ describe('Inject userId through statebox service', function () {
     {
       title: 'long wait, upsert and fetch',
       person: {
-        'employeeNo': '1002',
-        'firstName': 'Raymond',
-        'lastName': 'Chandler'
+        employeeNo: '1002',
+        firstName: 'Raymond',
+        lastName: 'Chandler'
       },
       stateMachine: LONG_WAIT_AND_UPSERT_STATE_MACHINE,
       userId: 'SuperSlow',
@@ -104,9 +104,9 @@ describe('Inject userId through statebox service', function () {
     {
       title: 'wait, upsert and fetch',
       person: {
-        'employeeNo': '1001',
-        'firstName': 'Dashiell',
-        'lastName': 'Hammett'
+        employeeNo: '1001',
+        firstName: 'Dashiell',
+        lastName: 'Hammett'
       },
       stateMachine: WAIT_AND_UPSERT_STATE_MACHINE,
       userId: 'Slow',
@@ -115,9 +115,9 @@ describe('Inject userId through statebox service', function () {
     {
       title: 'upsert and fetch',
       person: {
-        'employeeNo': '1000',
-        'firstName': 'Jim',
-        'lastName': 'Thompson'
+        employeeNo: '1000',
+        firstName: 'Jim',
+        lastName: 'Thompson'
       },
       stateMachine: UPSERT_STATE_MACHINE,
       userId: 'Speedy',
@@ -131,7 +131,7 @@ describe('Inject userId through statebox service', function () {
       {
         title: `${i} upsert and fetch`,
         person: {
-          'employeeNo': `${2000 + i}`
+          employeeNo: `${2000 + i}`
         },
         stateMachine: UPSERT_STATE_MACHINE,
         userId: `Speedy-${i}`,

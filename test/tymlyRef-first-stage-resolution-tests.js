@@ -73,12 +73,12 @@ describe('TymlyRef first-stage resolution', () => {
     [
       'wildcard namespace reference',
       'with-wildcard-namespace-ref-blueprint',
-      [ inner ]
+      [inner]
     ],
     [
       'wildcard name reference',
       'with-wildcard-name-ref-blueprint',
-      [ inner ]
+      [inner]
     ],
     [
       'reference with JSONPath selection',
@@ -120,8 +120,8 @@ describe('TymlyRef first-stage resolution', () => {
     for (const [label, bp, contents] of goodTests) {
       it(label, async () => {
         const tymlyServices = await tymly.boot({
-          pluginPaths: [ probePluginPath ],
-          blueprintPaths: [ path.resolve(bpDir, bp) ]
+          pluginPaths: [probePluginPath],
+          blueprintPaths: [path.resolve(bpDir, bp)]
         })
 
         const files = tymlyServices.probe.files
@@ -150,7 +150,7 @@ describe('TymlyRef first-stage resolution', () => {
       it(label, async () => {
         try {
           await tymly.boot({
-            blueprintPaths: [ path.resolve(bpDir, bp) ]
+            blueprintPaths: [path.resolve(bpDir, bp)]
           })
           expect.fail('Tymly Ref should have failed')
         } catch (err) {
