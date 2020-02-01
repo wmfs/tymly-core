@@ -1,3 +1,13 @@
+# [1.119.0](https://github.com/wmfs/tymly-core/compare/v1.118.0...v1.119.0) (2020-02-01)
+
+
+### 🛠 Builds
+
+* **deps:** bump nanoid from 2.1.10 to 2.1.11 ([b7f37cd](https://github.com/wmfs/tymly-core/commit/b7f37cdb6df7d5e1e0bd58b15b0e64996e697d75))
+* **deps-dev:** bump codecov from 3.6.2 to 3.6.3 ([8bf914f](https://github.com/wmfs/tymly-core/commit/8bf914f9999bcc813675b528877c2ac10108cde3))
+* **deps-dev:** bump codecov from 3.6.3 to 3.6.4 ([8eea774](https://github.com/wmfs/tymly-core/commit/8eea7748bf8abf6be28e947bbf96b0dad0d7d080))
+* **deps-dev:** bump cz-conventional-changelog from 3.0.2 to 3.1.0 ([2115172](https://github.com/wmfs/tymly-core/commit/21151726d94e5412fbcce09d656201f0a1a8ec9f))
+
 # [1.118.0](https://github.com/wmfs/tymly-core/compare/v1.117.0...v1.118.0) (2020-01-28)
 
 
