@@ -1,3 +1,12 @@
+# [1.124.0](https://github.com/wmfs/tymly-core/compare/v1.123.0...v1.124.0) (2020-02-26)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/tymly-statelint from 1.21.0 to 1.22.0 ([425beeb](https://github.com/wmfs/tymly-core/commit/425beebc31226b1ce7f916a2838a75d32b53c60e))
+* **deps-dev:** bump conventional-changelog-metahub from 4.0.0 to 4.0.1 ([7ed4c08](https://github.com/wmfs/tymly-core/commit/7ed4c08d67897b746b22b7311d810e1d727c83c2))
+* **deps-dev:** bump mocha from 7.0.1 to 7.1.0 ([fcfc09e](https://github.com/wmfs/tymly-core/commit/fcfc09e482bdee26fef13b072100fd7b571ab0ae))
+
 # [1.123.0](https://github.com/wmfs/tymly-core/compare/v1.122.0...v1.123.0) (2020-02-26)
 
 
