@@ -1,3 +1,10 @@
+# [1.123.0](https://github.com/wmfs/tymly-core/compare/v1.122.0...v1.123.0) (2020-02-26)
+
+
+### 🛠 Builds
+
+* **deps:** bump uuid from 3.4.0 to 7.0.1 ([1ca9fd6](https://github.com/wmfs/tymly-core/commit/1ca9fd62507dc4a42e4c3a37f3341a0ddf1abd15))
+
 # [1.122.0](https://github.com/wmfs/tymly-core/compare/v1.121.0...v1.122.0) (2020-02-26)
 
 
