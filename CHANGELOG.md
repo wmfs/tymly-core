@@ -1,3 +1,12 @@
+# [1.121.0](https://github.com/wmfs/tymly-core/compare/v1.120.0...v1.121.0) (2020-02-26)
+
+
+### 🛠 Builds
+
+* **deps:** bump async from 3.1.1 to 3.2.0 ([d960731](https://github.com/wmfs/tymly-core/commit/d960731368b1235ccc7be730734f6f4b2e627240))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/git from 7.0.18 to 9.0.0 ([73d2757](https://github.com/wmfs/tymly-core/commit/73d2757d15a1ad37ba2ca58fda276e65e1431b4e))
+* **deps-dev:** bump semantic-release from 15.14.0 to 17.0.4 ([18cd132](https://github.com/wmfs/tymly-core/commit/18cd132a1271795d61bbfba915fb3dc8dfd118aa))
+
 # [1.120.0](https://github.com/wmfs/tymly-core/compare/v1.119.0...v1.120.0) (2020-02-14)
 
 
