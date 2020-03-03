@@ -1,0 +1,12 @@
+{
+  "id": "drinksOrders",
+  "title": "Moe's Drinks Orders",
+  "description": "Moe's Drinks Orders",
+  "type": "object",
+  "properties": {
+    "drink": {
+      "type": "string",
+      "description": "Name of drink"
+    }
+  }
+}
