@@ -25,13 +25,20 @@ describe('Mods tests', function () {
   })
 
   it('ensure components have updated as per mods', () => {
-    const actualModel = tymlyService.blueprintComponents.models.tymlyTest_moesDrinksOrders
-    const expectedModel = require('./expected/moes-drinks-orders-model')
+    const { models, cardTemplates, functions } = tymlyService.blueprintComponents
+    const expectedPath = './expected/simpsons-blueprint'
+
+    const actualModel = models.tymlyTest_moesDrinksOrders
+    const expectedModel = require(`${expectedPath}/models/moes-drinks-orders.json`)
     expect(actualModel).to.eql(expectedModel)
 
-    const actualCardTemplate = tymlyService.blueprintComponents.cardTemplates.tymlyTest_orderAtMoes_1_0
-    const expectedCardTemplate = require('./expected/moes-drinks-orders-card-template')
+    const actualCardTemplate = cardTemplates.tymlyTest_orderAtMoes_1_0
+    const expectedCardTemplate = require(`${expectedPath}/card-templates/order-at-moes.json`)
     expect(actualCardTemplate).to.eql(expectedCardTemplate)
+
+    const actualFunction = functions.tymlyTest_helloWorldFunction
+    const expectedFunction = require(`${expectedPath}/functions/hello-world-function.js`)
+    expect(actualFunction()()).to.eql(expectedFunction()())
   })
 
   after('shutdown Tymly', async () => {
