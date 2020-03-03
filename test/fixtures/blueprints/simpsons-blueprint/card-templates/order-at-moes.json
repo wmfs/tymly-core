@@ -1,0 +1,25 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Moe's"
+    },
+    {
+      "id": "drink",
+      "type": "Input.ChoiceSet",
+      "choices": [
+        {
+          "title": "Duff Beer",
+          "value": "DUFF_BEER"
+        },
+        {
+          "title": "Krusty Kola",
+          "value": "KRUSTY_KOLA"
+        }
+      ]
+    }
+  ]
+}

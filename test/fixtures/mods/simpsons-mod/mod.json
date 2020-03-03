@@ -1,0 +1,14 @@
+{
+  "blueprint": {
+    "namespace": "tymlyTest",
+    "name": "simpsons",
+    "version": "1.0"
+  },
+  "name": "simpsonsMod",
+  "version": "1.0",
+  "label": "Simpsons Mod",
+  "author": "WMFS",
+  "organisation": "Tymlys",
+  "description": "An example Tymly Blueprint involving Simpsons",
+  "categories": ["simpsons"]
+}

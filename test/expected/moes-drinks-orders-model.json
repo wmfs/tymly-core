@@ -1,0 +1,20 @@
+{
+  "id": "drinksOrders",
+  "title": "Moe's Drinks Orders",
+  "description": "Moe's Drinks Orders",
+  "type": "object",
+  "properties": {
+    "drink": {
+      "type": "string",
+      "description": "Name of drink"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of customer"
+    }
+  },
+  "namespace": "tymlyTest",
+  "blueprintName": "simpsons",
+  "blueprintVersion": "1.0",
+  "name": "moesDrinksOrders"
+}

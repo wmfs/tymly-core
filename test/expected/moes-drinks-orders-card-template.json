@@ -1,0 +1,35 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Moe's"
+    },
+    {
+      "id": "name",
+      "type": "Input.Text",
+      "title": "Name"
+    },
+    {
+      "id": "drink",
+      "type": "Input.ChoiceSet",
+      "choices": [
+        {
+          "title": "Flamin' Moe",
+          "value": "FLAMIN_MOE"
+        },
+        {
+          "title": "Water",
+          "value": "WATER"
+        }
+      ]
+    }
+  ],
+  "namespace": "tymlyTest",
+  "blueprintName": "simpsons",
+  "blueprintVersion": "1.0",
+  "id": "orderAtMoes",
+  "name": "orderAtMoes"
+}
