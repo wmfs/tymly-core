@@ -20,6 +20,11 @@
           "value": "KRUSTY_KOLA"
         }
       ]
+    },
+    {
+      "id": "quantity",
+      "type": "Input.Number",
+      "title": "Quantity"
     }
   ]
 }

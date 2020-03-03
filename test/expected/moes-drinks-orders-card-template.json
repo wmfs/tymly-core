@@ -25,6 +25,11 @@
           "value": "WATER"
         }
       ]
+    },
+    {
+      "id": "quantity",
+      "type": "Input.Number",
+      "title": "Quantity"
     }
   ],
   "namespace": "tymlyTest",
