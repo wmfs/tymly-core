@@ -8,6 +8,10 @@
       "type": "string",
       "description": "Name of drink"
     },
+    "quantity": {
+      "type": "integer",
+      "description": "Quantity of drinks"
+    },
     "name": {
       "type": "string",
       "description": "Name of customer"
