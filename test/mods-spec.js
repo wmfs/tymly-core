@@ -25,8 +25,8 @@ describe('Mods tests', function () {
   })
 
   it('ensure components have updated as per mods', () => {
-    const { models, cardTemplates, functions } = tymlyService.blueprintComponents
     const expectedPath = './expected/simpsons-blueprint'
+    const { models, cardTemplates, functions, images } = tymlyService.blueprintComponents
 
     const actualModel = models.tymlyTest_moesDrinksOrders
     const expectedModel = require(`${expectedPath}/models/moes-drinks-orders.json`)
@@ -39,6 +39,10 @@ describe('Mods tests', function () {
     const actualFunction = functions.tymlyTest_helloWorldFunction
     const expectedFunction = require(`${expectedPath}/functions/hello-world-function.js`)
     expect(actualFunction()()).to.eql(expectedFunction()())
+
+    const actualImageFilePath = images['tymlyTest_simpsons.png'].filePath
+    const expectedImageFilePath = path.resolve(__dirname, './fixtures/mods/simpsons-mod/images/simpsons.png')
+    expect(actualImageFilePath).to.eql(expectedImageFilePath)
   })
 
   after('shutdown Tymly', async () => {
