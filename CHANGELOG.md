@@ -1,3 +1,25 @@
+# [1.126.0](https://github.com/wmfs/tymly-core/compare/v1.125.0...v1.126.0) (2020-03-04)
+
+
+### ✨ Features
+
+* beginning of mods and json patching ([0416593](https://github.com/wmfs/tymly-core/commit/0416593ded947eae63addbc2d343eb2e951d7b4e))
+* load mods to return components ([8047e5d](https://github.com/wmfs/tymly-core/commit/8047e5ddd2567f329acd80656d99add79d5ac8e7))
+* replace functions with modifier ([7208536](https://github.com/wmfs/tymly-core/commit/72085367089636020286ee752563c70002b930f1))
+* replace images with modifier ([54369d7](https://github.com/wmfs/tymly-core/commit/54369d7401cda06f5e9b253d238102d7e313b63f))
+
+
+### 🐛 Bug Fixes
+
+* default to empty array for modPaths ([1f4df52](https://github.com/wmfs/tymly-core/commit/1f4df5276dfd7029709ad511ed049e72b59a9243))
+
+
+### 🚨 Tests
+
+* add test for remove operation modifier ([0d11a33](https://github.com/wmfs/tymly-core/commit/0d11a339b3748c296e5aa338bee0510ad0ea1319))
+* add those images ([83df232](https://github.com/wmfs/tymly-core/commit/83df232a38440d6bb9119e5f088289aeb52fac36))
+* add to test fixtures ([895310f](https://github.com/wmfs/tymly-core/commit/895310f591167323ab044b0ed5dcc832190f3a36))
+
 # [1.125.0](https://github.com/wmfs/tymly-core/compare/v1.124.0...v1.125.0) (2020-02-27)
 
 
