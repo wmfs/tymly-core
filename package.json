@@ -39,7 +39,7 @@
     "read-pkg-up": "7.0.1",
     "underscore-query": "3.3.2",
     "upath": "1.2.0",
-    "uuid": "7.0.1"
+    "uuid": "7.0.2"
   },
   "devDependencies": {
     "chai": "4.2.0",
