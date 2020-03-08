@@ -237,6 +237,31 @@ describe('Memory Model promise tests', function () {
     )
   })
 
+  it('find Bart or Homer by name', async () => {
+    const doc = await personModel.findOne(
+      {
+        where: {
+          firstName: { equals: ['Homer', 'Bart'] },
+          lastName: { equals: 'Simpson' }
+        }
+      }
+    )
+    expect(doc).to.containSubset(
+      {
+        age: 39,
+        employeeNo: 1,
+        firstName: 'Homer',
+        lastName: 'Simpson'
+      },
+      {
+        age: 10,
+        employeeNo: 5,
+        firstName: 'Bart',
+        lastName: 'Simpson'
+      }
+    )
+  })
+
   it("shouldn't get one missing person", async () => {
     const doc = await personModel.findOne(
       {
