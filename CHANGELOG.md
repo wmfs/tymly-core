@@ -1,3 +1,10 @@
+## [1.126.1](https://github.com/wmfs/tymly-core/compare/v1.126.0...v1.126.1) (2020-03-08)
+
+
+### 🐛 Bug Fixes
+
+* Memory model where equals: can take an array ([788a414](https://github.com/wmfs/tymly-core/commit/788a414d460d044e3921e57923eb7d11b70ab37e))
+
 # [1.126.0](https://github.com/wmfs/tymly-core/compare/v1.125.0...v1.126.0) (2020-03-04)
 
 
