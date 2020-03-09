@@ -1,3 +1,10 @@
+## [1.126.2](https://github.com/wmfs/tymly-core/compare/v1.126.1...v1.126.2) (2020-03-09)
+
+
+### 🐛 Bug Fixes
+
+* Fixed require uuid for version 7.* ([cdadeeb](https://github.com/wmfs/tymly-core/commit/cdadeeb8d67de700709c437e7d55de49b7d9c147))
+
 ## [1.126.1](https://github.com/wmfs/tymly-core/compare/v1.126.0...v1.126.1) (2020-03-08)
 
 
