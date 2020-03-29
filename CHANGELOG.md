@@ -1,3 +1,23 @@
+# [1.128.0](https://github.com/wmfs/tymly-core/compare/v1.127.0...v1.128.0) (2020-03-29)
+
+
+### ✨ Features
+
+* Add statebox.sendTaskLastHeartbeat ([c351173](https://github.com/wmfs/tymly-core/commit/c351173507d0c20171a7d241236706c6734fecff))
+
+
+### 🛠 Builds
+
+* **deps:** Bump boom from 7.3.0 to hapi/boom 9.1.0 ([2beaa94](https://github.com/wmfs/tymly-core/commit/2beaa94600073131f40600dd3464c4f2fe4249d4))
+* **deps:** Bump statebox from 1.61.1 to 1.62.0 ([53351c8](https://github.com/wmfs/tymly-core/commit/53351c8bb1b63fee59a6b996e9c51600a5233b8a))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/changelog from 5.0.0 to 5.0.1 ([8c62242](https://github.com/wmfs/tymly-core/commit/8c62242216d8ba6ec34c89242e549102a81adcfb))
+* **deps-dev:** bump mocha from 7.1.0 to 7.1.1 ([2c49e1f](https://github.com/wmfs/tymly-core/commit/2c49e1f36e69641ef1021df08accb44bc349be8a))
+
+
+### 💎 Styles
+
+* Lint fixes ([6ef9bec](https://github.com/wmfs/tymly-core/commit/6ef9bec61149b94197ebbcc3f06e792850225cab))
+
 # [1.127.0](https://github.com/wmfs/tymly-core/compare/v1.126.2...v1.127.0) (2020-03-18)
 
 
