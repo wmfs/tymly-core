@@ -465,14 +465,11 @@ describe('Launch-state-machine state resources', function () {
       expect(executionDescription.ctx.launchedResult).to.equals('UPDATED')
     })
 
-    it('complete the parent execution', async () => {
-      const executionDescription = await statebox.sendTaskSuccess(
-        parentExecution,
-        null,
-        {}
-      )
+    it('third update completes parent execution', async () => {
+      const executionDescription = await statebox.waitUntilStoppedRunning(parentExecution)
 
       expect(executionDescription.status).to.eql('SUCCEEDED')
+      expect(executionDescription.ctx.launchedResult).to.equals('EXPIRED')
     })
 
     after('shutdown Tymly', async () => {

@@ -22,6 +22,21 @@
         "executionName.$": "$.launcher.executionName",
         "result": "UPDATED"
       },
+      "Next": "PauseAgain"
+    },
+    "PauseAgain": {
+      "Type": "Wait",
+      "Seconds": 2,
+      "Next": "LastFlag"
+    },
+    "LastFlag": {
+      "Type": "Task",
+      "Resource": "module:sendTaskHeartbeat",
+      "Parameters": {
+        "executionName.$": "$.launcher.executionName",
+        "result": "EXPIRED",
+        "final": true
+      },
       "End": true
     }
   },
