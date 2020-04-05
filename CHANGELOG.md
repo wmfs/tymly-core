@@ -1,3 +1,11 @@
+# [1.131.0](https://github.com/wmfs/tymly-core/compare/v1.130.0...v1.131.0) (2020-04-05)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/statebox from 1.62.0 to 1.63.0 ([32ced49](https://github.com/wmfs/tymly-core/commit/32ced49387d8cb6d68d93fa7a31a937b226c811f))
+* **deps-dev:** bump nyc from 15.0.0 to 15.0.1 ([04fbd90](https://github.com/wmfs/tymly-core/commit/04fbd9010227d8107d314c694b8c99c7c98ede06))
+
 # [1.130.0](https://github.com/wmfs/tymly-core/compare/v1.129.0...v1.130.0) (2020-04-02)
 
 
