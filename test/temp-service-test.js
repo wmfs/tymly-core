@@ -19,15 +19,15 @@ describe('Temp service', function () {
   })
 
   describe('create temp directory', () => {
-    it ('promises', async () => {
-      const dir = await tempService.makeTempDir("fruit")
+    it('promises', async () => {
+      const dir = await tempService.makeTempDir('fruit')
 
       confirmDirectory(dir)
     })
 
-    it ('callback', () => {
+    it('callback', () => {
       tempService.makeTempDir(
-        "bubbles",
+        'bubbles',
         (dir, err) => {
           expect(err).to.be.null()
           confirmDirectory(dir)
@@ -38,7 +38,7 @@ describe('Temp service', function () {
 
   describe('can not create temp directory - bad path', () => {
     const badPath = '../../../../../../../../../../bonk'
-    it ('promises', async () => {
+    it('promises', async () => {
       try {
         await tempService.makeTempDir(badPath)
       } catch (err) {
@@ -48,7 +48,7 @@ describe('Temp service', function () {
       expect.fail('makeTempDir should throw with bad path')
     })
 
-    it ('callback', done => {
+    it('callback', done => {
       tempService.makeTempDir(
         badPath,
         done
