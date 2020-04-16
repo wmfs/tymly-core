@@ -18,42 +18,22 @@ describe('Temp service', function () {
     tempService = services.temp
   })
 
-  describe('create temp directory', () => {
-    it('promises', async () => {
-      const dir = await tempService.makeTempDir('fruit')
-
-      confirmDirectory(dir)
-    })
-
-    it('callback', () => {
-      tempService.makeTempDir(
-        'bubbles',
-        (dir, err) => {
-          expect(err).to.be.null()
-          confirmDirectory(dir)
-        }
-      )
-    })
+  it('create temp directory', async () => {
+    const dir = await tempService.makeTempDir('fruit')
+    confirmDirectory(dir)
   })
 
-  describe('can not create temp directory - bad path', () => {
+  it('can not create temp directory - bad path', async () => {
     const badPath = '../../../../../../../../../../bonk'
-    it('promises', async () => {
-      try {
-        await tempService.makeTempDir(badPath)
-      } catch (err) {
-        return
-      }
-
-      expect.fail('makeTempDir should throw with bad path')
-    })
-
-    it('callback', done => {
-      tempService.makeTempDir(
-        badPath,
-        done
-      )
-    })
+    try {
+      // WARNING: the following line throws an exception in linux, but does not do so in win10
+      const path = await tempService.makeTempDir(badPath)
+      console.log(`directory created: ${path}`)
+      confirmDirectory(path)
+    } catch (err) {
+      return
+    }
+    expect.fail('makeTempDir should throw with bad path')
   })
 
   after('shutdown', async () => {
