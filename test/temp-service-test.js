@@ -6,6 +6,7 @@ const expect = chai.expect
 
 const tymly = require('./../lib')
 const fs = require('fs')
+const os = require('os')
 
 describe('Temp service', function () {
   let tymlyService
@@ -24,12 +25,11 @@ describe('Temp service', function () {
   })
 
   it('can not create temp directory - bad path', async () => {
-    const badPath = '../../../../../../../../../../bonk'
+    const badPath = os.platform() === 'win32'
+      ? ':::'
+      : '../../../../../../../../../../bonk'
     try {
-      // WARNING: the following line throws an exception in linux, but does not do so in win10
-      const path = await tempService.makeTempDir(badPath)
-      console.log(`directory created: ${path}`)
-      confirmDirectory(path)
+      await tempService.makeTempDir(badPath)
     } catch (err) {
       return
     }
