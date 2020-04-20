@@ -1,9 +1,5 @@
 
 class Heartbeat {
-  init (resourceConfig, env, callback) {
-    callback(null)
-  }
-
   async run (event, context, done) {
     const heartbeat = {
       heart: 'ba-dum-dum'
