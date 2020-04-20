@@ -55,7 +55,7 @@
     "standard": "14.3.3",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.0",
-    "@wmfs/tymly-test-helpers": "1.4.0"
+    "@wmfs/tymly-test-helpers": "1.4.1"
   },
   "scripts": {
     "lint": "standard",
