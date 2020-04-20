@@ -1,3 +1,24 @@
+## [1.135.2](https://github.com/wmfs/tymly-core/compare/v1.135.1...v1.135.2) (2020-04-20)
+
+
+### 🐛 Bug Fixes
+
+* **state-resource:** Remove callback parameter from init method ([6649d2e](https://github.com/wmfs/tymly-core/commit/6649d2e1e4f32e44ca7a9960a2f72cb52f0e6174))
+* **state-resource:** Removed done callback from run method ([7695ee5](https://github.com/wmfs/tymly-core/commit/7695ee592009b881bab9b088b91e4ebaa9c335af))
+* **state-resources:** Remove callback parameter from init methods ([c4f8f4a](https://github.com/wmfs/tymly-core/commit/c4f8f4a5c48ba76b4ee3a8c969d76bf8b740bb79))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-test-helpers from 1.4.0 to 1.4.1 ([22ffbe9](https://github.com/wmfs/tymly-core/commit/22ffbe9830466d3aea3fabbebd47ef9fc2c517c2))
+* **deps-dev:** bump semantic-release from 17.0.4 to 17.0.5 ([cc491e3](https://github.com/wmfs/tymly-core/commit/cc491e3ed29b33ebe998112a131736df4b66a73e))
+* **deps-dev:** bump semantic-release from 17.0.5 to 17.0.6 ([68fa0e0](https://github.com/wmfs/tymly-core/commit/68fa0e041f03cd5832c38735d4c23401740a9f14))
+
+
+### 📦 Code Refactoring
+
+* **tempService.makeTempDir:** Stripped out callback implementation ([6553f3b](https://github.com/wmfs/tymly-core/commit/6553f3b047d140c3fa91bfb0ab73fcab76d34cb9))
+
 ## [1.135.1](https://github.com/wmfs/tymly-core/compare/v1.135.0...v1.135.1) (2020-04-16)
 
 
