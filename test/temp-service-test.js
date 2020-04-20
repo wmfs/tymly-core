@@ -6,6 +6,7 @@ const expect = chai.expect
 
 const tymly = require('./../lib')
 const fs = require('fs')
+const os = require('os')
 
 describe('Temp service', function () {
   let tymlyService
@@ -18,42 +19,21 @@ describe('Temp service', function () {
     tempService = services.temp
   })
 
-  describe('create temp directory', () => {
-    it('promises', async () => {
-      const dir = await tempService.makeTempDir('fruit')
-
-      confirmDirectory(dir)
-    })
-
-    it('callback', () => {
-      tempService.makeTempDir(
-        'bubbles',
-        (dir, err) => {
-          expect(err).to.be.null()
-          confirmDirectory(dir)
-        }
-      )
-    })
+  it('create temp directory', async () => {
+    const dir = await tempService.makeTempDir('fruit')
+    confirmDirectory(dir)
   })
 
-  describe('can not create temp directory - bad path', () => {
-    const badPath = '../../../../../../../../../../bonk'
-    it('promises', async () => {
-      try {
-        await tempService.makeTempDir(badPath)
-      } catch (err) {
-        return
-      }
-
-      expect.fail('makeTempDir should throw with bad path')
-    })
-
-    it('callback', done => {
-      tempService.makeTempDir(
-        badPath,
-        done
-      )
-    })
+  it('can not create temp directory - bad path', async () => {
+    const badPath = os.platform() === 'win32'
+      ? ':::'
+      : '../../../../../../../../../../bonk'
+    try {
+      await tempService.makeTempDir(badPath)
+    } catch (err) {
+      return
+    }
+    expect.fail('makeTempDir should throw with bad path')
   })
 
   after('shutdown', async () => {

@@ -3,10 +3,6 @@
 let fail = false
 
 module.exports = class Stuttery {
-  init (resourceConfig, env, callback) {
-    callback(null)
-  }
-
   run (event, context) {
     fail = !fail
     if (fail) {

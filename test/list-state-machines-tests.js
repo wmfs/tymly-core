@@ -58,16 +58,13 @@ describe('list available state machines', () => {
 
   async function runStateResource (ResourceClass) {
     const stateResource = new ResourceClass()
-    await new Promise(resolve =>
-      stateResource.init(
-        null,
-        {
-          bootedServices: {
-            statebox: statebox
-          }
-        },
-        resolve
-      )
+    stateResource.init(
+      null,
+      {
+        bootedServices: {
+          statebox: statebox
+        }
+      }
     )
 
     return new Promise((resolve, reject) => {
