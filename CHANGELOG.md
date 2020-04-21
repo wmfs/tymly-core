@@ -1,3 +1,20 @@
+# [1.137.0](https://github.com/wmfs/tymly-core/compare/v1.136.0...v1.137.0) (2020-04-21)
+
+
+### 🐛 Bug Fixes
+
+* Rework runStateMachine sendHeartbeat without using done callback ([06f02a4](https://github.com/wmfs/tymly-core/commit/06f02a49779c8c17dbf1a3439702688356f7ef44))
+
+
+### 🛠 Builds
+
+* **deps:** Bump statebox from 1.64.1 to 1.64.2 ([51ad5f0](https://github.com/wmfs/tymly-core/commit/51ad5f007815e9bf8c0da82a9cad45703a990427))
+
+
+### 🚨 Tests
+
+* Remove done callback from Heartbeat.run ([236ccd5](https://github.com/wmfs/tymly-core/commit/236ccd5680b8a2b87d0b957f9d9c2d64f72c0794))
+
 # [1.136.0](https://github.com/wmfs/tymly-core/compare/v1.135.2...v1.136.0) (2020-04-21)
 
 
