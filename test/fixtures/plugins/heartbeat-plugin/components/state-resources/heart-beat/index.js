@@ -1,15 +1,13 @@
 
 class Heartbeat {
-  async run (event, context, done) {
+  run (event, context) {
     const heartbeat = {
       heart: 'ba-dum-dum'
     }
 
-    const executionDescription = await context.sendTaskHeartbeat(
+    context.sendTaskHeartbeat(
       { heartbeat }
     )
-
-    done(executionDescription)
   } // run
 } // Heartbeat
 
