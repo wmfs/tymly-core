@@ -24,20 +24,18 @@ describe('Inventory tests', function () {
     inventoryService = tymlyServices.inventory
   })
 
-  it('return inventory contents', function (done) {
-    inventoryService.collateEverything(
+  it('inventory contents', () => {
+    const inventory = inventoryService.collateEverything(
       {
         blueprintPaths: blueprintPaths,
         pluginPaths: pluginPaths,
         messages: startupMessages()
-      },
-      function (err, inventory) {
-        expect(err).to.eql(null)
-        expect(inventory).to.be.an('object')
-        expect(inventory.states.purring).to.be.an('array')
-        done()
       }
     )
+
+    expect(inventory).to.be.an('object')
+    expect(Object.keys(inventory.plugins)).to.have.length(1)
+    expect(inventory.states.purring).to.be.an('array')
   })
 
   after('shutdown Tymly', async () => {
