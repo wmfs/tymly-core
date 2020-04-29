@@ -1,3 +1,24 @@
+## [1.137.1](https://github.com/wmfs/tymly-core/compare/v1.137.0...v1.137.1) (2020-04-29)
+
+
+### 🐛 Bug Fixes
+
+* **boot:** Make service.boot method optional. ([dbfd8c4](https://github.com/wmfs/tymly-core/commit/dbfd8c45c0210c56c35dc62dc26f29e5fcff02dc))
+* **inventory:** Flip from collateEverything from taking a callback to just returning a value ([d4c6ee2](https://github.com/wmfs/tymly-core/commit/d4c6ee25c7ff1dd6cddb4ca51ea42b7a48f5afe2))
+* **inventory:** Remove redundant callback parameter ([8007eae](https://github.com/wmfs/tymly-core/commit/8007eae77a7208ddeb1dbdd38dc1dc7333f97680))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump mocha from 7.1.1 to 7.1.2 ([bf6de36](https://github.com/wmfs/tymly-core/commit/bf6de36cae534e2a14b87e6666b78a24b6d55034))
+* **deps-dev:** bump semantic-release from 17.0.6 to 17.0.7 ([80b8461](https://github.com/wmfs/tymly-core/commit/80b84614745833a187dc382a037687eea1364102))
+
+
+### 📦 Code Refactoring
+
+* **inventory:** Move pruneFunctions out of class definition ([c5cade4](https://github.com/wmfs/tymly-core/commit/c5cade46d54b869b299e026e74353a3d1e3d9073))
+* **inventory:** Remove empty boot method ([c1f5de7](https://github.com/wmfs/tymly-core/commit/c1f5de7e54e6d3ad635d6a644b0c9ba947f8d8c4))
+
 # [1.137.0](https://github.com/wmfs/tymly-core/compare/v1.136.0...v1.137.0) (2020-04-21)
 
 
