@@ -99,13 +99,8 @@ describe('Memory Model promise tests', function () {
       {}
     )
       .then(() => assert(false))
-      .catch(err => {
-        expect(err).to.containSubset(
-          {
-            name: 'DuplicatePrimaryKey'
-          }
-        )
-      }
+      .catch(err =>
+        expect(err.name).to.eql('DuplicatePrimaryKey')
       )
   })
 
@@ -121,13 +116,8 @@ describe('Memory Model promise tests', function () {
       {}
     )
       .then(() => assert(false))
-      .catch(err => {
-        expect(err).to.containSubset(
-          {
-            name: 'DuplicatePrimaryKey'
-          }
-        )
-      }
+      .catch(err =>
+        expect(err.name).to.eql('DuplicatePrimaryKey')
       )
   })
 

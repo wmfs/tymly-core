@@ -115,12 +115,7 @@ describe('Memory storage tests', function () {
         {},
         function (err) {
           console.log(err)
-          expect(err).to.eql(
-            {
-              name: 'DuplicatePrimaryKey',
-              message: 'Unable to create model \'people\' because {"employeeNo":"1"} already exists'
-            }
-          )
+          expect(err.name).to.eql('DuplicatePrimaryKey')
           done()
         }
       )
@@ -143,12 +138,7 @@ describe('Memory storage tests', function () {
         ],
         {},
         function (err) {
-          expect(err).to.eql(
-            {
-              name: 'DuplicatePrimaryKey',
-              message: 'Unable to create model \'people\' because {"employeeNo":"2"} already exists'
-            }
-          )
+          expect(err.name).to.eql('DuplicatePrimaryKey')
           done()
         }
       )
