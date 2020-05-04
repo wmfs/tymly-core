@@ -12,8 +12,8 @@ describe('Registry tests', function () {
   let registryService
 
   describe('startup', () => {
-    it('load the cat blueprint, which has some registry keys', function (done) {
-      tymly.boot(
+    it('load the cat blueprint, which has some registry keys', async () => {
+      const tymlyServices = await tymly.boot(
         {
           blueprintPaths: [
             path.resolve(__dirname, './fixtures/blueprints/cats-blueprint')
@@ -22,33 +22,29 @@ describe('Registry tests', function () {
           pluginPaths: [
             path.resolve(__dirname, './fixtures/plugins/cats-plugin')
           ]
-        },
-        function (err, tymlyServices) {
-          expect(err).to.eql(null)
-          tymlyService = tymlyServices.tymly
-          registryService = tymlyServices.registry
-          done()
         }
       )
+
+      tymlyService = tymlyServices.tymly
+      registryService = tymlyServices.registry
     })
+
+    const key = 'tymlyTest_mealThreshold'
 
     it('verify key exists', () => {
-      expect(registryService.has('tymlyTest_mealThreshold')).to.eql(true)
+      expect(registryService.has(key)).to.eql(true)
     })
 
-    it('registry value is correct, direct access', function () {
+    it('registry value is correct, direct access', () => {
       expect(registryService.registry.tymlyTest_mealThreshold.value).to.eql(3)
     })
 
-    it('registry value is correct, using key', function (done) {
-      const key = 'tymlyTest_mealThreshold'
+    it('registry value is correct, using key', () => {
       const value = registryService.get(key)
       expect(value).to.eql(3)
-      done()
     })
 
     it('change registry value, using key', function (done) {
-      const key = 'tymlyTest_mealThreshold'
       registryService.set(key, 2, function (err) {
         expect(err).to.eql(null)
         expect(registryService.get(key)).to.eql(2)
@@ -58,9 +54,9 @@ describe('Registry tests', function () {
   })
 
   describe('reboot', () => {
-    it('reboot tymly, set a registry key value by binding to environment variable)', function (done) {
+    it('reboot tymly, set a registry key value by binding to environment variable)', async () => {
       process.env.MEAL_THRESHOLD = 5
-      tymly.boot(
+      const tymlyServices = await tymly.boot(
         {
           blueprintPaths: [
             path.resolve(__dirname, './fixtures/blueprints/cats-blueprint')
@@ -69,20 +65,17 @@ describe('Registry tests', function () {
           pluginPaths: [
             path.resolve(__dirname, './fixtures/plugins/cats-plugin')
           ]
-        },
-        function (err, tymlyServices) {
-          expect(err).to.eql(null)
-          registryService = tymlyServices.registry
-          done()
         }
       )
+
+      registryService = tymlyServices.registry
     })
 
-    it('the environment variable is correctly set in the registry by env vars', function () {
+    it('the environment variable is correctly set in the registry by env vars', () => {
       expect(registryService.registry.tymlyTest_mealThreshold.meta.schema.properties.environmentVariableName).to.eql('MEAL_THRESHOLD')
     })
 
-    it('registry value is correct, direct access', function () {
+    it('registry value is correct, direct access', () => {
       expect(registryService.registry.tymlyTest_mealThreshold.value).to.eql('5')
     })
 

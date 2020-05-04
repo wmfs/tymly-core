@@ -17,8 +17,8 @@ describe('Registry key state resources', function () {
   let registry
 
   describe('setup', () => {
-    it('boot Tymly', function (done) {
-      tymly.boot(
+    it('boot Tymly', async () => {
+      const tymlyServices = await tymly.boot(
         {
           blueprintPaths: [
             path.resolve(__dirname, './fixtures/blueprints/registry-blueprint')
@@ -31,15 +31,12 @@ describe('Registry key state resources', function () {
               registryKeys: {}
             }
           }
-        },
-        function (err, tymlyServices) {
-          if (err) return done(err)
-          tymlyService = tymlyServices.tymly
-          statebox = tymlyServices.statebox
-          registry = tymlyServices.registry
-          done()
         }
       )
+
+      tymlyService = tymlyServices.tymly
+      statebox = tymlyServices.statebox
+      registry = tymlyServices.registry
     })
   })
 
