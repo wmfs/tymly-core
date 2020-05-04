@@ -34,7 +34,7 @@
     "lodash": "4.17.15",
     "lru-cache": "5.1.1",
     "mkdirp": "1.0.4",
-    "moment": "2.24.0",
+    "moment": "2.25.3",
     "nanoid": "3.0.2",
     "read-pkg-up": "7.0.1",
     "underscore-query": "3.3.2",
