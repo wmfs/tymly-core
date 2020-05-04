@@ -44,12 +44,9 @@ describe('Registry tests', function () {
       expect(value).to.eql(3)
     })
 
-    it('change registry value, using key', function (done) {
-      registryService.set(key, 2, function (err) {
-        expect(err).to.eql(null)
-        expect(registryService.get(key)).to.eql(2)
-        done()
-      })
+    it('change registry value, using key', async () => {
+      await registryService.set(key, 2)
+      expect(registryService.get(key)).to.eql(2)
     })
   })
 
@@ -80,12 +77,9 @@ describe('Registry tests', function () {
     })
 
     const key = 'tymlyTest_mealThreshold'
-    it('change registry value, using key', function (done) {
-      registryService.set(key, 2, function (err) {
-        expect(err).to.eql(null)
-        expect(registryService.get(key)).to.eql(2)
-        done()
-      })
+    it('change registry value, using key', async () => {
+      await registryService.set(key, 2)
+      expect(registryService.get(key)).to.eql(2)
     })
 
     it('reset registry value, using key', function (done) {
@@ -104,8 +98,8 @@ describe('Registry tests', function () {
       expect(registryService.has(key)).to.eql(false)
     })
 
-    it('set value by key', (done) => {
-      registryService.set(key, 'trousers', done)
+    it('set value by key', async () => {
+      await registryService.set(key, 'trousers')
     })
 
     it('verify value', () => {
