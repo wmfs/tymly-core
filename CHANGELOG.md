@@ -1,3 +1,34 @@
+## [1.137.2](https://github.com/wmfs/tymly-core/compare/v1.137.1...v1.137.2) (2020-05-04)
+
+
+### 🐛 Bug Fixes
+
+* **Registry:** Removed substitute method - not used ([8cd1614](https://github.com/wmfs/tymly-core/commit/8cd16143b5cd9d7e6dc77eaf1a492db915de9dd0))
+
+
+### 🛠 Builds
+
+* Remove async package dependency ([7356a96](https://github.com/wmfs/tymly-core/commit/7356a961bf67206211b88bcf4b7c6170f36b96b4))
+
+
+### 📦 Code Refactoring
+
+* **Memory-model:** Flip create to promise-first implementation ([1fd6724](https://github.com/wmfs/tymly-core/commit/1fd6724131575f7a4d08e11bf22d490817e507b5))
+* **Memory-model:** Flip find to promise-first implementation ([042170d](https://github.com/wmfs/tymly-core/commit/042170d49e2a9f4ab774958c46bb28e4a57b0a34))
+* **Memory-model:** Flipped destroyById to promise first implementation ([84620e9](https://github.com/wmfs/tymly-core/commit/84620e91b726e97f3238a12801b1f68af2100838))
+* **Memory-model:** Flipped findOne and findById to promise-first implementation ([5591f24](https://github.com/wmfs/tymly-core/commit/5591f24a80e5683059556fad4e17dc75b639894f))
+* **Memory-model:** Flipped patch to promise-first implementation ([5a90d59](https://github.com/wmfs/tymly-core/commit/5a90d59da85b73c03dcbf752c8cad8f278f596bf))
+* **Memory-model:** Flipped patch to promise-first implementation ([55848d6](https://github.com/wmfs/tymly-core/commit/55848d62a95adc892a9f0cfef521bc708eeb0ca3))
+* **Memory-model:** Flipped upsert to promise-first implementation ([c695b7b](https://github.com/wmfs/tymly-core/commit/c695b7b83e58aa0b428dccf401e88faf862f1b39))
+* **Memory-model:** Prefer built-ins to _.forOwn/_.forEach ([44784e6](https://github.com/wmfs/tymly-core/commit/44784e66e7a42a45b8aaffd56ceb0f00d968fa49))
+* **Memory-model:** Removed promisify helper function ([22dd640](https://github.com/wmfs/tymly-core/commit/22dd640cf74966178ec58f3298749c61eb02a66d))
+* **Registry:** Flip clear to async/await ([64ffd7b](https://github.com/wmfs/tymly-core/commit/64ffd7b145447c11acd1b55c84f1694e959ad4a6))
+* **Registry:** Flip refresh to promises ([a56951c](https://github.com/wmfs/tymly-core/commit/a56951cb9fda516e215acbd46246cf69961318c0))
+* **Registry:** Flip set to async/await ([72c0bd0](https://github.com/wmfs/tymly-core/commit/72c0bd0b6b48a9c8ddfdd9782d0c4f59a1ed3e3a))
+* **Registry:** Rework state resources to use promises interface ([75a1580](https://github.com/wmfs/tymly-core/commit/75a1580395dbbdb1b3187e4591e48fa3b4572ebc))
+* **Registry:** Reworked ensureBlueprintKeys to use async/await ([9a974bf](https://github.com/wmfs/tymly-core/commit/9a974bfd1a4798fce83babee01c376ad7edae212))
+* **Registry-tests:** await tymly.boot rather than using callback ([58f8037](https://github.com/wmfs/tymly-core/commit/58f803745275851ef3f49fc8f0a1b6d2347b1b08))
+
 ## [1.137.1](https://github.com/wmfs/tymly-core/compare/v1.137.0...v1.137.1) (2020-04-29)
 
 
