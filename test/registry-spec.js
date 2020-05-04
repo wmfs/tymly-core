@@ -82,12 +82,9 @@ describe('Registry tests', function () {
       expect(registryService.get(key)).to.eql(2)
     })
 
-    it('reset registry value, using key', function (done) {
-      registryService.clear(key, (err) => {
-        expect(err).to.eql(null)
-        expect(registryService.has(key)).to.eql(false)
-        done()
-      })
+    it('reset registry value, using key', async () => {
+      await registryService.clear(key)
+      expect(registryService.has(key)).to.eql(false)
     })
   })
 
@@ -108,8 +105,8 @@ describe('Registry tests', function () {
       expect(registryService.registry[key].value).to.eql('trousers')
     })
 
-    it('reset value by key', (done) => {
-      registryService.clear(key, done)
+    it('reset value by key', async () => {
+      await registryService.clear(key)
     })
 
     it('value is gone', () => {
