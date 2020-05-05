@@ -1,7 +1,6 @@
 class DummyUserInfoService {
-  boot (options, callback) {
+  boot (options) {
     options.messages.info('Dummy User Info Service')
-    callback(null)
   }
 
   /**

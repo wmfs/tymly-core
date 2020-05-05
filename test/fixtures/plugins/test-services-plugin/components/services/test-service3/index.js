@@ -1,10 +1,9 @@
 'use strict'
 
 class TestService3 {
-  boot (options, callback) {
+  boot (options) {
     this.bootOrder = ['testService3']
     this.shutdownOrder = []
-    callback(null)
   }
 
   async shutdown () {
