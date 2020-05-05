@@ -1,10 +1,9 @@
 'use strict'
 
 class TestService1 {
-  boot (options, callback) {
+  boot (options) {
     this.testService3 = options.bootedServices.testService3
     this.testService3.bootOrder.push('testService1')
-    callback(null)
   }
 
   async shutdown () {
