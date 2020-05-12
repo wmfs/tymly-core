@@ -22,7 +22,7 @@
   "main": "./lib/index.js",
   "dependencies": {
     "@wmfs/statebox": "1.65.0",
-    "@wmfs/tymly-statelint": "1.26.0",
+    "@wmfs/tymly-statelint": "1.27.0",
     "@hapi/boom": "9.1.0",
     "cls-hooked": "4.2.2",
     "debug": "4.1.1",
