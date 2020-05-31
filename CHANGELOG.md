@@ -1,3 +1,13 @@
+# [1.141.0](https://github.com/wmfs/tymly-core/compare/v1.140.0...v1.141.0) (2020-05-31)
+
+
+### 🛠 Builds
+
+* **deps:** bump moment from 2.24.0 to 2.26.0 ([0adf992](https://github.com/wmfs/tymly-core/commit/0adf992a3737412bb7ee82e3e79f4106d94ace63))
+* **deps-dev:** bump codecov from 3.6.5 to 3.7.0 ([1bb1091](https://github.com/wmfs/tymly-core/commit/1bb1091976cbd18bf81d72d90013053a64014111))
+* **deps-dev:** bump mocha from 7.1.2 to 7.2.0 ([a93ac92](https://github.com/wmfs/tymly-core/commit/a93ac925b2e7ff7c12eb932833fc9b5f0facb5e5))
+* **deps-dev:** bump semantic-release from 17.0.7 to 17.0.8 ([b94a2e2](https://github.com/wmfs/tymly-core/commit/b94a2e2b687389326cb6f6864effee644d1b77e4))
+
 # [1.140.0](https://github.com/wmfs/tymly-core/compare/v1.139.0...v1.140.0) (2020-05-12)
 
 
