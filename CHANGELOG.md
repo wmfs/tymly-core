@@ -1,3 +1,11 @@
+# [1.144.0](https://github.com/wmfs/tymly-core/compare/v1.143.0...v1.144.0) (2020-06-01)
+
+
+### 🛠 Builds
+
+* **deps:** bump nanoid from 3.0.2 to 3.1.9 ([15db101](https://github.com/wmfs/tymly-core/commit/15db101e3b1da69ef210bc9681d781abdca03ea8))
+* **deps-dev:** bump nyc from 15.0.1 to 15.1.0 ([583aeac](https://github.com/wmfs/tymly-core/commit/583aeac72ea0c96317236b1c698993ae31c5b033))
+
 # [1.143.0](https://github.com/wmfs/tymly-core/compare/v1.142.0...v1.143.0) (2020-05-31)
 
 
