@@ -1,3 +1,22 @@
+# [1.145.0](https://github.com/wmfs/tymly-core/compare/v1.144.0...v1.145.0) (2020-06-30)
+
+
+### ✨ Features
+
+* throw error if cannot find registry value ([c2e0c52](https://github.com/wmfs/tymly-core/commit/c2e0c52fa9cfc795ccf590fbdf2ad15e1ad46b11))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump mocha from 7.2.0 to 8.0.1 ([32e412f](https://github.com/wmfs/tymly-core/commit/32e412ff4bc36d5e8278e80559ed7b1c463d6e76))
+* **deps-dev:** bump semantic-release from 17.0.8 to 17.1.0 ([ffedded](https://github.com/wmfs/tymly-core/commit/ffedded1138395c69687145badc582358c11458a))
+* **deps-dev:** bump semantic-release from 17.1.0 to 17.1.1 ([4141bea](https://github.com/wmfs/tymly-core/commit/4141bea8a68fa0e42a9dcf835a8e581ace822235))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** use updated circle node image [skip ci] ([9a113e7](https://github.com/wmfs/tymly-core/commit/9a113e7c4365b7736a1e0e54b9a062c4eb7b5658))
+
 # [1.144.0](https://github.com/wmfs/tymly-core/compare/v1.143.0...v1.144.0) (2020-06-01)
 
 
