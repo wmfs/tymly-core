@@ -1,3 +1,10 @@
+# [1.146.0](https://github.com/wmfs/tymly-core/compare/v1.145.0...v1.146.0) (2020-07-01)
+
+
+### 🛠 Builds
+
+* **deps:** bump moment from 2.26.0 to 2.27.0 ([a846b21](https://github.com/wmfs/tymly-core/commit/a846b21c0926d6396c4d2ec72e9c154d44c064fb))
+
 # [1.145.0](https://github.com/wmfs/tymly-core/compare/v1.144.0...v1.145.0) (2020-06-30)
 
 
