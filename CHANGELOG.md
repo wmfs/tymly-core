@@ -1,3 +1,10 @@
+# [1.147.0](https://github.com/wmfs/tymly-core/compare/v1.146.0...v1.147.0) (2020-07-06)
+
+
+### 🛠 Builds
+
+* **deps:** bump nanoid from 3.1.9 to 3.1.10 ([2fda67a](https://github.com/wmfs/tymly-core/commit/2fda67a855ce23e522450376a15608df2a55999f))
+
 # [1.146.0](https://github.com/wmfs/tymly-core/compare/v1.145.0...v1.146.0) (2020-07-01)
 
 
