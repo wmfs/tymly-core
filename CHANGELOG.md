@@ -1,3 +1,11 @@
+## [1.147.1](https://github.com/wmfs/tymly-core/compare/v1.147.0...v1.147.1) (2020-07-13)
+
+
+### 🐛 Bug Fixes
+
+* standard ([9b8e9d6](https://github.com/wmfs/tymly-core/commit/9b8e9d6a05d48ab8b69de08d27d15f6a28e9b6b9))
+* **mods boot:** allow for adding of new functions in mods ([afd11ff](https://github.com/wmfs/tymly-core/commit/afd11fffe06e06786a720ee91d967c8a772bbb89))
+
 # [1.147.0](https://github.com/wmfs/tymly-core/compare/v1.146.0...v1.147.0) (2020-07-06)
 
 
