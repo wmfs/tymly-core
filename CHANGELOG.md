@@ -1,3 +1,10 @@
+# [1.150.0](https://github.com/wmfs/tymly-core/compare/v1.149.0...v1.150.0) (2020-07-14)
+
+
+### ✨ Features
+
+* upsert category, rather than create new ([9689cb6](https://github.com/wmfs/tymly-core/commit/9689cb688f92eec4c86ab92d6b8af1d47a171cd7))
+
 # [1.149.0](https://github.com/wmfs/tymly-core/compare/v1.148.0...v1.149.0) (2020-07-13)
 
 
