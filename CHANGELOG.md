@@ -1,3 +1,10 @@
+# [1.151.0](https://github.com/wmfs/tymly-core/compare/v1.150.0...v1.151.0) (2020-07-16)
+
+
+### 🛠 Builds
+
+* **deps:** bump lru-cache from 5.1.1 to 6.0.0 ([69f6389](https://github.com/wmfs/tymly-core/commit/69f6389ba6bf69af56bb4c5c1f32da59db45c1b1))
+
 # [1.150.0](https://github.com/wmfs/tymly-core/compare/v1.149.0...v1.150.0) (2020-07-14)
 
 
