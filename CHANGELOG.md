@@ -1,3 +1,10 @@
+# [1.157.0](https://github.com/wmfs/tymly-core/compare/v1.156.0...v1.157.0) (2020-08-17)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/statebox from 1.67.0 to 1.68.0 ([46b4484](https://github.com/wmfs/tymly-core/commit/46b44844866bc3ad946ece1333da72084e303e8b))
+
 # [1.156.0](https://github.com/wmfs/tymly-core/compare/v1.155.0...v1.156.0) (2020-08-17)
 
 
