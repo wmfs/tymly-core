@@ -1,3 +1,16 @@
+# [1.155.0](https://github.com/wmfs/tymly-core/compare/v1.154.0...v1.155.0) (2020-08-17)
+
+
+### 🛠 Builds
+
+* **deps:** bump lodash from 4.17.19 to 4.17.20 ([049c071](https://github.com/wmfs/tymly-core/commit/049c07126fb3bb971bba12575d749502ff5e0d82))
+* **deps-dev:** bump mocha from 8.1.0 to 8.1.1 ([6a6d281](https://github.com/wmfs/tymly-core/commit/6a6d281e1d6dcd85c35999b6e363c5029ee016c0))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** separate lint job [ch1009] ([1c3d482](https://github.com/wmfs/tymly-core/commit/1c3d482894c90fc53509a056c42d152c44a80def))
+
 # [1.154.0](https://github.com/wmfs/tymly-core/compare/v1.153.0...v1.154.0) (2020-07-31)
 
 
