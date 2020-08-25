@@ -1,3 +1,11 @@
+# [1.159.0](https://github.com/wmfs/tymly-core/compare/v1.158.0...v1.159.0) (2020-08-25)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/tymly-statelint from 1.31.0 to 1.32.0 ([36ef8df](https://github.com/wmfs/tymly-core/commit/36ef8dfb94bdcf4f1f84d1b227fa188c5a222bdc))
+* **deps-dev:** bump cz-conventional-changelog from 3.2.0 to 3.2.1 ([60e0db7](https://github.com/wmfs/tymly-core/commit/60e0db798627a35ecc02ac9fbb7e180715c3b2ee))
+
 # [1.158.0](https://github.com/wmfs/tymly-core/compare/v1.157.0...v1.158.0) (2020-08-25)
 
 
