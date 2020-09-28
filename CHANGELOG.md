@@ -1,3 +1,10 @@
+# [1.162.0](https://github.com/wmfs/tymly-core/compare/v1.161.0...v1.162.0) (2020-09-28)
+
+
+### 🛠 Builds
+
+* **deps:** bump debug from 4.1.1 to 4.2.0 ([ba668b4](https://github.com/wmfs/tymly-core/commit/ba668b46a965a059aaff9224315cf714ee3cbdf5))
+
 # [1.161.0](https://github.com/wmfs/tymly-core/compare/v1.160.0...v1.161.0) (2020-09-28)
 
 
