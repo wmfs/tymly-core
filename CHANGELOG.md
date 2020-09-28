@@ -1,3 +1,16 @@
+# [1.161.0](https://github.com/wmfs/tymly-core/compare/v1.160.0...v1.161.0) (2020-09-28)
+
+
+### 🛠 Builds
+
+* **deps:** bump moment from 2.27.0 to 2.29.0 ([531e7de](https://github.com/wmfs/tymly-core/commit/531e7de8688caa744bcd53331359df782d60f457))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-test-helpers from 1.4.2 to 1.6.0 ([cd2c2d3](https://github.com/wmfs/tymly-core/commit/cd2c2d34a9e7e76af6a0a6276bf24c0ad608c8e5))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-test-helpers from 1.6.0 to 1.7.0 ([f0e8a13](https://github.com/wmfs/tymly-core/commit/f0e8a13fe8487ce80b2aa7e35d0c89dc9882f928))
+* **deps-dev:** bump cz-conventional-changelog from 3.2.1 to 3.3.0 ([304d354](https://github.com/wmfs/tymly-core/commit/304d354817a56a3cbf6ac51130db023ab56f2c30))
+* **deps-dev:** bump mocha from 8.1.1 to 8.1.2 ([c2e8012](https://github.com/wmfs/tymly-core/commit/c2e80120c17f78eb5ca40c8e648aacc83188e819))
+* **deps-dev:** bump mocha from 8.1.2 to 8.1.3 ([66f2881](https://github.com/wmfs/tymly-core/commit/66f28811fcf3593222a6eb5a6b117a5835eb8778))
+* **deps-dev:** bump semantic-release from 17.1.1 to 17.1.2 ([5348b6c](https://github.com/wmfs/tymly-core/commit/5348b6c3760ecdd9bcac7dfde101fe2665a392c6))
+
 # [1.160.0](https://github.com/wmfs/tymly-core/compare/v1.159.0...v1.160.0) (2020-08-26)
 
 
