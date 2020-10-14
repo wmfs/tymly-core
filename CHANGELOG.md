@@ -1,3 +1,16 @@
+# [1.166.0](https://github.com/wmfs/tymly-core/compare/v1.165.0...v1.166.0) (2020-10-14)
+
+
+### ✨ Features
+
+* add help category [ch2544] ([6692664](https://github.com/wmfs/tymly-core/commit/669266493f679a57c9d46c06d176467f9e09041b))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump semantic-release from 17.1.2 to 17.2.0 ([c5903d4](https://github.com/wmfs/tymly-core/commit/c5903d4354798b96f240da6e8e0ad43d21118522))
+* **deps-dev:** bump semantic-release from 17.2.0 to 17.2.1 ([cd05441](https://github.com/wmfs/tymly-core/commit/cd05441b8e6bbc70233eaae3c2f49c5465373cec))
+
 # [1.165.0](https://github.com/wmfs/tymly-core/compare/v1.164.0...v1.165.0) (2020-10-08)
 
 
