@@ -1,0 +1,8 @@
+{
+  "label": "Help",
+  "description": "Help",
+  "style": {
+    "icon": "system",
+    "backgroundColor": "#008800"
+  }
+}
