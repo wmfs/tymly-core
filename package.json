@@ -34,7 +34,7 @@
     "lru-cache": "6.0.0",
     "mkdirp": "1.0.4",
     "moment": "2.29.1",
-    "nanoid": "3.1.12",
+    "nanoid": "3.1.15",
     "read-pkg-up": "7.0.1",
     "underscore-query": "3.3.2",
     "upath": "1.2.0",
