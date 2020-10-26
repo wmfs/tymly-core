@@ -1,3 +1,21 @@
+# [1.167.0](https://github.com/wmfs/tymly-core/compare/v1.166.0...v1.167.0) (2020-10-26)
+
+
+### 🛠 Builds
+
+* **deps:** bump nanoid from 3.1.12 to 3.1.16 ([384d703](https://github.com/wmfs/tymly-core/commit/384d703778fc02a0269eb104d5aa2bb081ee296b))
+* **deps-dev:** bump mocha from 8.1.3 to 8.2.0 ([4ab7ee1](https://github.com/wmfs/tymly-core/commit/4ab7ee1d43519f1c590d2cadfec290c7cfe83e72))
+* **deps-dev:** bump standard from 14.3.4 to 15.0.0 ([e41c648](https://github.com/wmfs/tymly-core/commit/e41c6483331630f2ab10b9f5c9fa5b88c8f6d8b4))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** add parallelism for unit tests [ch2766] ([691b377](https://github.com/wmfs/tymly-core/commit/691b377978f625122fb6cdc0fad69bf8231e63a8))
+* **circle:** authenticate Docker image pull [ch2767] ([288086a](https://github.com/wmfs/tymly-core/commit/288086aef2de4e30f770cce92d6bec8ded6bc1a7))
+* **circle:** cache dependencies [ch2770] ([0aa159a](https://github.com/wmfs/tymly-core/commit/0aa159a84719ba476321825e1ffefb57e93cd294))
+* **circle:** separate linting job [ch1009] ([bb33671](https://github.com/wmfs/tymly-core/commit/bb336711e2ca005804d68f5c3cbcd5b0e8153b39))
+* **circle:** update build environment variable context [ch2771] ([10194c7](https://github.com/wmfs/tymly-core/commit/10194c7f03e056c4c92de93d7205e85c12c5ceee))
+
 # [1.166.0](https://github.com/wmfs/tymly-core/compare/v1.165.0...v1.166.0) (2020-10-14)
 
 
