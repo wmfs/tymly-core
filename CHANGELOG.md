@@ -1,3 +1,13 @@
+# [1.170.0](https://github.com/wmfs/tymly-core/compare/v1.169.0...v1.170.0) (2020-11-09)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/statebox from 1.73.0 to 1.74.0 ([616eab1](https://github.com/wmfs/tymly-core/commit/616eab1c16a32252d3df737c9dff6b8f5c23e929))
+* **deps-dev:** bump codecov from 3.8.0 to 3.8.1 ([33acafa](https://github.com/wmfs/tymly-core/commit/33acafa34aa5c5f62e5523489fef463fc709ecc1))
+* **deps-dev:** bump mocha from 8.2.0 to 8.2.1 ([bff32be](https://github.com/wmfs/tymly-core/commit/bff32be74bfe6972327d6127c79a06f7c4e0865b))
+* **deps-dev:** bump semantic-release from 17.2.1 to 17.2.2 ([4cd5865](https://github.com/wmfs/tymly-core/commit/4cd586586a4fb232b9e7cbcb94c433f6679dcb46))
+
 # [1.169.0](https://github.com/wmfs/tymly-core/compare/v1.168.0...v1.169.0) (2020-10-29)
 
 
