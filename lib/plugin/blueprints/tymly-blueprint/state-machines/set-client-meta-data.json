@@ -1,6 +1,6 @@
 {
   "Comment": "sets client meta data",
-  "Version": "1.0",
+  "version": "1.0",
   "StartAt": "Set",
   "States": {
     "Set": {
