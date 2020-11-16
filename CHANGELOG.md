@@ -1,3 +1,22 @@
+# [1.172.0](https://github.com/wmfs/tymly-core/compare/v1.171.0...v1.172.0) (2020-11-16)
+
+
+### ✨ Features
+
+* client meta data ([b5647e6](https://github.com/wmfs/tymly-core/commit/b5647e6f2f0cb70e90067f28e1142ec6f4252d12))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump standard from 15.0.1 to 16.0.2 ([30676c7](https://github.com/wmfs/tymly-core/commit/30676c7292d893a3016da292c1c6919f94b47df8))
+
+
+### 💎 Styles
+
+* Array.prototype.map() expects a value to be returned at the end of arrow function ([346b087](https://github.com/wmfs/tymly-core/commit/346b087800f61d6d570abbe64a81b73d5c2bbc79))
+* Array.prototype.map() expects a value to be returned at the end of arrow function ([e1837a0](https://github.com/wmfs/tymly-core/commit/e1837a0eaad423e0dc60eccaf714884823bb6cc2))
+* Array.prototype.map() expects a value to be returned at the end of arrow function ([7e43210](https://github.com/wmfs/tymly-core/commit/7e43210f6b6d2274d2ab624b2654af48534ca481))
+
 # [1.171.0](https://github.com/wmfs/tymly-core/compare/v1.170.0...v1.171.0) (2020-11-12)
 
 
