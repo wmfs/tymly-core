@@ -1,0 +1,10 @@
+{
+  "description": "client meta data",
+  "type": "object",
+  "properties": {
+    "platform": {
+      "type": "object",
+      "description": "client meta data"
+    }
+  }
+}

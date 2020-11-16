@@ -1,0 +1,20 @@
+{
+  "Comment": "sets client meta data",
+  "version": "1.0",
+  "StartAt": "Set",
+  "States": {
+    "Set": {
+      "Type": "Task",
+      "Resource": "module:setClientMetaData",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
