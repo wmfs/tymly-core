@@ -1,3 +1,15 @@
+## [1.174.1](https://github.com/wmfs/tymly-core/compare/v1.174.0...v1.174.1) (2020-12-03)
+
+
+### 🐛 Bug Fixes
+
+* Issue [#443](https://github.com/wmfs/tymly-core/issues/443) Tymly loader - add to component blacklist [ch3372] ([55cf44b](https://github.com/wmfs/tymly-core/commit/55cf44bfa1f2ddbe373503813512f120d1958eff))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump semantic-release from 17.2.4 to 17.3.0 ([8f3333a](https://github.com/wmfs/tymly-core/commit/8f3333ae7a54b47a70c238b6f66d38dee3c0b5f5))
+
 # [1.174.0](https://github.com/wmfs/tymly-core/compare/v1.173.0...v1.174.0) (2020-11-21)
 
 
