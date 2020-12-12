@@ -1,3 +1,16 @@
+## [1.176.1](https://github.com/wmfs/tymly-core/compare/v1.176.0...v1.176.1) (2020-12-12)
+
+
+### 🐛 Bug Fixes
+
+* Moved resolveInputPaths into find-base from statebox ([0fb2850](https://github.com/wmfs/tymly-core/commit/0fb28509a315c79a460a6585730b14249a76bf14))
+
+
+### 📦 Code Refactoring
+
+* Pull out common base from Finding and FindingOne ([6681917](https://github.com/wmfs/tymly-core/commit/668191721907980f2a0c580ddccc2f569738a93f))
+* Rework body of find state resource to use async/await ([d930ede](https://github.com/wmfs/tymly-core/commit/d930edeff9dc80b1d628814f61aedbd8a34901dc))
+
 # [1.176.0](https://github.com/wmfs/tymly-core/compare/v1.175.0...v1.176.0) (2020-12-12)
 
 
