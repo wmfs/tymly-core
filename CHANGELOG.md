@@ -1,3 +1,10 @@
+# [1.178.0](https://github.com/wmfs/tymly-core/compare/v1.177.0...v1.178.0) (2021-01-05)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@hapi](https://github.com/hapi)/boom from 9.1.0 to 9.1.1 ([f256202](https://github.com/wmfs/tymly-core/commit/f2562024b757ed5d4ff801bbe5092198be76bac9))
+
 # [1.177.0](https://github.com/wmfs/tymly-core/compare/v1.176.1...v1.177.0) (2021-01-05)
 
 
