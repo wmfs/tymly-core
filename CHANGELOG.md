@@ -1,3 +1,12 @@
+# [1.177.0](https://github.com/wmfs/tymly-core/compare/v1.176.1...v1.177.0) (2021-01-05)
+
+
+### 🛠 Builds
+
+* **deps:** bump debug from 4.2.0 to 4.3.1 ([d2fc6ff](https://github.com/wmfs/tymly-core/commit/d2fc6ffc1e9165d728b85b44ece1e75dbd7bbb7b))
+* **deps:** bump nanoid from 3.1.16 to 3.1.20 ([8e41111](https://github.com/wmfs/tymly-core/commit/8e411119d68ed4f9baba7f3f8a81000ba98e388a))
+* **deps-dev:** bump semantic-release from 17.3.0 to 17.3.1 ([7418b9d](https://github.com/wmfs/tymly-core/commit/7418b9dfa247e309c4c406fddec8d9b33d65bcf3))
+
 ## [1.176.1](https://github.com/wmfs/tymly-core/compare/v1.176.0...v1.176.1) (2020-12-12)
 
 
