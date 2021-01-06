@@ -1,3 +1,10 @@
+# [1.180.0](https://github.com/wmfs/tymly-core/compare/v1.179.0...v1.180.0) (2021-01-06)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/tymly-statelint from 1.35.0 to 1.37.0 ([39fb048](https://github.com/wmfs/tymly-core/commit/39fb0483b2f1fd79207a80c81566e4338c5390f4))
+
 # [1.179.0](https://github.com/wmfs/tymly-core/compare/v1.178.0...v1.179.0) (2021-01-05)
 
 
