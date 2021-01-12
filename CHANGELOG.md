@@ -1,3 +1,10 @@
+# [1.184.0](https://github.com/wmfs/tymly-core/compare/v1.183.0...v1.184.0) (2021-01-12)
+
+
+### 🛠 Builds
+
+* **deps:** bump uuid from 7.0.3 to 8.3.2 ([5e39c68](https://github.com/wmfs/tymly-core/commit/5e39c681f152dacbbe9cc0ca25c5e75ea4f9f985))
+
 # [1.183.0](https://github.com/wmfs/tymly-core/compare/v1.182.0...v1.183.0) (2021-01-12)
 
 
