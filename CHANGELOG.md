@@ -1,3 +1,10 @@
+# [1.183.0](https://github.com/wmfs/tymly-core/compare/v1.182.0...v1.183.0) (2021-01-12)
+
+
+### 🛠 Builds
+
+* **deps:** bump upath from 1.2.0 to 2.0.1 ([c1e44bb](https://github.com/wmfs/tymly-core/commit/c1e44bb1b7ea2c4b813466ee00b34ee60e2beedc))
+
 # [1.182.0](https://github.com/wmfs/tymly-core/compare/v1.181.0...v1.182.0) (2021-01-12)
 
 
