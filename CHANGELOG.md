@@ -1,3 +1,12 @@
+# [1.185.0](https://github.com/wmfs/tymly-core/compare/v1.184.0...v1.185.0) (2021-01-19)
+
+
+### 🛠 Builds
+
+* **deps:** bump jsonpath from 1.0.2 to 1.1.0 ([71d40c0](https://github.com/wmfs/tymly-core/commit/71d40c0f489eb8731f7abd7c37b5129bf13b05f1))
+* **deps-dev:** bump semantic-release from 17.3.1 to 17.3.2 ([283dc9d](https://github.com/wmfs/tymly-core/commit/283dc9d585dfc42b44e44c85c6f746c35be2edc1))
+* **deps-dev:** bump semantic-release from 17.3.2 to 17.3.3 ([97b1b9b](https://github.com/wmfs/tymly-core/commit/97b1b9b64c670e11fa532db51de49f0b8e179901))
+
 # [1.184.0](https://github.com/wmfs/tymly-core/compare/v1.183.0...v1.184.0) (2021-01-12)
 
 
