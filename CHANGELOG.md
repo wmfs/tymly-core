@@ -1,3 +1,17 @@
+# [1.188.0](https://github.com/wmfs/tymly-core/compare/v1.187.0...v1.188.0) (2021-02-17)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/statebox from 1.82.0 to 1.83.0 ([06ab3eb](https://github.com/wmfs/tymly-core/commit/06ab3eb03351b7f898d84e830e44dbc7b2d664bb))
+* **deps-dev:** bump chai from 4.2.0 to 4.3.0 ([e9ff08f](https://github.com/wmfs/tymly-core/commit/e9ff08fd8913e3f9a49712df520750622522fa55))
+* **deps-dev:** bump mocha from 8.2.1 to 8.3.0 ([d47ef48](https://github.com/wmfs/tymly-core/commit/d47ef487301b81ce1081ae4f6294df0e41fc5841))
+* **deps-dev:** bump semantic-release from 17.3.4 to 17.3.5 ([eef8ff0](https://github.com/wmfs/tymly-core/commit/eef8ff0a2a7a11003e31a04b4b4c68e24586fcfb))
+* **deps-dev:** bump semantic-release from 17.3.5 to 17.3.6 ([bd5a232](https://github.com/wmfs/tymly-core/commit/bd5a232c46b667a1a8fd855c8e084b6359f62732))
+* **deps-dev:** bump semantic-release from 17.3.6 to 17.3.7 ([eceabfb](https://github.com/wmfs/tymly-core/commit/eceabfb9eaf16342dfe4308996c2d030637be429))
+* **deps-dev:** bump semantic-release from 17.3.7 to 17.3.8 ([5176937](https://github.com/wmfs/tymly-core/commit/5176937eded457c95ecb94e5922a1a1c5f8c67e6))
+* **deps-dev:** bump semantic-release from 17.3.8 to 17.3.9 ([85c9081](https://github.com/wmfs/tymly-core/commit/85c908118204e38714528adf97307e5540107b34))
+
 # [1.187.0](https://github.com/wmfs/tymly-core/compare/v1.186.0...v1.187.0) (2021-01-20)
 
 
