@@ -30,7 +30,7 @@
     "fast-json-patch": "3.0.0-1",
     "glob": "7.1.6",
     "jsonpath": "1.1.0",
-    "lodash": "4.17.20",
+    "lodash": "4.17.21",
     "lru-cache": "6.0.0",
     "mkdirp": "1.0.4",
     "moment": "2.29.1",
