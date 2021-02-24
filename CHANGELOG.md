@@ -1,3 +1,10 @@
+# [1.189.0](https://github.com/wmfs/tymly-core/compare/v1.188.0...v1.189.0) (2021-02-24)
+
+
+### 🛠 Builds
+
+* **deps:** bump lodash from 4.17.20 to 4.17.21 ([a7450fc](https://github.com/wmfs/tymly-core/commit/a7450fcc026d28f1a8137ea6c3ad9aabdabdf8c8))
+
 # [1.188.0](https://github.com/wmfs/tymly-core/compare/v1.187.0...v1.188.0) (2021-02-17)
 
 
