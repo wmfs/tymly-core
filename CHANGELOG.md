@@ -1,3 +1,19 @@
+# [1.193.0](https://github.com/wmfs/tymly-core/compare/v1.192.0...v1.193.0) (2021-03-17)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@hapi](https://github.com/hapi)/boom from 9.1.1 to 9.1.2 ([de7e6b5](https://github.com/wmfs/tymly-core/commit/de7e6b58fbd778a6918b0fbb7a4c91721b6a06bf))
+* **deps:** bump nanoid from 3.1.20 to 3.1.22 ([e9842cb](https://github.com/wmfs/tymly-core/commit/e9842cb086ae643359e76850123a4e3e673f38b5))
+* **deps-dev:** bump chai from 4.3.0 to 4.3.1 ([7283ceb](https://github.com/wmfs/tymly-core/commit/7283ceb937c5aaf606cd2db3c361f3c41c1fcee8))
+* **deps-dev:** bump chai from 4.3.1 to 4.3.3 ([531afa5](https://github.com/wmfs/tymly-core/commit/531afa5cc9e65d5f6b7ccd08b1bd18f046898337))
+* **deps-dev:** bump chai from 4.3.3 to 4.3.4 ([969cfab](https://github.com/wmfs/tymly-core/commit/969cfabd8fac23541f9ccd1a68b18c5a847866fb))
+* **deps-dev:** bump mocha from 8.3.0 to 8.3.1 ([7022f13](https://github.com/wmfs/tymly-core/commit/7022f13fe624b0b38e3f34610f677a252bb1443e))
+* **deps-dev:** bump mocha from 8.3.1 to 8.3.2 ([890b766](https://github.com/wmfs/tymly-core/commit/890b766cd49ed0fda4fe4ac686ad642e9294a83a))
+* **deps-dev:** bump semantic-release from 17.3.9 to 17.4.0 ([3a83a55](https://github.com/wmfs/tymly-core/commit/3a83a55e046eb6713c1664f6a51f0cde8ef627be))
+* **deps-dev:** bump semantic-release from 17.4.0 to 17.4.1 ([2a55c10](https://github.com/wmfs/tymly-core/commit/2a55c10ebc2e885c727f8d4c12041fbd4744b972))
+* **deps-dev:** bump semantic-release from 17.4.1 to 17.4.2 ([8aafa02](https://github.com/wmfs/tymly-core/commit/8aafa0264ab270a3ba4174652318df0e2b003f3e))
+
 # [1.192.0](https://github.com/wmfs/tymly-core/compare/v1.191.0...v1.192.0) (2021-02-25)
 
 
