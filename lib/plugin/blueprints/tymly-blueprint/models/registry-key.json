@@ -3,6 +3,7 @@
   "primaryKey": ["key"],
   "description": "Registry keys",
   "type": "object",
+  "audit": false,
   "properties": {
     "key": {
       "type": "string"
