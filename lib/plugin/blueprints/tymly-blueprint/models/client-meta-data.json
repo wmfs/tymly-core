@@ -1,6 +1,7 @@
 {
   "description": "client meta data",
   "type": "object",
+  "audit": false,
   "properties": {
     "platform": {
       "type": "object",
