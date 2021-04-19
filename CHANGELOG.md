@@ -1,3 +1,10 @@
+# [1.196.0](https://github.com/wmfs/tymly-core/compare/v1.195.1...v1.196.0) (2021-04-19)
+
+
+### ✨ Features
+
+* mods to ignore shared dirs use local instead ([9c1d926](https://github.com/wmfs/tymly-core/commit/9c1d926921df6b5971ccd28936e408321366d118))
+
 ## [1.195.1](https://github.com/wmfs/tymly-core/compare/v1.195.0...v1.195.1) (2021-04-07)
 
 
