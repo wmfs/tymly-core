@@ -1,3 +1,10 @@
+# [1.199.0](https://github.com/wmfs/tymly-core/compare/v1.198.0...v1.199.0) (2021-05-10)
+
+
+### 🛠 Builds
+
+* **deps:** use master branch for wmfs/jsonpath [ch6167] ([de6f67b](https://github.com/wmfs/tymly-core/commit/de6f67b081c77493acfd63c394640d83c53be640))
+
 # [1.198.0](https://github.com/wmfs/tymly-core/compare/v1.197.0...v1.198.0) (2021-05-10)
 
 
