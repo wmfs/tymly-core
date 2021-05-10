@@ -1,3 +1,12 @@
+# [1.197.0](https://github.com/wmfs/tymly-core/compare/v1.196.0...v1.197.0) (2021-05-10)
+
+
+### 🛠 Builds
+
+* **deps:** bump jsonpath ([5b2c826](https://github.com/wmfs/tymly-core/commit/5b2c82655bc1143af8e84c2565ba640fb7ad51df))
+* **deps-dev:** bump codecov from 3.8.1 to 3.8.2 ([aeaa3dd](https://github.com/wmfs/tymly-core/commit/aeaa3dd3ac9159bd65d941533768a7fb35577d16))
+* **deps-dev:** bump mocha from 8.3.2 to 8.4.0 ([a321558](https://github.com/wmfs/tymly-core/commit/a32155864857aa76f14402e2705992173649e84d))
+
 # [1.196.0](https://github.com/wmfs/tymly-core/compare/v1.195.1...v1.196.0) (2021-04-19)
 
 
