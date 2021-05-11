@@ -29,7 +29,7 @@
     "dottie": "2.0.2",
     "fast-json-patch": "3.0.0-1",
     "glob": "7.1.6",
-    "jsonpath": "wmfs/jsonpath#master",
+    "jsonpath": "1.1.1",
     "lodash": "4.17.21",
     "lru-cache": "6.0.0",
     "mkdirp": "1.0.4",
