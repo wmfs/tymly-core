@@ -1,3 +1,10 @@
+# [1.202.0](https://github.com/wmfs/tymly-core/compare/v1.201.0...v1.202.0) (2021-05-11)
+
+
+### 🛠 Builds
+
+* **deps:** revert jsonpath to 1.1.1 [ch6167] ([94cf1f7](https://github.com/wmfs/tymly-core/commit/94cf1f75eec9a415fd4bb0ad13f27f78e53572c2))
+
 # [1.201.0](https://github.com/wmfs/tymly-core/compare/v1.200.0...v1.201.0) (2021-05-10)
 
 
