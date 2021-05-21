@@ -1,3 +1,11 @@
+# [1.206.0](https://github.com/wmfs/tymly-core/compare/v1.205.0...v1.206.0) (2021-05-21)
+
+
+### 🛠 Builds
+
+* **deps:** bump glob from 7.1.6 to 7.1.7 ([ae3e902](https://github.com/wmfs/tymly-core/commit/ae3e9022d81de5e65ab1fa59d707e6e9304954cf))
+* **deps-dev:** bump semantic-release from 17.4.2 to 17.4.3 ([514a16a](https://github.com/wmfs/tymly-core/commit/514a16ac538c5f98c0cdc311513dd971b2129045))
+
 # [1.205.0](https://github.com/wmfs/tymly-core/compare/v1.204.0...v1.205.0) (2021-05-11)
 
 
