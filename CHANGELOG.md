@@ -1,3 +1,15 @@
+# [1.207.0](https://github.com/wmfs/tymly-core/compare/v1.206.0...v1.207.0) (2021-05-26)
+
+
+### 🛠 Builds
+
+* **deps:** bump nanoid from 3.1.22 to 3.1.23 ([a58e2ea](https://github.com/wmfs/tymly-core/commit/a58e2ea450dd899041dd12a7bb267b7c1d9b89e9))
+
+
+### 📦 Code Refactoring
+
+* rename to component ignore list ([731b15a](https://github.com/wmfs/tymly-core/commit/731b15a9345f52e874369c494fd07acc7371795d))
+
 # [1.206.0](https://github.com/wmfs/tymly-core/compare/v1.205.0...v1.206.0) (2021-05-21)
 
 
