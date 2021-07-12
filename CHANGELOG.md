@@ -1,3 +1,22 @@
+# [1.211.0](https://github.com/wmfs/tymly-core/compare/v1.210.0...v1.211.0) (2021-07-09)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/statebox from 1.92.0 to 1.93.0 ([24fdd5a](https://github.com/wmfs/tymly-core/commit/24fdd5ac472ad675f92d26d44392b7a64a973d44))
+
+# [1.210.0](https://github.com/wmfs/tymly-core/compare/v1.209.0...v1.210.0) (2021-07-09)
+
+
+### 🛠 Builds
+
+* **deps:** bump debug from 4.3.1 to 4.3.2 ([5052f5d](https://github.com/wmfs/tymly-core/commit/5052f5d94e80cd8ab8bc9132e92c640c37bea72d))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-test-helpers from 1.7.0 to 1.8.0 ([0fad360](https://github.com/wmfs/tymly-core/commit/0fad360de91cac5ce4bdfd02605e77bb5ea7e480))
+* **deps-dev:** bump mocha from 8.4.0 to 9.0.0 ([180819f](https://github.com/wmfs/tymly-core/commit/180819faa87ccc79c62e731487a15056e226b0e0))
+* **deps-dev:** bump mocha from 9.0.0 to 9.0.1 ([6d5d76b](https://github.com/wmfs/tymly-core/commit/6d5d76b1006823288ee3ac0b87b0d40725c4f28b))
+* **deps-dev:** bump mocha from 9.0.1 to 9.0.2 ([790a06e](https://github.com/wmfs/tymly-core/commit/790a06ed81f6f01b045cec4796f7ee4b3c8c868b))
+* **deps-dev:** bump semantic-release from 17.4.3 to 17.4.4 ([9aa4fe7](https://github.com/wmfs/tymly-core/commit/9aa4fe77144f4b8d641c6275c18aa66087c6d615))
+
 # [1.209.0](https://github.com/wmfs/tymly-core/compare/v1.208.0...v1.209.0) (2021-05-26)
 
 
