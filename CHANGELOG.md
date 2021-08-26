@@ -1,3 +1,16 @@
+## [1.212.2](https://github.com/wmfs/tymly-core/compare/v1.212.1...v1.212.2) (2021-08-26)
+
+
+### 🐛 Bug Fixes
+
+* load mods before and after passing refs ([2a3f22e](https://github.com/wmfs/tymly-core/commit/2a3f22e169550dff5889a7d6b91c58dfdf2998bb))
+* revert loading mods after final ref pass ([8000974](https://github.com/wmfs/tymly-core/commit/8000974a12e90b639ebe4f56cb1edbd8467aa2ea))
+
+
+### 💎 Styles
+
+* standard ([822d062](https://github.com/wmfs/tymly-core/commit/822d0626e47a668c4927d055aadfb913d3d6c8a9))
+
 ## [1.212.1](https://github.com/wmfs/tymly-core/compare/v1.212.0...v1.212.1) (2021-08-26)
 
 
