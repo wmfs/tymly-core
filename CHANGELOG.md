@@ -1,3 +1,25 @@
+## [1.212.1](https://github.com/wmfs/tymly-core/compare/v1.212.0...v1.212.1) (2021-08-26)
+
+
+### 🐛 Bug Fixes
+
+* issue 529 load mods after all refs ([342e94f](https://github.com/wmfs/tymly-core/commit/342e94f2d65c2eaf1c0856a8cfecbe1698c2feb0))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump codecov from 3.8.2 to 3.8.3 ([20822fa](https://github.com/wmfs/tymly-core/commit/20822faa27c57d4d224b553352cafa9ac4c339f1))
+* **deps-dev:** bump mocha from 9.0.2 to 9.0.3 ([fe09d97](https://github.com/wmfs/tymly-core/commit/fe09d97dfa7a761bcb9ed0208b30c6dccdfd17fd))
+* **deps-dev:** update dependency mocha to v9.1.0 ([2a23b3a](https://github.com/wmfs/tymly-core/commit/2a23b3aa3a90d81aa3965a6f18f2d82f2497dfca))
+* **deps-dev:** update dependency semantic-release to v17.4.5 ([0d8659b](https://github.com/wmfs/tymly-core/commit/0d8659bb22ecc6025b08b57309bcfb91ae67ee3f))
+* **deps-dev:** update dependency semantic-release to v17.4.6 ([69c358a](https://github.com/wmfs/tymly-core/commit/69c358a3f330b3497f3f90c35453aec60977ff00))
+* **deps-dev:** update dependency semantic-release to v17.4.7 ([2330e52](https://github.com/wmfs/tymly-core/commit/2330e52bd8ad81ba77368b9ac09e71f432cb8445))
+
+
+### ♻️ Chores
+
+* add renovate config [ch6600] ([1327068](https://github.com/wmfs/tymly-core/commit/1327068eac04370c603053edc75b7b1398635e0a))
+
 # [1.212.0](https://github.com/wmfs/tymly-core/compare/v1.211.0...v1.212.0) (2021-07-15)
 
 
