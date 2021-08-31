@@ -1,0 +1,18 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Moe's"
+    },
+    {
+      "$tymlyRef": "function:tymlyTest_helloWorldTextBlock"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Order form"
+    }
+  ]
+}

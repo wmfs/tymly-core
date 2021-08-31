@@ -63,6 +63,12 @@ describe('Mods tests', function () {
     expect(actual).to.eql(expected)
   })
 
+  it('replace card template which uses ref', () => {
+    const actual = cardTemplates.tymlyTest_refToRemove_1_0
+    const expected = require(`${expectedPath}/card-templates/ref-to-remove.json`)
+    expect(actual).to.eql(expected)
+  })
+
   after('shutdown Tymly', async () => {
     await tymlyService.shutdown()
   })

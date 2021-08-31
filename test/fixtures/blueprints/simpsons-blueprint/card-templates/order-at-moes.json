@@ -8,6 +8,9 @@
       "text": "Moe's"
     },
     {
+      "$tymlyRef": "function:tymlyTest_helloWorldTextBlock"
+    },
+    {
       "id": "drink",
       "type": "Input.ChoiceSet",
       "choices": [

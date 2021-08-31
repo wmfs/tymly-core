@@ -1,0 +1,20 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Moe's"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Order form"
+    }
+  ],
+  "namespace": "tymlyTest",
+  "blueprintName": "simpsons",
+  "blueprintVersion": "1.0",
+  "id": "refToRemove",
+  "name": "refToRemove"
+}

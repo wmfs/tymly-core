@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "operations": [
+    {
+      "op": "replace",
+      "path": "/body",
+      "value": [
+        {
+          "type": "TextBlock",
+          "text": "Moe's"
+        },
+        {
+          "type": "TextBlock",
+          "text": "Order form"
+        }
+      ]
+    }
+  ]
+}

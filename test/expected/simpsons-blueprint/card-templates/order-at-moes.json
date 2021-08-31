@@ -8,6 +8,10 @@
       "text": "Moe's"
     },
     {
+      "text": "Hello World",
+      "type": "TextBlock"
+    },
+    {
       "id": "name",
       "type": "Input.Text",
       "title": "Name"

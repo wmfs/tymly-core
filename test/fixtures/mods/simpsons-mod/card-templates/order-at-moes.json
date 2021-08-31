@@ -3,7 +3,7 @@
   "operations": [
     {
       "op": "replace",
-      "path": "/body/1",
+      "path": "/body/2",
       "value": {
         "id": "drink",
         "type": "Input.ChoiceSet",
@@ -21,7 +21,7 @@
     },
     {
       "op": "add",
-      "path": "/body/1",
+      "path": "/body/2",
       "value": {
         "id": "name",
         "type": "Input.Text",
