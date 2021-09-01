@@ -94,35 +94,6 @@ describe('Mods tests', function () {
       expect(cardTemplate.body).to.eql(body)
     })
 
-    it('remove ref to function', () => {
-      const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_removeRefToFunction_1_0
-      const body = [
-        {
-          type: 'Container',
-          items: [
-            {
-              type: 'TextBlock',
-              text: '1'
-            }
-          ]
-        },
-        {
-          type: 'Container',
-          items: [
-            {
-              type: 'TextBlock',
-              text: 'before'
-            },
-            {
-              type: 'TextBlock',
-              text: 'after'
-            }
-          ]
-        }
-      ]
-      expect(cardTemplate.body).to.eql(body)
-    })
-
     it('add ref to function', () => {
       const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_addRefToFunction_1_0
       const body = [
@@ -156,17 +127,153 @@ describe('Mods tests', function () {
       expect(cardTemplate.body).to.eql(body)
     })
 
-    it('change ref to card template', () => {})
+    it('remove ref to function', () => {
+      const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_removeRefToFunction_1_0
+      const body = [
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: '1'
+            }
+          ]
+        },
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: 'before'
+            },
+            {
+              type: 'TextBlock',
+              text: 'after'
+            }
+          ]
+        }
+      ]
+      expect(cardTemplate.body).to.eql(body)
+    })
 
-    it('remove ref to card template', () => {})
+    it('change ref to card template', () => {
+      const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_changeRefToCardTemplate_1_0
+      const body = [
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: '1'
+            }
+          ]
+        },
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: 'before'
+            },
+            {
+              id: 'userName',
+              type: 'Input.Text',
+              validation: {
+                required: true
+              },
 
-    it('add ref to card template', () => {})
+              // ideally we wouldn't have these...
+              blueprintName: 'mods',
+              blueprintVersion: '1.0',
+              name: 'nameInputText',
+              namespace: 'tymlyTest'
+            },
+            {
+              type: 'TextBlock',
+              text: 'after'
+            }
+          ]
+        }
+      ]
+      expect(cardTemplate.body).to.eql(body)
+    })
+
+    it('add ref to card template', () => {
+      const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_addRefToCardTemplate_1_0
+      const body = [
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: '1'
+            }
+          ]
+        },
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: 'before'
+            },
+            {
+              id: 'userName',
+              type: 'Input.Text',
+              validation: {
+                required: true
+              },
+
+              // ideally we wouldn't have these...
+              blueprintName: 'mods',
+              blueprintVersion: '1.0',
+              name: 'nameInputText',
+              namespace: 'tymlyTest'
+            },
+            {
+              type: 'TextBlock',
+              text: 'after'
+            }
+          ]
+        }
+      ]
+      expect(cardTemplate.body).to.eql(body)
+    })
+
+    it('remove ref to card template', () => {
+      const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_removeRefToCardTemplate_1_0
+      const body = [
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: '1'
+            }
+          ]
+        },
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: 'before'
+            },
+            {
+              type: 'TextBlock',
+              text: 'after'
+            }
+          ]
+        }
+      ]
+      expect(cardTemplate.body).to.eql(body)
+    })
 
     it('change ref to directory', () => {})
 
-    it('remove ref to directory', () => {})
-
     it('add ref to directory', () => {})
+
+    it('remove ref to directory', () => {})
   })
 
   it('models - simple operations', () => {

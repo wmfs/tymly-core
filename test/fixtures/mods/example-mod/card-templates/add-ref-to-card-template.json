@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "operations": [
+    {
+      "op": "add",
+      "path": "/body/1/items/1",
+      "value": {
+        "$tymlyRef": "cardTemplates:tymlyTest_nameInputText"
+      }
+    }
+  ]
+}
