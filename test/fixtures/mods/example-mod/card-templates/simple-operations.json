@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "operations": [
+    {
+      "op": "remove",
+      "path": "/actions/1"
+    },
+    {
+      "op": "replace",
+      "path": "/body/0/text",
+      "value": "Hello world"
+    },
+    {
+      "op": "add",
+      "path": "/body/1/items/0",
+      "value": {
+        "type": "TextBlock",
+        "text": "0"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/body/1/items/2",
+      "value": {
+        "type": "TextBlock",
+        "text": "2"
+      }
+    }
+  ]
+}
