@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "operations": [
+    {
+      "op": "replace",
+      "path": "/body/1/items",
+      "value":  []
+    }
+  ]
+}

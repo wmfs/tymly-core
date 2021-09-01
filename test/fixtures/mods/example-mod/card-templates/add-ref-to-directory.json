@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "operations": [
+    {
+      "op": "add",
+      "path": "/body/1",
+      "value":  {
+        "type": "Container",
+        "items": {
+          "$tymlyRef": "otherContent:*"
+        }
+      }
+    }
+  ]
+}

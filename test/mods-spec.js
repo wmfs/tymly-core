@@ -269,11 +269,91 @@ describe('Mods tests', function () {
       expect(cardTemplate.body).to.eql(body)
     })
 
-    it('change ref to directory', () => {})
+    it('change ref to directory', () => {
+      const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_changeRefToDirectory_1_0
+      const body = [
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: '1'
+            }
+          ]
+        },
+        {
+          type: 'Container',
+          items: [
+            {
+              id: 'age',
+              type: 'Input.Number',
+              title: 'Enter your age',
+              namespace: 'tymlyTest',
+              blueprintName: 'mods',
+              blueprintVersion: '1.0',
+              name: 'ageNumberInput',
+              validation: {
+                required: true
+              }
+            }
+          ]
+        }
+      ]
+      expect(cardTemplate.body).to.eql(body)
+    })
 
-    it('add ref to directory', () => {})
+    it('add ref to directory', () => {
+      const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_addRefToDirectory_1_0
+      const body = [
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: '1'
+            }
+          ]
+        },
+        {
+          type: 'Container',
+          items: [
+            {
+              id: 'age',
+              type: 'Input.Number',
+              title: 'Enter your age',
+              namespace: 'tymlyTest',
+              blueprintName: 'mods',
+              blueprintVersion: '1.0',
+              name: 'ageNumberInput',
+              validation: {
+                required: true
+              }
+            }
+          ]
+        }
+      ]
+      expect(cardTemplate.body).to.eql(body)
+    })
 
-    it('remove ref to directory', () => {})
+    it('remove ref to directory', () => {
+      const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_removeRefToDirectory_1_0
+      const body = [
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: '1'
+            }
+          ]
+        },
+        {
+          type: 'Container',
+          items: []
+        }
+      ]
+      expect(cardTemplate.body).to.eql(body)
+    })
   })
 
   it('models - simple operations', () => {

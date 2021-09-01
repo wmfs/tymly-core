@@ -1,0 +1,11 @@
+{
+  "operations": [
+    {
+      "op": "add",
+      "path": "/validation",
+      "value": {
+        "required": true
+      }
+    }
+  ]
+}
