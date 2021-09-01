@@ -123,7 +123,38 @@ describe('Mods tests', function () {
       expect(cardTemplate.body).to.eql(body)
     })
 
-    it('add ref to function', () => {})
+    it('add ref to function', () => {
+      const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_addRefToFunction_1_0
+      const body = [
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: '1'
+            }
+          ]
+        },
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: 'before'
+            },
+            {
+              text: 'Hello World!!!',
+              type: 'TextBlock'
+            },
+            {
+              type: 'TextBlock',
+              text: 'after'
+            }
+          ]
+        }
+      ]
+      expect(cardTemplate.body).to.eql(body)
+    })
 
     it('change ref to card template', () => {})
 
