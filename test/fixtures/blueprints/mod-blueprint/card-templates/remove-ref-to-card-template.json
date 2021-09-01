@@ -1,0 +1,32 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "1"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "before"
+        },
+        {
+          "$tymlyRef": "cardTemplates:tymlyTest_nameInputText"
+        },
+        {
+          "type": "TextBlock",
+          "text": "after"
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}
