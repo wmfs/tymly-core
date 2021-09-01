@@ -1,0 +1,20 @@
+{
+  "id": "orders",
+  "title": "Orders",
+  "description": "Orders",
+  "type": "object",
+  "properties": {
+    "product": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "address": {
+      "type": "string"
+    },
+    "areaCode": {
+      "type": "integer"
+    }
+  }
+}

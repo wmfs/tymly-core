@@ -9,58 +9,49 @@ describe('Mods tests', function () {
 
   const expectedPath = './expected/simpsons-blueprint'
 
-  let tymlyService, models, cardTemplates, functions, images
+  let tymlyService, blueprintComponents
 
   before('boot Tymly', async () => {
     const tymlyServices = await tymly.boot({
       blueprintPaths: [
-        path.resolve(__dirname, './fixtures/blueprints/simpsons-blueprint'),
-        path.resolve(__dirname, './fixtures/blueprints/space-blueprint'),
-        path.resolve(__dirname, './fixtures/blueprints/people-blueprint')
+        path.resolve(__dirname, './fixtures/blueprints/mod-blueprint')
       ],
       modPaths: [
-        path.resolve(__dirname, './fixtures/mods/simpsons-mod')
+        path.resolve(__dirname, './fixtures/mods/example-mod')
       ]
     })
 
     tymlyService = tymlyServices.tymly
-
-    const { blueprintComponents } = tymlyService
-
-    models = blueprintComponents.models
-    cardTemplates = blueprintComponents.cardTemplates
-    functions = blueprintComponents.functions
-    images = blueprintComponents.images
+    blueprintComponents = tymlyService.blueprintComponents
   })
 
-  it('simple card template operations', () => {
-    const actual = cardTemplates.tymlyTest_orderAtMoes_1_0
-    const expected = require(`${expectedPath}/card-templates/order-at-moes.json`)
-    expect(actual).to.eql(expected)
+  /*
+ TODO scenarios:
+ * card-templates add/remove/replace/using refs
+ * state-machines add/remove/replace/using refs
+ */
+
+  it('check the model changes', () => {
+    const { properties } = blueprintComponents.models.tymlyTest_orders
+    const expected = {
+      product: { type: 'string' },
+      quantity: { type: 'integer' },
+      areaCode: { type: 'string' },
+      location: { type: 'string' },
+    }
+    expect(properties).to.eql(expected)
   })
 
-  it('simple model operations', () => {
-    const actual = models.tymlyTest_moesDrinksOrders
-    const expected = require(`${expectedPath}/models/moes-drinks-orders.json`)
-    expect(actual).to.eql(expected)
+  it('check the image changes', () => {
+    const { filePath } = blueprintComponents.images['tymlyTest_smile.png']
+    const expected = path.resolve(__dirname, './fixtures/mods/example-mod/images/smile.png')
+    expect(filePath).to.eql(expected)
   })
 
-  it('remove operation', () => {
-    const actual = cardTemplates.tymlyTest_toRemove_1_0
-    const expected = require(`${expectedPath}/card-templates/to-remove.json`)
-    expect(actual).to.eql(expected)
-  })
-
-  it('replace function', () => {
-    const actual = functions.tymlyTest_helloWorldFunction
-    const expected = require(`${expectedPath}/functions/hello-world-function.js`)
-    expect(actual()()).to.eql(expected()())
-  })
-
-  it('replace image', () => {
-    const actual = images['tymlyTest_simpsons.png'].filePath
-    const expected = path.resolve(__dirname, './fixtures/mods/simpsons-mod/images/simpsons.png')
-    expect(actual).to.eql(expected)
+  it('check the function changes', () => {
+    const fn = blueprintComponents.functions.tymlyTest_numbersArray
+    const expected = require(path.resolve(__dirname, './fixtures/mods/example-mod/functions/numbers-array.js'))
+    expect(fn).to.eql(expected)
   })
 
   after('shutdown Tymly', async () => {

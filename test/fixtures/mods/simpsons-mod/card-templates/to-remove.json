@@ -1,9 +1,0 @@
-{
-  "version": "1.0",
-  "operations": [
-    {
-      "op": "remove",
-      "path": "/body/1"
-    }
-  ]
-}
