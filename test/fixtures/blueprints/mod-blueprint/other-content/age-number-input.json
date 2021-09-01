@@ -1,0 +1,5 @@
+{
+  "id": "age",
+  "type": "Input.Number",
+  "title": "Enter your age"
+}
