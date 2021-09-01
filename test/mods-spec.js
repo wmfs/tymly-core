@@ -7,8 +7,6 @@ const path = require('path')
 describe('Mods tests', function () {
   this.timeout(process.env.TIMEOUT || 5000)
 
-  const expectedPath = './expected/simpsons-blueprint'
-
   let tymlyService, blueprintComponents
 
   before('boot Tymly', async () => {
@@ -31,13 +29,48 @@ describe('Mods tests', function () {
  * state-machines add/remove/replace/using refs
  */
 
+  it('check the card-template changes for simple operations', () => {
+    const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_simpleOperations_1_0
+    const body = [
+      {
+        type: 'TextBlock',
+        text: 'Hello world'
+      },
+      {
+        type: 'Container',
+        items: [
+          {
+            type: 'TextBlock',
+            text: '0'
+          },
+          {
+            type: 'TextBlock',
+            text: '1'
+          },
+          {
+            type: 'TextBlock',
+            text: '2'
+          }
+        ]
+      }
+    ]
+    const actions = [
+      {
+        type: 'Action.Cancel',
+        title: 'Cancel'
+      }
+    ]
+    expect(cardTemplate.body).to.eql(body)
+    expect(cardTemplate.actions).to.eql(actions)
+  })
+
   it('check the model changes', () => {
     const { properties } = blueprintComponents.models.tymlyTest_orders
     const expected = {
       product: { type: 'string' },
       quantity: { type: 'integer' },
       areaCode: { type: 'string' },
-      location: { type: 'string' },
+      location: { type: 'string' }
     }
     expect(properties).to.eql(expected)
   })
