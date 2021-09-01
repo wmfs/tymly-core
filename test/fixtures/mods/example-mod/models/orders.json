@@ -1,0 +1,20 @@
+{
+  "operations": [
+    {
+      "op": "remove",
+      "path": "/properties/address"
+    },
+    {
+      "op": "add",
+      "path": "/properties/location",
+      "value": {
+        "type": "string"
+      }
+    },
+    {
+      "op": "replace",
+      "path": "/properties/areaCode/type",
+      "value": "string"
+    }
+  ]
+}

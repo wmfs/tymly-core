@@ -1,0 +1,14 @@
+{
+
+  "namespace": "tymlyTest",
+  "name": "mods",
+  "version": "1.0",
+
+  "label": "Mods",
+  "author": "WMFS",
+
+  "organisation": "Tymlys",
+  "description": "An example Tymly Blueprint using mods",
+  "categories": []
+
+}
