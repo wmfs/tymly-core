@@ -23,48 +23,122 @@ describe('Mods tests', function () {
     blueprintComponents = tymlyService.blueprintComponents
   })
 
-  /*
- TODO scenarios:
- * card-templates add/remove/replace/using refs
- * state-machines add/remove/replace/using refs
- */
+  // todo: state machines
 
-  it('check the card-template changes for simple operations', () => {
-    const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_simpleOperations_1_0
-    const body = [
-      {
-        type: 'TextBlock',
-        text: 'Hello world'
-      },
-      {
-        type: 'Container',
-        items: [
-          {
-            type: 'TextBlock',
-            text: '0'
-          },
-          {
-            type: 'TextBlock',
-            text: '1'
-          },
-          {
-            type: 'TextBlock',
-            text: '2'
-          }
-        ]
-      }
-    ]
-    const actions = [
-      {
-        type: 'Action.Cancel',
-        title: 'Cancel'
-      }
-    ]
-    expect(cardTemplate.body).to.eql(body)
-    expect(cardTemplate.actions).to.eql(actions)
+  describe('card templates', () => {
+    it('simple operations', () => {
+      const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_simpleOperations_1_0
+      const body = [
+        {
+          type: 'TextBlock',
+          text: 'Hello world'
+        },
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: '0'
+            },
+            {
+              type: 'TextBlock',
+              text: '1'
+            },
+            {
+              type: 'TextBlock',
+              text: '2'
+            }
+          ]
+        }
+      ]
+      const actions = [
+        {
+          type: 'Action.Cancel',
+          title: 'Cancel'
+        }
+      ]
+      expect(cardTemplate.body).to.eql(body)
+      expect(cardTemplate.actions).to.eql(actions)
+    })
+
+    it('change ref to function', () => {
+      const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_changeRefToFunction_1_0
+      const body = [
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: '1'
+            }
+          ]
+        },
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: 'before'
+            },
+            {
+              type: 'TextBlock',
+              text: 'Hello World!!!'
+            },
+            {
+              type: 'TextBlock',
+              text: 'after'
+            }
+          ]
+        }
+      ]
+      expect(cardTemplate.body).to.eql(body)
+    })
+
+    it('remove ref to function', () => {
+      const cardTemplate = blueprintComponents.cardTemplates.tymlyTest_removeRefToFunction_1_0
+      const body = [
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: '1'
+            }
+          ]
+        },
+        {
+          type: 'Container',
+          items: [
+            {
+              type: 'TextBlock',
+              text: 'before'
+            },
+            {
+              type: 'TextBlock',
+              text: 'after'
+            }
+          ]
+        }
+      ]
+      expect(cardTemplate.body).to.eql(body)
+    })
+
+    it('add ref to function', () => {})
+
+    it('change ref to card template', () => {})
+
+    it('remove ref to card template', () => {})
+
+    it('add ref to card template', () => {})
+
+    it('change ref to directory', () => {})
+
+    it('remove ref to directory', () => {})
+
+    it('add ref to directory', () => {})
   })
 
-  it('check the model changes', () => {
+  it('models - simple operations', () => {
     const { properties } = blueprintComponents.models.tymlyTest_orders
     const expected = {
       product: { type: 'string' },
@@ -75,13 +149,13 @@ describe('Mods tests', function () {
     expect(properties).to.eql(expected)
   })
 
-  it('check the image changes', () => {
+  it('images - replacing', () => {
     const { filePath } = blueprintComponents.images['tymlyTest_smile.png']
     const expected = path.resolve(__dirname, './fixtures/mods/example-mod/images/smile.png')
     expect(filePath).to.eql(expected)
   })
 
-  it('check the function changes', () => {
+  it('functions - replacing', () => {
     const fn = blueprintComponents.functions.tymlyTest_numbersArray
     const expected = require(path.resolve(__dirname, './fixtures/mods/example-mod/functions/numbers-array.js'))
     expect(fn).to.eql(expected)
