@@ -1,3 +1,24 @@
+## [1.212.3](https://github.com/wmfs/tymly-core/compare/v1.212.2...v1.212.3) (2021-09-02)
+
+
+### 🐛 Bug Fixes
+
+* search for refs again after applying mods ([2320768](https://github.com/wmfs/tymly-core/commit/2320768aff45a194e9bf6fc7a8f20c25577ca55b))
+* search for refs again after applying mods ([b091f64](https://github.com/wmfs/tymly-core/commit/b091f64f1c3b7fa36aa5f9a40a774a9b397a61a5))
+* separate out loading/applying mods ([b3602c7](https://github.com/wmfs/tymly-core/commit/b3602c7fc497a752fa87ae33e184e54fb52362ba))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency mocha to v9.1.1 ([b32d278](https://github.com/wmfs/tymly-core/commit/b32d278421e0573fce95eadb10b0e0a2b69d2bd2))
+
+
+### 🚨 Tests
+
+* mods with refs of card templates ([3a6d0ae](https://github.com/wmfs/tymly-core/commit/3a6d0ae7b541236f1f42f055544af7432e809228))
+* mods with refs of other directories ([e479ebe](https://github.com/wmfs/tymly-core/commit/e479ebeb3144f68aba8da20c6df14ff186addb31))
+* simple card template operations ([ba62c93](https://github.com/wmfs/tymly-core/commit/ba62c93f0868d18d72fa8f7b24fbec70d9cf5b9d))
+
 ## [1.212.2](https://github.com/wmfs/tymly-core/compare/v1.212.1...v1.212.2) (2021-08-26)
 
 
