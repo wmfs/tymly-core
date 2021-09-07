@@ -1,3 +1,16 @@
+## [1.212.4](https://github.com/wmfs/tymly-core/compare/v1.212.3...v1.212.4) (2021-09-07)
+
+
+### 🐛 Bug Fixes
+
+* load new non-json mods and reject invalid json mods ([2b0c853](https://github.com/wmfs/tymly-core/commit/2b0c8530f56d075e75a79409ae745236508f18c7))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/git to v9.0.1 ([2d769e6](https://github.com/wmfs/tymly-core/commit/2d769e692e69b7de2a71c88cd822cb55cc411a89))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-test-helpers to v1.10.0 ([8f89d57](https://github.com/wmfs/tymly-core/commit/8f89d57dc6e3f77f4940d432bd3116531d6e59b5))
+
 ## [1.212.3](https://github.com/wmfs/tymly-core/compare/v1.212.2...v1.212.3) (2021-09-02)
 
 
