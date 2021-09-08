@@ -1,3 +1,10 @@
+# [1.213.0](https://github.com/wmfs/tymly-core/compare/v1.212.4...v1.213.0) (2021-09-08)
+
+
+### ✨ Features
+
+* load and apply modified pg scripts ([eb848e6](https://github.com/wmfs/tymly-core/commit/eb848e6d3853e8eac8cc655884375a44c48ef9bb))
+
 ## [1.212.4](https://github.com/wmfs/tymly-core/compare/v1.212.3...v1.212.4) (2021-09-07)
 
 
