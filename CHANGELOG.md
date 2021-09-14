@@ -1,3 +1,15 @@
+## [1.214.1](https://github.com/wmfs/tymly-core/compare/v1.214.0...v1.214.1) (2021-09-14)
+
+
+### 🐛 Bug Fixes
+
+* handle errors with patching json ([d09eea2](https://github.com/wmfs/tymly-core/commit/d09eea2dcc5ab9e19ad002d6729a2db3dbafd279))
+
+
+### 💎 Styles
+
+* standard ([eeaf8b6](https://github.com/wmfs/tymly-core/commit/eeaf8b6166d37c0500b2b7a5445b67c7a364333f))
+
 # [1.214.0](https://github.com/wmfs/tymly-core/compare/v1.213.0...v1.214.0) (2021-09-14)
 
 
