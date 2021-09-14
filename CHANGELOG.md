@@ -1,3 +1,10 @@
+# [1.214.0](https://github.com/wmfs/tymly-core/compare/v1.213.0...v1.214.0) (2021-09-14)
+
+
+### ✨ Features
+
+* console log error when booting ([9e49c3a](https://github.com/wmfs/tymly-core/commit/9e49c3a2ffb5c8b6d49fd2e8824be7928eb208c0))
+
 # [1.213.0](https://github.com/wmfs/tymly-core/compare/v1.212.4...v1.213.0) (2021-09-08)
 
 
