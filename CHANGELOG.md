@@ -1,3 +1,10 @@
+# [1.216.0](https://github.com/wmfs/tymly-core/compare/v1.215.0...v1.216.0) (2021-09-14)
+
+
+### ✨ Features
+
+* more error logging ([030a905](https://github.com/wmfs/tymly-core/commit/030a90508c4510ab59fe916b9838fff98d8b7409))
+
 # [1.215.0](https://github.com/wmfs/tymly-core/compare/v1.214.1...v1.215.0) (2021-09-14)
 
 
