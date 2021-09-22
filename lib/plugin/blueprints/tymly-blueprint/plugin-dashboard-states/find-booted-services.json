@@ -1,0 +1,20 @@
+{
+  "StartAt": "FindBootedServices",
+  "States": {
+    "FindBootedServices": {
+      "Type": "Task",
+      "Resource": "function:tymly_findBootedServices",
+      "ResultPath": "$.bootedServices",
+      "Next": "FormatBootedServices"
+    },
+    "FormatBootedServices": {
+      "Type": "Pass",
+      "Parameters": {
+        "key": "bootedServices",
+        "value.$": "$.bootedServices"
+      },
+      "ResultPath": "$",
+      "End": true
+    }
+  }
+}

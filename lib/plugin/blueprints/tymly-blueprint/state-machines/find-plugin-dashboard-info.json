@@ -1,0 +1,27 @@
+{
+  "Comment": "Find plugin dashboard info",
+  "name": "Find plugin dashboard info",
+  "version": "1.0",
+  "categories": [
+    "system"
+  ],
+  "StartAt": "Finding",
+  "States": {
+    "Finding": {
+      "Type": "Parallel",
+      "Branches": {
+        "$tymlyRef": "pluginDashboardStates:*"
+      },
+      "ResultPath": "$.components",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "tymly_pluginAdmin",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

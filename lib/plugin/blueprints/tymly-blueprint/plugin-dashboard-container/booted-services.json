@@ -1,0 +1,31 @@
+{
+  "type": "Collapsible",
+  "title": "Booted Services",
+  "card": {
+    "type": "AdaptiveCard",
+    "body": [
+      {
+        "type": "MarkupTable",
+        "arrayPath": "data.bootedServices",
+        "columns": [
+          {
+            "title": "Service",
+            "value": "{{ item.name }}"
+          },
+          {
+            "title": "Boot before",
+            "value": "{{ item.bootBefore.join(', ') }}"
+          },
+          {
+            "title": "Boot after",
+            "value": "{{ item.bootAfter.join(', ') }}"
+          },
+          {
+            "title": "Ref properties",
+            "value": "{{ item.refProperties.join(', ') }}"
+          }
+        ]
+      }
+    ]
+  }
+}

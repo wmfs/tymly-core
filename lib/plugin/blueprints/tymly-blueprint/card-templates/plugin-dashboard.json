@@ -1,0 +1,24 @@
+{
+  "templateMeta": {
+    "name": "plugin-dashboard",
+    "title": "Plugin Dashboard",
+    "category": "system"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "spacing": "none",
+      "background": "none",
+      "items": { "$tymlyRef": "pluginDashboardContainer:*" }
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Back"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}

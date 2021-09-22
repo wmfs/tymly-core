@@ -1,0 +1,23 @@
+{
+  "StartAt": "FindBlueprintDocs",
+  "States": {
+    "FindBlueprintDocs": {
+      "Type": "Task",
+      "Resource": "module:finding",
+      "ResourceConfig": {
+        "modelId": "tymly_blueprintDoc"
+      },
+      "ResultPath": "$.blueprintDocs",
+      "Next": "FormatBlueprintDocs"
+    },
+    "FormatBlueprintDocs": {
+      "Type": "Pass",
+      "Parameters": {
+        "key": "blueprintDocs",
+        "value.$": "$.blueprintDocs"
+      },
+      "ResultPath": "$",
+      "End": true
+    }
+  }
+}

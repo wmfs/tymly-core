@@ -1,0 +1,39 @@
+{
+  "type": "Collapsible",
+  "title": "Blueprint Documents",
+  "card": {
+    "type": "AdaptiveCard",
+    "body": [
+      {
+        "type": "MarkupTable",
+        "arrayPath": "data.blueprintDocs",
+        "columns": [
+          {
+            "title": "Domain",
+            "value": "{{ item.domain }}"
+          },
+          {
+            "title": "Doc ID",
+            "value": "{{ item.docId }}"
+          },
+          {
+            "title": "Created at",
+            "value": "{{ formatDate(item.created, 'DD/MM/YYYY HH:mm') }}"
+          },
+          {
+            "title": "Created by",
+            "value": "{{ item.createdBy }}"
+          },
+          {
+            "title": "Modified at",
+            "value": "{{ formatDate(item.modified, 'DD/MM/YYYY HH:mm') }}"
+          },
+          {
+            "title": "Modified by",
+            "value": "{{ item.modifiedBy }}"
+          }
+        ]
+      }
+    ]
+  }
+}

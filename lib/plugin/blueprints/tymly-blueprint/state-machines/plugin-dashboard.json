@@ -1,0 +1,46 @@
+{
+  "Comment": "Plugin Dashboard",
+  "name": "Plugin Dashboard",
+  "version": "1.0",
+  "categories": [
+    "system"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "instigatorGroup": "app",
+  "StartAt": "Find",
+  "States": {
+    "Find": {
+      "Type": "Task",
+      "Resource": "module:runStateMachine",
+      "ResourceConfig": {
+        "stateMachine": "tymly_findPluginDashboardInfo_1_0"
+      },
+      "Next": "Format"
+    },
+    "Format": {
+      "Type": "Task",
+      "Resource": "function:tymly_formatPluginDashboardInfo",
+      "Next": "View"
+    },
+    "View": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "tymly_pluginDashboard",
+        "dataPath": "$"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "tymly_pluginAdmin",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
