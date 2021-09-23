@@ -1,0 +1,39 @@
+{
+  "type": "Collapsible",
+  "title": "Registry",
+  "card": {
+    "type": "AdaptiveCard",
+    "body": [
+      {
+        "type": "MarkupTable",
+        "arrayPath": "data.registryKeys",
+        "columns": [
+          {
+            "title": "Key",
+            "value": "{{ item.key }}"
+          },
+          {
+            "title": "Value",
+            "value": "{{ JSON.stringify(item.value).substring(0, 35) }}{{ JSON.stringify(item.value).length > 35 ? '...' : '' }}"
+          },
+          {
+            "title": "Created at",
+            "value": "{{ formatDate(item.created, 'DD/MM/YYYY HH:mm') }}"
+          },
+          {
+            "title": "Created by",
+            "value": "{{ item.createdBy }}"
+          },
+          {
+            "title": "Modified at",
+            "value": "{{ formatDate(item.modified, 'DD/MM/YYYY HH:mm') }}"
+          },
+          {
+            "title": "Modified by",
+            "value": "{{ item.modifiedBy }}"
+          }
+        ]
+      }
+    ]
+  }
+}

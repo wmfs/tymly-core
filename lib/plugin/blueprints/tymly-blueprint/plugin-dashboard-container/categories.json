@@ -1,0 +1,43 @@
+{
+  "type": "Collapsible",
+  "title": "Categories",
+  "card": {
+    "type": "AdaptiveCard",
+    "body": [
+      {
+        "type": "MarkupTable",
+        "arrayPath": "data.categories",
+        "columns": [
+          {
+            "title": "Name",
+            "value": "{{ item.name }}"
+          },
+          {
+            "title": "Label",
+            "value": "{{ item.label }}"
+          },
+          {
+            "title": "Styling",
+            "value": "{{ item.styling }}"
+          },
+          {
+            "title": "Created at",
+            "value": "{{ formatDate(item.created, 'DD/MM/YYYY HH:mm') }}"
+          },
+          {
+            "title": "Created by",
+            "value": "{{ item.createdBy }}"
+          },
+          {
+            "title": "Modified at",
+            "value": "{{ formatDate(item.modified, 'DD/MM/YYYY HH:mm') }}"
+          },
+          {
+            "title": "Modified by",
+            "value": "{{ item.modifiedBy }}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "StartAt": "FindCategories",
+  "States": {
+    "FindCategories": {
+      "Type": "Task",
+      "Resource": "module:finding",
+      "ResourceConfig": {
+        "modelId": "tymly_category"
+      },
+      "ResultPath": "$.categories",
+      "Next": "FormatCategories"
+    },
+    "FormatCategories": {
+      "Type": "Pass",
+      "Parameters": {
+        "key": "categories",
+        "value.$": "$.categories"
+      },
+      "ResultPath": "$",
+      "End": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "StartAt": "FindRegistryKeys",
+  "States": {
+    "FindRegistryKeys": {
+      "Type": "Task",
+      "Resource": "module:finding",
+      "ResourceConfig": {
+        "modelId": "tymly_registryKey"
+      },
+      "ResultPath": "$.registryKeys",
+      "Next": "FormatRegistryKeys"
+    },
+    "FormatRegistryKeys": {
+      "Type": "Pass",
+      "Parameters": {
+        "key": "registryKeys",
+        "value.$":  "$.registryKeys"
+      },
+      "ResultPath": "$",
+      "End": true
+    }
+  }
+}
