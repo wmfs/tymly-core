@@ -102,7 +102,7 @@ describe('Statebox Service', function () {
         'DOG_MACHINE', // state machine name
         {}, // options
         function (err, result) {
-          expect(err.message).to.eql('Unknown stateMachine with name \'DOG_MACHINE\'')
+          expect(result.errorMessage).to.eql('Unknown stateMachine with name \'DOG_MACHINE\'')
           done()
         }
       )
