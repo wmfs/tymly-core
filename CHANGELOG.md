@@ -1,3 +1,29 @@
+# [1.217.0](https://github.com/wmfs/tymly-core/compare/v1.216.0...v1.217.0) (2021-10-04)
+
+
+### ✨ Features
+
+* on state machine execution, check if state machine exists ([abd9463](https://github.com/wmfs/tymly-core/commit/abd9463c92b664299bc809822c1216682c5be5d1))
+
+
+### 🐛 Bug Fixes
+
+* unknown state machine message and test ([3153f50](https://github.com/wmfs/tymly-core/commit/3153f5082b5afd531a2ba40cd30bff60942f51c8))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6 ([aa484c2](https://github.com/wmfs/tymly-core/commit/aa484c22b16aacd6765662b74e7cde364936b821))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/git to v10 ([74cc735](https://github.com/wmfs/tymly-core/commit/74cc7355ca9771f1cd3edd02e4c885d87d8ee632))
+* **deps-dev:** update dependency mocha to v9.1.2 ([9545393](https://github.com/wmfs/tymly-core/commit/954539318ce95772a8c7fbc9b4ba99aef683284f))
+* **deps-dev:** update dependency semantic-release to v18 ([16c3646](https://github.com/wmfs/tymly-core/commit/16c3646a1921a48821a74fcf27bc72f5e555f0e6))
+* **deps-dev:** update dependency standard to v16.0.4 ([cec76ff](https://github.com/wmfs/tymly-core/commit/cec76ffd75b52ed28b02e56cd357d67def597de2))
+
+
+### 💎 Styles
+
+* standard ([22d286d](https://github.com/wmfs/tymly-core/commit/22d286d825a518a5564a6943ea9b1958ad879bf1))
+
 # [1.216.0](https://github.com/wmfs/tymly-core/compare/v1.215.0...v1.216.0) (2021-09-14)
 
 
