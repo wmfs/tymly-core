@@ -1,3 +1,15 @@
+## [1.217.1](https://github.com/wmfs/tymly-core/compare/v1.217.0...v1.217.1) (2021-10-21)
+
+
+### 🐛 Bug Fixes
+
+* add indexes to execution model ([c3771f1](https://github.com/wmfs/tymly-core/commit/c3771f1752b6e00121a6647a156f94413d12c4c9))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency mocha to v9.1.3 ([2b0bd3a](https://github.com/wmfs/tymly-core/commit/2b0bd3a530455527b7e858806930a37b9b675d51))
+
 # [1.217.0](https://github.com/wmfs/tymly-core/compare/v1.216.0...v1.217.0) (2021-10-04)
 
 
