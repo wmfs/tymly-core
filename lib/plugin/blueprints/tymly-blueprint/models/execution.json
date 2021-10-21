@@ -33,5 +33,23 @@
     }
   },
   "required": ["uuid"],
-  "audit": false
+  "audit": false,
+  "indexes": [
+    {
+      "columns": ["status"],
+      "unique": false
+    },
+    {
+      "columns": ["stateMachineName"],
+      "unique": false
+    },
+    {
+      "columns": ["executionName"],
+      "unique": false
+    },
+    {
+      "columns": ["parentExecution"],
+      "unique": false
+    }
+  ]
 }
