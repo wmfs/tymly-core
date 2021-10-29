@@ -1,3 +1,10 @@
+## [1.218.1](https://github.com/wmfs/tymly-core/compare/v1.218.0...v1.218.1) (2021-10-29)
+
+
+### 🐛 Bug Fixes
+
+* comment out log ([9088a64](https://github.com/wmfs/tymly-core/commit/9088a648ba2a5af90391c9708a11e959230ff7db))
+
 # [1.218.0](https://github.com/wmfs/tymly-core/compare/v1.217.1...v1.218.0) (2021-10-21)
 
 
