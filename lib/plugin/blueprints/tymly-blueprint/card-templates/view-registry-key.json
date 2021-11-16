@@ -1,0 +1,37 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "weight": "bolder",
+      "size": "medium",
+      "text": "{{ data.key }}"
+    },
+    {
+      "type": "TextBlock",
+      "text": "<pre>{{ JSON.stringify(data.registryValue, null, 2) }}</pre>"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Close"
+    },
+    {
+      "type": "Action.PushCard",
+      "title": "Clear registry key",
+      "stateMachineName": "tymly_clearRegistryKey_1_0",
+      "input": {
+        "key": "$.key"
+      }
+    }
+
+  ],
+  "templateMeta": {
+    "name": "view-registry-key",
+    "title": "View Registry Key",
+    "category": "system"
+  }
+}
