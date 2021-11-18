@@ -1,0 +1,8 @@
+{
+  "DeleteCacheItem": {
+    "Type": "Task",
+    "Resource": "module:deleteCacheItem",
+    "InputPath": "$",
+    "End": true
+  }
+}
