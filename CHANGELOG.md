@@ -1,3 +1,11 @@
+# [1.220.0](https://github.com/wmfs/tymly-core/compare/v1.219.0...v1.220.0) (2021-11-18)
+
+
+### ✨ Features
+
+* delete cache item state resource ([0d216d2](https://github.com/wmfs/tymly-core/commit/0d216d28259e72eb6088271ea506f8f17a94b3f6))
+* reset cache state resource ([c0b14a6](https://github.com/wmfs/tymly-core/commit/c0b14a6a168a69ab1a2b6244be3ad6f29c5bbd41))
+
 # [1.219.0](https://github.com/wmfs/tymly-core/compare/v1.218.1...v1.219.0) (2021-11-18)
 
 
