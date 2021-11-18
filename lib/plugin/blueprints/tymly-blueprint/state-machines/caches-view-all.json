@@ -1,0 +1,39 @@
+{
+  "name": "View all caches",
+  "Comment": "View all caches stored within Tymly",
+  "version": "1.0",
+  "categories": [
+    "system"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "instigatorGroup": "app",
+  "StartAt": "GetCaches",
+  "States": {
+    "GetCaches": {
+      "Type": "Task",
+      "Resource": "function:tymly_cachesGetAll",
+      "ResultPath": "$.caches",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "tymly_cachesViewAll",
+        "dataPath": "$"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "tymly_coreAdmin",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

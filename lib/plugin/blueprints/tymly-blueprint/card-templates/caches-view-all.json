@@ -1,0 +1,41 @@
+{
+  "templateMeta": {
+    "name": "caches-view-all",
+    "title": "View all caches stored within Tymly",
+    "category": "system"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "title": "Least-recently-used caches stored within Tymly",
+      "type": "MarkupTable",
+      "arrayPath": "data.caches",
+      "columns": [
+        {
+          "title": "Name",
+          "value": "{{ item.key }}"
+        },
+        {
+          "title": "Item count",
+          "value": "{{ item.itemCount }}"
+        },
+        {
+          "title": "Maximum size of the cache",
+          "value": "{{ item.max }}"
+        },
+        {
+          "title": "Maximum age (ms)",
+          "value": "{{ item.maxAge }}"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Cancel"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}
