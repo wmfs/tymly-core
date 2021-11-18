@@ -1,0 +1,8 @@
+{
+  "ResetCache": {
+    "Type": "Task",
+    "Resource": "module:resetCache",
+    "InputPath": "$",
+    "End": true
+  }
+}
