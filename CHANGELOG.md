@@ -1,3 +1,15 @@
+# [1.219.0](https://github.com/wmfs/tymly-core/compare/v1.218.1...v1.219.0) (2021-11-18)
+
+
+### ✨ Features
+
+* new caches method to return all keys ([85eba4d](https://github.com/wmfs/tymly-core/commit/85eba4d6c9b399072eddbeb16325a5358ccf7fd8))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update semantic-release monorepo ([3b0b6e8](https://github.com/wmfs/tymly-core/commit/3b0b6e828301ebb412678975003544d8c7fe72cf))
+
 ## [1.218.1](https://github.com/wmfs/tymly-core/compare/v1.218.0...v1.218.1) (2021-10-29)
 
 
