@@ -79,6 +79,7 @@ describe('State resource tests', function () {
     expect(execDesc.stateMachineName).to.eql(FIND_WHERE_STATE_MACHINE_NAME)
     expect(execDesc.currentStateName).to.eql('FindingWilfred')
     expect(execDesc.ctx.catDocFromStorage[0].name).to.eql('Rupert')
+    expect(execDesc.ctx.countCatDocFromStorage).to.eql(1)
     expect(execDesc.ctx.anotherCatDocFromStorage[0].name).to.eql('Wilfred')
   })
 
