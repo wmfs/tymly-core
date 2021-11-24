@@ -17,6 +17,22 @@
         }
       },
       "ResultPath": "$.catDocFromStorage",
+      "Next": "CountingRupert"
+    },
+    "CountingRupert": {
+      "Type": "Task",
+      "Resource": "module:findingCount",
+      "ResourceConfig": {
+        "modelId": "cat",
+        "filter": {
+          "where": {
+            "name": {
+              "equals": "Rupert"
+            }
+          }
+        }
+      },
+      "ResultPath": "$.countCatDocFromStorage",
       "Next": "FindingWilfred"
     },
     "FindingWilfred": {
