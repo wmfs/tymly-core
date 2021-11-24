@@ -1,3 +1,16 @@
+# [1.221.0](https://github.com/wmfs/tymly-core/compare/v1.220.0...v1.221.0) (2021-11-24)
+
+
+### ✨ Features
+
+* model function to find counts ([1a6f1ab](https://github.com/wmfs/tymly-core/commit/1a6f1aba76cb0d1ac4f646fb0a6a30cd25ae5c59))
+* state resource to find counts ([03b58fc](https://github.com/wmfs/tymly-core/commit/03b58fcc95968665da066e50970056aba3fb2673))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency semantic-release to v18.0.1 ([bbacb93](https://github.com/wmfs/tymly-core/commit/bbacb93ba01f2a8d41bf460085b0d481bca5e7ef))
+
 # [1.220.0](https://github.com/wmfs/tymly-core/compare/v1.219.0...v1.220.0) (2021-11-18)
 
 
