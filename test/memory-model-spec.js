@@ -169,6 +169,81 @@ describe('Memory Model tests', function () {
     )
   })
 
+  it('count all documents', done => {
+    personModel.findCount(
+      {},
+      function (err, doc) {
+        expect(doc).to.eql(5)
+        expect(err).to.equal(null)
+        done()
+      }
+    )
+  })
+
+  it('should count Bart by name', done => {
+    personModel.findCount(
+      {
+        where: {
+          firstName: { equals: 'Bart' },
+          lastName: { equals: 'Simpson' }
+        }
+      },
+      function (err, doc) {
+        expect(doc).to.eql(1)
+        expect(err).to.equal(null)
+        done()
+      }
+    )
+  })
+
+  it('should count one Homer by name', done => {
+    personModel.findCount(
+      {
+        where: {
+          firstName: { equals: 'Homer' },
+          lastName: { equals: 'Simpson' }
+        }
+      },
+      function (err, doc) {
+        expect(doc).to.eql(1)
+        expect(err).to.equal(null)
+        done()
+      }
+    )
+  })
+
+  it('should count Bart or Homer by name', done => {
+    personModel.findCount(
+      {
+        where: {
+          firstName: { equals: ['Homer', 'Bart'] },
+          lastName: { equals: 'Simpson' }
+        }
+      },
+      function (err, doc) {
+        expect(doc).to.eql(2)
+        expect(err).to.equal(null)
+        done()
+      }
+    )
+  })
+
+  it('shouldn\'t count one missing person', done => {
+    personModel.findCount(
+      {
+        where: {
+          firstName: { equals: 'Ned' },
+          lastName: { equals: 'Flanders' }
+        }
+      },
+      function (err, doc) {
+        expect(doc).to.eql(0)
+        expect(err).to.equal(null)
+        done()
+      }
+    )
+  })
+
   it('should find 5 people', function (done) {
     personModel.find(
       {},

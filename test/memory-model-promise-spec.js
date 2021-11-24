@@ -142,6 +142,59 @@ describe('Memory Model promise tests', function () {
       )
   })
 
+  it('count all documents', async () => {
+    const doc = await personModel.findCount()
+    expect(doc).to.eql(5)
+  })
+
+  it('should count Bart by name', async () => {
+    const doc = await personModel.findCount(
+      {
+        where: {
+          firstName: { equals: 'Bart' },
+          lastName: { equals: 'Simpson' }
+        }
+      }
+    )
+    expect(doc).to.eql(1)
+  })
+
+  it('should count one Homer by name', async () => {
+    const doc = await personModel.findCount(
+      {
+        where: {
+          firstName: { equals: 'Homer' },
+          lastName: { equals: 'Simpson' }
+        }
+      }
+    )
+    expect(doc).to.eql(1)
+  })
+
+  it('should count Bart or Homer by name', async () => {
+    const doc = await personModel.findCount(
+      {
+        where: {
+          firstName: { equals: ['Homer', 'Bart'] },
+          lastName: { equals: 'Simpson' }
+        }
+      }
+    )
+    expect(doc).to.eql(2)
+  })
+
+  it('shouldn\'t count one missing person', async () => {
+    const doc = await personModel.findCount(
+      {
+        where: {
+          firstName: { equals: 'Ned' },
+          lastName: { equals: 'Flanders' }
+        }
+      }
+    )
+    expect(doc).to.eql(0)
+  })
+
   it('should find 5 people, youngest first', async function () {
     const doc = await personModel.find(
       {
