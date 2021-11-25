@@ -202,6 +202,7 @@ describe('Memory Model promise tests', function () {
       }
     )
 
+    expect(doc.length).to.eql(5)
     expect(doc).to.containSubset(
       [
         {
@@ -235,6 +236,138 @@ describe('Memory Model promise tests', function () {
         }
       ]
     )
+  })
+
+  it('should find 3 youngest people', async function () {
+    const doc = await personModel.find(
+      {
+        orderBy: ['age'],
+        limit: 3
+      }
+    )
+
+    expect(doc.length).to.eql(3)
+    expect(doc).to.containSubset(
+      [
+        {
+          age: 8,
+          employeeNo: 3,
+          firstName: 'Lisa',
+          lastName: 'Simpson'
+        },
+        {
+          age: 10,
+          employeeNo: 5,
+          firstName: 'Bart',
+          lastName: 'Simpson'
+        },
+        {
+          age: 36,
+          employeeNo: 4,
+          firstName: 'Marge',
+          lastName: 'Simpson'
+        }
+      ]
+    )
+  })
+
+  it('should find 5 youngest people, except for the first', async function () {
+    const doc = await personModel.find(
+      {
+        orderBy: ['age'],
+        offset: 1
+      }
+    )
+
+    expect(doc.length).to.eql(4)
+    expect(doc).to.containSubset(
+      [
+        {
+          age: 10,
+          employeeNo: 5,
+          firstName: 'Bart',
+          lastName: 'Simpson'
+        },
+        {
+          age: 36,
+          employeeNo: 4,
+          firstName: 'Marge',
+          lastName: 'Simpson'
+        },
+        {
+          age: 39,
+          employeeNo: 1,
+          firstName: 'Homer',
+          lastName: 'Simpson'
+        },
+        {
+          employeeNo: 2,
+          firstName: 'Maggie',
+          lastName: 'Simpson'
+        }
+      ]
+    )
+  })
+
+  describe('searching', () => {
+    it('search all documents without options', async () => {
+      const doc = await personModel.search()
+      expect(doc.page).to.eql(1)
+      expect(doc.totalPages).to.eql(1)
+      expect(doc.totalHits).to.eql(5)
+      expect(doc.results.length).to.eql(5)
+    })
+
+    it('search all documents with offset as 2', async () => {
+      const doc = await personModel.search({ offset: 2 })
+      expect(doc.page).to.eql(1)
+      expect(doc.totalPages).to.eql(1)
+      expect(doc.totalHits).to.eql(5)
+      expect(doc.results.length).to.eql(3)
+    })
+
+    it('search all documents with limit as 2', async () => {
+      const doc = await personModel.search({ limit: 2 })
+      expect(doc.page).to.eql(1)
+      expect(doc.totalPages).to.eql(3)
+      expect(doc.totalHits).to.eql(5)
+      expect(doc.results.length).to.eql(2)
+    })
+
+    it('search all documents with limit as 2 and page as 2', async () => {
+      const doc = await personModel.search({ limit: 2, page: 2 })
+      expect(doc.page).to.eql(2)
+      expect(doc.totalPages).to.eql(3)
+      expect(doc.totalHits).to.eql(5)
+      expect(doc.results.length).to.eql(2)
+    })
+
+    it('search all documents with limit as 2 and offset as 4', async () => {
+      const doc = await personModel.search({ limit: 2, offset: 4 })
+      expect(doc.totalPages).to.eql(3)
+      expect(doc.totalHits).to.eql(5)
+      expect(doc.results.length).to.eql(1)
+    })
+
+    it('search all documents with filter on and order by age', async () => {
+      const doc = await personModel.search({
+        orderBy: ['-age'],
+        fields: ['firstName', 'lastName'],
+        where: {
+          age: { moreThan: 30 }
+        }
+      })
+      expect(doc.page).to.eql(1)
+      expect(doc.totalPages).to.eql(1)
+      expect(doc.totalHits).to.eql(2)
+      expect(doc.results.length).to.eql(2)
+      expect(doc.results[0].firstName).to.eql('Homer')
+      expect(
+        Object.keys(doc.results[0]).sort()
+      ).to.eql(
+        ['firstName', 'lastName']
+      )
+    })
   })
 
   it('should find Bart by name', async () => {
