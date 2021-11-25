@@ -1,0 +1,11 @@
+{
+  "Search": {
+    "Type": "Task",
+    "Resource": "module:storageSearch",
+    "ResourceConfig": {
+      "modelId": "cat"
+    },
+    "ResultPath": "$",
+    "End": true
+  }
+}
