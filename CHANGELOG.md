@@ -1,3 +1,16 @@
+# [1.222.0](https://github.com/wmfs/tymly-core/compare/v1.221.0...v1.222.0) (2021-11-25)
+
+
+### ✨ Features
+
+* ability to search model ([3322cc1](https://github.com/wmfs/tymly-core/commit/3322cc109f282b4257cdd28cdc496dc60e0b9abc))
+* ability to search model (state resource) ([df4d1da](https://github.com/wmfs/tymly-core/commit/df4d1da027b3e460e623dec1c35ec57a7e5aec22))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-test-helpers to v1.11.0 ([a02724a](https://github.com/wmfs/tymly-core/commit/a02724a9d1294146d4b658bb5d656df540411e6b))
+
 # [1.221.0](https://github.com/wmfs/tymly-core/compare/v1.220.0...v1.221.0) (2021-11-24)
 
 
