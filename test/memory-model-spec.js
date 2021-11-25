@@ -169,6 +169,81 @@ describe('Memory Model tests', function () {
     )
   })
 
+  describe('searching', () => {
+    it('search all documents without options', done => {
+      personModel.search({}, (err, doc) => {
+        expect(doc.page).to.eql(1)
+        expect(doc.totalPages).to.eql(1)
+        expect(doc.totalHits).to.eql(5)
+        expect(doc.results.length).to.eql(5)
+        done(err)
+      })
+    })
+
+    it('search all documents with offset as 2', done => {
+      personModel.search({ offset: 2 }, (err, doc) => {
+        expect(doc.page).to.eql(1)
+        expect(doc.totalPages).to.eql(1)
+        expect(doc.totalHits).to.eql(5)
+        expect(doc.results.length).to.eql(3)
+        done(err)
+      })
+    })
+
+    it('search all documents with limit as 2', done => {
+      personModel.search({ limit: 2 }, (err, doc) => {
+        expect(doc.page).to.eql(1)
+        expect(doc.totalPages).to.eql(3)
+        expect(doc.totalHits).to.eql(5)
+        expect(doc.results.length).to.eql(2)
+        done(err)
+      })
+    })
+
+    it('search all documents with limit as 2 and page as 2', done => {
+      personModel.search({ limit: 2, page: 2 }, (err, doc) => {
+        expect(doc.page).to.eql(2)
+        expect(doc.totalPages).to.eql(3)
+        expect(doc.totalHits).to.eql(5)
+        expect(doc.results.length).to.eql(2)
+        done(err)
+      })
+    })
+
+    it('search all documents with limit as 2 and offset as 4', done => {
+      personModel.search({ limit: 2, offset: 4 }, (err, doc) => {
+        expect(doc.totalPages).to.eql(3)
+        expect(doc.totalHits).to.eql(5)
+        expect(doc.results.length).to.eql(1)
+        done(err)
+      })
+    })
+
+    it('search all documents with filter on and order by age', done => {
+      personModel.search(
+        {
+          orderBy: ['-age'],
+          fields: ['firstName', 'lastName'],
+          where: {
+            age: { moreThan: 30 }
+          }
+        }, (err, doc) => {
+          expect(doc.page).to.eql(1)
+          expect(doc.totalPages).to.eql(1)
+          expect(doc.totalHits).to.eql(2)
+          expect(doc.results.length).to.eql(2)
+          expect(doc.results[0].firstName).to.eql('Homer')
+          expect(
+            Object.keys(doc.results[0]).sort()
+          ).to.eql(
+            ['firstName', 'lastName']
+          )
+          done(err)
+        }
+      )
+    })
+  })
+
   it('count all documents', done => {
     personModel.findCount(
       {},
