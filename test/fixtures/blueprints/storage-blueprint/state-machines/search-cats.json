@@ -1,0 +1,27 @@
+{
+  "Comment": "Search cats",
+  "StartAt": "Search",
+  "version": "1.0",
+  "States": {
+    "Search": {
+      "Type": "Task",
+      "Resource": "module:storageSearch",
+      "ResourceConfig": {
+        "modelId": "cat",
+        "filter": {
+          "fields": ["name", "size"]
+        }
+      },
+      "ResultPath": "$",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

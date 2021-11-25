@@ -9,6 +9,7 @@ const FIND_BY_ID_STATE_MACHINE_NAME = 'tymlyTest_findACatById_1_0'
 const FIND_BY_ID_OBJ_PK_STATE_MACHINE_NAME = 'tymlyTest_findADogById_1_0'
 const DELETE_STATE_MACHINE_NAME = 'tymlyTest_deleteACat_1_0'
 const DELETE_OBJ_PK_STATE_MACHINE_NAME = 'tymlyTest_deleteADog_1_0'
+const SEARCH_CATS_STATE_MACHINE_NAME = 'tymlyTest_searchCats_1_0'
 
 describe('State resource tests', function () {
   this.timeout(process.env.TIMEOUT || 5000)
@@ -142,6 +143,26 @@ describe('State resource tests', function () {
     expect(execDesc.currentResource).to.eql('module:findingById')
     expect(execDesc.ctx.dogDocFromStorage.name).to.eql('Donald')
     expect(execDesc.ctx.dogDocFromStorage.id).to.eql(2)
+  })
+
+  it('should start state machine to test the StorageSearch state resource', async () => {
+    const execDesc = await statebox.startExecution(
+      {},
+      SEARCH_CATS_STATE_MACHINE_NAME,
+      { sendResponse: 'COMPLETE' }
+    )
+
+    expect(execDesc.status).to.eql('SUCCEEDED')
+    expect(execDesc.currentStateName).to.eql('Search')
+    expect(execDesc.currentResource).to.eql('module:storageSearch')
+
+    expect(execDesc.ctx.page).to.eql(1)
+    expect(execDesc.ctx.totalPages).to.eql(1)
+    expect(execDesc.ctx.results.length).to.eql(1)
+    expect(execDesc.ctx.totalHits).to.eql(1)
+
+    const doc = execDesc.ctx.results[0]
+    expect(doc).to.eql({ name: 'Rupert', size: 'large' })
   })
 
   it('should shutdown Tymly', async () => {

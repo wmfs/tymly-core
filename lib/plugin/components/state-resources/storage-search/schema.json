@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "modelId": {
+      "type": "string",
+      "description": "This is the id of a model within the current namespace from which a single document will be fetched."
+    },
+    "filter": {
+      "type": "object",
+      "description": "Use to find the correct doc to return."
+    }
+
+  },
+  "required": ["modelId"],
+  "additionalProperties": false
+}
