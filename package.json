@@ -25,7 +25,7 @@
     "@wmfs/statebox": "1.93.2",
     "@wmfs/tymly-statelint": "1.42.0",
     "cls-hooked": "4.2.2",
-    "debug": "4.3.2",
+    "debug": "4.3.3",
     "dottie": "2.0.2",
     "fast-json-patch": "3.1.0",
     "glob": "7.2.0",
