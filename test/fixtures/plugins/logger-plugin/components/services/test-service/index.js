@@ -1,6 +1,8 @@
 class TestService {
   boot (options) {
-    const { logger } = options.bootedServices
+    // const { logger } = options.bootedServices
+    const logger = options.bootedServices.logger.child({ key: 'test-service' })
+
     logger.trace('This is a trace message')
     logger.debug('This is a debug message')
     logger.info('This is a info message')
