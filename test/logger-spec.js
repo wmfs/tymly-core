@@ -13,6 +13,29 @@ function readLogFile (filepath) {
     .map(JSON.parse)
 }
 
+function expectAllLevels (logs) {
+  const levels = logs.map(l => l.level)
+  expect(levels.includes(10)).to.eql(true) // trace
+  expect(levels.includes(20)).to.eql(true) // debug
+  expect(levels.includes(30)).to.eql(true) // info
+  expect(levels.includes(40)).to.eql(true) // warn
+  expect(levels.includes(50)).to.eql(true) // error
+  expect(levels.includes(60)).to.eql(true) // fatal
+}
+
+function expectSomeLevels (logs, expectedLevels) {
+  const levelMap = { fatal: 60, error: 50, warn: 40, info: 30, debug: 20, trace: 10 }
+  const actualLevels = logs.map(l => l.level)
+
+  for (const [key, value] of Object.keys(levelMap)) {
+    if (expectedLevels.includes(key)) {
+      expect(actualLevels.includes(value)).to.eql(true)
+    } else {
+      expect(actualLevels.includes(value)).to.eql(false)
+    }
+  }
+}
+
 describe('Logger tests', function () {
   this.timeout(process.env.TIMEOUT || 5000)
 
@@ -60,13 +83,7 @@ describe('Logger tests', function () {
       const filepath = bootedServices.logger.loggerOutputFilePath
       const logs = readLogFile(filepath)
       expect(logs.length).to.eql(6)
-      const levels = logs.map(l => l.level)
-      expect(levels.includes(10)).to.eql(true) // trace
-      expect(levels.includes(20)).to.eql(true) // debug
-      expect(levels.includes(30)).to.eql(true) // info
-      expect(levels.includes(40)).to.eql(true) // warn
-      expect(levels.includes(50)).to.eql(true) // error
-      expect(levels.includes(60)).to.eql(true) // fatal
+      expectAllLevels(logs)
     })
 
     it('clean up output file', () => {
@@ -97,13 +114,7 @@ describe('Logger tests', function () {
       const filepath = bootedServices.logger.loggerOutputFilePath
       const logs = readLogFile(filepath)
       expect(logs.length).to.eql(4)
-      const levels = logs.map(l => l.level)
-      expect(levels.includes(10)).to.eql(false) // trace
-      expect(levels.includes(20)).to.eql(false) // debug
-      expect(levels.includes(30)).to.eql(true) // info
-      expect(levels.includes(40)).to.eql(true) // warn
-      expect(levels.includes(50)).to.eql(true) // error
-      expect(levels.includes(60)).to.eql(true) // fatal
+      expectSomeLevels(logs, ['info', 'warn', 'error', 'fatal'])
     })
 
     it('clean up output file', () => {
@@ -134,13 +145,7 @@ describe('Logger tests', function () {
       const filepath = bootedServices.logger.loggerOutputFilePath
       const logs = readLogFile(filepath)
       expect(logs.length).to.eql(2)
-      const levels = logs.map(l => l.level)
-      expect(levels.includes(10)).to.eql(false) // trace
-      expect(levels.includes(20)).to.eql(false) // debug
-      expect(levels.includes(30)).to.eql(false) // info
-      expect(levels.includes(40)).to.eql(false) // warn
-      expect(levels.includes(50)).to.eql(true) // error
-      expect(levels.includes(60)).to.eql(true) // fatal
+      expectSomeLevels(logs, ['error', 'fatal'])
     })
 
     it('clean up output file', () => {
@@ -171,13 +176,7 @@ describe('Logger tests', function () {
       const filepath = bootedServices.logger.loggerOutputFilePath
       const logs = readLogFile(filepath)
       expect(logs.length).to.eql(6)
-      const levels = logs.map(l => l.level)
-      expect(levels.includes(10)).to.eql(true) // trace
-      expect(levels.includes(20)).to.eql(true) // debug
-      expect(levels.includes(30)).to.eql(true) // info
-      expect(levels.includes(40)).to.eql(true) // warn
-      expect(levels.includes(50)).to.eql(true) // error
-      expect(levels.includes(60)).to.eql(true) // fatal
+      expectAllLevels(logs)
     })
 
     it('clean up output file', () => {
