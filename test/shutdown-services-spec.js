@@ -40,6 +40,7 @@ describe('Shutdown services tests', function () {
         'registry',
         'categories',
         'statebox',
+        'logger',
         'testService1',
         'testService2',
         'probe'
