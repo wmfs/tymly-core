@@ -15,12 +15,25 @@ function readLogFile (filepath) {
 
 function expectAllLevels (logs) {
   const levels = logs.map(l => l.level)
+
   expect(levels.includes(10)).to.eql(true) // trace
   expect(levels.includes(20)).to.eql(true) // debug
   expect(levels.includes(30)).to.eql(true) // info
   expect(levels.includes(40)).to.eql(true) // warn
   expect(levels.includes(50)).to.eql(true) // error
   expect(levels.includes(60)).to.eql(true) // fatal
+
+  expect(
+    logs.find(l => l.level === 50).msg
+  ).to.eql(
+    'This is an error message'
+  )
+
+  expect(
+    logs.find(l => l.level === 60).msg
+  ).to.eql(
+    'This is a fatal message !!!'
+  )
 }
 
 function expectSomeLevels (logs, expectedLevels) {
