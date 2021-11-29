@@ -188,4 +188,9 @@ describe('Logger tests', function () {
       await bootedServices.tymly.shutdown()
     })
   })
+
+  after('reset logging environment variables', () => {
+    process.env.LOGGER = null
+    process.env.LOGGER_OUTPUT_DIR_PATH = null
+  })
 })

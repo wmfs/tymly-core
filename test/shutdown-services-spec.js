@@ -28,6 +28,7 @@ describe('Shutdown services tests', function () {
   it('should show the boot order was correct', () => {
     expect(tymlyService.orderedServiceNames).to.eql(
       [
+        'logger',
         'tymly',
         'timestamp',
         'temp',
@@ -40,7 +41,6 @@ describe('Shutdown services tests', function () {
         'registry',
         'categories',
         'statebox',
-        'logger',
         'testService1',
         'testService2',
         'probe'
