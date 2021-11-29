@@ -26,13 +26,13 @@ function expectAllLevels (logs) {
   expect(
     logs.find(l => l.level === 50).msg
   ).to.eql(
-    'This is an error message'
+    '[test-service] This is an error message'
   )
 
   expect(
     logs.find(l => l.level === 60).msg
   ).to.eql(
-    'This is a fatal message !!!'
+    '[test-service] This is a fatal message'
   )
 }
 
