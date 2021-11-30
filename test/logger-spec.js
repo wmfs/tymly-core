@@ -24,15 +24,21 @@ function expectAllLevels (logs) {
   expect(levels.includes(60)).to.eql(true) // fatal
 
   expect(
+    logs.find(l => l.level === 10).msg
+  ).to.eql(
+    '[test-service] This is a trace message'
+  )
+
+  expect(
     logs.find(l => l.level === 50).msg
   ).to.eql(
-    '[test-service] This is an error message'
+    '[logger] This is an error message'
   )
 
   expect(
     logs.find(l => l.level === 60).msg
   ).to.eql(
-    '[test-service] This is a fatal message'
+    '[logger] This is a fatal message'
   )
 }
 
