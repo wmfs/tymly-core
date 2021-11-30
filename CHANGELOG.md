@@ -1,3 +1,15 @@
+## [1.224.1](https://github.com/wmfs/tymly-core/compare/v1.224.0...v1.224.1) (2021-11-30)
+
+
+### 🐛 Bug Fixes
+
+* **logger:** return undefined if file path not found ([67a6a65](https://github.com/wmfs/tymly-core/commit/67a6a6506dbc59de035302b8d89cfb3648e7dcef))
+
+
+### ♻️ Chores
+
+* message to specify where logs output to ([80edb3c](https://github.com/wmfs/tymly-core/commit/80edb3c8c9ef0a8526700a1109e8d78ad0d494da))
+
 # [1.224.0](https://github.com/wmfs/tymly-core/compare/v1.223.0...v1.224.0) (2021-11-30)
 
 
