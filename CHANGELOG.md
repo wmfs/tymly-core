@@ -1,3 +1,15 @@
+## [1.224.2](https://github.com/wmfs/tymly-core/compare/v1.224.1...v1.224.2) (2021-11-30)
+
+
+### 🐛 Bug Fixes
+
+* use pino-pretty if development OR filepath not supplied ([5f74aa5](https://github.com/wmfs/tymly-core/commit/5f74aa5cf42be292343955ef72c8cff4f08093b4))
+
+
+### 🚨 Tests
+
+* update expects based on new log (for logger initialised) ([d99d2e8](https://github.com/wmfs/tymly-core/commit/d99d2e87d44d5b2f1c8e1a35e86cae4fe677ddb3))
+
 ## [1.224.1](https://github.com/wmfs/tymly-core/compare/v1.224.0...v1.224.1) (2021-11-30)
 
 
