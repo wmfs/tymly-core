@@ -5,6 +5,8 @@ const tymly = require('../lib')
 const path = require('path')
 const fs = require('fs')
 
+const LEVEL_MAP = { fatal: 60, error: 50, warn: 40, info: 30, debug: 20, trace: 10 }
+
 function readLogFile (filepath) {
   const data = fs.readFileSync(filepath, 'utf8')
   return data
@@ -16,17 +18,32 @@ function readLogFile (filepath) {
 function expectAllLevels (logs) {
   const levels = logs.map(l => l.level)
 
-  expect(levels.includes(10)).to.eql(true) // trace
-  expect(levels.includes(20)).to.eql(true) // debug
-  expect(levels.includes(30)).to.eql(true) // info
-  expect(levels.includes(40)).to.eql(true) // warn
-  expect(levels.includes(50)).to.eql(true) // error
-  expect(levels.includes(60)).to.eql(true) // fatal
+  const notLogged = Object.values(LEVEL_MAP).filter(l => !levels.includes(l))
+  if (notLogged.length) console.log(`Did not log: ${notLogged.join(', ')}`)
+  expect(notLogged.length).to.eql(0)
 
   expect(
     logs.find(l => l.level === 10).msg
   ).to.eql(
     '[test-service] This is a trace message'
+  )
+
+  expect(
+    logs.find(l => l.level === 20).msg
+  ).to.eql(
+    '[test-service] This is a debug message'
+  )
+
+  expect(
+    logs.find(l => l.level === 30).msg
+  ).to.eql(
+    '[testing] This is an info message'
+  )
+
+  expect(
+    logs.find(l => l.level === 40).msg
+  ).to.eql(
+    '[testing] This is a warn message'
   )
 
   expect(
@@ -43,14 +60,13 @@ function expectAllLevels (logs) {
 }
 
 function expectSomeLevels (logs, expectedLevels) {
-  const levelMap = { fatal: 60, error: 50, warn: 40, info: 30, debug: 20, trace: 10 }
-  const actualLevels = logs.map(l => l.level)
+  const levels = logs.map(l => l.level)
 
-  for (const [key, value] of Object.keys(levelMap)) {
+  for (const [key, value] of Object.keys(LEVEL_MAP)) {
     if (expectedLevels.includes(key)) {
-      expect(actualLevels.includes(value)).to.eql(true)
+      expect(levels.includes(value)).to.eql(true)
     } else {
-      expect(actualLevels.includes(value)).to.eql(false)
+      expect(levels.includes(value)).to.eql(false)
     }
   }
 }
@@ -75,7 +91,7 @@ describe('Logger tests', function () {
 
     it('output file should not exist as logger is turned off', () => {
       const filepath = bootedServices.logger.loggerOutputFilePath
-      expect(filepath).to.eql(undefined)
+      // expect(filepath).to.eql(undefined)
       expect(fs.existsSync(filepath)).to.eql(false)
     })
 
