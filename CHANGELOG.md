@@ -1,3 +1,10 @@
+# [1.224.0](https://github.com/wmfs/tymly-core/compare/v1.223.0...v1.224.0) (2021-11-30)
+
+
+### 🛠 Builds
+
+* **deps:** add pino-pretty ([0bdcc5f](https://github.com/wmfs/tymly-core/commit/0bdcc5fc65ba508fe4edaa97c9ad608404bffb0e))
+
 # [1.223.0](https://github.com/wmfs/tymly-core/compare/v1.222.0...v1.223.0) (2021-11-30)
 
 
