@@ -1,3 +1,41 @@
+# [1.223.0](https://github.com/wmfs/tymly-core/compare/v1.222.0...v1.223.0) (2021-11-30)
+
+
+### ✨ Features
+
+* add child function to logger service ([13d6b57](https://github.com/wmfs/tymly-core/commit/13d6b5795c491358674dab1959cc804e0fd34fdb))
+* append namespace to log ([952746f](https://github.com/wmfs/tymly-core/commit/952746fbc6ba2d56ee29f408dd9b8bd56d53a230))
+* implement a logger service using pino ([0400afa](https://github.com/wmfs/tymly-core/commit/0400afa0e5feb203ea2c68c87d903fe403f1abc5))
+* multistream instead of transport ([9c24102](https://github.com/wmfs/tymly-core/commit/9c241022a5624982a6c7978b6740d590e21f53c5))
+* use pino.transport to stream logs to file and use pino-pretty for dev ([5033b9c](https://github.com/wmfs/tymly-core/commit/5033b9cfc2c42de5d4a65e7ed0dcfac2705316bf))
+
+
+### 🐛 Bug Fixes
+
+* concatenate parameters of log with whitespace, just like `console.log` does, but leave out child() for now ([a66e31d](https://github.com/wmfs/tymly-core/commit/a66e31d3a546df0330ab9aafba12ccec6805c5d4))
+* ensure file stream to return empty object ([287b72a](https://github.com/wmfs/tymly-core/commit/287b72a789ebcd5f149521d36433bf10d68490ac))
+* file extension as .log ([b445b6b](https://github.com/wmfs/tymly-core/commit/b445b6b9c86ff97690e0f33b7c5a90bb60f67473))
+* replace usages of debug with logger ([4ed6132](https://github.com/wmfs/tymly-core/commit/4ed61329a9eebf4af845532ec146e78cb4fd7e92))
+
+
+### 📦 Code Refactoring
+
+* separate out generate file name from file stream function ([b386667](https://github.com/wmfs/tymly-core/commit/b3866676b1e30fb92ae06e109a85e8bafb413f5a))
+* simplify commented logger code ([e5ee919](https://github.com/wmfs/tymly-core/commit/e5ee919d523c12c18124415fce4ff0044dc1462b))
+* tidy up and set up but comment out transports ([a40e3df](https://github.com/wmfs/tymly-core/commit/a40e3df852b9377113c7677c918c48a8f7a9c59c))
+
+
+### 🚨 Tests
+
+* clearer expected log levels ([737521b](https://github.com/wmfs/tymly-core/commit/737521be7d6bdff98246d2e572fe5fbc013842a0))
+* illustrate use of namespace when adding logger ([128329e](https://github.com/wmfs/tymly-core/commit/128329ef526d685f5d080c9068537aebd6e68e23))
+* update shutdown tests to include new logger service ([9874ba2](https://github.com/wmfs/tymly-core/commit/9874ba2922d1347abc4ea919bac94536c8783494))
+
+
+### ♻️ Chores
+
+* remove commented code ([60b0a5f](https://github.com/wmfs/tymly-core/commit/60b0a5f11d13cbe7eb38db8aa112610869d36550))
+
 # [1.222.0](https://github.com/wmfs/tymly-core/compare/v1.221.0...v1.222.0) (2021-11-25)
 
 
