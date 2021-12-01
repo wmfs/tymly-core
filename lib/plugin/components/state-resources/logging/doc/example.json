@@ -3,6 +3,7 @@
     "Type": "Task",
     "Resource": "module:logging",
     "ResourceConfig": {
+      "level": "info",
       "template": "Purge site!"
     },
     "End": true

@@ -24,7 +24,6 @@
     "@hapi/boom": "9.1.2",
     "@wmfs/statebox": "1.93.2",
     "@wmfs/tymly-statelint": "1.42.0",
-    "abstract-logging": "2.0.1",
     "cls-hooked": "4.2.2",
     "debug": "4.3.2",
     "dottie": "2.0.2",
