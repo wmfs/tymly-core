@@ -84,6 +84,34 @@ describe('Logger tests', function () {
 
   process.env.LOGGER_OUTPUT_DIR_PATH = path.join(__dirname, 'logging-output')
 
+  describe('check level is valid', () => {
+    it('boot tymly', async () => {
+      bootedServices = await tymly.boot({ pluginPaths })
+    })
+
+    const testLevels = {
+      trace: true,
+      debug: true,
+      info: true,
+      warn: true,
+      error: true,
+      fatal: true,
+      nope: false,
+      FATAL: false,
+      1: false
+    }
+
+    for (const [level, expected] of Object.entries(testLevels)) {
+      it(`${level} should ${expected ? '' : 'not '}be valid`, () => {
+        expect(bootedServices.logger.isValidLevel(level)).to.eql(expected)
+      })
+    }
+
+    it('shutdown Tymly', async () => {
+      await bootedServices.tymly.shutdown()
+    })
+  })
+
   describe('no logger', () => {
     it('boot tymly', async () => {
       process.env.LOGGER = null
