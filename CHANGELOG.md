@@ -1,3 +1,10 @@
+# [1.226.0](https://github.com/wmfs/tymly-core/compare/v1.225.0...v1.226.0) (2021-12-01)
+
+
+### ✨ Features
+
+* format logs to return level label ([deed171](https://github.com/wmfs/tymly-core/commit/deed171ac0e2cad16b6430b40dd57263a635dd79))
+
 # [1.225.0](https://github.com/wmfs/tymly-core/compare/v1.224.2...v1.225.0) (2021-12-01)
 
 
