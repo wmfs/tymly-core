@@ -1,3 +1,21 @@
+# [1.225.0](https://github.com/wmfs/tymly-core/compare/v1.224.2...v1.225.0) (2021-12-01)
+
+
+### ✨ Features
+
+* refactor logger to use child ([1fc8697](https://github.com/wmfs/tymly-core/commit/1fc8697aaaf780f1bfc5738518c506cba01ba93a))
+* use console log for default logger and improve state resource for logging ([4026899](https://github.com/wmfs/tymly-core/commit/40268999b4a197ee19339bded0a12b0261536b04))
+
+
+### 🐛 Bug Fixes
+
+* improvemnts to logger boot process and messages ([bce4cdc](https://github.com/wmfs/tymly-core/commit/bce4cdc678bb639084fdafb61239f5020c5e1812))
+
+
+### 🚨 Tests
+
+* add test for checking level is valid ([f3c6eea](https://github.com/wmfs/tymly-core/commit/f3c6eea29ebf1b152a87ea933de4f5ac602dabbf))
+
 ## [1.224.2](https://github.com/wmfs/tymly-core/compare/v1.224.1...v1.224.2) (2021-11-30)
 
 
