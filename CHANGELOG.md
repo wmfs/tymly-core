@@ -1,3 +1,10 @@
+# [1.231.0](https://github.com/wmfs/tymly-core/compare/v1.230.0...v1.231.0) (2022-01-25)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency debug to v4.3.3 ([a9aaa7a](https://github.com/wmfs/tymly-core/commit/a9aaa7a9fc517efab562c1a49dc8dd2ac2851840))
+
 # [1.230.0](https://github.com/wmfs/tymly-core/compare/v1.229.0...v1.230.0) (2022-01-25)
 
 
