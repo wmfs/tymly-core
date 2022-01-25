@@ -1,3 +1,14 @@
+# [1.229.0](https://github.com/wmfs/tymly-core/compare/v1.228.0...v1.229.0) (2022-01-25)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-test-helpers to v1.13.0 ([cf6342e](https://github.com/wmfs/tymly-core/commit/cf6342ea8dcbdc847294a6b6c69f839177cd09d9))
+* **deps-dev:** update dependency mocha to v9.1.4 ([ed7d852](https://github.com/wmfs/tymly-core/commit/ed7d852f726ed82457c6b157abe71acafb662828))
+* **deps-dev:** update dependency mocha to v9.2.0 ([6a60609](https://github.com/wmfs/tymly-core/commit/6a606097fa7f800c4b37ebc0d809a4f00c1e13d7))
+* **deps-dev:** update dependency semantic-release to v19 ([b89859e](https://github.com/wmfs/tymly-core/commit/b89859e93b3117d96104d45813a9d88333bd720d))
+* **deps:** update dependency [@hapi](https://github.com/hapi)/boom to v9.1.4 ([182c2f4](https://github.com/wmfs/tymly-core/commit/182c2f4ee76b1b494de5502dccfe5b007f74a3b1))
+
 # [1.228.0](https://github.com/wmfs/tymly-core/compare/v1.227.0...v1.228.0) (2022-01-10)
 
 
