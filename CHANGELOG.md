@@ -1,3 +1,10 @@
+# [1.230.0](https://github.com/wmfs/tymly-core/compare/v1.229.0...v1.230.0) (2022-01-25)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency glob to v7.2.0 ([7a94a22](https://github.com/wmfs/tymly-core/commit/7a94a223374e4e4568e364d11441f3fedd81d001))
+
 # [1.229.0](https://github.com/wmfs/tymly-core/compare/v1.228.0...v1.229.0) (2022-01-25)
 
 
