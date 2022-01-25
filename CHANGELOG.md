@@ -1,3 +1,10 @@
+# [1.232.0](https://github.com/wmfs/tymly-core/compare/v1.231.0...v1.232.0) (2022-01-25)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency pino to v7.6.4 ([2373fbb](https://github.com/wmfs/tymly-core/commit/2373fbb2de35aaf089ba9b00de6dff70e703a820))
+
 # [1.231.0](https://github.com/wmfs/tymly-core/compare/v1.230.0...v1.231.0) (2022-01-25)
 
 
