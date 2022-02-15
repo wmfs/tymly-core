@@ -1,3 +1,14 @@
+# [1.235.0](https://github.com/wmfs/tymly-core/compare/v1.234.0...v1.235.0) (2022-02-15)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-test-helpers to v1.14.0 ([b349b6b](https://github.com/wmfs/tymly-core/commit/b349b6b3f382c36cc51ca7a691bc03d3175e7f65))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-test-helpers to v1.15.0 ([ce9dae4](https://github.com/wmfs/tymly-core/commit/ce9dae4af0eaac39ce46c361fdf342d4a7cbd1c9))
+* **deps-dev:** update dependency chai to v4.3.5 ([bb5fbc0](https://github.com/wmfs/tymly-core/commit/bb5fbc002352b37f09290ee4026982efb41e69bd))
+* **deps-dev:** update dependency chai to v4.3.6 ([ec335a7](https://github.com/wmfs/tymly-core/commit/ec335a7c476ab440b4a374b024d4a4ba343c8c73))
+* **deps:** update [@wmfs](https://github.com/wmfs)/statebox to 1.94.0 ([2d16df8](https://github.com/wmfs/tymly-core/commit/2d16df8d1246da6cdb16ed43d7dce1d71786cbfe))
+
 # [1.234.0](https://github.com/wmfs/tymly-core/compare/v1.233.0...v1.234.0) (2022-01-25)
 
 
