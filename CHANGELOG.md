@@ -1,3 +1,16 @@
+## [1.235.1](https://github.com/wmfs/tymly-core/compare/v1.235.0...v1.235.1) (2022-02-28)
+
+
+### 🐛 Bug Fixes
+
+* find-base to use external resolve input paths function ([1111665](https://github.com/wmfs/tymly-core/commit/11116659f4f42e8523293507fec1292caf421fb9))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-test-helpers to v1.16.0 ([4ed60e1](https://github.com/wmfs/tymly-core/commit/4ed60e10ff5e65034e01bd59988ca9f82a4927b8))
+* **deps-dev:** update dependency mocha to v9.2.1 ([d9f2548](https://github.com/wmfs/tymly-core/commit/d9f2548453f714d91d1f81a4d6a3e72c59b8f660))
+
 # [1.235.0](https://github.com/wmfs/tymly-core/compare/v1.234.0...v1.235.0) (2022-02-15)
 
 
