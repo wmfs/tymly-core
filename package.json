@@ -24,7 +24,7 @@
     "@hapi/boom": "9.1.4",
     "@wmfs/statebox": "1.94.0",
     "@wmfs/tymly-statelint": "1.44.0",
-    "@wmfs/json-path-input-resolver": "1.0.0",
+    "@wmfs/json-path-input-resolver": "1.1.0",
     "cls-hooked": "4.2.2",
     "debug": "4.3.3",
     "dottie": "2.0.2",
