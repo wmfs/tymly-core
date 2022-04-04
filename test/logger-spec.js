@@ -13,10 +13,11 @@ function readLogFile (filepath) {
     .split('\n')
     .filter(line => line)
     .map(JSON.parse)
+    .filter(line => line.msg !== 'Logger initialised')
 }
 
 function expectAllLevels (logs) {
-  logs.shift()
+  // logs.shift()
   const levels = logs.map(l => l.level)
 
   const notLogged = Object.values(LEVEL_MAP).filter(l => !levels.includes(l))
@@ -61,7 +62,7 @@ function expectAllLevels (logs) {
 }
 
 function expectSomeLevels (logs, expectedLevels) {
-  logs.shift()
+  // logs.shift()
   const levels = logs.map(l => l.level)
 
   for (const [key, value] of Object.keys(LEVEL_MAP)) {
@@ -147,7 +148,7 @@ describe('Logger tests', function () {
     it('check output file contents', () => {
       const filepath = bootedServices.logger.loggerOutputFilePath
       const logs = readLogFile(filepath)
-      expect(logs.length).to.eql(7)
+      expect(logs.length).to.eql(6)
       expectAllLevels(logs)
     })
 
@@ -178,7 +179,7 @@ describe('Logger tests', function () {
     it('check output file contents', () => {
       const filepath = bootedServices.logger.loggerOutputFilePath
       const logs = readLogFile(filepath)
-      expect(logs.length).to.eql(5)
+      expect(logs.length).to.eql(4)
       expectSomeLevels(logs, ['info', 'warn', 'error', 'fatal'])
     })
 
@@ -240,7 +241,7 @@ describe('Logger tests', function () {
     it('check output file contents', () => {
       const filepath = bootedServices.logger.loggerOutputFilePath
       const logs = readLogFile(filepath)
-      expect(logs.length).to.eql(7)
+      expect(logs.length).to.eql(6)
       expectAllLevels(logs)
     })
 
@@ -251,6 +252,21 @@ describe('Logger tests', function () {
 
     it('shutdown Tymly', async () => {
       await bootedServices.tymly.shutdown()
+    })
+  })
+
+  describe('boot Tymly with an alternative logger service', () => {
+    it('boot tymly', async () => {
+      process.env.LOGGER = 'trace'
+      bootedServices = await tymly.boot({
+        pluginPaths: [
+          path.resolve(__dirname, './fixtures/plugins/logger-plugin'),
+          path.resolve(__dirname, './fixtures/plugins/alternative-logger-plugin')
+        ]
+      })
+      expect(bootedServices.logger.shouldLog).to.eql(true)
+      expect(bootedServices.logger.level).to.eql('trace')
+      expect(bootedServices.logger.logs.length).to.eql(6)
     })
   })
 
