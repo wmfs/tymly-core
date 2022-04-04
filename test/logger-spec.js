@@ -254,6 +254,21 @@ describe('Logger tests', function () {
     })
   })
 
+  describe('boot Tymly with an alternative logger service', () => {
+    it('boot tymly', async () => {
+      process.env.LOGGER = 'trace'
+      bootedServices = await tymly.boot({
+        pluginPaths: [
+          path.resolve(__dirname, './fixtures/plugins/logger-plugin'),
+          path.resolve(__dirname, './fixtures/plugins/alternative-logger-plugin')
+        ]
+      })
+      expect(bootedServices.logger.shouldLog).to.eql(true)
+      expect(bootedServices.logger.level).to.eql('trace')
+      expect(bootedServices.logger.logs.length).to.eql(6)
+    })
+  })
+
   after('reset logging environment variables', () => {
     process.env.LOGGER = null
     process.env.LOGGER_OUTPUT_DIR_PATH = null
