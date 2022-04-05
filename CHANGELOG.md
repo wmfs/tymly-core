@@ -1,3 +1,16 @@
+## [1.235.2](https://github.com/wmfs/tymly-core/compare/v1.235.1...v1.235.2) (2022-04-05)
+
+
+### 🐛 Bug Fixes
+
+* improve default logger to acknowledge the level set ([368e00a](https://github.com/wmfs/tymly-core/commit/368e00aa5888f469d03ab79cb329a6159d0c113a))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-test-helpers to v1.17.0 ([d3bfda6](https://github.com/wmfs/tymly-core/commit/d3bfda65ad7e2b77cdba39cab0f5b8fb6b5fa089))
+* **deps-dev:** update dependency mocha to v9.2.2 ([a77cc3b](https://github.com/wmfs/tymly-core/commit/a77cc3bf5ab3869563d514f023617d3ae32e81aa))
+
 ## [1.235.1](https://github.com/wmfs/tymly-core/compare/v1.235.0...v1.235.1) (2022-02-28)
 
 
