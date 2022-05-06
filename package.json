@@ -46,7 +46,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/git": "10.0.1",
-    "@wmfs/tymly-test-helpers": "1.17.0",
+    "@wmfs/tymly-test-helpers": "1.17.1",
     "chai": "4.3.6",
     "chai-string": "1.5.0",
     "chai-subset": "1.6.0",
