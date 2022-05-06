@@ -1,3 +1,12 @@
+## [1.235.3](https://github.com/wmfs/tymly-core/compare/v1.235.2...v1.235.3) (2022-05-06)
+
+
+### 🐛 Bug Fixes
+
+* check if execution is still running when sending task heartbeat ([4194175](https://github.com/wmfs/tymly-core/commit/4194175dcd3787b35dd97a8598c279d5623b7de1))
+* pass parent execution in options when launching state machine ([185b917](https://github.com/wmfs/tymly-core/commit/185b91766b208b4c796ef2cbaf97e9172e984fe0))
+* remove console log ([4326efb](https://github.com/wmfs/tymly-core/commit/4326efb771e41d684f80e071870cf996f3fc72b5))
+
 ## [1.235.2](https://github.com/wmfs/tymly-core/compare/v1.235.1...v1.235.2) (2022-04-05)
 
 
