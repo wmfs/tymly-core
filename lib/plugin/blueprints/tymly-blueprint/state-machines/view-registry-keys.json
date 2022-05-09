@@ -1,0 +1,39 @@
+{
+  "Comment": "View Registry Keys",
+  "name": "View Registry Keys",
+  "version": "1.0",
+  "categories": [
+    "system"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "instigatorGroup": "app",
+  "StartAt": "Finding",
+  "States": {
+    "Finding": {
+      "Type": "Task",
+      "Resource": "function:tymly_getRegistryKeys",
+      "ResultPath": "$.regKeys",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "tymly_viewRegistryKeys",
+        "dataPath": "$"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "tymly_system",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

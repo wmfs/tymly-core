@@ -1,0 +1,38 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "weight": "bolder",
+      "text": "Are you sure you want to clear the '{{ data.key }}' registry key?"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "No"
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Yes"
+    }
+  ],
+  "templateMeta": {
+    "name": "clear-registry-key",
+    "title": "Clear Registry Key",
+    "category": "system"
+  },
+  "hooks": {
+    "afterSubmit": {
+      "actions": [
+        {
+          "type": "Action.PushCard",
+          "stateMachineName": "tymly_viewRegistryKeys_1_0",
+          "input": {}
+        }
+      ]
+    }
+  }
+}

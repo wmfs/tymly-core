@@ -1,0 +1,36 @@
+{
+  "Comment": "View Registry Key",
+  "name": "View Registry Key",
+  "version": "1.0",
+  "categories": [
+    "system"
+  ],
+  "StartAt": "Get",
+  "States": {
+    "Get": {
+      "Type": "Task",
+      "InputPath": "$",
+      "Resource": "module:getRegistryKey",
+      "ResultPath": "$",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "tymly_viewRegistryKey",
+        "dataPath": "$"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "tymly_system",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
