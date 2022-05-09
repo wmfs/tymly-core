@@ -1,3 +1,10 @@
+# [1.236.0](https://github.com/wmfs/tymly-core/compare/v1.235.3...v1.236.0) (2022-05-09)
+
+
+### ✨ Features
+
+* acknowledge relaxed property when execution is not running ([60f516c](https://github.com/wmfs/tymly-core/commit/60f516cd34383ec664fca4b25b327dd1e44d72c6))
+
 ## [1.235.3](https://github.com/wmfs/tymly-core/compare/v1.235.2...v1.235.3) (2022-05-06)
 
 
