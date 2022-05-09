@@ -30,6 +30,10 @@
     },
     "childCount": {
       "type": "integer"
+    },
+    "lastDescribed": {
+      "type": "string",
+      "format": "date-time"
     }
   },
   "required": ["uuid"],
