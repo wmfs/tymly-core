@@ -1,3 +1,16 @@
+# [1.237.0](https://github.com/wmfs/tymly-core/compare/v1.236.0...v1.237.0) (2022-05-09)
+
+
+### 🐛 Bug Fixes
+
+* allow for last described timestamp on execution model ([c9534c8](https://github.com/wmfs/tymly-core/commit/c9534c875a4d806179ec709a53710bd1a7039984))
+* return null execution if no exec name ([99b2a63](https://github.com/wmfs/tymly-core/commit/99b2a6361e854004c7ee0251055d7b3771d39d66))
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/statebox to 1.94.1 ([73a7921](https://github.com/wmfs/tymly-core/commit/73a7921d4e544bfbf383bcda751afef07386dce3))
+
 # [1.236.0](https://github.com/wmfs/tymly-core/compare/v1.235.3...v1.236.0) (2022-05-09)
 
 
