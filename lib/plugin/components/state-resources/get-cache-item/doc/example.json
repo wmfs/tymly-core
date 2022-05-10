@@ -1,0 +1,8 @@
+{
+  "GetCacheItem": {
+    "Type": "Task",
+    "Resource": "module:getCacheItem",
+    "InputPath": "$",
+    "End": true
+  }
+}
