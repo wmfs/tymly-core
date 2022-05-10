@@ -9,7 +9,7 @@
         "$.formData.dogName": "$.dog",
         "$.formData.catOwnerId": "$USERID",
         "$.formData.catBirthday": "$NOW",
-        "$.formData.email": "$USER_EMAIL",
+        "$.formData.email": "$EMAIL",
         "$.formData.faveColours": "$.faveColours",
         "$.formData.measurements": [
           {
