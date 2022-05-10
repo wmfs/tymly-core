@@ -1,3 +1,19 @@
+# [1.238.0](https://github.com/wmfs/tymly-core/compare/v1.237.0...v1.238.0) (2022-05-10)
+
+
+### 🐛 Bug Fixes
+
+* add buffer time to allow for execution ([d39bcbf](https://github.com/wmfs/tymly-core/commit/d39bcbfc58f303e8f49149de67841a2210cd4071))
+* describe execution accepts options as object ([67864f5](https://github.com/wmfs/tymly-core/commit/67864f5c62a76f9e171461c246d49879db6fde2b))
+* ensure last described is populated on launch state machine ([7efe2e5](https://github.com/wmfs/tymly-core/commit/7efe2e500df5a84f58c50b40054ec63550fb785a))
+* get update last described from execution options ([37c3b73](https://github.com/wmfs/tymly-core/commit/37c3b736cb4ebfe56d91dcc4c3ec3fc7b40a3474))
+* send task heartbeat to check if last described execution is null ([80240e9](https://github.com/wmfs/tymly-core/commit/80240e9aa3ce63081365f2fe581dacd0423feedc))
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/statebox to 1.94.2 ([54d23d7](https://github.com/wmfs/tymly-core/commit/54d23d7a468ed4377f2214a845dd8ac30461faec))
+
 # [1.237.0](https://github.com/wmfs/tymly-core/compare/v1.236.0...v1.237.0) (2022-05-09)
 
 
