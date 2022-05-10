@@ -1,3 +1,10 @@
+# [1.239.0](https://github.com/wmfs/tymly-core/compare/v1.238.0...v1.239.0) (2022-05-10)
+
+
+### ✨ Features
+
+* state resource to get from cache ([8a50777](https://github.com/wmfs/tymly-core/commit/8a5077700d1dc5b91d437e0284cb7cffac3633d3))
+
 # [1.238.0](https://github.com/wmfs/tymly-core/compare/v1.237.0...v1.238.0) (2022-05-10)
 
 
