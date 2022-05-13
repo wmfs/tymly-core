@@ -1,3 +1,11 @@
+## [1.239.1](https://github.com/wmfs/tymly-core/compare/v1.239.0...v1.239.1) (2022-05-13)
+
+
+### 🐛 Bug Fixes
+
+* process ref properties after mods are applied ([4ebe21a](https://github.com/wmfs/tymly-core/commit/4ebe21ae51fb79140cd8a87d5720fb7a1d9f29b2))
+* remove unused variable ([a05530c](https://github.com/wmfs/tymly-core/commit/a05530cc033eba2f0439994d5ad9f8c19aaf810e))
+
 # [1.239.0](https://github.com/wmfs/tymly-core/compare/v1.238.0...v1.239.0) (2022-05-10)
 
 
