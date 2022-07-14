@@ -1,3 +1,15 @@
+# [1.240.0](https://github.com/wmfs/tymly-core/compare/v1.239.1...v1.240.0) (2022-07-14)
+
+
+### ✨ Features
+
+* pass loaded mods to the service boot functions ([df9798f](https://github.com/wmfs/tymly-core/commit/df9798f99cede49635a0844b6856c649a0d0e699))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency semantic-release to v19.0.3 [security] ([db98863](https://github.com/wmfs/tymly-core/commit/db988635230d8c131292cb49f4c438d60c76cbe4))
+
 ## [1.239.1](https://github.com/wmfs/tymly-core/compare/v1.239.0...v1.239.1) (2022-05-13)
 
 
