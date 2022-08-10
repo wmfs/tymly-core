@@ -1,3 +1,10 @@
+# [1.241.0](https://github.com/wmfs/tymly-core/compare/v1.240.0...v1.241.0) (2022-08-10)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency moment to v2.29.4 [security] ([a50d3d1](https://github.com/wmfs/tymly-core/commit/a50d3d149f6b2fb4b25b5043f28ca0aed427f1f7))
+
 # [1.240.0](https://github.com/wmfs/tymly-core/compare/v1.239.1...v1.240.0) (2022-07-14)
 
 
