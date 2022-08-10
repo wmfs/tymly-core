@@ -36,7 +36,7 @@
     "mkdirp": "1.0.4",
     "moment": "2.29.4",
     "nanoid": "3.1.31",
-    "pino": "7.6.4",
+    "pino": "7.11.0",
     "pino-pretty": "7.5.0",
     "read-pkg-up": "7.0.1",
     "underscore-query": "3.3.2",
