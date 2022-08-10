@@ -1,3 +1,10 @@
+# [1.242.0](https://github.com/wmfs/tymly-core/compare/v1.241.0...v1.242.0) (2022-08-10)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency nanoid to v3.1.31 [security] ([75a5126](https://github.com/wmfs/tymly-core/commit/75a512640d6e3438be8288e263310596692bd436))
+
 # [1.241.0](https://github.com/wmfs/tymly-core/compare/v1.240.0...v1.241.0) (2022-08-10)
 
 
