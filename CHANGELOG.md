@@ -1,3 +1,10 @@
+# [1.243.0](https://github.com/wmfs/tymly-core/compare/v1.242.0...v1.243.0) (2022-11-01)
+
+
+### 🛠 Builds
+
+* **deps:** update deps ([982141b](https://github.com/wmfs/tymly-core/commit/982141be8d1c13468ed9599511f66d2530c913e6))
+
 # [1.242.0](https://github.com/wmfs/tymly-core/compare/v1.241.0...v1.242.0) (2022-08-10)
 
 
