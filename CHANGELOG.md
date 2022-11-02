@@ -1,3 +1,10 @@
+# [1.246.0](https://github.com/wmfs/tymly-core/compare/v1.245.0...v1.246.0) (2022-11-02)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/tymly-statelint to v1.47.0 ([5412255](https://github.com/wmfs/tymly-core/commit/5412255f42929ca3fc0a847b4aa96dc6e67ab6a9))
+
 # [1.245.0](https://github.com/wmfs/tymly-core/compare/v1.244.0...v1.245.0) (2022-11-02)
 
 
