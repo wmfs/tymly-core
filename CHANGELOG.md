@@ -1,3 +1,10 @@
+# [1.245.0](https://github.com/wmfs/tymly-core/compare/v1.244.0...v1.245.0) (2022-11-02)
+
+
+### ✨ Features
+
+* changes to lru-cache since dependency update ([e2c3a7d](https://github.com/wmfs/tymly-core/commit/e2c3a7d3a11bbbc2cb9983fe38d75c6504708b01))
+
 # [1.244.0](https://github.com/wmfs/tymly-core/compare/v1.243.0...v1.244.0) (2022-11-02)
 
 
