@@ -35,7 +35,7 @@ describe('Cache tests', function () {
   })
 
   it('delete the cache', () => {
-    cacheService.del('users', 'user1')
+    cacheService.delete('users', 'user1')
   })
 
   it('check the key has been removed from the cahce', () => {
@@ -53,7 +53,7 @@ describe('Cache tests', function () {
   })
 
   it('reset the cache', () => {
-    cacheService.reset('users')
+    cacheService.clear('users')
   })
 
   it('check the cache is empty', () => {
