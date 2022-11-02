@@ -23,7 +23,7 @@
   "dependencies": {
     "@hapi/boom": "10.0.0",
     "@wmfs/statebox": "1.98.0",
-    "@wmfs/tymly-statelint": "1.44.0",
+    "@wmfs/tymly-statelint": "1.47.0",
     "@wmfs/json-path-input-resolver": "1.1.0",
     "cls-hooked": "4.2.2",
     "debug": "4.3.4",
