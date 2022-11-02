@@ -32,7 +32,7 @@
     "glob": "8.0.3",
     "jsonpath": "1.1.1",
     "lodash": "4.17.21",
-    "lru-cache": "7.14.0",
+    "lru-cache": "7.14.1",
     "mkdirp": "1.0.4",
     "moment": "2.29.4",
     "nanoid": "3.3.4",
