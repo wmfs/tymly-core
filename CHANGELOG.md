@@ -1,3 +1,11 @@
+# [1.247.0](https://github.com/wmfs/tymly-core/compare/v1.246.0...v1.247.0) (2022-11-03)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-test-helpers to v1.22.2 ([c325205](https://github.com/wmfs/tymly-core/commit/c325205c74e87951482770a3e93c763f728e9af4))
+* **deps:** update dependency lru-cache to v7.14.1 ([7ed6fef](https://github.com/wmfs/tymly-core/commit/7ed6fefc3744485b806af6aaeebdaf753390ea02))
+
 # [1.246.0](https://github.com/wmfs/tymly-core/compare/v1.245.0...v1.246.0) (2022-11-02)
 
 
