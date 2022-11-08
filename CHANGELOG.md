@@ -1,3 +1,15 @@
+## [1.247.1](https://github.com/wmfs/tymly-core/compare/v1.247.0...v1.247.1) (2022-11-08)
+
+
+### 🐛 Bug Fixes
+
+* grab services on init function, in case userInfo has not booted yet ([8347f7c](https://github.com/wmfs/tymly-core/commit/8347f7c0722e691a1b3f7b3556f5322310477006))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency chai to v4.3.7 ([f50d241](https://github.com/wmfs/tymly-core/commit/f50d2417a25cea96676560bcb04708a6e92d272e))
+
 # [1.247.0](https://github.com/wmfs/tymly-core/compare/v1.246.0...v1.247.0) (2022-11-03)
 
 
