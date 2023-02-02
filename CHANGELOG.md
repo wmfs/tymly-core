@@ -1,3 +1,18 @@
+# [1.248.0](https://github.com/wmfs/tymly-core/compare/v1.247.1...v1.248.0) (2023-02-02)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6.0.2 ([cf2fc71](https://github.com/wmfs/tymly-core/commit/cf2fc711aaf3c9aa92b0ab323a58386969467683))
+* **deps-dev:** update dependency mocha to v10.2.0 ([f76dff5](https://github.com/wmfs/tymly-core/commit/f76dff56a02ff709af612fb69f37942c09d455d8))
+* **deps-dev:** update dependency semantic-release to v20 ([431ac4b](https://github.com/wmfs/tymly-core/commit/431ac4b5d111a298861462c330704f6be9a44cbf))
+* **deps-dev:** update dependency semantic-release to v20.0.1 ([d1b4d28](https://github.com/wmfs/tymly-core/commit/d1b4d28aed1878c31941febd4d6d63380a20a608))
+* **deps-dev:** update dependency semantic-release to v20.0.2 ([eef5f9f](https://github.com/wmfs/tymly-core/commit/eef5f9fe6b83bbd4d6b76e118643f382849360a2))
+* **deps-dev:** update dependency semantic-release to v20.0.3 ([b14cb44](https://github.com/wmfs/tymly-core/commit/b14cb443f44a47d557b2865257aea146409f7f02))
+* **deps-dev:** update dependency semantic-release to v20.0.4 ([f2bbf64](https://github.com/wmfs/tymly-core/commit/f2bbf64f25b3501e0b806d607603f40481af33cc))
+* **deps-dev:** update dependency semantic-release to v20.1.0 ([5baa527](https://github.com/wmfs/tymly-core/commit/5baa527fce9ea0b4aeef60b8b4d77f3bad880756))
+* **deps:** update dependency pino to v8.8.0 ([5051416](https://github.com/wmfs/tymly-core/commit/5051416be5e2940847d436fc1c3dd5aec088f825))
+
 ## [1.247.1](https://github.com/wmfs/tymly-core/compare/v1.247.0...v1.247.1) (2022-11-08)
 
 
