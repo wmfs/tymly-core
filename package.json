@@ -37,7 +37,7 @@
     "moment": "2.29.4",
     "nanoid": "3.3.4",
     "pino": "8.8.0",
-    "pino-pretty": "9.1.1",
+    "pino-pretty": "9.4.0",
     "read-pkg-up": "7.0.1",
     "underscore-query": "3.3.2",
     "upath": "2.0.1",
