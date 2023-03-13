@@ -1,3 +1,10 @@
+# [1.256.0](https://github.com/wmfs/tymly-core/compare/v1.255.0...v1.256.0) (2023-03-13)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency [@hapi](https://github.com/hapi)/boom to v10.0.1 ([1f6c627](https://github.com/wmfs/tymly-core/commit/1f6c627fbe183d23a28458fa4efbc6fe2ca3cf22))
+
 # [1.255.0](https://github.com/wmfs/tymly-core/compare/v1.254.0...v1.255.0) (2023-03-13)
 
 
