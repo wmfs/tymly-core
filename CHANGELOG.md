@@ -1,3 +1,10 @@
+# [1.255.0](https://github.com/wmfs/tymly-core/compare/v1.254.0...v1.255.0) (2023-03-13)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency pino-pretty to v10 ([f6c41f1](https://github.com/wmfs/tymly-core/commit/f6c41f16e867e58065364bf0895dea306bb6d161))
+
 # [1.254.0](https://github.com/wmfs/tymly-core/compare/v1.253.0...v1.254.0) (2023-03-13)
 
 
