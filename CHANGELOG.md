@@ -1,3 +1,10 @@
+# [1.250.0](https://github.com/wmfs/tymly-core/compare/v1.249.0...v1.250.0) (2023-03-13)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/statebox to v1.100.0 ([983d8ee](https://github.com/wmfs/tymly-core/commit/983d8eea2c560338ebf788077bf5a4b914218be0))
+
 # [1.249.0](https://github.com/wmfs/tymly-core/compare/v1.248.0...v1.249.0) (2023-03-13)
 
 
