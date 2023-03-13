@@ -21,7 +21,7 @@
   },
   "main": "./lib/index.js",
   "dependencies": {
-    "@hapi/boom": "10.0.0",
+    "@hapi/boom": "10.0.1",
     "@wmfs/statebox": "1.100.0",
     "@wmfs/tymly-statelint": "1.47.0",
     "@wmfs/json-path-input-resolver": "1.1.0",
