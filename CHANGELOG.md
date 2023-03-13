@@ -1,3 +1,10 @@
+# [1.252.0](https://github.com/wmfs/tymly-core/compare/v1.251.0...v1.252.0) (2023-03-13)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency mkdirp to v2 ([2790067](https://github.com/wmfs/tymly-core/commit/2790067d9fe09a7cf2aa2a0b75e8fab4e9b06f27))
+
 # [1.251.0](https://github.com/wmfs/tymly-core/compare/v1.250.0...v1.251.0) (2023-03-13)
 
 
