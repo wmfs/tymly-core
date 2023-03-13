@@ -1,3 +1,10 @@
+# [1.249.0](https://github.com/wmfs/tymly-core/compare/v1.248.0...v1.249.0) (2023-03-13)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency dottie to v2.0.3 ([a43e839](https://github.com/wmfs/tymly-core/commit/a43e83948f0c649350fc7356e4a1bc029da254a2))
+
 # [1.248.0](https://github.com/wmfs/tymly-core/compare/v1.247.1...v1.248.0) (2023-02-02)
 
 
