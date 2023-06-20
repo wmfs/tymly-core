@@ -1,3 +1,15 @@
+# [1.257.0](https://github.com/wmfs/tymly-core/compare/v1.256.0...v1.257.0) (2023-06-20)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6.0.3 ([f8cda03](https://github.com/wmfs/tymly-core/commit/f8cda03ed1d5e120a7b0d9b9752dadad58bb8f2a))
+* **deps-dev:** update dependency semantic-release to v20.1.1 ([25214a4](https://github.com/wmfs/tymly-core/commit/25214a4313d3f23f4e28f34d04dcb929fe6e02c9))
+* **deps-dev:** update dependency semantic-release to v20.1.3 ([573585e](https://github.com/wmfs/tymly-core/commit/573585e309716052ec572e4a736b5d31ad08773e))
+* **deps-dev:** update dependency semantic-release to v21 ([47532f1](https://github.com/wmfs/tymly-core/commit/47532f18336f9dc64d49e6a601a74cd27fba369a))
+* **deps-dev:** update dependency semantic-release to v21.0.1 ([ffa0085](https://github.com/wmfs/tymly-core/commit/ffa00852262634be491e8aca6888f25302319dfd))
+* **deps:** update dependency dottie to v2.0.4 [security] ([4670eeb](https://github.com/wmfs/tymly-core/commit/4670eeb7209274a8fd6df94d633271d855b9fc0c))
+
 # [1.256.0](https://github.com/wmfs/tymly-core/compare/v1.255.0...v1.256.0) (2023-03-13)
 
 
