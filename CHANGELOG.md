@@ -1,3 +1,12 @@
+# [1.259.0](https://github.com/wmfs/tymly-core/compare/v1.258.0...v1.259.0) (2023-07-26)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency semantic-release to v21.0.5 ([1cdaa5c](https://github.com/wmfs/tymly-core/commit/1cdaa5cb4143041e7652f28576205e461d42fb47))
+* **deps-dev:** update dependency semantic-release to v21.0.6 ([2ecfb0e](https://github.com/wmfs/tymly-core/commit/2ecfb0eec362854f6c873b3c17cf99f70dad9694))
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/statebox to v1.104.0 ([35bf31b](https://github.com/wmfs/tymly-core/commit/35bf31b046c5f087d31b0a2dc5aa7d3d662c67bf))
+
 # [1.258.0](https://github.com/wmfs/tymly-core/compare/v1.257.0...v1.258.0) (2023-06-20)
 
 
