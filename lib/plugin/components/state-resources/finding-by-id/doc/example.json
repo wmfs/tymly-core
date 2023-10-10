@@ -1,13 +1,14 @@
 {
   "findingById": {
-    "options": {
-      "modelId": "employees",
-      "target": "employeeDetails",
-      "key": {
-        "$value": {
-          "path": "key"
-        }
-      }
-    }
+    "Type": "Task",
+    "Resource": "module:findingById",
+    "InputPath": "$.id",
+    "ResourceConfig": {
+      "modelId": "namespace_model"
+    },
+    "ResultSelector": {
+      "results.$": "$"
+    },
+    "End": true
   }
 }

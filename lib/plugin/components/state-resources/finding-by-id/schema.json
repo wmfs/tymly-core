@@ -3,7 +3,7 @@
   "properties": {
     "modelId": {
       "type": "string",
-      "description": "This is the id of a model within the current namespace which will be used to upsert the document."
+      "description": "This is the id of a model which will be searched for the specified document."
     }
   },
   "required": ["modelId"],
