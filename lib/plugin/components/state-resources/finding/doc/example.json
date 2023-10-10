@@ -1,7 +1,21 @@
 {
   "Finding": {
     "Type": "Task",
-    "Resource": "module:findingById",
+    "Resource": "module:finding",
+    "ResourceConfig": {
+      "modelId": "namespace_model",
+      "filter": {
+        "where": {
+          "modelProperty1": {
+            "equals": "$.modelProperty1"
+          },
+          "booleanProperty": {
+            "equals": true
+          }
+        }
+      }
+    },
+    "ResultPath": "$.results",
     "End": true
   }
 }
