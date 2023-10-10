@@ -2,7 +2,7 @@
   "FindingOne": {
     "Resource": "module:findingOne",
     "ResourceConfig": {
-      "modelId": "safeAndWellAssessmentIndividual",
+      "modelId": "namespace_safeAndWellAssessmentIndividual",
       "filter": {
         "where": {
           "sawReportId": {
