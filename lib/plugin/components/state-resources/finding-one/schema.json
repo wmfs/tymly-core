@@ -3,11 +3,11 @@
   "properties": {
     "modelId": {
       "type": "string",
-      "description": "This is the id of a model within the current namespace from which a single document will be fetched."
+      "description": "This is the id of a model from which a single document will be fetched."
     },
     "filter": {
       "type": "object",
-      "description": "Use to find the correct doc to return."
+      "description": "Conditions which the document must meet to be returned."
     }
 
   },
