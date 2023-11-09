@@ -3,7 +3,10 @@
     "Type": "Task",
     "Resource": "module:setContextData",
     "ResourceConfig": {
-      "$.formData.sawReportId": "$.boardKeys.sawReportId"
+      "$.formData.sawReportId": "$.boardKeys.sawReportId",
+      "$.formData.loggedInUsersEmail": "$EMAIL",
+      "$.formData.loggedInUsersAuthId": "$USERID",
+      "$.formData.currentTimestampUTC": "$NOW"
     },
     "Next": "AwaitingHumanInput"
   }
