@@ -1,3 +1,10 @@
+# [1.263.0](https://github.com/wmfs/tymly-core/compare/v1.262.0...v1.263.0) (2024-02-22)
+
+
+### Features
+
+* app base url registry key [sc-22499] ([#655](https://github.com/wmfs/tymly-core/issues/655)) ([b5410be](https://github.com/wmfs/tymly-core/commit/b5410bef53c8ce612e2ddb00c22ce7f3123c1903))
+
 # [1.262.0](https://github.com/wmfs/tymly-core/compare/v1.261.0...v1.262.0) (2023-12-18)
 
 # [1.261.0](https://github.com/wmfs/tymly-core/compare/v1.260.0...v1.261.0) (2023-07-26)
