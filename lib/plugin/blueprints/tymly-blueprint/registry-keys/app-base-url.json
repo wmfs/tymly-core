@@ -1,0 +1,14 @@
+{
+  "label": "App Base URL",
+  "description": "App Base URL",
+  "schema": {
+    "properties": {
+      "environmentVariableName": "APP_BASE_URL",
+      "value": {
+        "type": "string",
+        "default": "Please insert App Base URL here"
+      }
+    },
+    "required": ["value"]
+  }
+}
