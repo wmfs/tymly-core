@@ -1,0 +1,14 @@
+{
+  "label": "Tymly GOV UK Notify API Key",
+  "description": "Tymly GOV UK Notify API Key",
+  "schema": {
+    "properties": {
+      "environmentVariableName": "GOV_UK_NOTIFY_API_KEY_TYMLY",
+      "value": {
+        "type": "string",
+        "default": "Please insert API URL here"
+      }
+    },
+    "required": ["value"]
+  }
+}
