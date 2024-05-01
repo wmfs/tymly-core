@@ -1,3 +1,10 @@
+## [1.263.1](https://github.com/wmfs/tymly-core/compare/v1.263.0...v1.263.1) (2024-05-01)
+
+
+### Bug Fixes
+
+* [sc-24835] Issue when adding RP Fault via postman ([#657](https://github.com/wmfs/tymly-core/issues/657)) ([e3178ac](https://github.com/wmfs/tymly-core/commit/e3178ac054dfb1cde14cbc12a5b4dec3393a7268))
+
 # [1.263.0](https://github.com/wmfs/tymly-core/compare/v1.262.0...v1.263.0) (2024-02-22)
 
 
