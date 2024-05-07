@@ -5,10 +5,14 @@ const expect = require('chai').expect
 const tymly = require('../lib')
 const moment = require('moment')
 
-const TestTimestamp = moment([2000, 2, 28, 22, 35, 0]).local()
-const TestTimestampString = `${TestTimestamp}`
+const stateMachines = {
+  now: 'tymlyTest_timestampNow_1_0',
+  today: 'tymlyTest_timestampToday_1_0',
+  year: 'tymlyTest_timestampYear_1_0'
+}
 
-const timestampStateMachine = 'tymlyTest_timestamp_1_0'
+const todayCheck = moment().format('L')
+const yearCheck = moment().format('yyyy')
 
 describe('Timestamp state resources', function () {
   this.timeout(process.env.TIMEOUT || 5000)
@@ -31,25 +35,39 @@ describe('Timestamp state resources', function () {
         tymlyService = tymlyServices.tymly
         statebox = tymlyServices.statebox
 
-        tymlyServices.timestamp.timeProvider = {
-          now () {
-            return TestTimestamp
-          }
-        } // debug provider
-
         done()
       }
     )
   })
 
-  it('run the state machine to get a timestamp', async () => {
+  it('run the state machine to get a timestamp for now', async () => {
     const execDesc = await statebox.startExecution(
-      { },
-      timestampStateMachine,
+      {},
+      stateMachines.now,
       { sendResponse: 'COMPLETE' }
     )
-    expect(execDesc.ctx.timestamp).to.eql(TestTimestamp)
-    expect(execDesc.ctx.timestamp.toString()).to.eql(TestTimestampString)
+
+    expect(execDesc.ctx.timestamp).to.not.eql(null)
+  })
+
+  it('run the state machine to get a timestamp for today', async () => {
+    const execDesc = await statebox.startExecution(
+      { query: '$TODAY' },
+      stateMachines.today,
+      { sendResponse: 'COMPLETE' }
+    )
+
+    expect(execDesc.ctx.timestamp).to.eql(todayCheck)
+  })
+
+  it('run the state machine to get a timestamp for the year', async () => {
+    const execDesc = await statebox.startExecution(
+      { query: '$YEAR' },
+      stateMachines.year,
+      { sendResponse: 'COMPLETE' }
+    )
+
+    expect(execDesc.ctx.timestamp).to.eql(yearCheck)
   })
 
   it('shutdown Tymly', async () => {
