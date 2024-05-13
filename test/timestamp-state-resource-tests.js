@@ -11,7 +11,7 @@ const stateMachines = {
   year: 'tymlyTest_timestampYear_1_0'
 }
 
-const todayCheck = moment().format('L')
+const todayCheck = moment().hour(0).minute(0).second(0).millisecond(0)
 const yearCheck = moment().format('yyyy')
 
 describe('Timestamp state resources', function () {
@@ -57,7 +57,7 @@ describe('Timestamp state resources', function () {
       { sendResponse: 'COMPLETE' }
     )
 
-    expect(execDesc.ctx.timestamp).to.eql(todayCheck)
+    expect(execDesc.ctx.timestamp.format()).to.eql(todayCheck.format())
   })
 
   it('run the state machine to get a timestamp for the year', async () => {
