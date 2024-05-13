@@ -1,3 +1,10 @@
+# [1.264.0](https://github.com/wmfs/tymly-core/compare/v1.263.1...v1.264.0) (2024-05-13)
+
+
+### Features
+
+* **(pin 262) crr dd:** [sc-24352] Improve Human Readable ID ([#658](https://github.com/wmfs/tymly-core/issues/658)) ([fe8c646](https://github.com/wmfs/tymly-core/commit/fe8c64652e37be91831b976a6211d080b06f6cf1))
+
 ## [1.263.1](https://github.com/wmfs/tymly-core/compare/v1.263.0...v1.263.1) (2024-05-01)
 
 
