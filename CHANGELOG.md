@@ -1,3 +1,10 @@
+# [1.265.0](https://github.com/wmfs/tymly-core/compare/v1.264.0...v1.265.0) (2024-06-03)
+
+
+### Features
+
+* provide format function on timestamp service ([#659](https://github.com/wmfs/tymly-core/issues/659)) ([f3a6fea](https://github.com/wmfs/tymly-core/commit/f3a6fea2dc968dcafee56070abf5c3d94ebbe562))
+
 # [1.264.0](https://github.com/wmfs/tymly-core/compare/v1.263.1...v1.264.0) (2024-05-13)
 
 
