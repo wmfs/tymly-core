@@ -1,0 +1,35 @@
+{
+  "Comment": "Clear Registry Key",
+  "name": "Clear Registry Key",
+  "version": "1.0",
+  "categories": [
+    "system"
+  ],
+  "StartAt": "AwaitingHumanInput",
+  "States": {
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "tymly_clearRegistryKey",
+        "dataPath": "$"
+      },
+      "Next": "Clear"
+    },
+    "Clear": {
+      "Type": "Task",
+      "InputPath": "$",
+      "Resource": "module:clearRegistryKey",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "tymly_system",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

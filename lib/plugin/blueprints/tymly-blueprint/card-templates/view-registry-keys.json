@@ -1,0 +1,49 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "id": "regKeysTable",
+      "type": "Table",
+      "showLaunches": true,
+      "arrayPath": "data.regKeys",
+      "columns": [
+        {
+          "title": "Key",
+          "field": "key"
+        },
+        {
+          "title": "Created By",
+          "field": "createdBy"
+        },
+        {
+          "title": "Created At",
+          "field": "created",
+          "format": "formatDate(item.created, 'DD MMM YYYY HH:mm')"
+        },
+        {
+          "title": "Modified By",
+          "field": "modifiedBy"
+        },
+        {
+          "title": "Modified At",
+          "field": "modified",
+          "format": "formatDate(item.modified, 'DD MMM YYYY HH:mm')"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Close"
+    }
+  ],
+  "templateMeta": {
+    "name": "view-registry-keys",
+    "title": "View Registry Keys",
+    "category": "system",
+    "customMaxWidthPx": 1200
+  }
+}
