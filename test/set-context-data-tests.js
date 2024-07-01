@@ -33,6 +33,7 @@ describe('Context tests', function () {
   it('should execute the set-context-data state machine', async () => {
     const execDesc = await statebox.startExecution(
       {
+        isThisNull: 'nope',
         dog: 'Donald',
         faveColours: ['pink', 'blue'],
         height: 3,
@@ -49,6 +50,7 @@ describe('Context tests', function () {
     expect(execDesc.currentResource).to.eql('module:setContextData')
     expect(execDesc.stateMachineName).to.eql('tymlyTest_setContextData_1_0')
     expect(execDesc.status).to.eql('SUCCEEDED')
+    expect(execDesc.ctx.formData.isThisNull).to.eql(null)
     expect(execDesc.ctx.formData.catName).to.eql('Rupert')
     expect(execDesc.ctx.formData.dogName).to.eql('Donald')
     expect(execDesc.ctx.formData.faveColours).to.eql(['pink', 'blue'])
