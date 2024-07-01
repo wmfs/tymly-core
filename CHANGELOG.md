@@ -1,3 +1,10 @@
+# [1.266.0](https://github.com/wmfs/tymly-core/compare/v1.265.0...v1.266.0) (2024-07-01)
+
+
+### Features
+
+* [sc-26239] Extend SetContextData to allow setting value as null ([#660](https://github.com/wmfs/tymly-core/issues/660)) ([15931af](https://github.com/wmfs/tymly-core/commit/15931af87ce434e7478e0b8dde4bb16b989a1dea))
+
 # [1.265.0](https://github.com/wmfs/tymly-core/compare/v1.264.0...v1.265.0) (2024-06-03)
 
 
