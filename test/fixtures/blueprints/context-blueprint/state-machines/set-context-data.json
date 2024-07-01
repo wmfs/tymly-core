@@ -5,6 +5,7 @@
   "States": {
     "SetDefaults": {
       "ResourceConfig": {
+        "$.formData.isThisNull": "$NULL",
         "$.formData.catName": "Rupert",
         "$.formData.dogName": "$.dog",
         "$.formData.catOwnerId": "$USERID",
