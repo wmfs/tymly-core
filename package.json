@@ -29,7 +29,7 @@
     "debug": "4.3.4",
     "dottie": "2.0.6",
     "fast-json-patch": "3.1.1",
-    "glob": "8.1.0",
+    "glob": "10.4.3",
     "jsonpath": "1.1.1",
     "lodash": "4.17.21",
     "lru-cache": "7.14.1",
