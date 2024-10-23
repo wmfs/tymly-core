@@ -72,7 +72,7 @@ describe('FindById and FindByIds State Resources', function () {
       id: '101',
       name: 'Billy',
       animal: 'Dog'
-    },{
+    }, {
       id: '99X',
       name: 'Babu',
       animal: 'Red Panda'
@@ -81,7 +81,7 @@ describe('FindById and FindByIds State Resources', function () {
 
   it('find by multiple unique keys, passing array', async () => {
     const executionDescription = await statebox.startExecution(
-      { ids: [['101'],['99X']] },
+      { ids: [['101'], ['99X']] },
       MULTIPLE_UNIQUE_KEYS,
       {
         sendResponse: 'COMPLETE'
@@ -92,7 +92,7 @@ describe('FindById and FindByIds State Resources', function () {
       id: '101',
       name: 'Billy',
       animal: 'Dog'
-    },{
+    }, {
       id: '99X',
       name: 'Babu',
       animal: 'Red Panda'
@@ -145,7 +145,7 @@ describe('FindById and FindByIds State Resources', function () {
       name: 'Billy',
       animal: 'Dog',
       colour: 'orange'
-    },{
+    }, {
       name: 'Babu',
       animal: 'Red Panda',
       colour: 'Auburn'
@@ -154,7 +154,7 @@ describe('FindById and FindByIds State Resources', function () {
 
   it('find by multiple composite keys, passing array', async () => {
     const executionDescription = await statebox.startExecution(
-      { keys: [['Billy', 'Dog'],['Babu', 'Red Panda']] },
+      { keys: [['Billy', 'Dog'], ['Babu', 'Red Panda']] },
       MULTIPLE_COMPOSITE_KEYS,
       {
         sendResponse: 'COMPLETE'
@@ -166,7 +166,7 @@ describe('FindById and FindByIds State Resources', function () {
       name: 'Billy',
       animal: 'Dog',
       colour: 'orange'
-    },{
+    }, {
       name: 'Babu',
       animal: 'Red Panda',
       colour: 'Auburn'
