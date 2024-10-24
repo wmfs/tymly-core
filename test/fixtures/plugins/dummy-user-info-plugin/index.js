@@ -1,4 +1,3 @@
-
 module.exports = {
   label: 'Dummy User Info',
   author: 'Jez Higgins',

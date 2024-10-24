@@ -16,8 +16,8 @@ describe('Inventory tests', function () {
 
   before('boot with an inventory service', async () => {
     const tymlyServices = await tymly.boot({
-      blueprintPaths: blueprintPaths,
-      pluginPaths: pluginPaths
+      blueprintPaths,
+      pluginPaths
     })
 
     tymlyService = tymlyServices.tymly
@@ -27,8 +27,8 @@ describe('Inventory tests', function () {
   it('inventory contents', () => {
     const inventory = inventoryService.collateEverything(
       {
-        blueprintPaths: blueprintPaths,
-        pluginPaths: pluginPaths,
+        blueprintPaths,
+        pluginPaths,
         messages: startupMessages()
       }
     )
