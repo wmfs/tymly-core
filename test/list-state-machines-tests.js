@@ -62,7 +62,7 @@ describe('list available state machines', () => {
       null,
       {
         bootedServices: {
-          statebox: statebox
+          statebox
         }
       }
     )
