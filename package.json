@@ -57,7 +57,7 @@
     "mocha": "10.2.0",
     "nyc": "15.1.0",
     "semantic-release": "21.0.7",
-    "standard": "17.0.0"
+    "standard": "17.1.2"
   },
   "scripts": {
     "lint": "standard",
