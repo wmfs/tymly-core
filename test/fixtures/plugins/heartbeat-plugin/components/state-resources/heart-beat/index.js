@@ -1,4 +1,3 @@
-
 class Heartbeat {
   run (event, context) {
     const heartbeat = {

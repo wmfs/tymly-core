@@ -1,4 +1,3 @@
-
 class Justfail {
   run (event, context) {
     context.sendTaskFailure({
