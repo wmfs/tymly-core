@@ -38,7 +38,7 @@
     "nanoid": "3.3.7",
     "pino": "9.5.0",
     "pino-pretty": "11.3.0",
-    "read-package-up": "11.0.0",
+    "read-pkg-up": "11.0.0",
     "underscore-query": "3.3.2",
     "upath": "2.0.1",
     "uuid": "11.0.2"
