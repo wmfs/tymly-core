@@ -1,3 +1,5 @@
+# [1.280.0](https://github.com/wmfs/tymly-core/compare/v1.279.0...v1.280.0) (2024-11-08)
+
 # [1.279.0](https://github.com/wmfs/tymly-core/compare/v1.278.0...v1.279.0) (2024-11-05)
 
 # [1.278.0](https://github.com/wmfs/tymly-core/compare/v1.277.0...v1.278.0) (2024-11-05)
