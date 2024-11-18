@@ -1,0 +1,12 @@
+{
+  "TimestampFormat": {
+    "Type": "Task",
+    "Parameters": {
+      "timestamp.$": "$.timestamp",
+      "format": "DD/MM/YYYY"
+    },
+    "Resource": "module:timestampFormat",
+    "ResultPath": "$.timestamp",
+    "End": true
+  }
+}
