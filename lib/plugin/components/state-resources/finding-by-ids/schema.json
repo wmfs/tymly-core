@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "modelIds": {
+      "type": "array",
+      "description": "This is an array of ids for which documents will be searched for."
+    }
+  },
+  "required": ["modelIds"],
+  "additionalProperties": false
+}
