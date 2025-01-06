@@ -1,3 +1,10 @@
+## [1.288.0](https://github.com/wmfs/tymly-core/compare/v1.287.0...v1.288.0) (2025-01-06)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** [sc-29160] Resolve issue with semantic-release changelog notes ([#701](https://github.com/wmfs/tymly-core/issues/701)) ([4949494](https://github.com/wmfs/tymly-core/commit/4949494a3f9e00d229c6ea0146f8f756f07f0d39))
+* **deps:** update dependency uuid to v11.0.4 ([#700](https://github.com/wmfs/tymly-core/issues/700)) ([42945b8](https://github.com/wmfs/tymly-core/commit/42945b8bc979bef9f0b68ec613d60fb0f3a48003))
+
 # [1.287.0](https://github.com/wmfs/tymly-core/compare/v1.286.0...v1.287.0) (2025-01-03)
 
 # [1.286.0](https://github.com/wmfs/tymly-core/compare/v1.285.0...v1.286.0) (2024-12-09)
