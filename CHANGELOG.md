@@ -1,3 +1,10 @@
+## [1.289.0](https://github.com/wmfs/tymly-core/compare/v1.288.0...v1.289.0) (2025-01-07)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency mocha to v11 ([#695](https://github.com/wmfs/tymly-core/issues/695)) ([6c61593](https://github.com/wmfs/tymly-core/commit/6c61593b9ea656b21211625d0ce7da4a0204be16))
+* **deps:** update dependency @wmfs/statebox to v1.112.0 ([#702](https://github.com/wmfs/tymly-core/issues/702)) ([fe0e28d](https://github.com/wmfs/tymly-core/commit/fe0e28d8d5bbdb6d302a3bdfa092abcee6df7cdf))
+
 ## [1.288.0](https://github.com/wmfs/tymly-core/compare/v1.287.0...v1.288.0) (2025-01-06)
 
 ### Build system dependencies :hammer:
