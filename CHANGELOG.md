@@ -1,3 +1,9 @@
+## [1.290.0](https://github.com/wmfs/tymly-core/compare/v1.289.0...v1.290.0) (2025-01-10)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency uuid to v11.0.5 ([#703](https://github.com/wmfs/tymly-core/issues/703)) ([c48b140](https://github.com/wmfs/tymly-core/commit/c48b14076d9eb8491ee166763f6b69578fc8fa11))
+
 ## [1.289.0](https://github.com/wmfs/tymly-core/compare/v1.288.0...v1.289.0) (2025-01-07)
 
 ### Build system dependencies :hammer:
