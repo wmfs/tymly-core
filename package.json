@@ -41,7 +41,7 @@
     "read-pkg-up": "7.0.1",
     "underscore-query": "3.3.2",
     "upath": "2.0.1",
-    "uuid": "11.0.4"
+    "uuid": "11.0.5"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",
