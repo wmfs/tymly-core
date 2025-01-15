@@ -1,3 +1,35 @@
+## [1.292.0](https://github.com/wmfs/tymly-core/compare/v1.291.0...v1.292.0) (2025-01-13)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency @wmfs/statebox to v1.113.0 ([#705](https://github.com/wmfs/tymly-core/issues/705)) ([bc05c28](https://github.com/wmfs/tymly-core/commit/bc05c280652c64fda0fa53eed72efd0ad35be6df))
+
+## [1.291.0](https://github.com/wmfs/tymly-core/compare/v1.290.0...v1.291.0) (2025-01-10)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency glob to v11.0.1 ([#704](https://github.com/wmfs/tymly-core/issues/704)) ([7c7c7dd](https://github.com/wmfs/tymly-core/commit/7c7c7ddf4849ccfa19661f89027a035f842355db))
+
+## [1.290.0](https://github.com/wmfs/tymly-core/compare/v1.289.0...v1.290.0) (2025-01-10)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency uuid to v11.0.5 ([#703](https://github.com/wmfs/tymly-core/issues/703)) ([c48b140](https://github.com/wmfs/tymly-core/commit/c48b14076d9eb8491ee166763f6b69578fc8fa11))
+
+## [1.289.0](https://github.com/wmfs/tymly-core/compare/v1.288.0...v1.289.0) (2025-01-07)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency mocha to v11 ([#695](https://github.com/wmfs/tymly-core/issues/695)) ([6c61593](https://github.com/wmfs/tymly-core/commit/6c61593b9ea656b21211625d0ce7da4a0204be16))
+* **deps:** update dependency @wmfs/statebox to v1.112.0 ([#702](https://github.com/wmfs/tymly-core/issues/702)) ([fe0e28d](https://github.com/wmfs/tymly-core/commit/fe0e28d8d5bbdb6d302a3bdfa092abcee6df7cdf))
+
+## [1.288.0](https://github.com/wmfs/tymly-core/compare/v1.287.0...v1.288.0) (2025-01-06)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** [sc-29160] Resolve issue with semantic-release changelog notes ([#701](https://github.com/wmfs/tymly-core/issues/701)) ([4949494](https://github.com/wmfs/tymly-core/commit/4949494a3f9e00d229c6ea0146f8f756f07f0d39))
+* **deps:** update dependency uuid to v11.0.4 ([#700](https://github.com/wmfs/tymly-core/issues/700)) ([42945b8](https://github.com/wmfs/tymly-core/commit/42945b8bc979bef9f0b68ec613d60fb0f3a48003))
+
 # [1.287.0](https://github.com/wmfs/tymly-core/compare/v1.286.0...v1.287.0) (2025-01-03)
 
 # [1.286.0](https://github.com/wmfs/tymly-core/compare/v1.285.0...v1.286.0) (2024-12-09)
