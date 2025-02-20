@@ -1,3 +1,9 @@
+## [1.294.0](https://github.com/wmfs/tymly-core/compare/v1.293.0...v1.294.0) (2025-02-20)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency @wmfs/statebox to v1.114.0 ([#710](https://github.com/wmfs/tymly-core/issues/710)) ([50501f5](https://github.com/wmfs/tymly-core/commit/50501f5246193dd40607dce5a6d5d4d4acf1bf69))
+
 ## [1.293.0](https://github.com/wmfs/tymly-core/compare/v1.292.0...v1.293.0) (2025-02-20)
 
 ### Build system dependencies :hammer:
