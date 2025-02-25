@@ -1,3 +1,18 @@
+## [1.294.0](https://github.com/wmfs/tymly-core/compare/v1.293.0...v1.294.0) (2025-02-20)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency @wmfs/statebox to v1.114.0 ([#710](https://github.com/wmfs/tymly-core/issues/710)) ([50501f5](https://github.com/wmfs/tymly-core/commit/50501f5246193dd40607dce5a6d5d4d4acf1bf69))
+
+## [1.293.0](https://github.com/wmfs/tymly-core/compare/v1.292.0...v1.293.0) (2025-02-20)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency mocha to v11.1.0 ([#706](https://github.com/wmfs/tymly-core/issues/706)) ([6682dff](https://github.com/wmfs/tymly-core/commit/6682dffebfa4f3770bf15ce20fa8b86fc83cfb2a))
+* **deps-dev:** update dependency semantic-release to v24.2.2 ([#707](https://github.com/wmfs/tymly-core/issues/707)) ([45d9459](https://github.com/wmfs/tymly-core/commit/45d945998eb008c5ff3518d595d244c375421e31))
+* **deps-dev:** update dependency semantic-release to v24.2.3 ([#708](https://github.com/wmfs/tymly-core/issues/708)) ([6e55cb9](https://github.com/wmfs/tymly-core/commit/6e55cb91b05e0d08ba0e8a05cf5eda8604683fd1))
+* **deps:** update dependency uuid to v11.1.0 ([#709](https://github.com/wmfs/tymly-core/issues/709)) ([9761385](https://github.com/wmfs/tymly-core/commit/97613859c5e66e81f6180b480b9f61cc5fa2fa51))
+
 ## [1.292.0](https://github.com/wmfs/tymly-core/compare/v1.291.0...v1.292.0) (2025-01-13)
 
 ### Build system dependencies :hammer:
