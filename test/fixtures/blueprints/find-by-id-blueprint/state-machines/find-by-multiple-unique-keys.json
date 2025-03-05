@@ -1,0 +1,17 @@
+{
+  "name": "FindByMultipleUniqueKeys",
+  "version": "1.0",
+  "StartAt": "FindByMultipleUniqueKeys",
+  "States": {
+    "FindByMultipleUniqueKeys": {
+      "Type": "Task",
+      "InputPath": "$.ids",
+      "Resource": "module:findingByIds",
+      "ResourceConfig": {
+        "modelId": "rescue"
+      },
+      "ResultPath": "$.found",
+      "End": true
+    }
+  }
+}

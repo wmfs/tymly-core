@@ -1,0 +1,14 @@
+{
+  "findingByIds": {
+    "Type": "Task",
+    "Resource": "module:findingByIds",
+    "InputPath": "$.ids",
+    "ResourceConfig": {
+      "modelId": "namespace_model"
+    },
+    "ResultSelector": {
+      "results.$": "$"
+    },
+    "End": true
+  }
+}
