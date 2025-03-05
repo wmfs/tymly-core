@@ -1,3 +1,9 @@
+## [1.297.0](https://github.com/wmfs/tymly-core/compare/v1.296.0...v1.297.0) (2025-03-05)
+
+### New Feature(s) :rocket:
+
+* [sc-28055] Adapt UPRN queries (Audit blueprint only) ([#663](https://github.com/wmfs/tymly-core/issues/663)) ([94051b0](https://github.com/wmfs/tymly-core/commit/94051b0a96d328cf76c15172e5988d7ebeeccb84))
+
 ## [1.296.0](https://github.com/wmfs/tymly-core/compare/v1.295.0...v1.296.0) (2025-02-28)
 
 ### Build system dependencies :hammer:
