@@ -1,3 +1,10 @@
+## [1.298.0](https://github.com/wmfs/tymly-core/compare/v1.297.0...v1.298.0) (2025-03-10)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency chai-string to v1.6.0 ([#715](https://github.com/wmfs/tymly-core/issues/715)) ([992ccaf](https://github.com/wmfs/tymly-core/commit/992ccafba166c0e9da9f2d971263c55c833ae209))
+* **deps:** update dependency nanoid to v3.3.9 ([#714](https://github.com/wmfs/tymly-core/issues/714)) ([9170b88](https://github.com/wmfs/tymly-core/commit/9170b880580e58c08f6de9485b08e2e0100fc44f))
+
 ## [1.297.0](https://github.com/wmfs/tymly-core/compare/v1.296.0...v1.297.0) (2025-03-05)
 
 ### New Feature(s) :rocket:
