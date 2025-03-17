@@ -1,3 +1,9 @@
+## [1.299.0](https://github.com/wmfs/tymly-core/compare/v1.298.0...v1.299.0) (2025-03-17)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency nanoid to v3.3.10 ([#716](https://github.com/wmfs/tymly-core/issues/716)) ([a695c6f](https://github.com/wmfs/tymly-core/commit/a695c6f6b68990a7b82451604fc22b72741c0b8c))
+
 ## [1.298.0](https://github.com/wmfs/tymly-core/compare/v1.297.0...v1.298.0) (2025-03-10)
 
 ### Build system dependencies :hammer:
