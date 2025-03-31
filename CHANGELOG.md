@@ -1,3 +1,9 @@
+## [1.303.0](https://github.com/wmfs/tymly-core/compare/v1.302.0...v1.303.0) (2025-03-31)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency @wmfs/tymly-statelint to v1.59.0 ([#720](https://github.com/wmfs/tymly-core/issues/720)) ([7b38a82](https://github.com/wmfs/tymly-core/commit/7b38a82f804a267d3be61b954ae53753e501c015))
+
 ## [1.302.0](https://github.com/wmfs/tymly-core/compare/v1.301.0...v1.302.0) (2025-03-31)
 
 ### Build system dependencies :hammer:
