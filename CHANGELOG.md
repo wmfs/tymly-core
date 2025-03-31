@@ -1,3 +1,9 @@
+## [1.301.0](https://github.com/wmfs/tymly-core/compare/v1.300.0...v1.301.0) (2025-03-31)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency lru-cache to v11.1.0 ([#718](https://github.com/wmfs/tymly-core/issues/718)) ([7511b21](https://github.com/wmfs/tymly-core/commit/7511b2135943202b31480040cc2be2a774010e9c))
+
 ## [1.300.0](https://github.com/wmfs/tymly-core/compare/v1.299.0...v1.300.0) (2025-03-20)
 
 ### Build system dependencies :hammer:
