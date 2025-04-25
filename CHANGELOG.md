@@ -1,3 +1,9 @@
+## [1.308.0](https://github.com/wmfs/tymly-core/compare/v1.307.0...v1.308.0) (2025-04-25)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency glob to v11.0.2 ([#725](https://github.com/wmfs/tymly-core/issues/725)) ([b664852](https://github.com/wmfs/tymly-core/commit/b664852b48fcbbbc916a4a050a66e9cbd8a8c0e1))
+
 ## [1.307.0](https://github.com/wmfs/tymly-core/compare/v1.306.0...v1.307.0) (2025-04-08)
 
 ### Build system dependencies :hammer:
