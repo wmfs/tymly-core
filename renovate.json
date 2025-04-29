@@ -1,26 +1,40 @@
 {
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
   "dependencyDashboard": true,
-  "enabledManagers": ["npm"],
+  "enabledManagers": [
+    "npm"
+  ],
   "packageRules": [
     {
-      "matchDepTypes": ["devDependencies"],
+      "matchDepTypes": [
+        "devDependencies"
+      ],
       "automerge": true,
       "semanticCommitType": "build",
       "semanticCommitScope": "deps-dev",
-      "labels": ["devDependencies"]
+      "labels": [
+        "devDependencies"
+      ]
     },
     {
-      "matchDepTypes": ["dependencies"],
+      "matchDepTypes": [
+        "dependencies"
+      ],
       "semanticCommitType": "build",
       "semanticCommitScope": "deps",
-      "labels": ["dependencies"],
-      "reviewers": ["team:tymly-reviewers"]
+      "labels": [
+        "dependencies"
+      ],
+      "reviewers": [
+        "team:tymly-reviewers"
+      ]
     }
   ],
-    "vulnerabilityAlerts": {
-    "labels": ["security"]
+  "vulnerabilityAlerts": {
+    "labels": [
+      "security"
+    ]
   }
 }
