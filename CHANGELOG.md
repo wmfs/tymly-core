@@ -1,3 +1,14 @@
+## [1.309.0](https://github.com/wmfs/tymly-core/compare/v1.308.0...v1.309.0) (2025-05-14)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency mocha to v11.2.2 ([#726](https://github.com/wmfs/tymly-core/issues/726)) ([634695e](https://github.com/wmfs/tymly-core/commit/634695e94b33de106d745e3f31dd4ed58e3e7033))
+* **deps:** update dependency debug to v4.4.1 ([#727](https://github.com/wmfs/tymly-core/issues/727)) ([89f5521](https://github.com/wmfs/tymly-core/commit/89f552165ac87a614342d6564ec043cf8b4dd98b))
+
+### Chores :pencil2:
+
+* **config:** migrate config renovate.json ([#689](https://github.com/wmfs/tymly-core/issues/689)) ([18c1c8d](https://github.com/wmfs/tymly-core/commit/18c1c8dfba9e29e9593cb14d04fbadccb63634c1))
+
 ## [1.308.0](https://github.com/wmfs/tymly-core/compare/v1.307.0...v1.308.0) (2025-04-25)
 
 ### Build system dependencies :hammer:
