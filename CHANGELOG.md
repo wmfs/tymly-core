@@ -1,3 +1,11 @@
+## [1.311.0](https://github.com/wmfs/tymly-core/compare/v1.310.0...v1.311.0) (2025-05-19)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency mocha to v11.3.0 ([#729](https://github.com/wmfs/tymly-core/issues/729)) ([72cb875](https://github.com/wmfs/tymly-core/commit/72cb875bbe6864c3a3b59b94017b2edc71dc9fa7))
+* **deps-dev:** update dependency semantic-release to v24.2.4 ([#730](https://github.com/wmfs/tymly-core/issues/730)) ([bf3d46a](https://github.com/wmfs/tymly-core/commit/bf3d46a02305e3d1bdc7455db7879da489460660))
+* **deps:** update dependency pino to v9.7.0 ([#731](https://github.com/wmfs/tymly-core/issues/731)) ([14cbf71](https://github.com/wmfs/tymly-core/commit/14cbf7161e2e6449623fdd1f3896043eaaa83f2c))
+
 ## [1.310.0](https://github.com/wmfs/tymly-core/compare/v1.309.0...v1.310.0) (2025-05-14)
 
 ### Build system dependencies :hammer:
