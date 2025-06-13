@@ -1,3 +1,14 @@
+## [1.312.0](https://github.com/wmfs/tymly-core/compare/v1.311.0...v1.312.0) (2025-06-13)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v9 ([#733](https://github.com/wmfs/tymly-core/issues/733)) ([6e17902](https://github.com/wmfs/tymly-core/commit/6e179028c9940f09a6b1e86269b40e17d37665ee))
+* **deps-dev:** update dependency mocha to v11.4.0 ([#732](https://github.com/wmfs/tymly-core/issues/732)) ([fe50a57](https://github.com/wmfs/tymly-core/commit/fe50a57cfb014bfe764c9004f67b49c2a9a25990))
+* **deps-dev:** update dependency mocha to v11.5.0 ([#735](https://github.com/wmfs/tymly-core/issues/735)) ([a076ac9](https://github.com/wmfs/tymly-core/commit/a076ac939e2574d9be75065a51fedbbf1e24dcfd))
+* **deps-dev:** update dependency mocha to v11.6.0 ([#736](https://github.com/wmfs/tymly-core/issues/736)) ([04a73dd](https://github.com/wmfs/tymly-core/commit/04a73dd72a3bcfcfcfbb945f110af5069c622415))
+* **deps-dev:** update dependency semantic-release to v24.2.5 ([#734](https://github.com/wmfs/tymly-core/issues/734)) ([2e93a6f](https://github.com/wmfs/tymly-core/commit/2e93a6f234e1f69c349996721203429bef0fc629))
+* **deps:** update dependency glob to v11.0.3 ([#737](https://github.com/wmfs/tymly-core/issues/737)) ([34e2b57](https://github.com/wmfs/tymly-core/commit/34e2b570cb194b980059f6451c799500183211bd))
+
 ## [1.311.0](https://github.com/wmfs/tymly-core/compare/v1.310.0...v1.311.0) (2025-05-19)
 
 ### Build system dependencies :hammer:
