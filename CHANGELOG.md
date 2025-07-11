@@ -1,3 +1,10 @@
+## [1.314.0](https://github.com/wmfs/tymly-core/compare/v1.313.0...v1.314.0) (2025-07-11)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v9.1.0 ([#742](https://github.com/wmfs/tymly-core/issues/742)) ([c50cd81](https://github.com/wmfs/tymly-core/commit/c50cd81931dc320b7a10af1436c65e7b20fe854f))
+* **deps:** update dependency @wmfs/tymly-statelint to v1.63.0 ([#743](https://github.com/wmfs/tymly-core/issues/743)) ([2124fe4](https://github.com/wmfs/tymly-core/commit/2124fe4f54dbe61e88201f95f473a0d484ccac3b))
+
 ## [1.313.0](https://github.com/wmfs/tymly-core/compare/v1.312.0...v1.313.0) (2025-07-10)
 
 ### Build system dependencies :hammer:
