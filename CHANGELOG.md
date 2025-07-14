@@ -1,3 +1,10 @@
+## [1.315.0](https://github.com/wmfs/tymly-core/compare/v1.314.0...v1.315.0) (2025-07-14)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency semantic-release to v24.2.7 ([#745](https://github.com/wmfs/tymly-core/issues/745)) ([304914f](https://github.com/wmfs/tymly-core/commit/304914ffd4bf99148bb950fb323db4a0971c5fa5))
+* **deps:** update dependency @wmfs/tymly-statelint to v1.64.0 ([#744](https://github.com/wmfs/tymly-core/issues/744)) ([e371fc6](https://github.com/wmfs/tymly-core/commit/e371fc679bc5d4cd494ff3c0fdb15a99d9f8cc4d))
+
 ## [1.314.0](https://github.com/wmfs/tymly-core/compare/v1.313.0...v1.314.0) (2025-07-11)
 
 ### Build system dependencies :hammer:
