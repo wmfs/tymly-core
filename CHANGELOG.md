@@ -1,3 +1,19 @@
+## [1.316.0](https://github.com/wmfs/tymly-core/compare/v1.315.0...v1.316.0) (2025-11-24)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency @semantic-release/release-notes-generator to v14.1.0 ([#753](https://github.com/wmfs/tymly-core/issues/753)) ([0b1bfd9](https://github.com/wmfs/tymly-core/commit/0b1bfd91b4c8fe583118008b078d1f05c90eaf98))
+* **deps-dev:** update dependency mocha to v11.7.2 ([#750](https://github.com/wmfs/tymly-core/issues/750)) ([2563dab](https://github.com/wmfs/tymly-core/commit/2563dab81740d446058f85fc83018fe484dbad83))
+* **deps-dev:** update dependency mocha to v11.7.3 ([#758](https://github.com/wmfs/tymly-core/issues/758)) ([cc5c114](https://github.com/wmfs/tymly-core/commit/cc5c11448ea41c35459e6f89fa817011a6a30877))
+* **deps-dev:** update dependency mocha to v11.7.4 ([#759](https://github.com/wmfs/tymly-core/issues/759)) ([8adb23a](https://github.com/wmfs/tymly-core/commit/8adb23a5dba3d1bbea6c5f34f68caf878c1d0b8e))
+* **deps-dev:** update dependency mocha to v11.7.5 ([#764](https://github.com/wmfs/tymly-core/issues/764)) ([54b871a](https://github.com/wmfs/tymly-core/commit/54b871ad0886fd3a40adb23e353a1f7fd67fe853))
+* **deps-dev:** update dependency semantic-release to v24.2.8 ([#755](https://github.com/wmfs/tymly-core/issues/755)) ([5d82a31](https://github.com/wmfs/tymly-core/commit/5d82a3179adb663b4ae4803957867ebdf6aa3b5e))
+* **deps-dev:** update dependency semantic-release to v24.2.9 ([#757](https://github.com/wmfs/tymly-core/issues/757)) ([7e13914](https://github.com/wmfs/tymly-core/commit/7e1391486fa10aa8602804b0c4011c01c893aa5d))
+* **deps-dev:** update dependency semantic-release to v25 ([#761](https://github.com/wmfs/tymly-core/issues/761)) ([2af8845](https://github.com/wmfs/tymly-core/commit/2af88454017647f337c44f7d82f7099ae2c5aaaf))
+* **deps-dev:** update dependency semantic-release to v25.0.1 ([#762](https://github.com/wmfs/tymly-core/issues/762)) ([fabfac1](https://github.com/wmfs/tymly-core/commit/fabfac1f1e397628277c7d33a737de0ba2db337d))
+* **deps-dev:** update dependency semantic-release to v25.0.2 ([#765](https://github.com/wmfs/tymly-core/issues/765)) ([af485d9](https://github.com/wmfs/tymly-core/commit/af485d99f0038b48c3189bc506371ef8394ae6bc))
+* **deps:** update dependency glob to v11.1.0 [security] ([#768](https://github.com/wmfs/tymly-core/issues/768)) ([084005f](https://github.com/wmfs/tymly-core/commit/084005f710ff09bfe389c8bd1575cfd9ebef2ace))
+
 ## [1.315.0](https://github.com/wmfs/tymly-core/compare/v1.314.0...v1.315.0) (2025-07-14)
 
 ### Build system dependencies :hammer:
