@@ -1,3 +1,9 @@
+## [1.317.0](https://github.com/wmfs/tymly-core/compare/v1.316.0...v1.317.0) (2025-11-25)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency @wmfs/json-path-input-resolver to v1.2.0 ([#763](https://github.com/wmfs/tymly-core/issues/763)) ([f266a91](https://github.com/wmfs/tymly-core/commit/f266a91ec88f35e2fe5e49d29472a2744f9ac197))
+
 ## [1.316.0](https://github.com/wmfs/tymly-core/compare/v1.315.0...v1.316.0) (2025-11-24)
 
 ### Build system dependencies :hammer:
