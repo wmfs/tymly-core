@@ -8,7 +8,8 @@ const moment = require('moment')
 const stateMachines = {
   now: 'tymlyTest_timestampNow_1_0',
   today: 'tymlyTest_timestampToday_1_0',
-  year: 'tymlyTest_timestampYear_1_0'
+  year: 'tymlyTest_timestampYear_1_0',
+  format: 'tymlyTest_timestampFormat_1_0'
 }
 
 const todayCheck = moment().hour(0).minute(0).second(0).millisecond(0)
@@ -68,6 +69,18 @@ describe('Timestamp state resources', function () {
     )
 
     expect(execDesc.ctx.timestamp).to.eql(yearCheck)
+  })
+
+  it('run the state machine to get a formatted timestamp', async () => {
+    const date = moment().date(1).month(0).year(2020)
+
+    const execDesc = await statebox.startExecution(
+      { timestamp: date, format: 'DD/MM/YY' },
+      stateMachines.format,
+      { sendResponse: 'COMPLETE' }
+    )
+
+    expect(execDesc.ctx.timestamp).to.eql('01/01/20')
   })
 
   it('shutdown Tymly', async () => {
