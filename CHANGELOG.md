@@ -1,3 +1,13 @@
+## [1.317.1](https://github.com/wmfs/tymly-core/compare/v1.317.0...v1.317.1) (2026-08-13)
+
+### Bug Fix(es) :bug:
+
+* update .circleci/config.yml to 2.1 ([6c9978f](https://github.com/wmfs/tymly-core/commit/6c9978f35e55df3134a2d9c8b6f06f07a67b81a5))
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency semantic-release to v25.0.3 ([#777](https://github.com/wmfs/tymly-core/issues/777)) ([202cc1d](https://github.com/wmfs/tymly-core/commit/202cc1da4476578d5b25be3b98c96996b4de018c))
+
 ## [1.317.0](https://github.com/wmfs/tymly-core/compare/v1.316.0...v1.317.0) (2025-11-25)
 
 ### Build system dependencies :hammer:
