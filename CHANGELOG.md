@@ -1,3 +1,9 @@
+## [1.319.0](https://github.com/wmfs/tymly-core/compare/v1.318.0...v1.319.0) (2026-10-26)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency lodash to v4.18.1 [security] ([#772](https://github.com/wmfs/tymly-core/issues/772)) ([dc1b9fe](https://github.com/wmfs/tymly-core/commit/dc1b9fe7f10e4f5d2a4f76c20af49a54dd3941e1))
+
 ## [1.318.0](https://github.com/wmfs/tymly-core/compare/v1.317.1...v1.318.0) (2026-10-26)
 
 ### Build system dependencies :hammer:
