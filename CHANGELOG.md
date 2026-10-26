@@ -1,3 +1,9 @@
+## [1.321.0](https://github.com/wmfs/tymly-core/compare/v1.320.0...v1.321.0) (2026-10-26)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency jsonpath to v1.3.0 [security] ([#774](https://github.com/wmfs/tymly-core/issues/774)) ([9902481](https://github.com/wmfs/tymly-core/commit/99024819bf15e09287b44e962d23ba7efbab79f6))
+
 ## [1.320.0](https://github.com/wmfs/tymly-core/compare/v1.319.0...v1.320.0) (2026-10-26)
 
 ### Build system dependencies :hammer:
