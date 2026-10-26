@@ -1,3 +1,10 @@
+## [1.322.0](https://github.com/wmfs/tymly-core/compare/v1.321.0...v1.322.0) (2026-10-26)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency nanoid to v3.3.18 [security] ([#780](https://github.com/wmfs/tymly-core/issues/780)) ([4041fb5](https://github.com/wmfs/tymly-core/commit/4041fb5a216d8258bfb92a541f628c8718d769c2))
+* **deps:** update dependency uuid to v11.1.1 [security] ([#779](https://github.com/wmfs/tymly-core/issues/779)) ([22346d4](https://github.com/wmfs/tymly-core/commit/22346d48a682d2ef0c7bcef46acba5cb67385dac))
+
 ## [1.321.0](https://github.com/wmfs/tymly-core/compare/v1.320.0...v1.321.0) (2026-10-26)
 
 ### Build system dependencies :hammer:
