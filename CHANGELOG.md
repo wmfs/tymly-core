@@ -1,3 +1,9 @@
+## [1.320.0](https://github.com/wmfs/tymly-core/compare/v1.319.0...v1.320.0) (2026-10-26)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency moment to v2.31.0 [security] ([#785](https://github.com/wmfs/tymly-core/issues/785)) ([f9e78e2](https://github.com/wmfs/tymly-core/commit/f9e78e2a59b49f5054fc4f26728bc59ba5714316))
+
 ## [1.319.0](https://github.com/wmfs/tymly-core/compare/v1.318.0...v1.319.0) (2026-10-26)
 
 ### Build system dependencies :hammer:
