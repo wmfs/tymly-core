@@ -1,3 +1,16 @@
+## [1.318.0](https://github.com/wmfs/tymly-core/compare/v1.317.1...v1.318.0) (2026-10-26)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency @wmfs/tymly-test-helpers to v1.24.1 ([#781](https://github.com/wmfs/tymly-core/issues/781)) ([ac98c1b](https://github.com/wmfs/tymly-core/commit/ac98c1be16a05de7b3d4e20438fb8936f629eea4))
+* **deps-dev:** update semantic-release monorepo ([#782](https://github.com/wmfs/tymly-core/issues/782)) ([281827f](https://github.com/wmfs/tymly-core/commit/281827f936dc7ddd8b58c1c468158cdf73947b0b))
+* **deps:** update dependency dottie to v2.0.7 [security] ([#776](https://github.com/wmfs/tymly-core/issues/776)) ([2ea53d4](https://github.com/wmfs/tymly-core/commit/2ea53d4fe82b5f7adb05f7b4a5e3fe7b00e7608e))
+
+### CICD Configuration Changes :construction_worker:
+
+* use github-app-token orb for release token [sc-34101] ([#786](https://github.com/wmfs/tymly-core/issues/786)) ([86ad881](https://github.com/wmfs/tymly-core/commit/86ad8815b0a9195cc13492836d778249e77bea1f))
+* use shared renovate preset [sc-34117] ([8e73442](https://github.com/wmfs/tymly-core/commit/8e7344263b9d58f50ed2a69efa33adbdfde2e6c8))
+
 ## [1.317.1](https://github.com/wmfs/tymly-core/compare/v1.317.0...v1.317.1) (2026-08-13)
 
 ### Bug Fix(es) :bug:
