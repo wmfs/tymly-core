@@ -22,9 +22,9 @@
   "main": "./lib/index.js",
   "dependencies": {
     "@hapi/boom": "10.0.1",
-    "@wmfs/statebox": "1.118.0",
-    "@wmfs/tymly-statelint": "1.64.0",
-    "@wmfs/json-path-input-resolver": "1.2.0",
+    "@wmfs/statebox": "1.121.0",
+    "@wmfs/tymly-statelint": "1.66.0",
+    "@wmfs/json-path-input-resolver": "1.3.0",
     "cls-hooked": "4.2.2",
     "debug": "4.4.3",
     "dottie": "2.0.7",
