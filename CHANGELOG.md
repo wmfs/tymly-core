@@ -1,3 +1,9 @@
+## [1.323.0](https://github.com/wmfs/tymly-core/compare/v1.322.0...v1.323.0) (2026-11-02)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency debug to v4.4.3 ([#756](https://github.com/wmfs/tymly-core/issues/756)) ([c2ffa95](https://github.com/wmfs/tymly-core/commit/c2ffa954b33dacc3b01e6a46db0210845d120639))
+
 ## [1.322.0](https://github.com/wmfs/tymly-core/compare/v1.321.0...v1.322.0) (2026-10-26)
 
 ### Build system dependencies :hammer:
