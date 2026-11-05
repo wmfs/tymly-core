@@ -44,9 +44,9 @@
     "uuid": "11.1.1"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/changelog": "7.0.0",
     "@semantic-release/release-notes-generator": "14.1.1",
-    "@semantic-release/git": "10.0.1",
+    "@semantic-release/git": "11.0.1",
     "@wmfs/tymly-test-helpers": "1.24.1",
     "chai": "4.5.0",
     "chai-string": "1.6.0",
