@@ -1,3 +1,14 @@
+## [1.328.0](https://github.com/wmfs/tymly-core/compare/v1.327.0...v1.328.0) (2026-11-05)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency mocha to v12 ([#795](https://github.com/wmfs/tymly-core/issues/795)) ([c63822e](https://github.com/wmfs/tymly-core/commit/c63822ef7cf4f43021c4757a4fc31b80f9d51817))
+* **deps-dev:** update dependency nyc to v18 ([#796](https://github.com/wmfs/tymly-core/issues/796)) ([c418894](https://github.com/wmfs/tymly-core/commit/c4188940171cce5f156f5002bdba3b0459b3fd05))
+* **deps-dev:** update devdependencies (non-major) ([#794](https://github.com/wmfs/tymly-core/issues/794)) ([00b8c68](https://github.com/wmfs/tymly-core/commit/00b8c6869c3770f44a7ffc4a28305f4188e9c500))
+* **deps-dev:** update semantic-release monorepo ([#797](https://github.com/wmfs/tymly-core/issues/797)) ([e176722](https://github.com/wmfs/tymly-core/commit/e1767223e6cbf4f8a88173f3518766d90b44df7c))
+* **deps:** update dependency glob to v14.0.3 ([#792](https://github.com/wmfs/tymly-core/issues/792)) ([43f46d4](https://github.com/wmfs/tymly-core/commit/43f46d404883660e25e8606e5b5193b853657c7e))
+* **deps:** update dependency uuid to v14 ([#800](https://github.com/wmfs/tymly-core/issues/800)) ([f6413b6](https://github.com/wmfs/tymly-core/commit/f6413b616620ac48f9c7223f17c2f48b66d3fffc))
+
 ## [1.327.0](https://github.com/wmfs/tymly-core/compare/v1.326.0...v1.327.0) (2026-11-04)
 
 ### Build system dependencies :hammer:
