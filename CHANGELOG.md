@@ -1,3 +1,9 @@
+## [1.328.1](https://github.com/wmfs/tymly-core/compare/v1.328.0...v1.328.1) (2026-11-16)
+
+### Bug Fix(es) :bug:
+
+* statebox errors thrown in async task resources [sc-34182] ([#791](https://github.com/wmfs/tymly-core/issues/791)) ([b533191](https://github.com/wmfs/tymly-core/commit/b533191ff9a0970183a3d94feb4768e682d567fd))
+
 ## [1.328.0](https://github.com/wmfs/tymly-core/compare/v1.327.0...v1.328.0) (2026-11-05)
 
 ### Build system dependencies :hammer:
