@@ -1,3 +1,13 @@
+## [1.330.0](https://github.com/wmfs/tymly-core/compare/v1.329.0...v1.330.0) (2026-11-18)
+
+### Tests :alembic:
+
+* [sc-34553] tymly-core: cats-blueprint test fixtures use quoted numbers in NumericGreaterThan ([4bdf6aa](https://github.com/wmfs/tymly-core/commit/4bdf6aa18d4a84cba9a24eb166f50c835f94de71))
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency glob to v14.0.6 ([#802](https://github.com/wmfs/tymly-core/issues/802)) ([5691fa2](https://github.com/wmfs/tymly-core/commit/5691fa2ca807c703300a2a787f5c0c3dbf2cbe2a))
+
 ## [1.329.0](https://github.com/wmfs/tymly-core/compare/v1.328.1...v1.329.0) (2026-11-17)
 
 ### Build system dependencies :hammer:
