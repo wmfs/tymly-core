@@ -1,3 +1,9 @@
+## [1.332.0](https://github.com/wmfs/tymly-core/compare/v1.331.0...v1.332.0) (2026-11-18)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency pino to v9.14.0 ([#747](https://github.com/wmfs/tymly-core/issues/747)) ([e0e0063](https://github.com/wmfs/tymly-core/commit/e0e006375d03e2a29a1ad74d2244bb6116747f58))
+
 ## [1.331.0](https://github.com/wmfs/tymly-core/compare/v1.330.0...v1.331.0) (2026-11-18)
 
 ### Build system dependencies :hammer:
