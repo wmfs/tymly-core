@@ -1,3 +1,10 @@
+## [1.331.0](https://github.com/wmfs/tymly-core/compare/v1.330.0...v1.331.0) (2026-11-18)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency nanoid to v3.3.20 ([#793](https://github.com/wmfs/tymly-core/issues/793)) ([66fb942](https://github.com/wmfs/tymly-core/commit/66fb942a7f2437431ca6465a35caa034eb997495))
+* **deps:** update dependency pino-pretty to v13.2.0 ([#748](https://github.com/wmfs/tymly-core/issues/748)) ([ec1df08](https://github.com/wmfs/tymly-core/commit/ec1df08598552afd2a1523c9a811823a41894c30))
+
 ## [1.330.0](https://github.com/wmfs/tymly-core/compare/v1.329.0...v1.330.0) (2026-11-18)
 
 ### Tests :alembic:
